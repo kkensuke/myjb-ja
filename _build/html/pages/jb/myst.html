@@ -1268,6 +1268,7 @@ substitutions:
 </pre></div>
 </div>
 <p>そして、次のように使用します： <code class="docutils literal notranslate"><span class="pre">{{image}}</span></code></p>
+<a class="reference internal image-reference" href="../../_images/GitHub-flow.png"><img alt="image" src="../../_images/GitHub-flow.png" style="width: 200px;" /></a>
 <section id="id28">
 <h3>本全体のサブスティテューションを定義する<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h3>
 <p>また、次の構成を使用して本全体のサブスティテューション変数を定義することもできます：</p>
@@ -1346,9 +1347,9 @@ substitutions:
 </pre></div>
 </div>
 <p>インストール後に _config.yml で有効にする必要があります。</p>
-<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
-  extra_extensions:
-    - sphinx_proof
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">extra_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx_proof</span><span class="w"></span>
 </pre></div>
 </div>
 <p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
@@ -1394,33 +1395,33 @@ substitutions:
 <h2><span class="section-number">4.4.4. </span>アクセシビリティの向上のための設定<a class="headerlink" href="#id38" title="Permalink to this headline">#</a></h2>
 <p>本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。</p>
 <p>言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、_config.yml ファイルの sphinx 構成内の language オプションに記述します：</p>
-<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
-  config:
-    language: en
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
 <section id="tex">
 <h2><span class="section-number">4.4.5. </span>TeXマクロの定義<a class="headerlink" href="#tex" title="Permalink to this headline">#</a></h2>
 <p>TeXブロックのMacrosオプションの下で、本全体にLaTeXマクロを定義できます。例として、次の2つのマクロはSphinx構成内で事前に定義されています</p>
-<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
-  config                    :             # Sphinx構成を直接上書きするキーバリューペア
-    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-                                          # デフォルトではMathJaxバージョン2が使用されています。
-                                          # 多くの数式を使用している場合は、バージョン3を試してみることができ、
-                                          # 読み込み速度を60-80%向上させると報告されています。
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">config                    </span><span class="p">:</span><span class="w">             </span><span class="c1"># Sphinx構成を直接上書きするキーバリューペア</span><span class="w"></span>
+<span class="w">    </span><span class="nt">mathjax_path            </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span><span class="w"></span>
+<span class="w">                                          </span><span class="l l-Scalar l-Scalar-Plain"># デフォルトではMathJaxバージョン2が使用されています。</span><span class="w"></span>
+<span class="w">                                          </span><span class="l l-Scalar l-Scalar-Plain"># 多くの数式を使用している場合は、バージョン3を試してみることができ、</span><span class="w"></span>
+<span class="w">                                          </span><span class="l l-Scalar l-Scalar-Plain"># 読み込み速度を60-80%向上させると報告されています。</span><span class="w"></span>
 
-:
-    mathjax3_config:
-      loader:                             # physicsパッケージを使用したい場合は、これをロードし、以下のパッケージリストに追加する必要があります。
-        load                : [&#39;[tex]/physics&#39;]
-      tex:
-        packages            : { &#39;[+]&#39;: [&#39;physics&#39;] }
-        macros:
-          &quot;N&quot;: &quot;\\mathbb{N}&quot;
-          &quot;floor&quot;: [&quot;\\lfloor#1\\rfloor&quot;, 1]
-          &quot;bmat&quot; : [&quot;\\left[\\begin{array}&quot;]
-          &quot;emat&quot; : [&quot;\\end{array}\\right]&quot;]
+<span class="p p-Indicator">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">mathjax3_config</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">loader</span><span class="p">:</span><span class="w">                             </span><span class="c1"># physicsパッケージを使用したい場合は、これをロードし、以下のパッケージリストに追加する必要があります。</span><span class="w"></span>
+<span class="w">        </span><span class="nt">load                </span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;[tex]/physics&#39;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">      </span><span class="nt">tex</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">packages            </span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="w"> </span><span class="s">&#39;[+]&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;physics&#39;</span><span class="p p-Indicator">]</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"></span>
+<span class="w">        </span><span class="nt">macros</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="s">&quot;N&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;\\mathbb{N}&quot;</span><span class="w"></span>
+<span class="w">          </span><span class="s">&quot;floor&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\lfloor#1\\rfloor&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">1</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="s">&quot;bmat&quot;</span><span class="w"> </span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\left[\\begin{array}&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">          </span><span class="s">&quot;emat&quot;</span><span class="w"> </span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\end{array}\\right]&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>また、特定のファイル用のTeXマクロを定義するには、mathディレクティブの下にファイルの先頭にそれらを導入します。例：</p>
