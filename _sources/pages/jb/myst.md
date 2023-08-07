@@ -1,3 +1,18 @@
+---
+myst:
+  substitutions:
+    key1: "I'm a **substitution**"
+    key2: |
+      ```{note}
+      {{ key1 }}
+      ```
+    image: |
+      ```{image} ../basic/github/img/GitHub-flow.png
+      :alt: image
+      :width: 200px
+      ```
+---
+
 # MyST
 
 以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けのMarkdownの派生版の一つです。
@@ -679,7 +694,7 @@ pip install sphinx-proof
 
 インストール後に _config.yml で有効にする必要があります。
 
-```yml
+```yaml
 sphinx:
   extra_extensions:
     - sphinx_proof
@@ -731,7 +746,7 @@ jupyter-book build mybookname/ --builder linkcheck
 本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。
 
 言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、_config.yml ファイルの sphinx 構成内の language オプションに記述します：
-```yml
+```yaml
 sphinx:
   config:
     language: en
@@ -741,7 +756,7 @@ sphinx:
 ## TeXマクロの定義
 
 TeXブロックのMacrosオプションの下で、本全体にLaTeXマクロを定義できます。例として、次の2つのマクロはSphinx構成内で事前に定義されています
-```yml
+```yaml
 sphinx:
   config                    :             # Sphinx構成を直接上書きするキーバリューペア
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
