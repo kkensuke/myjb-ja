@@ -1,0 +1,59 @@
+# Table of contents
+format: jb-book
+root: intro
+
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: false
+#options:   # The options key will be applied to all chapters, but not sub-sections
+#  numbered: 3
+
+parts:
+  - numbered: 3
+    chapters:
+    - file: pages/basic/basic # chapters need at least one file before sections.
+#     title:
+      sections:
+      - file: pages/basic/linux
+      - file: pages/basic/path
+      - file: pages/basic/alias
+      - file: pages/basic/zsh
+      - file: pages/basic/markdown
+      - file: pages/basic/github/github
+      - file: pages/basic/github/commitMessage
+      - file: pages/basic/packageManager
+    # - file: pages/python/python0
+    #   sections:
+    #   - file: pages/python/python
+    #   - file: pages/python/numpy
+    #   - file: pages/python/matplotlib
+    #   - file: pages/python/sympy
+    #   - file: pages/python/scipy
+    - file: pages/coding-rules/coding-rules
+      sections:
+      - file: pages/coding-rules/naming
+    - file: pages/latex/latex
+      sections:
+      - file: pages/latex/settings
+      - file: pages/latex/basics
+      - file: pages/latex/article
+      - file: pages/latex/revtex4-2
+      - file: pages/latex/beamer
+      - file: pages/latex/newcommands
+    # - file: pages/qc/qc
+    #   sections:
+    #   - file: pages/qc/basics
+    #   - file: pages/qc/qiskit
+    #   - file: pages/qc/pennylane
+    - file: pages/jb/jb
+      sections:
+      - file: pages/jb/mkjb
+      - file: pages/jb/myst
+    - file: pages/tools/tools
+      sections:
+      - file: pages/tools/usefulWebApps/usefulWebApps
+      - file: pages/tools/usefulMacApps/usefulMacApps
+      - file: pages/tools/usefulFirefoxExtensions/usefulFirefoxExtensions
+      - file: pages/tools/usefulVScodeExtensions/usefulVScodeExtensions
+    - file: pages/others/others
+      sections:
+      - file: pages/others/firefox/firefox-security-settings

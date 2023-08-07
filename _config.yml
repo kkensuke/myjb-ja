@@ -1,0 +1,135 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : My note  # The title of the book. Will be placed in the left navbar.
+author                      : kkensuke           # The author of the book
+#authors                     :
+email                       :
+copyright                   : "2023"           # Copyright year to be placed in the footer
+logo                        : mylogo.png         # A path to the book logo
+#organization                :
+#address                     :
+#contact                     :
+#version                     :
+#release                     :
+#revision                    :
+#status                      :
+#date                        :
+#dedication                  :
+abstract                    : note
+
+# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+# exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .gitignore, develop]
+#Auto-exclude files not in the toc
+only_build_toc_files        : true
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks         : auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacts. Defaults to `_build/.jupyter_cache/`
+  exclude_patterns          : []    # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
+  timeout                   : 30    # The maximum time (in seconds) each notebook cell is allowed to run.
+  run_in_temp               : false # If `True`, then a temporary directory will be created and used as the command working directory (cwd),
+                                    # otherwise the notebook's parent directory will be the cwd.
+  allow_errors              : false # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
+  stderr_output             : show  # One of 'show', 'remove', 'remove-warn', 'warn', 'error', 'severe'
+
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_enable_extensions    :  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath                  # for direct parsing of amsmath LaTeX environments
+    - dollarmath               # for parsing of dollar $ and $$ encapsulated math
+    - colon_fence              # you can also use ::: delimiters to denote code fences, instead of ```
+    - deflist                  # you will be able to utilise definition lists    Term1\n : Definition
+    - html_admonition          # If you’d like to use admonitions that are defined purely with HTML
+    - html_image
+    - linkify                  # will automatically identify “bare” web URLs and add hyperlinks
+    - replacements             # will automatically convert some common typographic texts
+    - smartquotes              # will automatically convert standard quotations to their opening/closing variants
+    - substitution             # will allow you to add substitutions. Put keys at the top of files
+    - tasklist                 # you will be able to utilise task lists  - [] sentence, - [x] sentence
+  myst_url_schemes          : [mailto, http, https]   # URI schemes that will be recognized as external URLs in Markdown links
+  myst_dmath_double_inline  : true          # Allow display math ($$) within an inline context
+  myst_substitutions        :
+    key0                    : global-value
+  myst_number_code_blocks   : bash,zsh,python,latex
+
+#######################################################################################
+# HTML-specific settings
+html:
+  favicon                   : ""    # A path to a favicon image
+  use_edit_page_button      : true  # Add GitHub buttons to your book
+                                    # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+                                    # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button     : true  # Whether to add a link to your repository button
+  use_issues_button         : true  # Whether to add an "open an issue" button
+  use_multitoc_numbering    : true  # Continuous numbering across parts/chapters
+  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a> <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kkensuke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script> # <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KHZEE5Y57R'); </script>
+ # Will be displayed underneath the footer.
+  google_analytics_id       : # A GA id that can be used to track book views.
+  home_page_in_navbar       : false # Whether to include your home page in the left Navigation Bar
+  baseurl                   : ""    # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  comments:
+    announcement            : ""    # A banner announcement at the top of the site.
+    hypothesis              : true
+    utterances              :
+      repo                  : "kkensuke/myjb-ja"
+
+#######################################################################################
+# LaTeX-specific settings
+latex:
+  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+  use_jupyterbook_latex     : true      # use sphinx-jupyterbook-latex for pdf builds as default
+  latex_documents           :           # Define the name of the latex output file for PDF builds
+    targetname              : book.tex  # Updating the name of the book style PDF file
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+#######################################################################################
+# Launch button settings
+
+launch_buttons:
+  notebook_interface        : jupyterlab            # The interface interactive links will activate ["classic", "jupyterlab"]
+  # binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+                                                    # If your Jupyter Book is hosted online on GitHub,
+                                                    # you can automatically insert buttons that link to the Jupyter Notebook running in a BinderHub.
+  jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe                     : false                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
+  colab_url                 : https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
+
+repository:                           # Information about where the book exists on the web
+  url                       : https://github.com/kkensuke/myjb-ja  # The URL to your book's repository
+  path_to_book              : /       # A path to your book's folder, relative to the repository root.
+  branch                    : main    # Which branch of the repository should be used when creating links
+
+#######################################################################################
+# Advanced and power-user settings https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
+sphinx:
+  extra_extensions          :             # A list of extra extensions to load by Sphinx (added to those already used by JB).
+  local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
+  config                    :             # key-value pairs to directly over-ride the Sphinx configuration
+    language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
+    html_baseurl            : https://kkensuke.github.io/myjb-ja/intro.html
+    myst_heading_anchors    : 3           # The heading level at which to generate anchors. Without this, internal links will not work.
+    nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
+                                          # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
+    bibtex_reference_style  : author_year # and label, super
+    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+                                          # By default MathJax version 2 is currently used.
+                                          # If you are using a lot of math, you may want to try using version 3
+                                          # , which claims to improve load speeds by 60 - 80%:
+    mathjax3_config:
+      loader:                             # If you want to use physics package, you need to load it and add it to the packages list below.
+        load                : ['[tex]/physics']
+      tex:
+        packages            : { '[+]': ['physics'] }
+        macros:
+          "ket"             : ["|#1\\rangle",1]      # just an example
+          "bra"             : ["\\langle#1|",1]      # just an example
+    latex_toplevel_sectioning: 'chapter'  # 'part'
