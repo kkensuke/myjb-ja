@@ -512,9 +512,9 @@ document.write(`
 </section>
 <section id="venv">
 <span id="id1"></span><h2><span class="section-number">1.9.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this headline">#</a></h2>
-<p>Pythonの仮想環境を作成するには、venvが最も簡単なツールです！ Pythonのためのpyenvやanacondaなどもありますが、初心者には必要ありません。
-venvを作成しましょう。
-venvを作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用のvenvを作成します。</p>
+<p>Python の仮想環境を作成するには、venvが最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。
+venv を作成しましょう。
+venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python3 -m venv ~/test
 </pre></div>
 </div>
@@ -532,13 +532,13 @@ Pythonのバージョンを確認してみましょう：</p>
 </pre></div>
 </div>
 <p>すると <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.x.x</span></code> が表示されます。</p>
-<p>これで新しいvenvを作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> コマンドでvenv内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
-何かをインストールする前に、<code class="docutils literal notranslate"><span class="pre">pip</span></code> をアップグレードする必要があるかもしれません。これはPythonのパッケージマネージャです（以下のUsernameを変更してください）：</p>
+<p>これで新しい venv を作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> コマンドで venv 内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
+何かをインストールする前に、<code class="docutils literal notranslate"><span class="pre">pip</span></code> をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャです（以下の Username を変更してください）：</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/&lt;Username&gt;/test/bin/python3 -m pip install --upgrade pip
 </pre></div>
 </div>
-<p>次にパッケージをインストールしてみましょう（ここではnumpyを使用します）！</p>
+<p>次にパッケージをインストールしてみましょう（ここでは numpy を使用します）！</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip install numpy
 </pre></div>
 </div>
@@ -547,17 +547,17 @@ Pythonのバージョンを確認してみましょう：</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">numpy==x.xx.x</span></code> のように表示されます。</p>
-<p>初心者としてPythonを使用する場合は、matplotlib、pandas、jupyter-labをインストールすることをお勧めします；</p>
+<p>初心者として Python を使用する場合は、matplotlib、pandas、jupyter-lab をインストールすることをお勧めします；</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip install matplotlib
 pip install jupyterlab
 </pre></div>
 </div>
-<p>Matplotlibは可視化のためのライブラリ、pandasはデータ分析と操作のためのライブラリ、jupyter-labはウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
-これでテスト用venvに多くのパッケージがインストールされました。<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> を試してみてください。ただし、明らかに4つまたは5つのパッケージしかインストールされていないように思うかもしれませんが、実際には、jupyter-labとともに多くのパッケージがインストールされています。
-venvを非アクティブにするには、ターミナルで単に <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> と入力します。再度アクティブにするには、<code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">test/bin/activate</span></code> を入力します。</p>
+<p>Matplotlib は可視化のためのライブラリ、pandas はデータ分析と操作のためのライブラリ、jupyter-lab はウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
+これでテスト用 venv に多くのパッケージがインストールされました。<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> を試してみてください。ただし、明らかに4つまたは5つのパッケージしかインストールされていないように思うかもしれませんが、実際には、jupyter-lab とともに多くのパッケージがインストールされています。
+venv を非アクティブにするには、ターミナルで単に <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> と入力します。再度アクティブにするには、<code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">test/bin/activate</span></code> を入力します。</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>venvを削除する場合は、ターミナルで次を入力して削除します：</p>
+<p>venv を削除する場合は、ターミナルで次を入力して削除します：</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm -rf ~/test
 </pre></div>
 </div>
@@ -565,12 +565,12 @@ venvを非アクティブにするには、ターミナルで単に <code class=
 </section>
 <section id="jupyter-lab">
 <h2><span class="section-number">1.9.3. </span>Jupyter-labを使用しましょう！<a class="headerlink" href="#jupyter-lab" title="Permalink to this headline">#</a></h2>
-<p>jupyter-labをインストールしたので、使ってみましょう！！</p>
+<p>jupyter-lab をインストールしたので、使ってみましょう！！</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter-lab
 </pre></div>
 </div>
 <p>デフォルトのブラウザが表示され、jupyter-labが開きます。</p>
-<p>jupyter-labを非アクティブ化するには（venvではなく）、ターミナルで <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">C</span></code> を入力し、終了するかどうかを尋ねられたら y（yes）を入力します。
+<p>jupyter-lab を非アクティブ化するには（venvではなく）、ターミナルで <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">C</span></code> を入力し、終了するかどうかを尋ねられたら y（yes）を入力します。
 詳細については、<a class="reference internal" href="../jb/jb.html"><span class="doc std std-doc">Jupyter Book</span></a> ページを参照してください。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
