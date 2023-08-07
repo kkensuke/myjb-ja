@@ -1,4 +1,4 @@
-# Firefoxのセキュリティ設定
+# Firefox のセキュリティ設定
 
 ## セキュリティアドオン
 - [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)

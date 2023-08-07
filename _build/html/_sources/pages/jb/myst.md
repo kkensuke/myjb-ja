@@ -15,7 +15,7 @@ myst:
 
 # MyST
 
-以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けのMarkdownの派生版の一つです。
+以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けの Markdown の派生版の一つです。
 
 >## 見出し
 >```
