@@ -15,7 +15,7 @@ myst:
 
 # MyST
 
-以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けの Markdown の派生版の一つです。
+以下では、MyST Markdown の基本的な使用方法を列挙します。MyST は、科学技術文書向けの Markdown の派生版の一つです。
 
 >## 見出し
 >```
@@ -254,10 +254,10 @@ myst:
 : 図を左寄せ、中央揃え、または右寄せに配置します。デフォルトの配置は中央揃えです。
 
 `name` : テキスト
-: 図の固有の識別子で、{ref}や{numref}ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。
+: 図の固有の識別子で、{ref} や {numref} ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。
 
 `figclass` : テキスト
-: 図のclass属性の値を設定します。これにより、カスタムCSSやJavaScriptを追加できます。事前定義されたオプションには次のものがあります：
+: 図の class 属性の値を設定します。これにより、カスタム CSS や JavaScript を追加できます。事前定義されたオプションには次のものがあります：
 
 ## 数式
 >```
@@ -640,7 +640,7 @@ parse:
 
 
 ### フォーマットのサブスティテューション
-Sphinx構成の`substitutions`オプションを使用して、次のようにサブスティテューションを定義できます：
+Sphinx 構成の `substitutions` オプションを使用して、次のようにサブスティテューションを定義できます：
 ```
 substitutions:
   repo_url: [私のリポジトリURL](https://github.com/executablebooks/jupyter-book)
@@ -667,7 +667,7 @@ substitutions:
 
 
 ## マークの欠落を確認する
-Jupyter Bookをビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：
+Jupyter Book をビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：
 ```shell
 jupyter-book build -W -n --keep-going docs/
 ```
@@ -708,13 +708,13 @@ https://sphinx-proof.readthedocs.io/en/latest/syntax.html
 
 ## 本のバッジを生成する
 [![Jupyter Book バッジ](https://jupyterbook.org/badge.svg)](<https://github.com/kk564/jb-test.git>)
-さらに、[shields.io](https://shields.io/) から直接バッジを生成することもできます。こちらは、Jupyter Bookのロゴのベース64エンコードバージョンを使用した自動生成バッジのURLです。ご自由に変更してください！
+さらに、[shields.io](https://shields.io/) から直接バッジを生成することもできます。こちらは、Jupyter Book のロゴのベース64エンコードバージョンを使用した自動生成バッジの URL です。ご自由に変更してください！
 
 ## LaTeXを使用してPDFをビルドする
 
 ### 本スタイルのPDF
 
-LaTeXを使用してプロジェクトのPDFをビルドするには、次のコマンドを使用します：
+LaTeX を使用してプロジェクトの PDF をビルドするには、次のコマンドを使用します：
 ```
 jupyter-book build mybookname/ --builder pdflatex [--individualpages]
 
@@ -745,7 +745,7 @@ jupyter-book build mybookname/ --builder linkcheck
 
 本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。
 
-言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、_config.yml ファイルの sphinx 構成内の language オプションに記述します：
+言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、`_config.yml` ファイルの sphinx 構成内の language オプションに記述します：
 ```yaml
 sphinx:
   config:
@@ -755,7 +755,7 @@ sphinx:
 
 ## TeXマクロの定義
 
-TeXブロックのMacrosオプションの下で、本全体にLaTeXマクロを定義できます。例として、次の2つのマクロはSphinx構成内で事前に定義されています
+TeX ブロックの Macros オプションの下で、本全体に LaTeX マクロを定義できます。例として、次の2つのマクロは Sphinx 構成内で事前に定義されています
 ```yaml
 sphinx:
   config                    :             # Sphinx構成を直接上書きするキーバリューペア
@@ -778,7 +778,7 @@ sphinx:
 ```
 
 
-また、特定のファイル用のTeXマクロを定義するには、mathディレクティブの下にファイルの先頭にそれらを導入します。例：
+また、特定のファイル用の TeX マクロを定義するには、math ディレクティブの下にファイルの先頭にそれらを導入します。例：
 
 ````
 ```latex

@@ -33,12 +33,12 @@ pipを更新する：
 $ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 ```
 
-### jupyter-bookパッケージをインストールする
+### jupyter-book パッケージをインストールする
 ```zsh
 (venv)$ pip install -U jupyter-book
 ```
 
-### 新しいJupyter Bookを作成する。
+### 新しい Jupyter Book を作成する。
 ```zsh
 $ jb create test-book
 $ cd test-book
@@ -80,23 +80,23 @@ $ git commit -m "コメント"
 $ git push origin main
 ```
 
-GitHub Pagesを更新する
+GitHub Pages を更新する
 ```zsh
 $ ghp-import -n -p -f _build/html
 ```
 
 
-## 他のjbの作成方法
+## 他の jb の作成方法
 ### インタラクティブなプロンプトからより完全な本を作成する方法
 
-Jupyter Bookは、インタラクティブなプロンプトを使用して本のディレクトリ構造を作成するためのJupyter Book cookiecutter も提供しています。
+Jupyter Book は、インタラクティブなプロンプトを使用して本のディレクトリ構造を作成するための Jupyter Book cookiecutter も提供しています。
 ```
 jupyter-book create mynewbook/ --cookiecutter
 ```
 https://github.com/executablebooks/cookiecutter-jupyter-book
 
 ### 目次から本のファイルを作成する方法
-単一の構造から空のファイルを迅速に生成し、それを自分でコンテンツで埋めるために、_toc.ymlファイルを使用して本の骨組みを自動的に作成することも可能です。
+単一の構造から空のファイルを迅速に生成し、それを自分でコンテンツで埋めるために、`_toc.yml` ファイルを使用して本の骨組みを自動的に作成することも可能です。
 ```
 jupyter-book toc to-project path/to/_toc.yml
 ```

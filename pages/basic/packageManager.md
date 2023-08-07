@@ -52,9 +52,9 @@ brew --version
 
 (venv)=
 ## [Venv](https://docs.python.org/3/library/venv.html)
-Pythonの仮想環境を作成するには、venvが最も簡単なツールです！ Pythonのためのpyenvやanacondaなどもありますが、初心者には必要ありません。
-venvを作成しましょう。
-venvを作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用のvenvを作成します。
+Python の仮想環境を作成するには、venvが最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。
+venv を作成しましょう。
+venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。
 
 ```zsh
 python3 -m venv ~/test
@@ -75,13 +75,13 @@ python -V
 ```
 すると `Python 3.x.x` が表示されます。
 
-これで新しいvenvを作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
-`pip list --format=freeze` コマンドでvenv内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
-何かをインストールする前に、`pip` をアップグレードする必要があるかもしれません。これはPythonのパッケージマネージャです（以下のUsernameを変更してください）：
+これで新しい venv を作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
+`pip list --format=freeze` コマンドで venv 内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
+何かをインストールする前に、`pip` をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャです（以下の Username を変更してください）：
 ```zsh
 /Users/<Username>/test/bin/python3 -m pip install --upgrade pip
 ```
-次にパッケージをインストールしてみましょう（ここではnumpyを使用します）！
+次にパッケージをインストールしてみましょう（ここでは numpy を使用します）！
 ```zsh
 pip install numpy
 ```
@@ -91,32 +91,32 @@ pip list --format=freeze
 ```
 `numpy==x.xx.x` のように表示されます。
 
-初心者としてPythonを使用する場合は、matplotlib、pandas、jupyter-labをインストールすることをお勧めします；
+初心者として Python を使用する場合は、matplotlib、pandas、jupyter-lab をインストールすることをお勧めします；
 ```zsh
 pip install matplotlib
 pip install jupyterlab
 ```
 
-Matplotlibは可視化のためのライブラリ、pandasはデータ分析と操作のためのライブラリ、jupyter-labはウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
-これでテスト用venvに多くのパッケージがインストールされました。`pip list --format=freeze` を試してみてください。ただし、明らかに4つまたは5つのパッケージしかインストールされていないように思うかもしれませんが、実際には、jupyter-labとともに多くのパッケージがインストールされています。
-venvを非アクティブにするには、ターミナルで単に `deactivate` と入力します。再度アクティブにするには、`source test/bin/activate` を入力します。
+Matplotlib は可視化のためのライブラリ、pandas はデータ分析と操作のためのライブラリ、jupyter-lab はウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
+これでテスト用 venv に多くのパッケージがインストールされました。`pip list --format=freeze` を試してみてください。ただし、明らかに4つまたは5つのパッケージしかインストールされていないように思うかもしれませんが、実際には、jupyter-lab とともに多くのパッケージがインストールされています。
+venv を非アクティブにするには、ターミナルで単に `deactivate` と入力します。再度アクティブにするには、`source test/bin/activate` を入力します。
 
 ````{warning}
-venvを削除する場合は、ターミナルで次を入力して削除します：
+venv を削除する場合は、ターミナルで次を入力して削除します：
 ```zsh
 rm -rf ~/test
 ```
 ````
 
 ## Jupyter-labを使用しましょう！
-jupyter-labをインストールしたので、使ってみましょう！！
+jupyter-lab をインストールしたので、使ってみましょう！！
 
 ```zsh
 jupyter-lab
 ```
 デフォルトのブラウザが表示され、jupyter-labが開きます。
 
-jupyter-labを非アクティブ化するには（venvではなく）、ターミナルで `Control + C` を入力し、終了するかどうかを尋ねられたら y（yes）を入力します。
+jupyter-lab を非アクティブ化するには（venvではなく）、ターミナルで `Control + C` を入力し、終了するかどうかを尋ねられたら y（yes）を入力します。
 詳細については、[Jupyter Book](../jb/jb.md) ページを参照してください。
 
 ```{note}
