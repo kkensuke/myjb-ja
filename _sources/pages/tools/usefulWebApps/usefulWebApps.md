@@ -1,6 +1,6 @@
 # 便利なウェブアプリ
 
-## [10分メール](https://10minemail.com/en/)
+## [10 minutes mail](https://10minemail.com/en/)
 10分間の一時的なメールアドレスを取得できます。本物のメールアドレスを使うに値しないサービスにサインアップするために使用できます。時間を延長することもできます。類似したサービスは多数あります。
 ```{image} img/10-minute-mail.png
 :width: 700px
