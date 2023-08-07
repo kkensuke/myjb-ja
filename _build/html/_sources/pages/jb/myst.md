@@ -260,13 +260,15 @@
 >>式の参照: {eq}`mylabel`
 
 
-
+<!-- 
 ## 実行可能なコード
 
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
+-->
+
 
 ## 参考文献
 

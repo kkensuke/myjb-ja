@@ -1,4 +1,4 @@
-## Zsh
+# Zsh
 
 ```{admonition} Zsh
 Zシェル（Zsh）はUnixのコマンドシェルの1つです。対話型のログインコマンドシェルとして使用することができ、強力なシェルスクリプトコマンドインタプリタとしても機能します。Zshは、Bourneシェルの拡張版として、多くの改良が加えられたものと見なすこともできます。さらに、一部の便利な機能がbash、ksh、tcshからも取り入れられています。 [- Wikipedia](https://en.wikipedia.org/wiki/Z_Shell)

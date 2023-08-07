@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1.9. GitHub &#8212; My note</title>
+    <title>1.7. GitHub &#8212; My note</title>
   
   
   
@@ -99,8 +99,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/basic/github/github.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="1.14. 絵文字を使ったコミットメッセージ" href="commitMessage.html" />
-    <link rel="prev" title="1.7. Markdown" href="../markdown.html" />
+    <link rel="next" title="1.8. 絵文字を使ったコミットメッセージ" href="commitMessage.html" />
+    <link rel="prev" title="1.5. Markdown" href="../markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,17 +189,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../path.html">1.2. $PATH</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../alias.html">1.3. エイリアス</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../zsh.html">1.4. Zsh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../markdown.html">1.5. Markdown</a></li>
 
-
-<li class="toctree-l2"><a class="reference internal" href="../markdown.html">1.7. Markdown</a></li>
-
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.9. GitHub</a></li>
-
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="commitMessage.html">1.14. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../packageManager.html">1.15. Homebrew と venv</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.7. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packageManager.html">1.9. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../coding-rules/coding-rules.html">2. コーディングルール</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -444,30 +438,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.9. GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.10. Git (バージョン管理システム、VSC)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.11. 基本コマンド</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.11.1. 新しいリポジトリの作成</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.11.2. コマンドラインから既存のリポジトリをプッシュ</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.11.3. クローン</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.11.4. リモートリポジトリの新しい変更をローカルリポジトリに取り込む</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.11.5. ブランチの作成とローカルでのブランチの変更</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore">1.11.6. .gitignore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.11.7. リポジトリの名前を変更したい場合</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git">1.11.8. Gitの管理を終了する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.11.9. ファイルの削除</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.11.10. 他のユーザーをプライベートリポジトリに招待する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.7.1. Git (バージョン管理システム、VSC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.7.2. 基本コマンド</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">新しいリポジトリの作成</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コマンドラインから既存のリポジトリをプッシュ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">クローン</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">リモートリポジトリの新しい変更をローカルリポジトリに取り込む</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">ブランチの作成とローカルでのブランチの変更</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore">.gitignore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">リポジトリの名前を変更したい場合</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Gitの管理を終了する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">ファイルの削除</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">他のユーザーをプライベートリポジトリに招待する</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.12. GitHub CLI</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.12.1. インストール</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.12.2. 現在のディレクトリをベースに新しいリポジトリを作成</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.12.3. リモートリポジトリを削除するためのエイリアスを作成</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.7.3. GitHub CLI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">インストール</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">現在のディレクトリをベースに新しいリポジトリを作成</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">リモートリポジトリを削除するためのエイリアスを作成</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.13. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.4. 参考</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -478,12 +470,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="github">
-<h1><span class="section-number">1.9. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="github">
+<h1><span class="section-number">1.7. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h1>
 <a class="reference internal image-reference" href="../../../_images/GitHub-flow.png" id="flow"><img alt="../../../_images/GitHub-flow.png" class="align-center" id="flow" src="../../../_images/GitHub-flow.png" style="width: 600px;" /></a>
-</section>
 <section id="git-vsc">
-<h1><span class="section-number">1.10. </span>Git (バージョン管理システム、VSC)<a class="headerlink" href="#git-vsc" title="Permalink to this headline">#</a></h1>
+<h2><span class="section-number">1.7.1. </span>Git (バージョン管理システム、VSC)<a class="headerlink" href="#git-vsc" title="Permalink to this headline">#</a></h2>
 <p>Gitは、開発者がソースコードの変更を管理し、ソフトウェア開発プロジェクトで共同作業するために使われる一般的なバージョン管理システムです。複数の人が同じプトジェクトのソースコードに対して別々に作業し、過去の変更を追跡することを可能にします。</p>
 <p>Gitのローカルリポジトリは、開発者のコンピュータに保存されているプトジェクトのソースコードです。プトジェクトのソースコードに変更が加えられると、その変更はローカルで追跡され、開発者はその変更をローカルリポジトリにコミットすることができます。これによって開発者は、他の開発者が作業しているプトジェクトのソースコードに影響を与えることなく、新しいコードの変更を試したり、修正を加えたりすることができます。</p>
 <p>一方、リモートリポジトリは、リモートサーバーに保存されているプトジェクトのソースコードです。開発者はローカルの変更をリモートリポジトリにプッシュして、チーム内の他の開発者と共有することができます。これにより、チーム全員がプトジェクトのソースコードに加えられた最新の変更を見ることができ、より効果的なコラボレーションが可能になります。</p>
@@ -502,9 +493,9 @@ document.write(`
 <p>これらは、Gitで使われる最も一般的な用語や概念のほんの一部です。Gitを学ぶには時間がかかりますが、チームで働く開発者にとっては重要なスキルです。</p>
 </section>
 <section id="id1">
-<h1><span class="section-number">1.11. </span>基本コマンド<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<h2><span class="section-number">1.7.2. </span>基本コマンド<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <section id="id2">
-<h2><span class="section-number">1.11.1. </span>新しいリポジトリの作成<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h3>新しいリポジトリの作成<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>まず、<a class="reference external" href="https://github.com/">GitHubのウェブサイト</a>で初期化せずに新しいリポジトリを作成します。
 次に、ローカルコンピュータ上で以下のコマンドを実行します。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mkdir プロジェクト名<span class="o">]</span>
@@ -535,7 +526,7 @@ git push -u origin main
 </div>
 </section>
 <section id="id3">
-<h2><span class="section-number">1.11.2. </span>コマンドラインから既存のリポジトリをプッシュ<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<h3>コマンドラインから既存のリポジトリをプッシュ<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <p>すでにローカルリポジトリを作成（または初期化）している場合、次のコマンドを使用してリモートリポジトリにリンクするだけで済みます。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add origin https://github.com/&lt;ユーザー名&gt;/&lt;リポジトリ&gt;.git
 git branch -M main
@@ -548,7 +539,7 @@ git push -u origin main
 </div>
 </section>
 <section id="id4">
-<h2><span class="section-number">1.11.3. </span>クローン<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<h3>クローン<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>任意のディレクトリで次のコマンドを実行します。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone <span class="o">[</span>ブランチ（mainの場合は省略することも可能）<span class="o">]</span> https://github.com/&lt;ユーザー名&gt;/&lt;リポジトリ&gt;.git
 $ <span class="nb">cd</span> &lt;リポジトリ&gt;
@@ -556,7 +547,7 @@ $ <span class="nb">cd</span> &lt;リポジトリ&gt;
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">1.11.4. </span>リモートリポジトリの新しい変更をローカルリポジトリに取り込む<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<h3>リモートリポジトリの新しい変更をローカルリポジトリに取り込む<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git pull origin main
 </pre></div>
 </div>
@@ -570,7 +561,7 @@ $ git merge origin main
 </div>
 </section>
 <section id="id6">
-<h2><span class="section-number">1.11.5. </span>ブランチの作成とローカルでのブランチの変更<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
+<h3>ブランチの作成とローカルでのブランチの変更<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>リポジトリを作成すると、最初に main ブランチしか存在しません。
 したがって、デフォルトで main ブランチにいます。</p>
 <p>現在のブランチを確認するには、次のコマンドを使用できます。</p>
@@ -620,7 +611,7 @@ $ git checkout &lt;ブランチ名&gt;
 </div>
 </section>
 <section id="gitignore">
-<h2><span class="section-number">1.11.6. </span>.gitignore<a class="headerlink" href="#gitignore" title="Permalink to this headline">#</a></h2>
+<h3>.gitignore<a class="headerlink" href="#gitignore" title="Permalink to this headline">#</a></h3>
 <p>GitHubで追跡したくないファイルを無視するようにGitを設定することができます。
 <code class="docutils literal notranslate"><span class="pre">.git</span></code> と同じディレクトリにある <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> にファイル名を書くだけです。</p>
 <p>ただし、Gitのコントロール下にある各ディレクトリに <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> を毎回作成し、そこにファイル名を書き込むことは面倒です。<a class="reference external" href="https://www.toptal.com/developers/gitignore/api/">gitignore.io ウェブサイト</a>または <a class="reference external" href="https://docs.gitignore.io">gitignore.io CLI</a> を使用して <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> を簡単に作成できます。</p>
@@ -643,18 +634,18 @@ $ git checkout &lt;ブランチ名&gt;
 <p>詳細については、<a class="reference external" href="https://docs.github.com/ja/get-started/getting-started-with-git/ignoring-files">Ignoring files</a>を参照してください。</p>
 </section>
 <section id="id7">
-<h2><span class="section-number">1.11.7. </span>リポジトリの名前を変更したい場合<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
+<h3>リポジトリの名前を変更したい場合<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>まず、GitHubのウェブサイトでリポジトリの名前を変更します。</p></li>
 <li><p>次に、対応する [.git/ -&gt; config] ファイルを開き、[url = https://~.&lt;ここに変更した名前&gt;.git] とします。</p></li>
 </ul>
 </section>
 <section id="git">
-<h2><span class="section-number">1.11.8. </span>Gitの管理を終了する<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h2>
+<h3>Gitの管理を終了する<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">.git</span></code> ディレクトリを削除するだけです。</p>
 </section>
 <section id="id8">
-<h2><span class="section-number">1.11.9. </span>ファイルの削除<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h2>
+<h3>ファイルの削除<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
 <li><p>リポジトリとローカルディレクトリからファイルを削除</p></li>
 <li><p>リポジトリだけからファイルを削除</p></li>
@@ -666,7 +657,7 @@ $ git commit -m <span class="s2">&quot;削除&quot;</span><span class="p">;</spa
 </div>
 </section>
 <section id="id9">
-<h2><span class="section-number">1.11.10. </span>他のユーザーをプライベートリポジトリに招待する<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h2>
+<h3>他のユーザーをプライベートリポジトリに招待する<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>GitHubのウェブサイトで、リポジトリの設定を開きます。</p></li>
 <li><p>左のメニューから「Collaborators」を選択します。</p></li>
@@ -675,16 +666,16 @@ $ git commit -m <span class="s2">&quot;削除&quot;</span><span class="p">;</spa
 </ul>
 </section>
 </section>
-<section id="id10">
-<h1><span class="section-number">1.12. </span>GitHub CLI<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h1>
+<section id="github-cli">
+<span id="id10"></span><h2><span class="section-number">1.7.3. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">#</a></h2>
 <section id="id11">
-<h2><span class="section-number">1.12.1. </span>インストール<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h2>
+<h3>インストール<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ brew install gh
 </pre></div>
 </div>
 </section>
 <section id="id12">
-<h2><span class="section-number">1.12.2. </span>現在のディレクトリをベースに新しいリポジトリを作成<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h2>
+<h3>現在のディレクトリをベースに新しいリポジトリを作成<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git init<span class="p">;</span> git add .
 $ git commit -m <span class="s2">&quot;Initial commit&quot;</span>
 $ gh repo create --private --source<span class="o">=</span>. --push
@@ -703,7 +694,7 @@ ginit<span class="o">()</span> <span class="o">{</span>
 </div>
 </section>
 <section id="id13">
-<h2><span class="section-number">1.12.3. </span>リモートリポジトリを削除するためのエイリアスを作成<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h2>
+<h3>リモートリポジトリを削除するためのエイリアスを作成<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
 <ul>
 <li><p>登録</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ gh <span class="nb">alias</span> <span class="nb">set</span> repo-delete <span class="s1">&#39;api -X DELETE repos/$1&#39;</span>
@@ -725,11 +716,12 @@ $ gh auth refresh -h github.com -s delete_repo
 </section>
 </section>
 <section id="id14">
-<h1><span class="section-number">1.13. </span>参考<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h1>
+<h2><span class="section-number">1.7.4. </span>参考<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">What is Git?</a></p></li>
 <li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials">Bitbucket</a></p></li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -769,7 +761,7 @@ $ gh auth refresh -h github.com -s delete_repo
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.7. </span>Markdown</p>
+        <p class="prev-next-title"><span class="section-number">1.5. </span>Markdown</p>
       </div>
     </a>
     <a class="right-next"
@@ -777,7 +769,7 @@ $ gh auth refresh -h github.com -s delete_repo
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.14. </span>絵文字を使ったコミットメッセージ</p>
+        <p class="prev-next-title"><span class="section-number">1.8. </span>絵文字を使ったコミットメッセージ</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -799,30 +791,28 @@ $ gh auth refresh -h github.com -s delete_repo
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.9. GitHub</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.10. Git (バージョン管理システム、VSC)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.11. 基本コマンド</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.11.1. 新しいリポジトリの作成</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.11.2. コマンドラインから既存のリポジトリをプッシュ</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.11.3. クローン</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.11.4. リモートリポジトリの新しい変更をローカルリポジトリに取り込む</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.11.5. ブランチの作成とローカルでのブランチの変更</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore">1.11.6. .gitignore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.11.7. リポジトリの名前を変更したい場合</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git">1.11.8. Gitの管理を終了する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.11.9. ファイルの削除</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.11.10. 他のユーザーをプライベートリポジトリに招待する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.7.1. Git (バージョン管理システム、VSC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.7.2. 基本コマンド</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">新しいリポジトリの作成</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コマンドラインから既存のリポジトリをプッシュ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">クローン</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">リモートリポジトリの新しい変更をローカルリポジトリに取り込む</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">ブランチの作成とローカルでのブランチの変更</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore">.gitignore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">リポジトリの名前を変更したい場合</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git">Gitの管理を終了する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">ファイルの削除</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">他のユーザーをプライベートリポジトリに招待する</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.12. GitHub CLI</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.12.1. インストール</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.12.2. 現在のディレクトリをベースに新しいリポジトリを作成</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.12.3. リモートリポジトリを削除するためのエイリアスを作成</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.7.3. GitHub CLI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">インストール</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">現在のディレクトリをベースに新しいリポジトリを作成</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">リモートリポジトリを削除するためのエイリアスを作成</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.13. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.4. 参考</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>

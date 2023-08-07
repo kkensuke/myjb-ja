@@ -1,4 +1,4 @@
-## GitHub
+# GitHub
 
 ```{image} ./img/GitHub-flow.png
 :name: flow
