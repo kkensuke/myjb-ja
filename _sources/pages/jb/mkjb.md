@@ -1,4 +1,4 @@
-# Jupyter Bookの作成
+# Jupyter Book の作成
 
 Jupyter Book をゼロから作成してみましょう。
 

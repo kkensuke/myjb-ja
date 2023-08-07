@@ -1,4 +1,4 @@
-# 便利なVS Code拡張機能
+# 便利な VS Code 拡張機能
 
 ## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 GitHub Copilotは、コードをより速く、より少ない労力で書くのを支援するAIペアプログラマです。数十億行の公開コードを学習した機械学習を使用して、入力中に新しいコード行を提案します。
