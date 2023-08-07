@@ -1,0 +1,1644 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>4.2. MyST &#8212; My note</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "kkensuke/myjb-ja");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics"]}, "tex": {"packages": {"[+]": ["physics"]}, "macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/jb/myst';</script>
+    <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/jb/myst.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5. Tools" href="../tools/tools.html" />
+    <link rel="prev" title="4.1. Jupyter Bookの作成" href="mkjb.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/mylogo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/mylogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../basic/basic.html">1. Programming basics</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basic/linux.html">1.1. コマンドライン</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/path.html">1.2. $PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/alias.html">1.3. エイリアス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/zsh.html">1.4. Zsh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/markdown.html">1.5. Markdown</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../basic/github/github.html">1.7. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic/packageManager.html">1.9. Homebrew と venv</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../coding-rules/coding-rules.html">2. コーディングルール</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../coding-rules/naming.html">2.1. 命名規則</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../latex/latex.html">3. LaTeX</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../latex/settings.html">3.4. VS Code での LaTeX 設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/basics.html">3.5. Latexの基本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/article.html">3.6. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/revtex4-2.html">3.7. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/beamer.html">3.8. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/newcommands.html">3.9. newcommands</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="jb.html">4. Jupyter Book</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="mkjb.html">4.1. Jupyter Bookの作成</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.2. MyST</a></li>
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">5. Tools</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">5.1. 便利なウェブアプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">5.2. 便利なMacアプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">5.3. 便利なFirefox拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">5.4. 便利なVS Code拡張機能</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../others/others.html">6. Others</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../others/firefox/firefox-security-settings.html">6.1. Firefoxのセキュリティ設定</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/kkensuke/myjb-ja" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kkensuke/myjb-ja/edit/main//pages/jb/myst.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kkensuke/myjb-ja/issues/new?title=Issue%20on%20page%20%2Fpages/jb/myst.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/pages/jb/myst.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>MyST</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.2. MyST</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2.1. 見出し</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.3. 見出しレベル 1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.3.1. 見出しレベル 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">見出しレベル 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">見出しレベル 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">見出しレベル 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">見出しレベル 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">4.3.2. ターゲット見出し</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target">target</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.3.3. 引用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4.3.4. 行末記号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4.3.5. これはテキストの終わりです。</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">4.3.6. 行コメント</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">4.3.7. ブロックの区切り</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">4.3.8. リスト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">4.3.9. テーブル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">4.3.10. 注意書き</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">図のパラメータ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">4.3.11. 数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">4.3.12. 参考文献</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">4.3.13. トグル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">4.3.14. マージン</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.3.15. パネル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">4.3.16. バッジ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">ドロップダウン</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">4.3.17. 定義リスト</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">タブ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key">4.3.18. key</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">本全体のサブスティテューションを定義する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">フォーマットのサブスティテューション</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">4.3.19. 脚注</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#div">4.3.20. カスタム&lt;div&gt; ブロック</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">4.3.21. マークの欠落を確認する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">4.3.22. レイアウト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">4.3.23. 証明、定理、アルゴリズム</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">4.4. ビルドと出力の公開</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">4.4.1. 本のバッジを生成する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latexpdf">4.4.2. LaTeXを使用してPDFをビルドする</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf">本スタイルのPDF</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">4.4.3. 本内の外部リンクをチェックする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">4.4.4. アクセシビリティの向上のための設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tex">4.4.5. TeXマクロの定義</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">4.5. 参考文献</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="myst">
+<h1><span class="section-number">4.2. </span>MyST<a class="headerlink" href="#myst" title="Permalink to this headline">#</a></h1>
+<p>以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けのMarkdownの派生版の一つです。</p>
+<section id="id1">
+<h2><span class="section-number">4.2.1. </span>見出し<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 見出しレベル 1</span>
+<span class="c1">## 見出しレベル 2</span>
+<span class="c1">### 見出しレベル 3</span>
+<span class="c1">#### 見出しレベル 4</span>
+<span class="c1">##### 見出しレベル 5</span>
+<span class="c1">###### 見出しレベル 6</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1><span class="section-number">4.3. </span>見出しレベル 1<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h1>
+<section id="id3">
+<h2><span class="section-number">4.3.1. </span>見出しレベル 2<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h3>見出しレベル 3<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<section id="id5">
+<h4>見出しレベル 4<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<section id="id6">
+<h5>見出しレベル 5<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h5>
+<section id="id7">
+<h6>見出しレベル 6<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h6>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="id8">
+<h2><span class="section-number">4.3.2. </span>ターゲット見出し<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">target</span><span class="p">)</span><span class="o">=</span>
+<span class="c1">### target</span>
+<span class="o">...</span>
+<span class="p">[</span><span class="n">targetを見る</span><span class="p">](</span><span class="n">target</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<section id="target">
+<span id="id9"></span><h3>target<a class="headerlink" href="#target" title="Permalink to this headline">#</a></h3>
+<p>…
+<a class="reference internal" href="#target"><span class="std std-ref">targetを見る</span></a></p>
+</section>
+</section>
+<section id="id10">
+<h2><span class="section-number">4.3.3. </span>引用<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">これは引用です</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>これは引用です</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id11">
+<h2><span class="section-number">4.3.4. </span>行末記号<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>これはテキストの終わりです。
+---
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="id12">
+<h2><span class="section-number">4.3.5. </span>これはテキストの終わりです。<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id13">
+<h2><span class="section-number">4.3.6. </span>行コメント<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>% これは行コメントです。
+</pre></div>
+</div>
+<blockquote>
+<div></div></blockquote>
+</div></blockquote>
+</section>
+<section id="id14">
+<h2><span class="section-number">4.3.7. </span>ブロックの区切り<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">これはブロックの例です</span>
+<span class="o">+++</span> <span class="p">{</span><span class="s2">&quot;meta&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">}</span>
+<span class="n">ブロックの区切り</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>これはブロックの例です</p>
+<p>ブロックの区切り</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id15">
+<h2><span class="section-number">4.3.8. </span>リスト<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">最初の項目</span>
+<span class="mf">2.</span> <span class="mi">2</span><span class="n">番目の項目</span>
+   <span class="o">*</span> <span class="n">最初のサブ項目</span>
+   <span class="o">*</span> <span class="mi">2</span><span class="n">番目のサブ項目</span>
+     <span class="o">*</span> <span class="mi">3</span><span class="n">番目のサブサブ項目</span>
+</pre></div>
+</div>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>最初の項目</p></li>
+<li><p>2番目の項目</p>
+<ul class="simple">
+<li><p>最初のサブ項目</p></li>
+<li><p>2番目のサブ項目</p>
+<ul>
+<li><p>3番目のサブサブ項目</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id16">
+<h2><span class="section-number">4.3.9. </span>テーブル<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{list-table} このテーブルのタイトル
+:header-rows: 1
+:name: example-table
+
+* - 訓練
+ - 検証
+* - 0
+ - 5
+* - 13720
+ - 2744
+```
+</pre></div>
+</div>
+</div></blockquote>
+<table class="table" id="example-table">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">このテーブルのタイトル</span><a class="headerlink" href="#example-table" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>訓練</p></th>
+<th class="head"><p>検証</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>13720</p></td>
+<td><p>2744</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id17">
+<h2><span class="section-number">4.3.10. </span>注意書き<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} これはタイトルです
+タイトル付きの注意書きの例です。
+```
+</pre></div>
+</div>
+<div class="admonition- admonition">
+<p class="admonition-title">これはタイトルです</p>
+<p>タイトル付きの注意書きの例です。</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note} ノートは**引数なし**で必要です。
+だからここから内容が始まります。
+```
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ノートは<strong>引数なし</strong>で必要です。
+だからここから内容が始まります。</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{warning}
+警告
+```
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>警告</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tip}
+ヒント
+```
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>ヒント</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{caution}
+注意
+```
+</pre></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>注意</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{attention}
+注意
+```
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>注意</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{danger}
+危険
+```
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>危険</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{error}
+エラー
+```
+</pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>エラー</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{hint}
+ヒント
+```
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>ヒント</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{important}
+重要
+```
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>重要</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{seealso}
+関連項目
+```
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>関連項目</p>
+</div>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-success mr-1` これはロールの例（チェックマークと成功の色）です。
+</pre></div>
+</div>
+<blockquote>
+<div><p><span class="fa fa-check, text-success mr-1"></span> これはロールの例（チェックマークと成功の色）です。</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-info mr-1` これはロールの例（チェックマークと情報の色）です。
+</pre></div>
+</div>
+<blockquote>
+<div><p><span class="fa fa-check, text-info mr-1"></span> これはロールの例（チェックマークと情報の色）です。</p>
+</div></blockquote>
+</div></blockquote>
+<section id="id18">
+<h3>図のパラメータ<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
+<p>次のオプションがサポートされています：</p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">scale</span></code> : 整数パーセンテージ</dt><dd><p>図を均一にスケーリングします。デフォルトは「100」で、スケーリングは行われません。記号「%」は省略可能です。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">width</span></code> : 長さまたはパーセンテージ</dt><dd><p>図の幅を次の単位で設定できます：「em」、「ex」、「px」、「in」、「cm」、「mm」、「pt」、「pc」、「%」。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">height</span></code> : 長さ</dt><dd><p>図の高さを</p>
+</dd>
+</dl>
+<p>次の単位で設定できます：「em」、「ex」、「px」、「in」、「cm」、「mm」、「pt」、「pc」。</p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">alt</span></code> : テキスト</dt><dd><p>図が表示されない場合や読者が補助技術を使用している場合に表示されるテキスト。通常、図の簡単な説明を記述します。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">align</span></code> : 「left」、「center」、または「right」</dt><dd><p>図を左寄せ、中央揃え、または右寄せに配置します。デフォルトの配置は中央揃えです。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">name</span></code> : テキスト</dt><dd><p>図の固有の識別子で、{ref}や{numref}ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">figclass</span></code> : テキスト</dt><dd><p>図のclass属性の値を設定します。これにより、カスタムCSSやJavaScriptを追加できます。事前定義されたオプションには次のものがあります：</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="id19">
+<h2><span class="section-number">4.3.11. </span>数式<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>これはインラインの数式です $z=\sqrt{x^2+y^2}$。
+</pre></div>
+</div>
+<blockquote>
+<div><p>これはインラインの数式です <span class="math notranslate nohighlight">\(z=\sqrt{x^2+y^2}\)</span>。</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$$
+z=\sqrt{x^2+y^2}
+$$ (mylabel)
+式の参照: {eq}`mylabel`
+</pre></div>
+</div>
+<blockquote>
+<div><div class="math notranslate nohighlight" id="equation-mylabel">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-mylabel" title="Permalink to this equation">#</a></span>\[z=\sqrt{x^2+y^2}\]</div>
+<p>式の参照: <a class="reference internal" href="#equation-mylabel">(4.1)</a></p>
+</div></blockquote>
+</div></blockquote>
+<!-- 
+## 実行可能なコード
+
+```{code-cell} ipython3
+note = "Python syntax highlighting"
+print(note)
+```
+-->
+</section>
+<section id="id20">
+<h2><span class="section-number">4.3.12. </span>参考文献<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{doc}`../basic/alias`を参照してください。
+</pre></div>
+</div>
+<blockquote>
+<div><blockquote>
+<div><p><a class="reference internal" href="../basic/alias.html"><span class="doc">エイリアス</span></a>を参照してください。</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id21">
+<h2><span class="section-number">4.3.13. </span>トグル<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{toggle}
+```python
+print(&#39;こんにちは&#39;)
+```
+````
+</pre></div>
+</div>
+<blockquote>
+<div><div class="toggle docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;こんにちは&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id22">
+<h2><span class="section-number">4.3.14. </span>マージン<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{margin} **マージンタイトル**
+ここにマージンコンテンツがあります、かなりクールです！
+```
+</pre></div>
+</div>
+<blockquote>
+<div><aside class="margin sidebar">
+<p class="sidebar-title"><strong>マージンタイトル</strong></p>
+<p>ここにマージンコンテンツがあります、かなりクールです！</p>
+</aside>
+</div></blockquote>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:::{tip}
+:class: margin toggle
+このノートはマージンに表示されます！
+:::
+</pre></div>
+</div>
+<blockquote>
+<div><div class="margin toggle admonition tip">
+<p class="admonition-title">Tip</p>
+<p>このノートはマージンに表示されます！</p>
+</div>
+</div></blockquote>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``{figure} ./gitHub/img/GitHub-flow.png
+---
+figclass: margin
+alt: My figure text
+name: myfig4
+---
+そして、ここが図のキャプションです
+```
+</pre></div>
+</div>
+<blockquote>
+<div><figure class="margin align-default" id="myfig4">
+<img alt="My figure text" src="../../_images/GitHub-flow.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">そして、ここが図のキャプションです</span><a class="headerlink" href="#myfig4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</div></blockquote>
+<!--
+```{typescript}
+asdf
+asdf
+asdf
+```
+-->
+</section>
+<section id="id23">
+<h2><span class="section-number">4.3.15. </span>パネル<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://sphinx-design.readthedocs.io/en/latest/cards.html">https://sphinx-design.readthedocs.io/en/latest/cards.html</a></p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{card}
+パネルヘッダー1
+^^^
+パネルボディ1
++++
+パネルフッター1
+````
+</pre></div>
+</div>
+<blockquote>
+<div><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">パネルヘッダー1</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">パネルボディ1</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">パネルフッター1</p>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id24">
+<h2><span class="section-number">4.3.16. </span>バッジ<a class="headerlink" href="#id24" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{bdg}`plain badge`
+{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+{bdg-success}`success` {bdg-success-line}`success-line`
+{bdg-info}`info` {bdg-info-line}`info-line`
+{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+{bdg-light}`light` {bdg-light-line}`light-line`
+{bdg-dark}`dark` {bdg-dark-line}`dark-line`
+</pre></div>
+</div>
+<blockquote>
+<div><p><span class="sd-sphinx-override sd-badge">plain badge</span>
+<span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">primary</span> <span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">primary-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">secondary</span> <span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">secondary-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">success</span> <span class="sd-sphinx-override sd-badge sd-outline-success sd-text-success">success-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">info</span> <span class="sd-sphinx-override sd-badge sd-outline-info sd-text-info">info-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">warning</span> <span class="sd-sphinx-override sd-badge sd-outline-warning sd-text-warning">warning-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">danger</span> <span class="sd-sphinx-override sd-badge sd-outline-danger sd-text-danger">danger-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">light</span> <span class="sd-sphinx-override sd-badge sd-outline-light sd-text-light">light-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-dark sd-bg-text-dark">dark</span> <span class="sd-sphinx-override sd-badge sd-outline-dark sd-text-dark">dark-line</span></p>
+</div></blockquote>
+</div></blockquote>
+<section id="id25">
+<h3>ドロップダウン<a class="headerlink" href="#id25" title="Permalink to this headline">#</a></h3>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{dropdown}
+:animate: fade-in-slide-down
+```
+git add .
+git commit -m &quot;update&quot;
+git push origin main
+```
+````
+</pre></div>
+</div>
+<blockquote>
+<div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;update&quot;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+</div>
+</details></div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} ボタンをクリックして表示！
+:class: dropdown
+隠れたトグルコンテンツがあります！
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="dropdown admonition">
+<p class="admonition-title">ボタンをクリックして表示！</p>
+<p>隠れたトグルコンテンツがあります！</p>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+<section id="id26">
+<h2><span class="section-number">4.3.17. </span>定義リスト<a class="headerlink" href="#id26" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">用語1</span>
+<span class="p">:</span> <span class="n">定義</span>
+
+<span class="n">用語2</span>
+<span class="p">:</span> <span class="n">定義</span>
+</pre></div>
+</div>
+<blockquote>
+<div><dl class="simple myst">
+<dt>用語1</dt><dd><p>定義</p>
+</dd>
+<dt>用語2</dt><dd><p>定義</p>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{glossary}
+用語1
+ 用語1の説明
+
+2番目の用語
+ 2番目の用語の説明
+```
+</pre></div>
+</div>
+<blockquote>
+<div><dl class="glossary simple">
+<dt id="term-1">用語1<a class="headerlink" href="#term-1" title="Permalink to this term">#</a></dt><dd><p>用語1の説明</p>
+</dd>
+<dt id="term-2">2番目の用語<a class="headerlink" href="#term-2" title="Permalink to this term">#</a></dt><dd><p>2番目の用語の説明</p>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+ここにクールな引用があります。
+
+-- Jo the Jovyan
+```
+</pre></div>
+</div>
+<blockquote>
+<div><blockquote class="epigraph">
+<div><p>ここにクールな引用があります。</p>
+<p class="attribution">—Jo the Jovyan</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<section id="id27">
+<h3>タブ<a class="headerlink" href="#id27" title="Permalink to this headline">#</a></h3>
+<p>ex1</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tab-set}
+```{tab-item} タブ1のタイトル
+私の最初のタブ
+```
+
+```{tab-item} タブ2のタイトル
+`some code`を含む私の2番目のタブ！
+```
+````
+</pre></div>
+</div>
+<blockquote>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+タブ1のタイトル</label><div class="sd-tab-content docutils">
+<p>私の最初のタブ</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+タブ2のタイトル</label><div class="sd-tab-content docutils">
+<p><code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>を含む私の2番目のタブ！</p>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<p>ex2</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`````{tab-set}
+````{tab-item} c++
+
+```{code-block} c++
+
+int main(const int argc, const char **argv) {
+ return 0;
+}
+```
+````
+
+````{tab-item} python
+
+```{code-block} python
+
+def main():
+   return
+```
+````
+
+````{tab-item} java
+
+```{code-block} java
+
+class Main {
+   public static void main(String[] args) {
+   }
+}
+```
+````
+
+````{tab-item} julia
+
+```{code-block} julia
+
+function main()
+end
+```
+````
+
+````{tab-item} fortran
+
+```{code-block} fortran
+
+PROGRAM main
+END PROGRAM main
+```
+````
+`````
+</pre></div>
+</div>
+<blockquote>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+c++</label><div class="sd-tab-content docutils">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+python</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+   <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+java</label><div class="sd-tab-content docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+julia</label><div class="sd-tab-content docutils">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+fortran</label><div class="sd-tab-content docutils">
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
+<span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+</section>
+<section id="key">
+<h2><span class="section-number">4.3.18. </span>key<a class="headerlink" href="#key" title="Permalink to this headline">#</a></h2>
+<p>サブスティテューションを使用するには、最初に次のようにページのトップにフロントマターのコンテンツを追加します：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
+substitutions:
+  image: |
+    ```{image} ../basic/github/img/GitHub-flow.png
+    :alt: image
+    :width: 200px
+    ```
+---
+</pre></div>
+</div>
+<p>そして、次のように使用します： <code class="docutils literal notranslate"><span class="pre">{{image}}</span></code></p>
+<section id="id28">
+<h3>本全体のサブスティテューションを定義する<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h3>
+<p>また、次の構成を使用して本全体のサブスティテューション変数を定義することもできます：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">parse</span><span class="p">:</span>
+  <span class="n">myst_substitutions</span><span class="p">:</span>
+    <span class="n">key0</span><span class="p">:</span> <span class="k">global</span><span class="o">-</span><span class="n">value</span>
+</pre></div>
+</div>
+<p>グローバル値: global-value</p>
+</section>
+<section id="id29">
+<h3>フォーマットのサブスティテューション<a class="headerlink" href="#id29" title="Permalink to this headline">#</a></h3>
+<p>Sphinx構成の<code class="docutils literal notranslate"><span class="pre">substitutions</span></code>オプションを使用して、次のようにサブスティテューションを定義できます：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">substitutions</span><span class="p">:</span>
+  <span class="n">repo_url</span><span class="p">:</span> <span class="p">[</span><span class="n">私のリポジトリURL</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">executablebooks</span><span class="o">/</span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id30">
+<h2><span class="section-number">4.3.19. </span>脚注<a class="headerlink" href="#id30" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>これは脚注[^mylabel]です。
+[^mylabel]: 私の脚注テキスト。
+</pre></div>
+</div>
+<blockquote>
+<div><p>これは脚注<a class="footnote-reference brackets" href="#mylabel" id="id31">1</a>です。</p>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="div">
+<h2><span class="section-number">4.3.20. </span>カスタム&lt;div&gt; ブロック<a class="headerlink" href="#div" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{div} my-class
+**いくつかのコンテンツ。**
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="my-class docutils">
+<p><strong>いくつかのコンテンツ。</strong></p>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id32">
+<h2><span class="section-number">4.3.21. </span>マークの欠落を確認する<a class="headerlink" href="#id32" title="Permalink to this headline">#</a></h2>
+<p>Jupyter Bookをビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build -W -n --keep-going docs/
+</pre></div>
+</div>
+</section>
+<section id="id33">
+<h2><span class="section-number">4.3.22. </span>レイアウト<a class="headerlink" href="#id33" title="Permalink to this headline">#</a></h2>
+<p>full-width</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+:class: full-width
+全幅を取るノートです
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="full-width admonition note">
+<p class="admonition-title">Note</p>
+<p>全幅を取るノートです</p>
+</div>
+</div></blockquote>
+</div></blockquote>
+</section>
+<section id="id34">
+<h2><span class="section-number">4.3.23. </span>証明、定理、アルゴリズム<a class="headerlink" href="#id34" title="Permalink to this headline">#</a></h2>
+<p>これは現在はJupyter Bookのデフォルトパッケージには含まれていないもので、比較的新しいパッケージです。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">proof</span>
+</pre></div>
+</div>
+<p>インストール後に _config.yml で有効にする必要があります。</p>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  extra_extensions:
+    - sphinx_proof
+</pre></div>
+</div>
+<p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id35">
+<h1><span class="section-number">4.4. </span>ビルドと出力の公開<a class="headerlink" href="#id35" title="Permalink to this headline">#</a></h1>
+<section id="id36">
+<h2><span class="section-number">4.4.1. </span>本のバッジを生成する<a class="headerlink" href="#id36" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://github.com/kk564/jb-test.git"><img alt="Jupyter Book バッジ" src="https://jupyterbook.org/badge.svg" /></a>
+さらに、<a class="reference external" href="https://shields.io/">shields.io</a> から直接バッジを生成することもできます。こちらは、Jupyter Bookのロゴのベース64エンコードバージョンを使用した自動生成バッジのURLです。ご自由に変更してください！</p>
+</section>
+<section id="latexpdf">
+<h2><span class="section-number">4.4.2. </span>LaTeXを使用してPDFをビルドする<a class="headerlink" href="#latexpdf" title="Permalink to this headline">#</a></h2>
+<section id="pdf">
+<h3>本スタイルのPDF<a class="headerlink" href="#pdf" title="Permalink to this headline">#</a></h3>
+<p>LaTeXを使用してプロジェクトのPDFをビルドするには、次のコマンドを使用します：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdflatex</span> <span class="p">[</span><span class="o">--</span><span class="n">individualpages</span><span class="p">]</span>
+
+<span class="n">または</span>
+<span class="n">jb</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdflatex</span> <span class="p">[</span><span class="o">--</span><span class="n">individualpages</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>LaTeXファイルを生成するだけの場合は、次のコマンドを使用できます：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build mybookname/ --builder latex
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+<section id="id37">
+<h2><span class="section-number">4.4.3. </span>本内の外部リンクをチェックする<a class="headerlink" href="#id37" title="Permalink to this headline">#</a></h2>
+<p>本の外部リンクが有効であることを確認したい場合は、Jupyter Book で Sphinx リンクチェッカーを実行します。これにより、外部リンクの各々がチェックされます。</p>
+<p>リンクチェッカーを実行するには、次のコマンドを使用します：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">linkcheck</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Book</span></code> の各リンクのステータスが表示され、必要に応じて不正なリンクを後で解決できるようになります。</p>
+</section>
+<section id="id38">
+<h2><span class="section-number">4.4.4. </span>アクセシビリティの向上のための設定<a class="headerlink" href="#id38" title="Permalink to this headline">#</a></h2>
+<p>本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。</p>
+<p>言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、_config.yml ファイルの sphinx 構成内の language オプションに記述します：</p>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  config:
+    language: en
+</pre></div>
+</div>
+</section>
+<section id="tex">
+<h2><span class="section-number">4.4.5. </span>TeXマクロの定義<a class="headerlink" href="#tex" title="Permalink to this headline">#</a></h2>
+<p>TeXブロックのMacrosオプションの下で、本全体にLaTeXマクロを定義できます。例として、次の2つのマクロはSphinx構成内で事前に定義されています</p>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  config                    :             # Sphinx構成を直接上書きするキーバリューペア
+    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+                                          # デフォルトではMathJaxバージョン2が使用されています。
+                                          # 多くの数式を使用している場合は、バージョン3を試してみることができ、
+                                          # 読み込み速度を60-80%向上させると報告されています。
+
+:
+    mathjax3_config:
+      loader:                             # physicsパッケージを使用したい場合は、これをロードし、以下のパッケージリストに追加する必要があります。
+        load                : [&#39;[tex]/physics&#39;]
+      tex:
+        packages            : { &#39;[+]&#39;: [&#39;physics&#39;] }
+        macros:
+          &quot;N&quot;: &quot;\\mathbb{N}&quot;
+          &quot;floor&quot;: [&quot;\\lfloor#1\\rfloor&quot;, 1]
+          &quot;bmat&quot; : [&quot;\\left[\\begin{array}&quot;]
+          &quot;emat&quot; : [&quot;\\end{array}\\right]&quot;]
+</pre></div>
+</div>
+<p>また、特定のファイル用のTeXマクロを定義するには、mathディレクティブの下にファイルの先頭にそれらを導入します。例：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```latex
+\newcommand\N{\mathbb{N}}
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\newcommand{\bmat}{\left[\begin{array}}
+\newcommand{\emat}{\end{array}\right]}
+```
+</pre></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id39">
+<h1><span class="section-number">4.5. </span>参考文献<a class="headerlink" href="#id39" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/start/your-first-book.html">Jupyter Book</a></p></li>
+</ul>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="mylabel"><span class="brackets"><a class="fn-backref" href="#id31">1</a></span></dt>
+<dd><p>私の脚注テキスト。</p>
+</dd>
+</dl>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages/jb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="mkjb.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4.1. </span>Jupyter Bookの作成</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../tools/tools.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Tools</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.2. MyST</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2.1. 見出し</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.3. 見出しレベル 1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.3.1. 見出しレベル 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">見出しレベル 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">見出しレベル 4</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">見出しレベル 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">見出しレベル 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">4.3.2. ターゲット見出し</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target">target</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">4.3.3. 引用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4.3.4. 行末記号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">4.3.5. これはテキストの終わりです。</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">4.3.6. 行コメント</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">4.3.7. ブロックの区切り</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">4.3.8. リスト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">4.3.9. テーブル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">4.3.10. 注意書き</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">図のパラメータ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">4.3.11. 数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">4.3.12. 参考文献</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">4.3.13. トグル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">4.3.14. マージン</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">4.3.15. パネル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">4.3.16. バッジ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">ドロップダウン</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">4.3.17. 定義リスト</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">タブ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key">4.3.18. key</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">本全体のサブスティテューションを定義する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">フォーマットのサブスティテューション</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">4.3.19. 脚注</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#div">4.3.20. カスタム&lt;div&gt; ブロック</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">4.3.21. マークの欠落を確認する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">4.3.22. レイアウト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">4.3.23. 証明、定理、アルゴリズム</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">4.4. ビルドと出力の公開</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">4.4.1. 本のバッジを生成する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latexpdf">4.4.2. LaTeXを使用してPDFをビルドする</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdf">本スタイルのPDF</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">4.4.3. 本内の外部リンクをチェックする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">4.4.4. アクセシビリティの向上のための設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tex">4.4.5. TeXマクロの定義</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">4.5. 参考文献</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By kkensuke
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a> <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kkensuke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
