@@ -6,5 +6,5 @@
 - [Zsh](./zsh.md)
 - [マークダウン](./markdown.md)
 - [GitHub](./github/github.md)
-- [Commit Masssages with emoji](./github/commitMessage.md)
+- [絵文字を使ったコミットメッセージ](./github/commitMessage.md)
 - [Homebrew と venv](./packageManager.md)
