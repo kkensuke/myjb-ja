@@ -531,7 +531,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="myst">
 <h1><span class="section-number">4.2. </span>MyST<a class="headerlink" href="#myst" title="Permalink to this headline">#</a></h1>
-<p>以下では、MyST Markdownの基本的な使用方法を列挙します。MySTは、科学技術文書向けの Markdown の派生版の一つです。</p>
+<p>以下では、MyST Markdown の基本的な使用方法を列挙します。MyST は、科学技術文書向けの Markdown の派生版の一つです。</p>
 <section id="id1">
 <h2><span class="section-number">4.2.1. </span>見出し<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 見出しレベル 1</span>
@@ -846,9 +846,9 @@ document.write(`
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">align</span></code> : 「left」、「center」、または「right」</dt><dd><p>図を左寄せ、中央揃え、または右寄せに配置します。デフォルトの配置は中央揃えです。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">name</span></code> : テキスト</dt><dd><p>図の固有の識別子で、{ref}や{numref}ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。</p>
+<dt><code class="docutils literal notranslate"><span class="pre">name</span></code> : テキスト</dt><dd><p>図の固有の識別子で、{ref} や {numref} ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">figclass</span></code> : テキスト</dt><dd><p>図のclass属性の値を設定します。これにより、カスタムCSSやJavaScriptを追加できます。事前定義されたオプションには次のものがあります：</p>
+<dt><code class="docutils literal notranslate"><span class="pre">figclass</span></code> : テキスト</dt><dd><p>図の class 属性の値を設定します。これにより、カスタム CSS や JavaScript を追加できます。事前定義されたオプションには次のものがあります：</p>
 </dd>
 </dl>
 </section>
@@ -1288,7 +1288,7 @@ substitutions:
 </section>
 <section id="id29">
 <h3>フォーマットのサブスティテューション<a class="headerlink" href="#id29" title="Permalink to this headline">#</a></h3>
-<p>Sphinx構成の<code class="docutils literal notranslate"><span class="pre">substitutions</span></code>オプションを使用して、次のようにサブスティテューションを定義できます：</p>
+<p>Sphinx 構成の <code class="docutils literal notranslate"><span class="pre">substitutions</span></code> オプションを使用して、次のようにサブスティテューションを定義できます：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">substitutions</span><span class="p">:</span>
   <span class="n">repo_url</span><span class="p">:</span> <span class="p">[</span><span class="n">私のリポジトリURL</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">executablebooks</span><span class="o">/</span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span><span class="p">)</span>
 </pre></div>
@@ -1324,7 +1324,7 @@ substitutions:
 </section>
 <section id="id32">
 <h2><span class="section-number">4.3.21. </span>マークの欠落を確認する<a class="headerlink" href="#id32" title="Permalink to this headline">#</a></h2>
-<p>Jupyter Bookをビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：</p>
+<p>Jupyter Book をビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter-book build -W -n --keep-going docs/
 </pre></div>
 </div>
@@ -1367,13 +1367,13 @@ substitutions:
 <section id="id36">
 <h2><span class="section-number">4.4.1. </span>本のバッジを生成する<a class="headerlink" href="#id36" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://github.com/kk564/jb-test.git"><img alt="Jupyter Book バッジ" src="https://jupyterbook.org/badge.svg" /></a>
-さらに、<a class="reference external" href="https://shields.io/">shields.io</a> から直接バッジを生成することもできます。こちらは、Jupyter Bookのロゴのベース64エンコードバージョンを使用した自動生成バッジのURLです。ご自由に変更してください！</p>
+さらに、<a class="reference external" href="https://shields.io/">shields.io</a> から直接バッジを生成することもできます。こちらは、Jupyter Book のロゴのベース64エンコードバージョンを使用した自動生成バッジの URL です。ご自由に変更してください！</p>
 </section>
 <section id="latexpdf">
 <h2><span class="section-number">4.4.2. </span>LaTeXを使用してPDFをビルドする<a class="headerlink" href="#latexpdf" title="Permalink to this headline">#</a></h2>
 <section id="pdf">
 <h3>本スタイルのPDF<a class="headerlink" href="#pdf" title="Permalink to this headline">#</a></h3>
-<p>LaTeXを使用してプロジェクトのPDFをビルドするには、次のコマンドを使用します：</p>
+<p>LaTeX を使用してプロジェクトの PDF をビルドするには、次のコマンドを使用します：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdflatex</span> <span class="p">[</span><span class="o">--</span><span class="n">individualpages</span><span class="p">]</span>
 
 <span class="n">または</span>
@@ -1401,7 +1401,7 @@ substitutions:
 <section id="id38">
 <h2><span class="section-number">4.4.4. </span>アクセシビリティの向上のための設定<a class="headerlink" href="#id38" title="Permalink to this headline">#</a></h2>
 <p>本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。</p>
-<p>言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、_config.yml ファイルの sphinx 構成内の language オプションに記述します：</p>
+<p>言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、<code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> ファイルの sphinx 構成内の language オプションに記述します：</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span><span class="w"></span>
@@ -1410,7 +1410,7 @@ substitutions:
 </section>
 <section id="tex">
 <h2><span class="section-number">4.4.5. </span>TeXマクロの定義<a class="headerlink" href="#tex" title="Permalink to this headline">#</a></h2>
-<p>TeXブロックのMacrosオプションの下で、本全体にLaTeXマクロを定義できます。例として、次の2つのマクロはSphinx構成内で事前に定義されています</p>
+<p>TeX ブロックの Macros オプションの下で、本全体に LaTeX マクロを定義できます。例として、次の2つのマクロは Sphinx 構成内で事前に定義されています</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">config                    </span><span class="p">:</span><span class="w">             </span><span class="c1"># Sphinx構成を直接上書きするキーバリューペア</span><span class="w"></span>
 <span class="w">    </span><span class="nt">mathjax_path            </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span><span class="w"></span>
@@ -1431,7 +1431,7 @@ substitutions:
 <span class="w">          </span><span class="s">&quot;emat&quot;</span><span class="w"> </span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;\\end{array}\\right]&quot;</span><span class="p p-Indicator">]</span><span class="w"></span>
 </pre></div>
 </div>
-<p>また、特定のファイル用のTeXマクロを定義するには、mathディレクティブの下にファイルの先頭にそれらを導入します。例：</p>
+<p>また、特定のファイル用の TeX マクロを定義するには、math ディレクティブの下にファイルの先頭にそれらを導入します。例：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```latex
 \newcommand\N{\mathbb{N}}
 \newcommand\floor[1]{\lfloor#1\rfloor}

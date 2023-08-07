@@ -62,7 +62,7 @@
 
 ## `main.tex`
 
-If you want to use `report` class, change `article` to `report` in the first line.
+もし、`report` クラスを使いたい場合は、最初の行の `article` を `report` に変更してください。
 
 ```latex
 \documentclass[12pt]{article}

@@ -1,10 +1,10 @@
 # 便利な VS Code 拡張機能
 
 ## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-GitHub Copilotは、コードをより速く、より少ない労力で書くのを支援するAIペアプログラマです。数十億行の公開コードを学習した機械学習を使用して、入力中に新しいコード行を提案します。
+GitHub Copilot は、コードをより速く、より少ない労力で書くのを支援するAIペアプログラマです。数十億行の公開コードを学習した機械学習を使用して、入力中に新しいコード行を提案します。
 
 ## [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-Better Commentsは、よりわかりやすいコメントをコードに作成するのに役立ちます。
+Better Comments は、よりわかりやすいコメントをコードに作成するのに役立ちます。
 
 ## [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 複数の言語に対応したコードスニペットやコードファイルを実行します。
@@ -34,10 +34,10 @@ Jupyterノートブックのサポート、インテリセンス、デバッグ�
 お気に入りのツールからリアルタイムの共同開発を快適に行います。
 
 ## [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-Visual Studio Code用のマテリアルデザインアイコン。
+Visual Studio Code 用のマテリアルデザインアイコン。
 
 ## [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-IntelliSense（Pylance）、Linting、デバッグ（マルチスレッド、リモート）、Jupyterノートブック、コードの整形、リファクタリング、ユニットテストなど。
+IntelliSense（Pylance）、Linting、デバッグ（マルチスレッド、リモート）、Jupyter ノートブック、コードの整形、リファクタリング、ユニットテストなど。
 
 ## [Trainling Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
 末尾の空白をハイライト表示して一括削除します！
