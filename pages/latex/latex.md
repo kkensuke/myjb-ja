@@ -19,4 +19,4 @@
 - [beamer](./beamer.md)
 - [\newcommands](./newcommands.md)
 
-これらのセクションに関連するすべてのファイルを[こちら](https://github.com/kkensuke/latex-template/tree/main/latex-template)からダウンロードできます。
+これらのセクションに関連するすべてのファイルを[こちら](https://github.com/kkensuke/latex-template/tree/main)からダウンロードできます。

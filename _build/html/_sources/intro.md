@@ -3,7 +3,6 @@
 もともと、英語で書いていたページを ChatGPT で日本語に翻訳しました。内容を一通り確認しましたが、おかしなところがまだあるかもしれません。
 
 - [プログラミング基礎](pages/basic/basic.md)
-- [Python](pages/python/python.md)
 - [コーディングルール](pages/coding-rules/coding-rules.md)
 - [Latex](pages/latex/latex.md)
 - [Jupyer book](pages/jb/jb.md)
