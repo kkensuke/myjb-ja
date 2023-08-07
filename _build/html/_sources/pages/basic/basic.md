@@ -1,10 +1,10 @@
-# Programming basics
+# プログラミング基礎
 
-- [Command line](./linux.md)
+- [コマンドライン](./linux.md)
 - [$PATH](./path.md)
-- [Alias](./alias.md)
+- [エイリアス](./alias.md)
 - [Zsh](./zsh.md)
-- [Markdown](./markdown.md)
+- [マークダウン](./markdown.md)
 - [GitHub](./github/github.md)
 - [Commit Masssages with emoji](./github/commitMessage.md)
-- [Homebrew and venv](./packageManager.md)
+- [Homebrew と venv](./packageManager.md)

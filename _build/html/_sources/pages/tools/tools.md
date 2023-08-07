@@ -1,4 +1,4 @@
-# Tools
+# ツール
 
 - [便利な Web アプリ](usefulWebApps/usefulWebApps.md)
 - [便利な Mac アプリ](usefulMacApps/usefulMacApps.md)
