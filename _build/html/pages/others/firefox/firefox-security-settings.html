@@ -497,24 +497,24 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:preferences#general</span></code> に移動します。</p></li>
 <li><p>ページを下にスクロールし、<code class="docutils literal notranslate"><span class="pre">ネットワーク設定</span></code> の　<code class="docutils literal notranslate"><span class="pre">設定</span></code> をクリックします。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">DNS</span> <span class="pre">over</span> <span class="pre">HTTPSを有効にする</span></code>を選択し、プロバイダとして<code class="docutils literal notranslate"><span class="pre">Cloudflare</span></code>を選択します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code>をクリックしてタブを閉じます。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DNS</span> <span class="pre">over</span> <span class="pre">HTTPSを有効にする</span></code> を選択し、プロバイダとして <code class="docutils literal notranslate"><span class="pre">Cloudflare</span></code> を選択します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> をクリックしてタブを閉じます。</p></li>
 </ol>
 <p>または</p>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code>に移動します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.trr</span></code>を検索します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.mode</span></code>を<code class="docutils literal notranslate"><span class="pre">2</span></code>または<code class="docutils literal notranslate"><span class="pre">3</span></code>に設定します（<code class="docutils literal notranslate"><span class="pre">2</span></code>: TRR優先、DNSにフォールバック、<code class="docutils literal notranslate"><span class="pre">3</span></code>: TRRのみ）。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.uri</span></code>を<code class="docutils literal notranslate"><span class="pre">https://mozilla.cloudflare-dns.com/dns-query</span></code>に設定します。</p></li>
+<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.trr</span></code> を検索します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.mode</span></code> を <code class="docutils literal notranslate"><span class="pre">2</span></code> または <code class="docutils literal notranslate"><span class="pre">3</span></code> に設定します（<code class="docutils literal notranslate"><span class="pre">2</span></code> : TRR優先、DNSにフォールバック、<code class="docutils literal notranslate"><span class="pre">3</span></code> : TRRのみ）。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.uri</span></code> を <code class="docutils literal notranslate"><span class="pre">https://mozilla.cloudflare-dns.com/dns-query</span></code> に設定します。</p></li>
 </ol>
 </section>
 <section id="ech">
 <h3>ECH（暗号化されたクライアントハロー）の有効化<a class="headerlink" href="#ech" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code>に移動します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.dns</span></code>を検索します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.dns.echconfig.enabled</span></code>を<code class="docutils literal notranslate"><span class="pre">true</span></code>に設定します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.dns.http3_echconfig.enabled</span></code>を<code class="docutils literal notranslate"><span class="pre">true</span></code>に設定します。</p></li>
+<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.dns</span></code> を検索します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.dns.echconfig.enabled</span></code> を <code class="docutils literal notranslate"><span class="pre">true</span></code> に設定します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.dns.http3_echconfig.enabled</span></code> を <code class="docutils literal notranslate"><span class="pre">true</span></code> に設定します。</p></li>
 </ol>
 </section>
 <section id="webrtc">
@@ -526,8 +526,8 @@ document.write(`
 </div>
 <p>WebRTCの無効化:</p>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code>に移動します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">media.peerconnection.enabled</span></code>を検索し、<code class="docutils literal notranslate"><span class="pre">false</span></code>に設定します。</p></li>
+<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">media.peerconnection.enabled</span></code> を検索し、<code class="docutils literal notranslate"><span class="pre">false</span></code> に設定します。</p></li>
 </ol>
 <p><a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/webrtc-leak-shield/">WebRTC Leak Shield</a>：この拡張機能を使用すると、上記の設定を簡単に切り替えることができます。</p>
 </section>

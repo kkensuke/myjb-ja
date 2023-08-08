@@ -23,20 +23,20 @@
 ### Cloudflare を使用した DoH（DNS-over-HTTPS）の有効化
 1. Firefoxを開き、`about:preferences#general` に移動します。
 2. ページを下にスクロールし、`ネットワーク設定` の　`設定` をクリックします。
-3. `DNS over HTTPSを有効にする`を選択し、プロバイダとして`Cloudflare`を選択します。
-4. `OK`をクリックしてタブを閉じます。
+3. `DNS over HTTPSを有効にする` を選択し、プロバイダとして `Cloudflare` を選択します。
+4. `OK` をクリックしてタブを閉じます。
 
 または
-1. Firefoxを開き、`about:config`に移動します。
-2. `network.trr`を検索します。
-3. `network.trr.mode`を`2`または`3`に設定します（`2`: TRR優先、DNSにフォールバック、`3`: TRRのみ）。
-4. `network.trr.uri`を`https://mozilla.cloudflare-dns.com/dns-query`に設定します。
+1. Firefoxを開き、`about:config` に移動します。
+2. `network.trr` を検索します。
+3. `network.trr.mode` を `2` または `3` に設定します（`2` : TRR優先、DNSにフォールバック、`3` : TRRのみ）。
+4. `network.trr.uri` を `https://mozilla.cloudflare-dns.com/dns-query` に設定します。
 
 ### ECH（暗号化されたクライアントハロー）の有効化
-1. Firefoxを開き、`about:config`に移動します。
-2. `network.dns`を検索します。
-3. `network.dns.echconfig.enabled`を`true`に設定します。
-4. `network.dns.http3_echconfig.enabled`を`true`に設定します。
+1. Firefoxを開き、`about:config` に移動します。
+2. `network.dns` を検索します。
+3. `network.dns.echconfig.enabled` を `true` に設定します。
+4. `network.dns.http3_echconfig.enabled` を `true` に設定します。
 
 ### WebRTC の無効化
 ```{caution} WebRTC
@@ -44,8 +44,8 @@
 ```
 
 WebRTCの無効化:
-1. Firefoxを開き、`about:config`に移動します。
-2. `media.peerconnection.enabled`を検索し、`false`に設定します。
+1. Firefoxを開き、`about:config` に移動します。
+2. `media.peerconnection.enabled` を検索し、`false` に設定します。
 
 [WebRTC Leak Shield](https://addons.mozilla.org/en-US/firefox/addon/webrtc-leak-shield/)：この拡張機能を使用すると、上記の設定を簡単に切り替えることができます。
 
