@@ -70,7 +70,7 @@ alias path='echo -e ${PATH//:/\\n}'
 	- `-h` オプションはわかりやすい形式でファイルサイズを表示します。
 	- `-l` オプションはファイルのサイズ、所有者、グループ、パーミッションを表示します。
 	- `-S` オプションはファイルサイズでソートします。
-	- `ds`: `du -d 1` は現在のディレクトリ内のディレクトリのサイズを表示します。
+- `ds`: `du -d 1` は現在のディレクトリ内のディレクトリのサイズを表示します。
 	- `-h` オプションはわかりやすい形式でファイルサイズを表示します。
 	- `2>/dev/null` はエラーメッセージを非表示にします。
 	- `sort -h` はファイルサイズでソートします。
@@ -111,9 +111,9 @@ alias grep='grep --color'
 - `fb` は現在のディレクトリ内で、サイズが `$2` MB を超える `$1` という名前のファイルを検索します。
 	- `-size +$2M` オプションは `$2` MB を超えるファイルを検索します。
 	- `-type f` オプションはファイルのみを検索します（`-type d` はディレクトリのみを検索します）。
-	- `-name $1` オプションは名前が `$1` のファイルを検索します。
+	- `-name $1` オプションは、`$1` のファイルを検索します。ある拡張子のファイルを検索する場合は、`-name "*.$1"` と指定します。
 	- `-exec ls -lhS "{}" +` オプションは各検索されたファイルに対して `ls -lhS` コマンドを実行します。
-- `find . -name "*.$1" -type f -delete` は拡張子が `$1` のファイルを検索して削除します。
+- `fd`: `find . -name "*.$1" -type f -delete` は拡張子が `$1` のファイルを検索して削除します。
 - `rn` は拡張子が `$1` のファイルを、ファイル名から `$2` を削除して名前を変更します。例えば、`rn txt asdf` は `aaasdfff.txt` を `aaff.txt` に変更します。
 
 ```{note}
@@ -126,10 +126,17 @@ alias grep='grep --color'
 alias hr='open .'
 alias c='open /Applications/CotEditor.app'
 alias vs='code'
-alias firefox='open /Applications/Firefox.app'
+alias fire='open /Applications/Firefox.app'
 alias chrome='open /Applications/Google\ Chrome.app'
 alias safari='open /Applications/Safari.app'
 ```
+
+- `hr` は現在のディレクトリを Finder で開きます。
+- `c` は CotEditor を起動します。
+- `vs` は Visual Studio Code を起動します。
+- `fire` は Firefox を起動します。
+- `chrome` は Google Chrome を起動します。
+- `safari` は Safari を起動します。
 
 
 ### その他
@@ -146,6 +153,11 @@ zipen(){
 }
 ```
 
+- `zipen` はファイルやディレクトリ（引数は複数も可）を暗号化して `enc.zip` に圧縮します。`zipen file1 file2 dir1` のように使用します。
+
+```{note}
+`"$@"` はすべての引数を表します。上の例では、`"$@"` は `file1 file2 dir1` に展開されます。
+```
 
 ## Mac OS 設定
 ### Finderで隠しファイルを表示/非表示にする
@@ -168,9 +180,7 @@ alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall
 ### スクリーンショットの設定
 ```bash
 alias dwl='defaults write com.apple.screencapture location'
-alias ddl='defaults delete com.apple.screencapture
-
- location'
+alias ddl='defaults delete com.apple.screencapture location'
 alias drl='defaults read com.apple.screencapture location'
 ```
 スクリーンショットの保存場所を `dwl ~/path/to/dir` で変更できます。
@@ -207,7 +217,10 @@ alias gs='git status'
 gacpm() { git add -A && git commit -m "$1" && git push origin main }
 ```
 
-例えば、新しいリポジトリを1つのコマンドで作成する関数を定義できます。
+- `gacpm` は、`git add -A`、`git commit -m "$1"`、`git push origin main` を実行します。`$1` はコミットメッセージで、`gacpm` の後に引数として渡します。`gacpm "update README.md"` のように使用します。
+
+
+また、次のように新しいリポジトリを1つのコマンドで作成する関数を定義できます。
 ```bash
 # $1 = private or public
 ginit() {
