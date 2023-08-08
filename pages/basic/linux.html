@@ -956,29 +956,23 @@ ls <span class="k">$(</span>dirname <span class="k">$(</span>which cat<span clas
 <hr class="docutils" />
 <section id="id9">
 <h3>シンボリックリンク<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: シンボリックリンクを作成します</p>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のハードリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します
+<code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のシンボリックリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します。</p>
+<p>シンボリックリンクは、別のファイルやディレクトリへの参照するためのファイルです。シンボリックリンクは、元のファイルが削除されてもリンクが残り、元のファイルへのポインタが壊れてしまうことがあります。</p>
+<p>一方、ハードリンクは、同じ inode に紐付いている別のファイルエントリです。したがって、ハードリンクは元のファイルと同じデータを共有し、元のファイルとリンクファイルの間には区別がありません。したがって、元のファイルを削除しても、ハードリンクが残り、データは保持されます。ただし、ハードリンクは同じファイルシステム内でのみ機能します。</p>
+<p>例：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original_file link_file
 ls -l
 <span class="c1"># lrwxr-xr-x  1 user  group  12 Aug  4 15:18 link_file -&gt; original_file</span>
 </pre></div>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code class="docutils literal notranslate"><span class="pre">-f</span></code> オプションを使用すると、既存のファイルを強制的に上書きすることができます。</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>エイリアスはシンボリックリンクに似ていますが、オリジナルのファイルを移動した後も有効です。シンボリックリンクと比べてエイリアスの方が便利に思えますが、エイリアスは Unix システムと互換性がありません。<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> のようには使えませんが、<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code> のように使うことはできます。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span></code> コマンドのオプション：<br />
--s, –symbolic    シンボリックリンクを作成<br />
--f, –force       リンクを強制的に作成します。既存のファイルを上書きすることがあります。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>シンボリックリンクは、別のファイルやディレクトリへの参照を提供するファイルです。シンボリックリンクは、ファイルシステムの中でファイルやディレクトリのパスを指すポインタのようなものです。シンボリックリンクは、元のファイルが削除されてもリンクが残り、元のファイルへのポインタが壊れてしまうことがあります。</p>
-<p>一方、ハードリンクは、同じ inode に紐付いている別のファイルエントリです。したがって、ハードリンクは元のファイルと同じデータを共有し、元のファイルとリンクファイルの間には区別がありません。したがって、元のファイルを削除しても、ハードリンクが残り、データは保持されます。ただし、ハードリンクは同じファイルシステム内でのみ機能します。</p>
-<p>ハードリンクは <code class="docutils literal notranslate"><span class="pre">ln</span></code> コマンドを使用して作成されますが、シンボリックリンクは <code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code> コマンドを使用して作成されます。</p>
-<p>ハードリンクは同じファイルシステム内でのみ機能するため、異なるファイルシステムにファイルをリンクする必要がある場合は、シンボリックリンクを使用します。</p>
-<p>シンボリックリンクを作成することで、同じファイルを複数の場所で参照したり、ファイルのパスを簡単に変更したりすることができます。</p>
 </div>
 </section>
 </section>
