@@ -1,1 +1,1 @@
-# [My notes](https://kkensuke.github.io/myjb-ja/intro.html)
+# [My jupyter book](https://kkensuke.github.io/myjb-ja/intro.html)
