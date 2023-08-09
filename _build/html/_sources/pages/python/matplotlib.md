@@ -194,9 +194,7 @@ x = np.random.normal(0, 1, 10000)
 # 平均2、標準偏差 0.5 の正規分布から 10000 個の乱数を生成します。
 y = np.random.normal(2, 0.5, 10000)
 
-# 50
-
-のビンでヒストグラムをプロットします。
+# 50 のビンでヒストグラムをプロットします。
 # `alpha` は棒の透明度です。複数のヒストグラムを比較するために使用されます。
 plt.hist(x, bins=50, color='blue', alpha=0.5, label='x')
 plt.hist(y, bins=50, color='green', alpha=0.5, label='y')
