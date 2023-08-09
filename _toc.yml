@@ -21,13 +21,13 @@ parts:
       - file: pages/basic/github/github
       - file: pages/basic/github/commitMessage
       - file: pages/basic/packageManager
-    # - file: pages/python/python0
-    #   sections:
-    #   - file: pages/python/python
-    #   - file: pages/python/numpy
-    #   - file: pages/python/matplotlib
-    #   - file: pages/python/sympy
-    #   - file: pages/python/scipy
+    - file: pages/python/python
+      sections:
+      - file: pages/python/basics
+      - file: pages/python/numpy
+      - file: pages/python/matplotlib
+      - file: pages/python/sympy
+      - file: pages/python/scipy
     - file: pages/coding-rules/coding-rules
       sections:
       - file: pages/coding-rules/naming
