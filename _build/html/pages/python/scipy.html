@@ -579,32 +579,14 @@ document.write(`
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;x; 被食者&quot;</span><span class="p">,</span> <span class="s2">&quot;y; 捕食者&quot;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Lotka-Volterraシステム&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;x; prey&quot;</span><span class="p">,</span> <span class="s2">&quot;y; predator&quot;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Lotka-Volterra System&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12473 (\N{KATAKANA LETTER SU}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12486 (\N{KATAKANA LETTER TE}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12512 (\N{KATAKANA LETTER MU}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 34987 (\N{CJK UNIFIED IDEOGRAPH-88AB}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 39135 (\N{CJK UNIFIED IDEOGRAPH-98DF}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32773 (\N{CJK UNIFIED IDEOGRAPH-8005}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 25429 (\N{CJK UNIFIED IDEOGRAPH-6355}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-</pre></div>
-</div>
-<img alt="../../_images/e4343ada008d43b0f89f1cc39c7f9ddd6b5571e985689bba41b6bfdd95166645.png" src="../../_images/e4343ada008d43b0f89f1cc39c7f9ddd6b5571e985689bba41b6bfdd95166645.png" />
+<img alt="../../_images/14f2313a1c70ff4e38da24be968d453d605e24e55976ebdbe19a5b85f33beac1.png" src="../../_images/14f2313a1c70ff4e38da24be968d453d605e24e55976ebdbe19a5b85f33beac1.png" />
 </div>
 </div>
 </section>
@@ -798,8 +780,8 @@ numerical result:  [0.9999993  0.99999854]
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;true value: &quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">nfit</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;測定データ&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nfit</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;フィッティング曲線&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Measured data&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nfit</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;fitting curve&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -810,33 +792,7 @@ numerical result:  [0.9999993  0.99999854]
 true value:  [3, 0.5, 3]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 28204 (\N{CJK UNIFIED IDEOGRAPH-6E2C}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 23450 (\N{CJK UNIFIED IDEOGRAPH-5B9A}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12487 (\N{KATAKANA LETTER DE}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12540 (\N{KATAKANA-HIRAGANA PROLONGED SOUND MARK}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12479 (\N{KATAKANA LETTER TA}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12501 (\N{KATAKANA LETTER HU}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12451 (\N{KATAKANA LETTER SMALL I}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12464 (\N{KATAKANA LETTER GU}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26354 (\N{CJK UNIFIED IDEOGRAPH-66F2}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32218 (\N{CJK UNIFIED IDEOGRAPH-7DDA}) missing from current font.
-  fig.canvas.print_figure(bytes_io, **kw)
-</pre></div>
-</div>
-<img alt="../../_images/8e830020ad6678b8ec398c8167c477848da668e64d4df3ef5e325e8d58110db0.png" src="../../_images/8e830020ad6678b8ec398c8167c477848da668e64d4df3ef5e325e8d58110db0.png" />
+<img alt="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" src="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" />
 </div>
 </div>
 </section>

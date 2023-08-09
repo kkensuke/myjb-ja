@@ -60,8 +60,8 @@ z = sol.sol(t)
 
 plt.plot(t, z.T)
 plt.xlabel("t")
-plt.legend(["x; 被食者", "y; 捕食者"], shadow=True)
-plt.title("Lotka-Volterraシステム")
+plt.legend(["x; prey", "y; predator"], shadow=True)
+plt.title("Lotka-Volterra System")
 plt.show()
 ```
 
@@ -204,8 +204,8 @@ print("\nnumerical result: ", p)
 print("true value: ", [3, 0.5, 3])
 nfit = fitFunc(p, x)
 
-plt.plot(x, y, label="測定データ", color="orange")
-plt.plot(x, nfit, label="フィッティング曲線", color="red")
+plt.plot(x, y, label="Measured data", color="orange")
+plt.plot(x, nfit, label="fitting curve", color="red")
 plt.legend()
 plt.show()
 ```
