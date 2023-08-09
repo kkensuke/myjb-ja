@@ -1,5 +1,5 @@
 develop/
 references.bib
 _build/latex/
-_build/jupyter_cache/
+_build/.jupyter_cache/
 _build/jupyter_execute/
