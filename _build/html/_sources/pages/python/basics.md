@@ -18,7 +18,7 @@ kernelspec:
 
 [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) は、Python プログラミングのために作られた、Web ベースの次世代型ユーザーインターフェースです。
 
-Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyter-lab, refer to [venv](venv).
+ここでは、Python の基本と JupyterLab の使い方を学ぶことができます。jupyter-lab をインストールしていない場合は、[venv](venv) を参照してください。
 
 +++
 
@@ -42,9 +42,9 @@ print("Hello, world!")
 
 +++
 
-When programming, we often put some comments to explain the code. In python, we can use `#` to write  comments.
+プログラミングにおいて、コードの説明をするためにコメントを書くことがあります。Python では、`#` を使ってコメントを書くことができます。
 
-If you want to comment out multiple lines, you can use `""" """` to write comments (actually, this is called docstrings).
+複数行のコメントを書きたい場合は、`""" """` を使ってコメントを書くことができます（実際には、これは docstrings と呼ばれます）。
 
 ```{code-cell} ipython3
 # This is a comment. No output.
@@ -57,10 +57,6 @@ If you want to comment out multiple lines, you can use `""" """` to write commen
     comment.
 """
 ```
-
-プログラミングにおいて、コードの説明をするためにコメントを書くことがあります。Python では、`#` を使ってコメントを書くことができます。
-
-複数行のコメントを書きたい場合は、`""" """` を使ってコメントを書くことができます（実際には、これは docstrings と呼ばれます）。
 
 ### 算術演算
 

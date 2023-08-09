@@ -50,10 +50,11 @@ brew --version
 ```
 `Homebrew x.x.x` と表示された場合、成功です。
 
+
 (venv)=
 ## [Venv](https://docs.python.org/3/library/venv.html)
-Python の仮想環境を作成するには、venvが最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。
-venv を作成しましょう。
+Python の仮想環境を作成するには、venv が最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。venv を作成しましょう。
+
 venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。
 
 ```zsh
