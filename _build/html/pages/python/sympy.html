@@ -236,8 +236,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. ツール</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. 便利なウェブアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利なMacアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利なFirefox拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利な Mac アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利な Firefox 拡張機能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. 便利な VS Code 拡張機能</a></li>
 </ul>
 </li>
@@ -503,16 +503,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declare-symbols">2.4.1. Declare symbols</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expansion">2.4.2. Expansion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitution">2.4.3. Substitution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factorization">2.4.4. Factorization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solve-equations">2.4.5. Solve equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-fraction-decomposition">2.4.6. Partial fraction decomposition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrals-and-derivatives">2.4.7. Integrals and derivatives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summation">2.4.8. Summation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limits">2.4.9. Limits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-examples">2.4.10. Other Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.4.1. 記号の宣言</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.4.2. 展開</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.4.3. 代入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.4.4. 因数分解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.4.5. 方程式の解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.4.6. 部分分数分解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.4.7. 積分と微分</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2.4.8. 総和</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2.4.9. 極限</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">2.4.10. その他の例</a></li>
 </ul>
             </nav>
         </div>
@@ -527,9 +527,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="sympy">
 <h1><span class="section-number">2.4. </span><a class="reference external" href="https://www.tutorialspoint.com/sympy/index.htm">SymPY</a><a class="headerlink" href="#sympy" title="Permalink to this headline">#</a></h1>
 <blockquote>
-<div><p>SymPy is a Python library for symbolic mathematics. - sympy doc</p>
+<div><p>SymPy は、数式処理のための Python ライブラリです。 - SymPy ドキュメント</p>
 </div></blockquote>
-<p>In this page, you see examples of sympy usage.</p>
+<p>このページでは、SymPyの使用例を見ることができます。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -537,8 +537,8 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="declare-symbols">
-<h2><span class="section-number">2.4.1. </span>Declare symbols<a class="headerlink" href="#declare-symbols" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h2><span class="section-number">2.4.1. </span>記号の宣言<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
@@ -559,8 +559,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="expansion">
-<h2><span class="section-number">2.4.2. </span>Expansion<a class="headerlink" href="#expansion" title="Permalink to this headline">#</a></h2>
+<section id="id2">
+<h2><span class="section-number">2.4.2. </span>展開<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">expand</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
@@ -574,8 +574,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="substitution">
-<h2><span class="section-number">2.4.3. </span>Substitution<a class="headerlink" href="#substitution" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h2><span class="section-number">2.4.3. </span>代入<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
@@ -588,8 +588,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="factorization">
-<h2><span class="section-number">2.4.4. </span>Factorization<a class="headerlink" href="#factorization" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h2><span class="section-number">2.4.4. </span>因数分解<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
@@ -602,8 +602,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="solve-equations">
-<h2><span class="section-number">2.4.5. </span>Solve equations<a class="headerlink" href="#solve-equations" title="Permalink to this headline">#</a></h2>
+<section id="id5">
+<h2><span class="section-number">2.4.5. </span>方程式の解<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">solve</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -617,8 +617,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="partial-fraction-decomposition">
-<h2><span class="section-number">2.4.6. </span>Partial fraction decomposition<a class="headerlink" href="#partial-fraction-decomposition" title="Permalink to this headline">#</a></h2>
+<section id="id6">
+<h2><span class="section-number">2.4.6. </span>部分分数分解<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">apart</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
@@ -631,11 +631,11 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="integrals-and-derivatives">
-<h2><span class="section-number">2.4.7. </span>Integrals and derivatives<a class="headerlink" href="#integrals-and-derivatives" title="Permalink to this headline">#</a></h2>
+<section id="id7">
+<h2><span class="section-number">2.4.7. </span>積分と微分<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>  <span class="c1"># Without real=True, a is treated as a complex number.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>  <span class="c1"># real=Trueを指定しない場合、aは複素数として扱われます。</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
 
 <span class="n">u</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">sin</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
@@ -657,7 +657,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} - \frac{e^{- i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{e^{i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
+\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} + \frac{i e^{- i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{i e^{i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -673,8 +673,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="summation">
-<h2><span class="section-number">2.4.8. </span>Summation<a class="headerlink" href="#summation" title="Permalink to this headline">#</a></h2>
+<section id="id8">
+<h2><span class="section-number">2.4.8. </span>総和<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span><span class="p">,</span> <span class="n">N</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;k, N&quot;</span><span class="p">,</span> <span class="n">integer</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -688,8 +688,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="limits">
-<h2><span class="section-number">2.4.9. </span>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">#</a></h2>
+<section id="id9">
+<h2><span class="section-number">2.4.9. </span>極限<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \to 0} \frac{\sin x}{x} = 1 \]</div>
 <div class="cell docutils container">
@@ -704,8 +704,8 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="other-examples">
-<h2><span class="section-number">2.4.10. </span>Other Examples<a class="headerlink" href="#other-examples" title="Permalink to this headline">#</a></h2>
+<section id="id10">
+<h2><span class="section-number">2.4.10. </span>その他の例<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
@@ -804,16 +804,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#declare-symbols">2.4.1. Declare symbols</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expansion">2.4.2. Expansion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#substitution">2.4.3. Substitution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factorization">2.4.4. Factorization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solve-equations">2.4.5. Solve equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partial-fraction-decomposition">2.4.6. Partial fraction decomposition</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrals-and-derivatives">2.4.7. Integrals and derivatives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summation">2.4.8. Summation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limits">2.4.9. Limits</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-examples">2.4.10. Other Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.4.1. 記号の宣言</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.4.2. 展開</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.4.3. 代入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.4.4. 因数分解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.4.5. 方程式の解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.4.6. 部分分数分解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.4.7. 積分と微分</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2.4.8. 総和</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2.4.9. 極限</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">2.4.10. その他の例</a></li>
 </ul>
   </nav></div>
 

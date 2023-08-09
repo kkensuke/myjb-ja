@@ -10,17 +10,16 @@ kernelspec:
   language: python
   name: python3
 ---
-
 # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
-> SymPy is a Python library for symbolic mathematics. - sympy doc
+> SymPy は、数式処理のための Python ライブラリです。 - SymPy ドキュメント
 
-In this page, you see examples of sympy usage.
+このページでは、SymPyの使用例を見ることができます。
 
 ```{code-cell} ipython3
 from sympy import *
 ```
 
-## Declare symbols
+## 記号の宣言
 
 ```{code-cell} ipython3
 x = Symbol("x")
@@ -31,41 +30,41 @@ y = Symbol("y")
 (x + y) ** 2
 ```
 
-## Expansion
+## 展開
 
 ```{code-cell} ipython3
 f = expand((x + y) ** 2)
 display(f)
 ```
 
-## Substitution
+## 代入
 
 ```{code-cell} ipython3
 f.subs({x: 1, y: 2})
 ```
 
-## Factorization
+## 因数分解
 
 ```{code-cell} ipython3
 factor(x**2 - 4 * x + 3)
 ```
 
-## Solve equations
+## 方程式の解
 
 ```{code-cell} ipython3
 solve(x**2 - x - 1)
 ```
 
-## Partial fraction decomposition
+## 部分分数分解
 
 ```{code-cell} ipython3
 apart(1 / (x**5 - 1))
 ```
 
-## Integrals and derivatives
+## 積分と微分
 
 ```{code-cell} ipython3
-a = Symbol("a")  # Without real=True, a is treated as a complex number.
+a = Symbol("a")  # real=Trueを指定しない場合、aは複素数として扱われます。
 b = Symbol("b")
 
 u = exp(a * x) * sin(b * x)
@@ -82,14 +81,14 @@ R = diff(u, x, 2) + u + x
 display(R)
 ```
 
-## Summation
+## 総和
 
 ```{code-cell} ipython3
 k, N = symbols("k, N", integer=True)
 factor(summation(k, (k, 1, N)))
 ```
 
-## Limits
+## 極限
 
 $$ \lim_{x \to 0} \frac{\sin x}{x} = 1 $$
 
@@ -97,7 +96,7 @@ $$ \lim_{x \to 0} \frac{\sin x}{x} = 1 $$
 limit(sin(x) / x, x, 0)
 ```
 
-## Other Examples
+## その他の例
 
 ```{code-cell} ipython3
 s = Symbol("s")

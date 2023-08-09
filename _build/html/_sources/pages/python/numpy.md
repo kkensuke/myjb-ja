@@ -10,27 +10,26 @@ kernelspec:
   language: python
   name: python3
 ---
-
 # Numpy
 
-Numpy is a Python library for scientific computing. It provides high-performance multidimensional arrays and matrices, and efficient tools for working with these objects.
+Numpyは、科学計算のためのPythonライブラリです。高性能な多次元配列や行列を提供し、これらのオブジェクトを効率的に操作するためのツールを提供します。
 
 ```{code-cell} ipython3
 import numpy as np
 ```
 
-## Create numpy arrays
+## Numpy配列の作成
 
 +++
 
-A basic way to create an array is to use the function `np.array()`. It takes a list as an argument and returns a numpy array.
+配列を作成する基本的な方法は、関数 `np.array()` を使用することです。これはリストを引数に取り、numpy配列を返します。
 
 ```{code-cell} ipython3
 a = np.array([1, 2, 3])
 print(a)
 ```
 
-In numpy, there are many methods to create arrays. For example, `np.arange()` creates an array of integers, `np.zeros()` creates an array of zeros, and `np.ones()` creates an array of ones.
+Numpyでは、配列を作成するための多くのメソッドがあります。例えば、`np.arange()` は整数の配列を作成し、`np.zeros()` はゼロの配列を作成し、`np.ones()` は1の配列を作成します。
 
 ```{code-cell} ipython3
 np.arange(10)
@@ -56,15 +55,15 @@ np.ones(10)
 np.ones((3, 5))
 ```
 
-`np.random.??` makes random arrays.
+`np.random.??` はランダムな配列を作成します。
 
-`np.random.rand()` makes an array of random numbers from the uniform distribution between 0 and 1.
+`np.random.rand()` は、0から1の一様分布のランダムな数値の配列を作成します。
 
-`np.random.randn()` makes an array of random numbers from the standard normal distribution.
+`np.random.randn()` は、標準正規分布からのランダムな数値の配列を作成します。
 
-`np.random.randint(low, high, size)` makes an array of random integers between low and high.
+`np.random.randint(low, high, size)` は、lowからhighまでのランダムな整数の配列を作成します。
 
-`np.random.choice(a, size, replace=True, p=None)` makes an array of random numbers from the list a.
+`np.random.choice(a, size, replace=True, p=None)` は、リストaからランダムな数値の配列を作成します。
 
 ```{code-cell} ipython3
 np.random.seed(0)
@@ -84,33 +83,33 @@ print("np.random.randint(1, 10, (3, 5)) = ", np.random.randint(1, 10, (3, 5)), s
 print("np.random.choice(['a', 'b', 'c'], 10) = ", np.random.choice(["a", "b", "c"], 10), sep="\n", end="\n\n")
 ```
 
-`np.linspace(start, stop, num, endpoint=True)` creates an array of evenly spaced numbers over a specified interval. This can be useful for plotting functions.
+`np.linspace(start, stop, num, endpoint=True)` は、指定された区間内で均等に分布する数値の配列を作成します。これは関数をプロットする際に便利です。
 
 ```{code-cell} ipython3
 np.linspace(0, 1, 6)
 ```
 
-`np.eye()` creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.
+`np.eye()` は、対角線上に1があり他は0の行列を作成します。行と列の数を指定して非正方形の単位行列を作成することもできます。
 
 ```{code-cell} ipython3
 np.eye(3, 5)
 ```
 
 ```{code-cell} ipython3
-np.eye(5)  # This is the same as np.identity(5)
+np.eye(5)  # これは np.identity(5) と同じです
 ```
 
 ```{code-cell} ipython3
 np.identity(5)
 ```
 
-`np.emtpy()` creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using `np.zeros()` or `np.ones()`.
+`np.empty()` は、与えられた形状とデータ型の未初期化（任意の）データの配列を作成します。配列を作成してから後でデータで埋める場合に使用されます。`np.zeros()` や `np.ones()` を使用して0または1の配列を作成するよりも速くなります。
 
 ```{code-cell} ipython3
 np.empty(10)
 ```
 
-`np.zeros_like(()`, `np.ones_like()`, `np.empty_like()` create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.
+`np.zeros_like()`, `np.ones_like()`, `np.empty_like()` は、与えられた配列と同じ形状とデータ型のゼロ、1、または未初期化のデータの配列を作成します。
 
 ```{code-cell} ipython3
 a = np.array([[1, 2, 3], [4, 5, 6]])
@@ -126,31 +125,32 @@ np.full((3, 5), 3)
 np.fromfunction(lambda i, j: i + j, (3, 5))
 ```
 
-## Manipulating arrays
+## 配列の操作
 
 ```{code-cell} ipython3
-# Append 4 to a
+# 配列に 4 を追加する
+
 a = np.array([1, 2, 3])
 b = np.append(a, 4)
 print(b)
 ```
 
 ```{code-cell} ipython3
-# Delete a[1]
+# a[1] を削除する
 a = np.array([1, 2, 3])
 b = np.delete(a, 1)
 print(b)
 ```
 
 ```{code-cell} ipython3
-# Sort a
+# 配列をソートする
 a = np.array([3, 2, 1])
 b = np.sort(a)
 print(b)
 ```
 
 ```{code-cell} ipython3
-# Concatenate two arrays
+# 二つの配列を連結する
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 c = np.concatenate((a, b))
@@ -158,7 +158,7 @@ print(c)
 ```
 
 ```{code-cell} ipython3
-# Reshape an array
+# 配列を再形成する
 a = np.array([1, 2, 3, 4, 5, 6])
 print("a.shape ", a.shape)
 b = a.reshape(2, 3)
@@ -167,114 +167,114 @@ print("b.shape ", b.shape)
 ```
 
 ```{code-cell} ipython3
-# Conditional selection
+# 条件に基づく選択
 a = np.array([1, 2, 3, 4, 5, 6])
 print(a > 3)
 print(a[a > 3])
 ```
 
 ```{code-cell} ipython3
-# Slice an array
+# 配列をスライスする
 a = np.array([1, 2, 3, 4, 5, 6])
-# print from a[1] to a[3], not including a[4](=5)
+# a[1] から a[3] までを表示します（a[4]（=5）は含まれません）
 print(a[1:4])
 ```
 
-## Arithmetic operations on arrays
+## 配列の演算
 
 ```{code-cell} ipython3
 a = np.array([1, 2, 3, 4])
 b = np.array([5, 6, 7, 8])
 
-# Addition
+# 加算
 print(a + b)
 
-# Subtraction
+# 減算
 print(a - b)
 
-# Multiplication
+# 乗算
 print(a * b)
 
-# Division
+# 除算
 print(a / b)
 ```
 
 ```{code-cell} ipython3
 a = np.array([1, 2, 3, 4])
 
-# Add a scalar to each element
+# 各要素にスカラーを加算
 print("a + 2 = ", a + 2)
 
-# Subtract a scalar from each element
+# 各要素からスカラーを減算
 print("a - 2 = ", a - 2)
 
-# Multiply a scalar to each element
+# 各要素にスカラーを乗算
 print("a * 2 = ", a * 2)
 
-# Divide each element by a scalar
+# 各要素をスカラーで除算
 print("a / 2 = ", a / 2)
 
-# Take the square root of each element
+# 各要素の平方根を取得
 print("a ** 0.5 = ", np.sqrt(a))
 
-# Take the square of each element
+# 各要素を二乗
 print("a ** 2 = ", a**2)
 
-# Take the log of each element
+# 各要素の対数を取得
 print("np.log(a) = ", np.log(a))
 
-# Take the exponential of each element
+# 各要素の指数を取得
 print("np.exp(a) = ", np.exp(a))
 
-# Take the sin of each element
+# 各要素の sin を取得
 print("np.sin(a) = ", np.sin(a))
 
-# Take the cos of each element
+# 各要素の cos を取得
 print("np.cos(a) = ", np.cos(a))
 ```
 
 ```{code-cell} ipython3
 a = np.array([1, 2, 3, 4, 5])
 
-# Maximum
+# 最大値
 print("max = ", a.max())
 
-# Minimum
+# 最小値
 print("min = ", a.min())
 
-# Argmax
+# 最大値のインデックス
 print("argmax = ", a.argmax())
 
-# Argmin
+# 最小値のインデックス
 print("argmin = ", a.argmin())
 
-# Sum
+# 合計
 print("sum = ", a.sum())
 
-# Mean
+# 平均
 print("mean = ", a.mean())
 
-# Standard deviation
+# 標準偏差
 print("std = ", a.std())
 
-# Variance
+# 分散
 print("var = ", a.var())
 ```
 
 ```{code-cell} ipython3
-# Dot product
+# ドット積
 a = np.array([1, 2, 3, 4])
 b = np.array([5, 6, 7, 8])
 print(np.dot(a, b))
 ```
 
-## Matrix operations
+## 行列の操作
 
 ```{code-cell} ipython3
 a = np.array([[1, 2, 3], [4, 5, 6]])
 b = np.array([[7, 8], [9, 10], [11, 12]])
 
-# Matrix multiplication
+# 行列の積
 print(np.dot(a, b), end="\n\n")
 
 print(a.dot(b), end="\n\n")
@@ -285,23 +285,23 @@ print(a @ b, end="\n\n")
 ```{code-cell} ipython3
 a = np.array([[1, 2, 3], [4, 6, 8], [7, 11, 13]])
 
-# Transpose
+# 転置行列
 print("a.T = ", a.T, sep="\n", end="\n\n")
 
-# Trace
+# トレース
 print("np.trace(a) = ", np.trace(a), end="\n\n")
 
-# Determinant
+# 行列式
 print("np.linalg.det(a) = ", np.linalg.det(a), end="\n\n")
 
-# Inverse
+# 逆行列
 print("np.linalg.inv(a) = ", np.linalg.inv(a), sep="\n", end="\n\n")
 ```
 
-`np.linalg.???` is a module for linear algebra. `linalg` can also be called from `scipy` as `scipy.linalg.???`.
+`np.linalg.???` は、線形代数のためのモジュールです。`linalg` は `scipy.linalg.???` としても `scipy` から呼び出すことができます。
 
 ```{code-cell} ipython3
-# Eigenvalues and eigenvectors
+# 固有値と固有ベクトル
 eigvals, eigvecs = np.linalg.eig(a)
 print("eigvals = ", eigvals, sep="\n", end="\n\n")
 print("eigvecs = ", eigvecs, sep="\n", end="\n\n")
@@ -310,7 +310,7 @@ print("a = ", eigvecs @ np.diag(eigvals) @ np.linalg.inv(eigvecs), sep="\n", end
 ```
 
 ```{code-cell} ipython3
-# Singular value decomposition
+# 特異値分解
 U, S, V = np.linalg.svd(a)
 print("U = ", U, sep="\n", end="\n\n")
 print("S = ", S, sep="\n", end="\n\n")
@@ -319,4 +319,4 @@ print("V = ", V, sep="\n", end="\n\n")
 print("a = ", U @ np.diag(S) @ V, sep="\n", end="\n\n")
 ```
 
-## [Learn more about numpy](https://numpy.org/doc/stable/user/absolute_beginners.html)
+## [Numpyについてもっと学ぶ](https://numpy.org/doc/stable/user/absolute_beginners.html)

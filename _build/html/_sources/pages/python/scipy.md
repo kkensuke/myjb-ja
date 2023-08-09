@@ -13,9 +13,9 @@ kernelspec:
 
 # [SciPY](https://docs.scipy.org/doc/scipy/index.html)
 
-> SciPy is a collection of **mathematical algorithms and convenience functions** built on the NumPy extension of Python. - scippy doc
+> SciPY は、Python の NumPy 拡張をベースとした、**数学的なアルゴリズムと便利な関数のコレクション**です。 - SciPYドキュメント
 
-In this page, you see examples of scipy functions (differentiation, integration, optimization) to solve problems.
+このページでは、異なる関数（微分、積分、最適化）を使用して問題を解決するSciPYの例を見ることができます。
 
 ```{code-cell} ipython3
 import numpy as np
@@ -25,9 +25,9 @@ from scipy import integrate, diff, optimize
 from IPython.display import display, Latex
 ```
 
-## Differentiation
+## 微分
 ### scipy.integrate.solve_ivp
-Solve an **initial value problem** for a system of ODEs.
+ODE（常微分方程式）のシステムの**初期値問題**を解きます。
 
 $$ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 $$
 
@@ -40,7 +40,7 @@ $$ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 $$
 
 +++
 
-Solve the Lotka-Volterra equations. The Lotka-Volterra equations, also known as the predator-prey equations, are a pair of first-order, non-linear, differential equations frequently used to describe the dynamics of biological systems in which two species interact, one as a predator and the other as prey. They were proposed independently by Alfred J. Lotka in 1925 and Vito Volterra in 1926.
+Lotka-Volterra 方程式を解きます。Lotka-Volterra 方程式は、捕食者と被食者として2つの種が相互作用する生物学的な系の動態を記述するために使用される、一次非線形の常微分方程式のペアです。これは 1925 年にアルフレッド・J・ロトカと 1926 年にヴィト・ヴォルテラによってそれぞれ提案されました。
 
 $$ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  $$
 
@@ -60,30 +60,30 @@ z = sol.sol(t)
 
 plt.plot(t, z.T)
 plt.xlabel("t")
-plt.legend(["x; prey", "y; predator"], shadow=True)
-plt.title("Lotka-Volterra System")
+plt.legend(["x; 被食者", "y; 捕食者"], shadow=True)
+plt.title("Lotka-Volterraシステム")
 plt.show()
 ```
 
 ---
-## Integration
+## 積分
 ### scipy.integrate.quad
-Compute a definite integral.
+定積分を計算します。
 
 >```python
 >scipy.integrate.quad(func, a, b, args=(), full_output=0, epsabs=1.49e-08, epsrel=1.49e-08,\
 >    limit=50, points=None, weight=None, wvar=None, wopts=None, maxp1=50, limlst=50)
 >```
 
-Return `y` and `abserr`.
-- y(float): The integral of func from a to b.
-- abserr(float): An estimate of the absolute error in the result.
+`y` と `abserr` を返します。
+- y（float）：funcのaからbまでの定積分。
+- abserr（float）：結果の絶対誤差の推定値。
 
-Let's compute the integral: $ \int_0^4 x^2 dx$
+次の定積分を計算しましょう：$ \int_0^4 x^2 dx$
 
 ```{code-cell} ipython3
 x2 = lambda x: x**2
-ans = integrate.quad(x2, 0, 4)  # numerical result
+ans = integrate.quad(x2, 0, 4)  # 数値的な結果
 print("x, y = ", ans)
 
 
@@ -91,9 +91,9 @@ display(Latex("$$ \int_0^4 x^2 dx = \\frac{x^3}{3} \Big|_0^4 = \\frac{4^3}{3} = 
 ```
 
 ---
-## Root finding
+## 方程式の根を求める
 ### scipy.optimize.root_scalar
-Find a root of a scalar function.
+スカラー関数の根を求めます。
 >```python
 >scipy.optimize.root_scalar(f, args=(), method=None, bracket=None, fprime=None, fprime2=None,\
 >    x0=None, x1=None, xtol=None, rtol=None, maxiter=None, options=None)
@@ -101,7 +101,7 @@ Find a root of a scalar function.
 
 +++
 
-find a root of a scalar function
+スカラー関数の根を求めます。
 
 $$f(x) = x^2 - x -1 $$
 
@@ -113,17 +113,17 @@ def f(x):
     return x**2 - x - 1
 
 
-sol = optimize.root_scalar(f, bracket=[0, 3])  # numerical result
+sol = optimize.root_scalar(f, bracket=[0, 3])  # 数値的な結果
 print("numerical result: ", sol.root)
 
 
 print("\nanalytical result:")
-display(Latex("$$ f(x) = x^2 -x - 1 = 0 \Longleftrightarrow x = \\frac{1 \pm \sqrt{5}}{2} = -0.618034, 1.618034 $$"))
+display(Latex("$$ f(x) = x^2 -x - 1 = 0 \\Longleftrightarrow x = \\frac{1 \\pm \\sqrt{5}}{2} = -0.618034, 1.618034 $$"))
 ```
 
 ---
 ### scipy.optimize.root
-Find a root of a vector function.
+ベクトル関数の根を求めます。
 
 >```python
 >scipy.optimize.root(func, x0, args=(), method='hybr', jac=None, tol=None,
@@ -135,7 +135,7 @@ def fun(x):
     return [x[0] + 0.5 * (x[0] - x[1]) ** 3 - 1.0, 0.5 * (x[1] - x[0]) ** 3 + x[1]]
 
 
-def jac(x):  # Jacbian
+def jac(x):  # ヤコビアン
     return np.array(
         [
             [1 + 1.5 * (x[0] - x[1]) ** 2, -1.5 * (x[0] - x[1]) ** 2],
@@ -150,7 +150,7 @@ print('numerical result: ', sol.x)
 
 ---
 ### scipy.optimize.minimize
-Local (multivariate) optimization
+局所的な（多変数の）最適化
 
 >```python
 >scipy.optimize.minimize(fun, x0, args=(), method=None, jac=None, hess=None,\
@@ -159,7 +159,7 @@ Local (multivariate) optimization
 
 +++
 
-find the minimum point of
+次の関数の最小点を求めます。
 
 $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
 
@@ -174,7 +174,7 @@ print("\nnumerical result: ", res.x)
 
 ---
 ### scipy.optimize.least_squares
-Least-squares
+最小二乗法
 >```python
 >scipy.optimize.least_squares(fun, x0, jac='2-point', bounds=(- inf, inf), method='trf', ftol=1e-08,\
 >    xtol=1e-08, gtol=1e-08, x_scale=1.0, loss='linear', f_scale=1.0, diff_step=None, tr_solver=None,\
@@ -183,14 +183,14 @@ Least-squares
 
 +++
 
-Here, we solve fitting problem.
+ここでは、フィッティング問題を解きます。
 
 ```{code-cell} ipython3
-# Solve a nonlinear least-squares problem with bounds on the variables.
+# 変数に制約がある非線形最小二乗法の問題を解きます。
 import os
 import scipy.optimize as opt
 
-# p: parameters, t: time, y: measured data
+# p: パラメータ、t: 時間、y: 測定データ
 fitFunc = lambda p, t: p[0] * np.exp(-p[1] * t) * np.cos(p[2] * t)
 errFunc = lambda p, t, y: fitFunc(p, t) - y
 
@@ -198,14 +198,14 @@ np.random.seed(0)
 x = np.linspace(0, 5, 100)
 y = fitFunc([3, 0.5, 3], x) + np.random.randn(len(x)) / 3
 
-p0 = [1, 1, 1]  # Initial guess for the parameters
+p0 = [1, 1, 1]  # パラメータの初期推定値
 (p, success) = opt.leastsq(errFunc, p0, args=(x, y))
 print("\nnumerical result: ", p)
 print("true value: ", [3, 0.5, 3])
 nfit = fitFunc(p, x)
 
-plt.plot(x, y, label="Measured data", color="orange")
-plt.plot(x, nfit, label="fitting curve", color="red")
+plt.plot(x, y, label="測定データ", color="orange")
+plt.plot(x, nfit, label="フィッティング曲線", color="red")
 plt.legend()
 plt.show()
 ```

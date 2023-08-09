@@ -11,71 +11,72 @@ kernelspec:
   name: python3
 ---
 
-# Matplotlib
-Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. - [Matplotlib](https://matplotlib.org/)
+# [Matplotlib](https://matplotlib.org/)
+
+Matplotlib は、Python でさまざまなグラフを描画するための包括的なライブラリです。
 
 ```{code-cell} ipython3
 import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-## 1. Plot a line
+## 1. 直線をプロットする
 
 ```{code-cell} ipython3
-# make a square function
+# 正方関数を定義
 def square(x):
     return x**2
 
-# Make x and y values.
-# np.linxpace() is a function that returns evenly spaced numbers over a specified interval.
-# We use it to make x values from -5 to 5 with 100 points in between.
+# x と y の値を作成
+# np.linspace() は、指定された範囲内で均等に分布する数値を返す関数です。
+# これを使用して、-5 から 5 までのx値を、間に 100 のポイントで作成します。
 x = np.linspace(-5, 5, 100)
 y = square(x)
 ```
 
 ```{code-cell} ipython3
-# plot the function. ` plt` is an alias for `matplotlib.pyplot`.
+# 関数をプロットします。`plt` は `matplotlib.pyplot` の別名です。
 plt.plot(x, y)
 plt.show()
 ```
 
 ```{code-cell} ipython3
-# plot the function. ` plt` is an alias for `matplotlib.pyplot`.
+# 関数をプロットします。`plt` は `matplotlib.pyplot` の別名です。
 plt.plot(x, y)
 
-# Add labels to the axes
+# 軸にラベルを追加
 plt.xlabel('x')
 plt.ylabel('y')
 
-# Add a title
-plt.title('Square function')
+# タイトルを追加
+plt.title('正方関数')
 
 plt.show()
 ```
 
-### Change color, marker style and line style 
+### 色、マーカースタイル、および線スタイルを変更する
 
 ```{code-cell} ipython3
 x = np.linspace(-5, 5, 10)
 y = square(x)
 
-# You can specify the color, marker, and line style in the plot function as below.
-plt.plot(x, y, color='red', marker='o', linestyle='--', label='label')
+# プロット関数内で色、マーカー、および線スタイルを指定できます。
+plt.plot(x, y, color='red', marker='o', linestyle='--', label='ラベル')
 
-# Show the legend. It uses the `label` defined in the `plot()` function.
+# 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
 plt.legend()
 
-# Add labels to the axes
+# 軸にラベルを追加
 plt.xlabel('x')
 plt.ylabel('y')
 
-# Add a title
-plt.title('Square function')
+# タイトルを追加
+plt.title('正方関数')
 
 plt.show()
 ```
 
-Add cube function plot.
+立方体関数のプロットを追加します。
 
 ```{code-cell} ipython3
 def cube(x):
@@ -87,43 +88,43 @@ x = np.linspace(-3, 3, 10)
 y = square(x)
 z = cube(x)
 
-# You can specify the color, marker, and line style in the plot function as below.
-plt.plot(x, y, color='red', marker='o', linestyle='--', label='Square')
-plt.plot(x, z, color='blue', marker='x', linestyle='-', label='Cube')
+# プロット関数内で色、マーカー、および線スタイルを指定できます。
+plt.plot(x, y, color='red', marker='o', linestyle='--', label='正方')
+plt.plot(x, z, color='blue', marker='x', linestyle='-', label='立方')
 
-# Show the legend. It uses the `label` defined in the `plot()` function
-plt.legend() 
+# 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
+plt.legend()
 
-# Add labels to the axes
+# 軸にラベルを追加
 plt.xlabel('x')
 plt.ylabel('y')
 
-# Add a title
-plt.title('Square and cube functions')
+# タイトルを追加
+plt.title('正方と立方の関数')
 
 plt.show()
 ```
 
-### `plt.semilogy` plots the y-axis in log scale.
+### `plt.semilogy` はy軸を対数スケールでプロットします。
 
 ```{code-cell} ipython3
 x = np.linspace(0.1, 10, 10)
 y = square(x)
 z = cube(x)
 
-# You can specify the color, marker, and line style in the plot function as below.
-plt.semilogy(x, y, color='red', marker='o', linestyle='--', label='Square')
-plt.semilogy(x, z, color='blue', marker='x', linestyle='-', label='Cube')
+# プロット関数内で色、マーカー、および線スタイルを指定できます。
+plt.semilogy(x, y, color='red', marker='o', linestyle='--', label='正方')
+plt.semilogy(x, z, color='blue', marker='x', linestyle='-', label='立方')
 
-# Show the legend. It uses the `label` defined in the `plot()` function
-plt.legend() 
+# 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
+plt.legend()
 
-# Add labels to the axes
+# 軸にラベルを追加
 plt.xlabel('x')
 plt.ylabel('y')
 
-# Add a title
-plt.title('Square and cube functions')
+# タイトルを追加
+plt.title('正方と立方の関数')
 
 plt.show()
 ```
@@ -132,26 +133,26 @@ plt.show()
 x = np.linspace(-5, 5, 10)
 y = np.exp(x)
 
-# You can specify the color, marker, and line style in the plot function as below.
-plt.semilogy(x, y, label='Exponential')
+# プロット関数内で色、マーカー、および線スタイルを指定できます。
+plt.semilogy(x, y, label='指数関数')
 
-# Show the legend. It uses the `label` defined in the `plot()` function
-plt.legend() 
+# 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
+plt.legend()
 
-# Add labels to the axes
+# 軸にラベルを追加
 plt.xlabel('x')
 plt.ylabel('exp(x)')
 
-# Add a title
-plt.title('Exponential function')
+# タイトルを追加
+plt.title('指数関数')
 
 plt.show()
 ```
 
-## 2. Scatter plot
+## 2. 散布図
 
 ```{code-cell} ipython3
-# Scatter plot
+# 散布図
 x = np.linspace(-5, 5, 20)
 y = square(x)
 
@@ -162,7 +163,7 @@ plt.show()
 ```{code-cell} ipython3
 np.random.seed(0)
 
-# Scatter plot: gaussian distribution with mean 0 and standard deviation 1
+# 散布図：平均0、標準偏差 1 のガウス分布
 x = np.random.normal(size=1000)
 y = np.random.normal(size=1000)
 
@@ -170,44 +171,45 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-## 3. Histogram
+## 3. ヒストグラム
 
 ```{code-cell} ipython3
 np.random.seed(0)
 
-# Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.
-
+# 平均0、標準偏差1の正規分布から 10000 個の乱数を生成します。
 x = np.random.normal(0, 1, 10000)
 
-# Plot a histogram with 50 bins.
+# 50 のビンでヒストグラムをプロットします。
 plt.hist(x, bins=50)
 plt.show()
 ```
 
-### Add another histogram
+別のヒストグラムを追加します。
 
 ```{code-cell} ipython3
 np.random.seed(0)
 
-# Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.
+# 平均0、標準偏差 1 の正規分布から 10000 個の乱数を生成します。
 x = np.random.normal(0, 1, 10000)
-# Generate 10000 random numbers from a normal distribution with mean 2 and standard deviation 0.5.
+# 平均2、標準偏差 0.5 の正規分布から 10000 個の乱数を生成します。
 y = np.random.normal(2, 0.5, 10000)
 
-# Plot a histogram with 50 bins.
-# `alpha` is the transparency of the bars. used to compare several histograms.
+# 50
+
+のビンでヒストグラムをプロットします。
+# `alpha` は棒の透明度です。複数のヒストグラムを比較するために使用されます。
 plt.hist(x, bins=50, color='blue', alpha=0.5, label='x')
 plt.hist(y, bins=50, color='green', alpha=0.5, label='y')
 
-# Show the legend. It uses the `label` defined in the `hist()` function.
+# 凡例を表示します。これは `hist()` 関数で定義された `label` を使用します。
 plt.legend()
 
-# Add labels to the axes
-plt.xlabel('value')
-plt.ylabel('count')
+# 軸にラベルを追加
+plt.xlabel('値')
+plt.ylabel('カウント')
 
-# Add a title
-plt.title('Histogram')
+# タイトルを追加
+plt.title('ヒストグラム')
 
 plt.show()
 ```
@@ -218,16 +220,16 @@ import numpy as np
 
 year = ("2003", "2013", "2023")
 gdps = {
-    'Japan': (4519.56, 5212.33, 4409.74),
-    'China': (1656.96, 9624.93, 19373.59),
-    'America': (11456.45, 16843.23, 26854.60),
+    '日本': (4519.56, 5212.33, 4409.74),
+    '中国': (1656.96, 9624.93, 19373.59),
+    'アメリカ': (11456.45, 16843.23, 26854.60),
 }
 
-x = np.arange(len(year)) * 1  # the label locations
-width = 0.3  # the width of the bars
+x = np.arange(len(year)) * 1  # ラベルの位置
+width = 0.3  # バーの幅
 multiplier = 0
 
-fig, ax = plt.subplots(layout='constrained')
+fig, ax = plt.subplots(constrained_layout=True)
 
 for country, gdp in gdps.items():
     offset = width * multiplier
@@ -236,7 +238,7 @@ for country, gdp in gdps.items():
     multiplier += 1
 
 
-ax.set_ylabel('GDP (billion USD)')
+ax.set_ylabel('GDP (10億USD)')
 ax.set_title('GDP')
 ax.set_xticks(x + width, year)
 ax.legend(loc='upper left', ncols=3)
@@ -244,7 +246,7 @@ ax.legend(loc='upper left', ncols=3)
 plt.show()
 ```
 
-## 5. 2D plots
+## 5. 2D プロット
 
 ```{code-cell} ipython3
 import matplotlib.pyplot as plt
@@ -256,13 +258,13 @@ data2d = np.sin(t)[:, np.newaxis] * np.sin(t)[np.newaxis, :]
 fig, ax = plt.subplots()
 im = ax.imshow(data2d)
 
-fig.colorbar(im, ax=ax, label='Colorbar')
+fig.colorbar(im, ax=ax, label='カラーバー')
 
 ax.set_title('sin(x)sin(y)')
 plt.show()
 ```
 
-## 6. 3D line plots
+## 6. 3D ラインプロット
 
 ```{code-cell} ipython3
 def pos(t):
@@ -280,17 +282,17 @@ x, y, z = pos(t)
 fig = plt.figure(figsize=(6, 6))
 ax = fig.add_subplot(projection='3d')
 
-ax.plot(x, y, z, label='parametric curve')
+ax.plot(x, y, z, label='パラメトリック曲線')
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 
-ax.set_title("3D Parametric Curve")
+ax.set_title("3Dパラメトリック曲線")
 plt.show()
 ```
 
-## 7. 3D surface plot
+## 7. 3D サーフェスプロット
 
 ```{code-cell} ipython3
 import matplotlib.pyplot as plt
@@ -300,21 +302,21 @@ import numpy as np
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
 
-# Make data.
+# データを作成します。
 X = np.arange(-5, 5, 0.05)
 Y = np.arange(-5, 5, 0.05)
 X, Y = np.meshgrid(X, Y)
 Z = np.sin(X) * np.cos(Y)
 
-# Plot the surface.
+# サーフェスをプロットします。
 surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
 
-# Customize the z axis.
+# z軸をカスタマイズします。
 ax.set_zlim(-1.01, 1.01)
 ax.zaxis.set_major_locator(LinearLocator(5))
 ax.zaxis.set_major_formatter('{x:.02f}')
 
-# Add a color bar which maps values to colors.
+# 値を色にマッピングするカラーバーを追加します。
 fig.colorbar(surf, shrink=0.5, aspect=9)
 
 plt.show()

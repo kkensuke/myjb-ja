@@ -236,8 +236,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. ツール</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. 便利なウェブアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利なMacアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利なFirefox拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利な Mac アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利な Firefox 拡張機能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. 便利な VS Code 拡張機能</a></li>
 </ul>
 </li>
@@ -503,15 +503,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">2.5.1. Differentiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.5.1. 微分</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">scipy.integrate.solve_ivp</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">2.5.2. Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.5.2. 積分</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-integrate-quad">scipy.integrate.quad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#root-finding">2.5.3. Root finding</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.5.3. 方程式の根を求める</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-root-scalar">scipy.optimize.root_scalar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-root">scipy.optimize.root</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-minimize">scipy.optimize.minimize</a></li>
@@ -532,9 +532,9 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="scipy">
 <h1><span class="section-number">2.5. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/index.html">SciPY</a><a class="headerlink" href="#scipy" title="Permalink to this headline">#</a></h1>
 <blockquote>
-<div><p>SciPy is a collection of <strong>mathematical algorithms and convenience functions</strong> built on the NumPy extension of Python. - scippy doc</p>
+<div><p>SciPY は、Python の NumPy 拡張をベースとした、<strong>数学的なアルゴリズムと便利な関数のコレクション</strong>です。 - SciPYドキュメント</p>
 </div></blockquote>
-<p>In this page, you see examples of scipy functions (differentiation, integration, optimization) to solve problems.</p>
+<p>このページでは、異なる関数（微分、積分、最適化）を使用して問題を解決するSciPYの例を見ることができます。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -546,11 +546,11 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="differentiation">
-<h2><span class="section-number">2.5.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h2><span class="section-number">2.5.1. </span>微分<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <section id="scipy-integrate-solve-ivp">
 <h3>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">#</a></h3>
-<p>Solve an <strong>initial value problem</strong> for a system of ODEs.</p>
+<p>ODE（常微分方程式）のシステムの<strong>初期値問題</strong>を解きます。</p>
 <div class="math notranslate nohighlight">
 \[ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 \]</div>
 <blockquote>
@@ -559,7 +559,7 @@ document.write(`
 </pre></div>
 </div>
 </div></blockquote>
-<p>Solve the Lotka-Volterra equations. The Lotka-Volterra equations, also known as the predator-prey equations, are a pair of first-order, non-linear, differential equations frequently used to describe the dynamics of biological systems in which two species interact, one as a predator and the other as prey. They were proposed independently by Alfred J. Lotka in 1925 and Vito Volterra in 1926.</p>
+<p>Lotka-Volterra 方程式を解きます。Lotka-Volterra 方程式は、捕食者と被食者として2つの種が相互作用する生物学的な系の動態を記述するために使用される、一次非線形の常微分方程式のペアです。これは 1925 年にアルフレッド・J・ロトカと 1926 年にヴィト・ヴォルテラによってそれぞれ提案されました。</p>
 <div class="math notranslate nohighlight">
 \[ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  \]</div>
 <div class="cell docutils container">
@@ -579,40 +579,58 @@ document.write(`
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;x; prey&quot;</span><span class="p">,</span> <span class="s2">&quot;y; predator&quot;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Lotka-Volterra System&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;x; 被食者&quot;</span><span class="p">,</span> <span class="s2">&quot;y; 捕食者&quot;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Lotka-Volterraシステム&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/14f2313a1c70ff4e38da24be968d453d605e24e55976ebdbe19a5b85f33beac1.png" src="../../_images/14f2313a1c70ff4e38da24be968d453d605e24e55976ebdbe19a5b85f33beac1.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12473 (\N{KATAKANA LETTER SU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12486 (\N{KATAKANA LETTER TE}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12512 (\N{KATAKANA LETTER MU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 34987 (\N{CJK UNIFIED IDEOGRAPH-88AB}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 39135 (\N{CJK UNIFIED IDEOGRAPH-98DF}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32773 (\N{CJK UNIFIED IDEOGRAPH-8005}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 25429 (\N{CJK UNIFIED IDEOGRAPH-6355}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/e4343ada008d43b0f89f1cc39c7f9ddd6b5571e985689bba41b6bfdd95166645.png" src="../../_images/e4343ada008d43b0f89f1cc39c7f9ddd6b5571e985689bba41b6bfdd95166645.png" />
 </div>
 </div>
 </section>
 </section>
 <hr class="docutils" />
-<section id="integration">
-<h2><span class="section-number">2.5.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h2>
+<section id="id2">
+<h2><span class="section-number">2.5.2. </span>積分<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <section id="scipy-integrate-quad">
 <h3>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this headline">#</a></h3>
-<p>Compute a definite integral.</p>
+<p>定積分を計算します。</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">full_output</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">epsabs</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span> <span class="n">epsrel</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span>\
    <span class="n">limit</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">wvar</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">wopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">maxp1</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">limlst</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
-<p>Return <code class="docutils literal notranslate"><span class="pre">y</span></code> and <code class="docutils literal notranslate"><span class="pre">abserr</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">y</span></code> と <code class="docutils literal notranslate"><span class="pre">abserr</span></code> を返します。</p>
 <ul class="simple">
-<li><p>y(float): The integral of func from a to b.</p></li>
-<li><p>abserr(float): An estimate of the absolute error in the result.</p></li>
+<li><p>y（float）：funcのaからbまでの定積分。</p></li>
+<li><p>abserr（float）：結果の絶対誤差の推定値。</p></li>
 </ul>
-<p>Let’s compute the integral: <span class="math notranslate nohighlight">\( \int_0^4 x^2 dx\)</span></p>
+<p>次の定積分を計算しましょう：<span class="math notranslate nohighlight">\( \int_0^4 x^2 dx\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># numerical result</span>
+<span class="n">ans</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># 数値的な結果</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x, y = &quot;</span><span class="p">,</span> <span class="n">ans</span><span class="p">)</span>
 
 
@@ -631,18 +649,18 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section id="root-finding">
-<h2><span class="section-number">2.5.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h2><span class="section-number">2.5.3. </span>方程式の根を求める<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <section id="scipy-optimize-root-scalar">
 <h3>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this headline">#</a></h3>
-<p>Find a root of a scalar function.</p>
+<p>スカラー関数の根を求めます。</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
    <span class="n">x0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">xtol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
-<p>find a root of a scalar function</p>
+<p>スカラー関数の根を求めます。</p>
 <div class="math notranslate nohighlight">
 \[f(x) = x^2 - x -1 \]</div>
 <div class="cell docutils container">
@@ -654,12 +672,12 @@ document.write(`
     <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>
 
 
-<span class="n">sol</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># numerical result</span>
+<span class="n">sol</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># 数値的な結果</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;numerical result: &quot;</span><span class="p">,</span> <span class="n">sol</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">analytical result:&quot;</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$$ f(x) = x^2 -x - 1 = 0 \Longleftrightarrow x = </span><span class="se">\\</span><span class="s2">frac{1 \pm \sqrt</span><span class="si">{5}</span><span class="s2">}</span><span class="si">{2}</span><span class="s2"> = -0.618034, 1.618034 $$&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Latex</span><span class="p">(</span><span class="s2">&quot;$$ f(x) = x^2 -x - 1 = 0 </span><span class="se">\\</span><span class="s2">Longleftrightarrow x = </span><span class="se">\\</span><span class="s2">frac{1 </span><span class="se">\\</span><span class="s2">pm </span><span class="se">\\</span><span class="s2">sqrt</span><span class="si">{5}</span><span class="s2">}</span><span class="si">{2}</span><span class="s2"> = -0.618034, 1.618034 $$&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -677,7 +695,7 @@ analytical result:
 <hr class="docutils" />
 <section id="scipy-optimize-root">
 <h3>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this headline">#</a></h3>
-<p>Find a root of a vector function.</p>
+<p>ベクトル関数の根を求めます。</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;hybr&#39;</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                    <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -690,7 +708,7 @@ analytical result:
     <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
 
 
-<span class="k">def</span> <span class="nf">jac</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>  <span class="c1"># Jacbian</span>
+<span class="k">def</span> <span class="nf">jac</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>  <span class="c1"># ヤコビアン</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
         <span class="p">[</span>
             <span class="p">[</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">],</span>
@@ -714,14 +732,14 @@ analytical result:
 <hr class="docutils" />
 <section id="scipy-optimize-minimize">
 <h3>scipy.optimize.minimize<a class="headerlink" href="#scipy-optimize-minimize" title="Permalink to this headline">#</a></h3>
-<p>Local (multivariate) optimization</p>
+<p>局所的な（多変数の）最適化</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hess</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
    <span class="n">hessp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">constraints</span><span class="o">=</span><span class="p">(),</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
-<p>find the minimum point of</p>
+<p>次の関数の最小点を求めます。</p>
 <div class="math notranslate nohighlight">
 \[ f(x,y) = (1-x)^2 + 5(y-x^2)^2 \]</div>
 <div class="cell docutils container">
@@ -751,7 +769,7 @@ numerical result:  [0.9999993  0.99999854]
 <hr class="docutils" />
 <section id="scipy-optimize-least-squares">
 <h3>scipy.optimize.least_squares<a class="headerlink" href="#scipy-optimize-least-squares" title="Permalink to this headline">#</a></h3>
-<p>Least-squares</p>
+<p>最小二乗法</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">least_squares</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="s1">&#39;2-point&#39;</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span> <span class="n">inf</span><span class="p">,</span> <span class="n">inf</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;trf&#39;</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span>\
    <span class="n">xtol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">gtol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">x_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">f_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">diff_step</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tr_solver</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
@@ -759,14 +777,14 @@ numerical result:  [0.9999993  0.99999854]
 </pre></div>
 </div>
 </div></blockquote>
-<p>Here, we solve fitting problem.</p>
+<p>ここでは、フィッティング問題を解きます。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solve a nonlinear least-squares problem with bounds on the variables.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 変数に制約がある非線形最小二乗法の問題を解きます。</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="nn">opt</span>
 
-<span class="c1"># p: parameters, t: time, y: measured data</span>
+<span class="c1"># p: パラメータ、t: 時間、y: 測定データ</span>
 <span class="n">fitFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
 <span class="n">errFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
 
@@ -774,14 +792,14 @@ numerical result:  [0.9999993  0.99999854]
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">3</span>
 
-<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Initial guess for the parameters</span>
+<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># パラメータの初期推定値</span>
 <span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">success</span><span class="p">)</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">leastsq</span><span class="p">(</span><span class="n">errFunc</span><span class="p">,</span> <span class="n">p0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">numerical result: &quot;</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;true value: &quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">nfit</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Measured data&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nfit</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;fitting curve&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;測定データ&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nfit</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;フィッティング曲線&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -792,7 +810,33 @@ numerical result:  [0.9999993  0.99999854]
 true value:  [3, 0.5, 3]
 </pre></div>
 </div>
-<img alt="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" src="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 28204 (\N{CJK UNIFIED IDEOGRAPH-6E2C}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 23450 (\N{CJK UNIFIED IDEOGRAPH-5B9A}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12487 (\N{KATAKANA LETTER DE}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12540 (\N{KATAKANA-HIRAGANA PROLONGED SOUND MARK}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12479 (\N{KATAKANA LETTER TA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12501 (\N{KATAKANA LETTER HU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12451 (\N{KATAKANA LETTER SMALL I}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12464 (\N{KATAKANA LETTER GU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26354 (\N{CJK UNIFIED IDEOGRAPH-66F2}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32218 (\N{CJK UNIFIED IDEOGRAPH-7DDA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/8e830020ad6678b8ec398c8167c477848da668e64d4df3ef5e325e8d58110db0.png" src="../../_images/8e830020ad6678b8ec398c8167c477848da668e64d4df3ef5e325e8d58110db0.png" />
 </div>
 </div>
 </section>
@@ -866,15 +910,15 @@ true value:  [3, 0.5, 3]
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiation">2.5.1. Differentiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.5.1. 微分</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">scipy.integrate.solve_ivp</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">2.5.2. Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.5.2. 積分</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-integrate-quad">scipy.integrate.quad</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#root-finding">2.5.3. Root finding</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.5.3. 方程式の根を求める</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-root-scalar">scipy.optimize.root_scalar</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-root">scipy.optimize.root</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scipy-optimize-minimize">scipy.optimize.minimize</a></li>
