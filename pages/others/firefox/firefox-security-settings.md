@@ -13,7 +13,7 @@
 
 ## 安全なインターネット接続
 - VPNの使用
-- [Cloudfare](https://developers.cloudflare.com/1.1.1.1/setup/)の有効化
+- [Cloudfare](https://developers.cloudflare.com/1.1.1.1/setup/) の有効化
 - ECHの有効化
 - WebRTCの無効化
 

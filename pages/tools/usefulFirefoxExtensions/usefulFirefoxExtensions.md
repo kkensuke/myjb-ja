@@ -1,4 +1,4 @@
-# 便利なFirefox拡張機能
+# 便利な Firefox 拡張機能
 
 ## セキュリティ
 ### [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)
