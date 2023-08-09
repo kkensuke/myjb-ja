@@ -234,8 +234,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. ツール</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. 便利なウェブアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利なMacアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利なFirefox拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利な Mac アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利な Firefox 拡張機能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. 便利な VS Code 拡張機能</a></li>
 </ul>
 </li>
@@ -501,11 +501,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-numpy-arrays">2.2.1. Create numpy arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-arrays">2.2.2. Manipulating arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operations-on-arrays">2.2.3. Arithmetic operations on arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-operations">2.2.4. Matrix operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more-about-numpy">2.2.5. Learn more about numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.1. Numpy配列の作成</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.2.2. 配列の操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2.3. 配列の演算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.4. 行列の操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.2.5. Numpyについてもっと学ぶ</a></li>
 </ul>
             </nav>
         </div>
@@ -519,7 +519,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="numpy">
 <h1><span class="section-number">2.2. </span>Numpy<a class="headerlink" href="#numpy" title="Permalink to this headline">#</a></h1>
-<p>Numpy is a Python library for scientific computing. It provides high-performance multidimensional arrays and matrices, and efficient tools for working with these objects.</p>
+<p>Numpyは、科学計算のためのPythonライブラリです。高性能な多次元配列や行列を提供し、これらのオブジェクトを効率的に操作するためのツールを提供します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -527,9 +527,9 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="create-numpy-arrays">
-<h2><span class="section-number">2.2.1. </span>Create numpy arrays<a class="headerlink" href="#create-numpy-arrays" title="Permalink to this headline">#</a></h2>
-<p>A basic way to create an array is to use the function <code class="docutils literal notranslate"><span class="pre">np.array()</span></code>. It takes a list as an argument and returns a numpy array.</p>
+<section id="id1">
+<h2><span class="section-number">2.2.1. </span>Numpy配列の作成<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<p>配列を作成する基本的な方法は、関数 <code class="docutils literal notranslate"><span class="pre">np.array()</span></code> を使用することです。これはリストを引数に取り、numpy配列を返します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
@@ -543,7 +543,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>In numpy, there are many methods to create arrays. For example, <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> creates an array of integers, <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> creates an array of zeros, and <code class="docutils literal notranslate"><span class="pre">np.ones()</span></code> creates an array of ones.</p>
+<p>Numpyでは、配列を作成するための多くのメソッドがあります。例えば、<code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> は整数の配列を作成し、<code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> はゼロの配列を作成し、<code class="docutils literal notranslate"><span class="pre">np.ones()</span></code> は1の配列を作成します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -620,11 +620,11 @@ document.write(`
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.random.??</span></code> makes random arrays.</p>
-<p><code class="docutils literal notranslate"><span class="pre">np.random.rand()</span></code> makes an array of random numbers from the uniform distribution between 0 and 1.</p>
-<p><code class="docutils literal notranslate"><span class="pre">np.random.randn()</span></code> makes an array of random numbers from the standard normal distribution.</p>
-<p><code class="docutils literal notranslate"><span class="pre">np.random.randint(low,</span> <span class="pre">high,</span> <span class="pre">size)</span></code> makes an array of random integers between low and high.</p>
-<p><code class="docutils literal notranslate"><span class="pre">np.random.choice(a,</span> <span class="pre">size,</span> <span class="pre">replace=True,</span> <span class="pre">p=None)</span></code> makes an array of random numbers from the list a.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.random.??</span></code> はランダムな配列を作成します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.random.rand()</span></code> は、0から1の一様分布のランダムな数値の配列を作成します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.random.randn()</span></code> は、標準正規分布からのランダムな数値の配列を作成します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.random.randint(low,</span> <span class="pre">high,</span> <span class="pre">size)</span></code> は、lowからhighまでのランダムな整数の配列を作成します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.random.choice(a,</span> <span class="pre">size,</span> <span class="pre">replace=True,</span> <span class="pre">p=None)</span></code> は、リストaからランダムな数値の配列を作成します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -671,7 +671,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.linspace(start,</span> <span class="pre">stop,</span> <span class="pre">num,</span> <span class="pre">endpoint=True)</span></code> creates an array of evenly spaced numbers over a specified interval. This can be useful for plotting functions.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.linspace(start,</span> <span class="pre">stop,</span> <span class="pre">num,</span> <span class="pre">endpoint=True)</span></code> は、指定された区間内で均等に分布する数値の配列を作成します。これは関数をプロットする際に便利です。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
@@ -684,7 +684,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.eye()</span></code> creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.eye()</span></code> は、対角線上に1があり他は0の行列を作成します。行と列の数を指定して非正方形の単位行列を作成することもできます。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -701,7 +701,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># This is the same as np.identity(5)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># これは np.identity(5) と同じです</span>
 </pre></div>
 </div>
 </div>
@@ -731,7 +731,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.emtpy()</span></code> creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> or <code class="docutils literal notranslate"><span class="pre">np.ones()</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.empty()</span></code> は、与えられた形状とデータ型の未初期化（任意の）データの配列を作成します。配列を作成してから後でデータで埋める場合に使用されます。<code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> や <code class="docutils literal notranslate"><span class="pre">np.ones()</span></code> を使用して0または1の配列を作成するよりも速くなります。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -745,7 +745,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.zeros_like(()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.ones_like()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.empty_like()</span></code> create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.zeros_like()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.ones_like()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.empty_like()</span></code> は、与えられた配列と同じ形状とデータ型のゼロ、1、または未初期化のデータの配列を作成します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
@@ -790,11 +790,12 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 </div>
 </section>
-<section id="manipulating-arrays">
-<h2><span class="section-number">2.2.2. </span>Manipulating arrays<a class="headerlink" href="#manipulating-arrays" title="Permalink to this headline">#</a></h2>
+<section id="id2">
+<h2><span class="section-number">2.2.2. </span>配列の操作<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Append 4 to a</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 配列に 4 を追加する</span>
+
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
@@ -809,7 +810,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Delete a[1]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a[1] を削除する</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
@@ -824,7 +825,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sort a</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 配列をソートする</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
@@ -839,7 +840,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Concatenate two arrays</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 二つの配列を連結する</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
@@ -855,7 +856,7 @@ np.random.choice([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], 10) =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Reshape an array</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 配列を再形成する</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a.shape &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -875,7 +876,7 @@ b.shape  (2, 3)
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Conditional selection</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 条件に基づく選択</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">])</span>
@@ -891,9 +892,9 @@ b.shape  (2, 3)
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Slice an array</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 配列をスライスする</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-<span class="c1"># print from a[1] to a[3], not including a[4](=5)</span>
+<span class="c1"># a[1] から a[3] までを表示します（a[4]（=5）は含まれません）</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -905,23 +906,23 @@ b.shape  (2, 3)
 </div>
 </div>
 </section>
-<section id="arithmetic-operations-on-arrays">
-<h2><span class="section-number">2.2.3. </span>Arithmetic operations on arrays<a class="headerlink" href="#arithmetic-operations-on-arrays" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h2><span class="section-number">2.2.3. </span>配列の演算<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
 
-<span class="c1"># Addition</span>
+<span class="c1"># 加算</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="c1"># Subtraction</span>
+<span class="c1"># 減算</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="c1"># Multiplication</span>
+<span class="c1"># 乗算</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="c1"># Division</span>
+<span class="c1"># 除算</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -939,34 +940,34 @@ b.shape  (2, 3)
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 
-<span class="c1"># Add a scalar to each element</span>
+<span class="c1"># 各要素にスカラーを加算</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a + 2 = &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Subtract a scalar from each element</span>
+<span class="c1"># 各要素からスカラーを減算</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a - 2 = &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Multiply a scalar to each element</span>
+<span class="c1"># 各要素にスカラーを乗算</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a * 2 = &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Divide each element by a scalar</span>
+<span class="c1"># 各要素をスカラーで除算</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a / 2 = &quot;</span><span class="p">,</span> <span class="n">a</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Take the square root of each element</span>
+<span class="c1"># 各要素の平方根を取得</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a ** 0.5 = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
-<span class="c1"># Take the square of each element</span>
+<span class="c1"># 各要素を二乗</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a ** 2 = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c1"># Take the log of each element</span>
+<span class="c1"># 各要素の対数を取得</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.log(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
-<span class="c1"># Take the exponential of each element</span>
+<span class="c1"># 各要素の指数を取得</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.exp(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
-<span class="c1"># Take the sin of each element</span>
+<span class="c1"># 各要素の sin を取得</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.sin(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
-<span class="c1"># Take the cos of each element</span>
+<span class="c1"># 各要素の cos を取得</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.cos(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -990,28 +991,28 @@ np.cos(a) =  [ 0.54030231 -0.41614684 -0.9899925  -0.65364362]
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 
-<span class="c1"># Maximum</span>
+<span class="c1"># 最大値</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;max = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 
-<span class="c1"># Minimum</span>
+<span class="c1"># 最小値</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;min = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
 
-<span class="c1"># Argmax</span>
+<span class="c1"># 最大値のインデックス</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;argmax = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">argmax</span><span class="p">())</span>
 
-<span class="c1"># Argmin</span>
+<span class="c1"># 最小値のインデックス</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;argmin = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">argmin</span><span class="p">())</span>
 
-<span class="c1"># Sum</span>
+<span class="c1"># 合計</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sum = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 
-<span class="c1"># Mean</span>
+<span class="c1"># 平均</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mean = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 
-<span class="c1"># Standard deviation</span>
+<span class="c1"># 標準偏差</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;std = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
 
-<span class="c1"># Variance</span>
+<span class="c1"># 分散</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;var = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">var</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1031,7 +1032,7 @@ var =  2.0
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dot product</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ドット積</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
@@ -1045,14 +1046,14 @@ var =  2.0
 </div>
 </div>
 </section>
-<section id="matrix-operations">
-<h2><span class="section-number">2.2.4. </span>Matrix operations<a class="headerlink" href="#matrix-operations" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h2><span class="section-number">2.2.4. </span>行列の操作<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
 
-<span class="c1"># Matrix multiplication</span>
+<span class="c1"># 行列の積</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1078,16 +1079,16 @@ var =  2.0
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]])</span>
 
-<span class="c1"># Transpose</span>
+<span class="c1"># 転置行列</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a.T = &quot;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Trace</span>
+<span class="c1"># トレース</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.trace(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Determinant</span>
+<span class="c1"># 行列式</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.linalg.det(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># Inverse</span>
+<span class="c1"># 逆行列</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;np.linalg.inv(a) = &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1110,10 +1111,10 @@ np.linalg.inv(a) =
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.linalg.???</span></code> is a module for linear algebra. <code class="docutils literal notranslate"><span class="pre">linalg</span></code> can also be called from <code class="docutils literal notranslate"><span class="pre">scipy</span></code> as <code class="docutils literal notranslate"><span class="pre">scipy.linalg.???</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.linalg.???</span></code> は、線形代数のためのモジュールです。<code class="docutils literal notranslate"><span class="pre">linalg</span></code> は <code class="docutils literal notranslate"><span class="pre">scipy.linalg.???</span></code> としても <code class="docutils literal notranslate"><span class="pre">scipy</span></code> から呼び出すことができます。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Eigenvalues and eigenvectors</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 固有値と固有ベクトル</span>
 <span class="n">eigvals</span><span class="p">,</span> <span class="n">eigvecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;eigvals = &quot;</span><span class="p">,</span> <span class="n">eigvals</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;eigvecs = &quot;</span><span class="p">,</span> <span class="n">eigvecs</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1141,7 +1142,7 @@ a =
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Singular value decomposition</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 特異値分解</span>
 <span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;U = &quot;</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;S = &quot;</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1174,8 +1175,8 @@ a =
 </div>
 </div>
 </section>
-<section id="learn-more-about-numpy">
-<h2><span class="section-number">2.2.5. </span><a class="reference external" href="https://numpy.org/doc/stable/user/absolute_beginners.html">Learn more about numpy</a><a class="headerlink" href="#learn-more-about-numpy" title="Permalink to this headline">#</a></h2>
+<section id="id5">
+<h2><span class="section-number">2.2.5. </span><a class="reference external" href="https://numpy.org/doc/stable/user/absolute_beginners.html">Numpyについてもっと学ぶ</a><a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
@@ -1246,11 +1247,11 @@ a =
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-numpy-arrays">2.2.1. Create numpy arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-arrays">2.2.2. Manipulating arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operations-on-arrays">2.2.3. Arithmetic operations on arrays</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-operations">2.2.4. Matrix operations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more-about-numpy">2.2.5. Learn more about numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.1. Numpy配列の作成</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.2.2. 配列の操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2.3. 配列の演算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.4. 行列の操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.2.5. Numpyについてもっと学ぶ</a></li>
 </ul>
   </nav></div>
 

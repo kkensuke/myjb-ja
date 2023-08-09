@@ -234,8 +234,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. ツール</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. 便利なウェブアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利なMacアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利なFirefox拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利な Mac アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利な Firefox 拡張機能</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. 便利な VS Code 拡張機能</a></li>
 </ul>
 </li>
@@ -501,19 +501,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-line">2.3.1. 1. Plot a line</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-color-marker-style-and-line-style">Change color, marker style and line style</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plt-semilogy-plots-the-y-axis-in-log-scale"><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> plots the y-axis in log scale.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.3.1. 1. 直線をプロットする</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">色、マーカースタイル、および線スタイルを変更する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plt-semilogy-y"><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> はy軸を対数スケールでプロットします。</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot">2.3.2. 2. Scatter plot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">2.3.3. 3. Histogram</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-another-histogram">Add another histogram</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-plots">2.3.4. 5. 2D plots</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-line-plots">2.3.5. 6. 3D line plots</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-surface-plot">2.3.6. 7. 3D surface plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.3.2. 2. 散布図</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.3.3. 3. ヒストグラム</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d">2.3.4. 5. 2D プロット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.3.5. 6. 3D ラインプロット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.3.6. 7. 3D サーフェスプロット</a></li>
 </ul>
             </nav>
         </div>
@@ -526,8 +523,8 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="matplotlib">
-<h1><span class="section-number">2.3. </span>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h1>
-<p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. - <a class="reference external" href="https://matplotlib.org/">Matplotlib</a></p>
+<h1><span class="section-number">2.3. </span><a class="reference external" href="https://matplotlib.org/">Matplotlib</a><a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h1>
+<p>Matplotlib は、Python でさまざまなグラフを描画するための包括的なライブラリです。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -536,17 +533,17 @@ document.write(`
 </div>
 </div>
 </div>
-<section id="plot-a-line">
-<h2><span class="section-number">2.3.1. </span>1. Plot a line<a class="headerlink" href="#plot-a-line" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h2><span class="section-number">2.3.1. </span>1. 直線をプロットする<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a square function</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 正方関数を定義</span>
 <span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 
-<span class="c1"># Make x and y values.</span>
-<span class="c1"># np.linxpace() is a function that returns evenly spaced numbers over a specified interval.</span>
-<span class="c1"># We use it to make x values from -5 to 5 with 100 points in between.</span>
+<span class="c1"># x と y の値を作成</span>
+<span class="c1"># np.linspace() は、指定された範囲内で均等に分布する数値を返す関数です。</span>
+<span class="c1"># これを使用して、-5 から 5 までのx値を、間に 100 のポイントで作成します。</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -555,7 +552,7 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot the function. ` plt` is an alias for `matplotlib.pyplot`.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 関数をプロットします。`plt` は `matplotlib.pyplot` の別名です。</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -567,53 +564,71 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot the function. ` plt` is an alias for `matplotlib.pyplot`.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 関数をプロットします。`plt` は `matplotlib.pyplot` の別名です。</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="c1"># Add labels to the axes</span>
+<span class="c1"># 軸にラベルを追加</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Square function&#39;</span><span class="p">)</span>
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;正方関数&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9d6bf25552761a8b2daf7c38208b0811ceded8d6269feaf63689f16d336ddc84.png" src="../../_images/9d6bf25552761a8b2daf7c38208b0811ceded8d6269feaf63689f16d336ddc84.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 27491 (\N{CJK UNIFIED IDEOGRAPH-6B63}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26041 (\N{CJK UNIFIED IDEOGRAPH-65B9}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 38306 (\N{CJK UNIFIED IDEOGRAPH-95A2}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/87f909c68a293eff65784c4e4771b373b04fd2fa869105a3b357a6d646316953.png" src="../../_images/87f909c68a293eff65784c4e4771b373b04fd2fa869105a3b357a6d646316953.png" />
 </div>
 </div>
-<section id="change-color-marker-style-and-line-style">
-<h3>Change color, marker style and line style<a class="headerlink" href="#change-color-marker-style-and-line-style" title="Permalink to this headline">#</a></h3>
+<section id="id2">
+<h3>色、マーカースタイル、および線スタイルを変更する<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="c1"># You can specify the color, marker, and line style in the plot function as below.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
+<span class="c1"># プロット関数内で色、マーカー、および線スタイルを指定できます。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;ラベル&#39;</span><span class="p">)</span>
 
-<span class="c1"># Show the legend. It uses the `label` defined in the `plot()` function.</span>
+<span class="c1"># 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="c1"># Add labels to the axes</span>
+<span class="c1"># 軸にラベルを追加</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Square function&#39;</span><span class="p">)</span>
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;正方関数&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/b8461396fd5c5ab284b4d7e1fd2b30fb5db76d5847026b75088134396787d92f.png" src="../../_images/b8461396fd5c5ab284b4d7e1fd2b30fb5db76d5847026b75088134396787d92f.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12505 (\N{KATAKANA LETTER BE}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12523 (\N{KATAKANA LETTER RU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/a81facb6d83a91e63bb50cef25342f28bb1277bfff25a6bf0faafdfb53035462.png" src="../../_images/a81facb6d83a91e63bb50cef25342f28bb1277bfff25a6bf0faafdfb53035462.png" />
 </div>
 </div>
-<p>Add cube function plot.</p>
+<p>立方体関数のプロットを追加します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cube</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -628,57 +643,65 @@ document.write(`
 <span class="n">y</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">cube</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="c1"># You can specify the color, marker, and line style in the plot function as below.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Square&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cube&#39;</span><span class="p">)</span>
+<span class="c1"># プロット関数内で色、マーカー、および線スタイルを指定できます。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;正方&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;立方&#39;</span><span class="p">)</span>
 
-<span class="c1"># Show the legend. It uses the `label` defined in the `plot()` function</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> 
+<span class="c1"># 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="c1"># Add labels to the axes</span>
+<span class="c1"># 軸にラベルを追加</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Square and cube functions&#39;</span><span class="p">)</span>
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;正方と立方の関数&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/7cd41fdf52937afcd9334b2e83f705c1ff6ec04b60fda49a9330f6ffa5921af1.png" src="../../_images/7cd41fdf52937afcd9334b2e83f705c1ff6ec04b60fda49a9330f6ffa5921af1.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12392 (\N{HIRAGANA LETTER TO}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 31435 (\N{CJK UNIFIED IDEOGRAPH-7ACB}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12398 (\N{HIRAGANA LETTER NO}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/368ed0cfd42186fd862b4942246361b761e42fa3c9f576d99f9c2ad6c374cabd.png" src="../../_images/368ed0cfd42186fd862b4942246361b761e42fa3c9f576d99f9c2ad6c374cabd.png" />
 </div>
 </div>
 </section>
-<section id="plt-semilogy-plots-the-y-axis-in-log-scale">
-<h3><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> plots the y-axis in log scale.<a class="headerlink" href="#plt-semilogy-plots-the-y-axis-in-log-scale" title="Permalink to this headline">#</a></h3>
+<section id="plt-semilogy-y">
+<h3><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> はy軸を対数スケールでプロットします。<a class="headerlink" href="#plt-semilogy-y" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">cube</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="c1"># You can specify the color, marker, and line style in the plot function as below.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Square&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Cube&#39;</span><span class="p">)</span>
+<span class="c1"># プロット関数内で色、マーカー、および線スタイルを指定できます。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;正方&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;立方&#39;</span><span class="p">)</span>
 
-<span class="c1"># Show the legend. It uses the `label` defined in the `plot()` function</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> 
+<span class="c1"># 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="c1"># Add labels to the axes</span>
+<span class="c1"># 軸にラベルを追加</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Square and cube functions&#39;</span><span class="p">)</span>
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;正方と立方の関数&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/77b63ca590e9e4877bcfc7541ef8ef0a334cb8e53e3051486e598b9e5989adcb.png" src="../../_images/77b63ca590e9e4877bcfc7541ef8ef0a334cb8e53e3051486e598b9e5989adcb.png" />
+<img alt="../../_images/8eda4db1e7ad84e19d93d19f5e2250683181c6f45d7990af7f0f979b63eac97c.png" src="../../_images/8eda4db1e7ad84e19d93d19f5e2250683181c6f45d7990af7f0f979b63eac97c.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -686,34 +709,38 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="c1"># You can specify the color, marker, and line style in the plot function as below.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Exponential&#39;</span><span class="p">)</span>
+<span class="c1"># プロット関数内で色、マーカー、および線スタイルを指定できます。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;指数関数&#39;</span><span class="p">)</span>
 
-<span class="c1"># Show the legend. It uses the `label` defined in the `plot()` function</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> 
+<span class="c1"># 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-<span class="c1"># Add labels to the axes</span>
+<span class="c1"># 軸にラベルを追加</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;exp(x)&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Exponential function&#39;</span><span class="p">)</span>
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;指数関数&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/daaf9478d107f534f4f5dd029a28cb8276872cf938abe8c23a34d3e16246c49b.png" src="../../_images/daaf9478d107f534f4f5dd029a28cb8276872cf938abe8c23a34d3e16246c49b.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 25351 (\N{CJK UNIFIED IDEOGRAPH-6307}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/bba5fe2c4885fabd1580c284bc13bffaf563f93759931db1fcb162308e68ec6b.png" src="../../_images/bba5fe2c4885fabd1580c284bc13bffaf563f93759931db1fcb162308e68ec6b.png" />
 </div>
 </div>
 </section>
 </section>
-<section id="scatter-plot">
-<h2><span class="section-number">2.3.2. </span>2. Scatter plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h2><span class="section-number">2.3.2. </span>2. 散布図<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Scatter plot</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 散布図</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
@@ -730,7 +757,7 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c1"># Scatter plot: gaussian distribution with mean 0 and standard deviation 1</span>
+<span class="c1"># 散布図：平均0、標準偏差 1 のガウス分布</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 
@@ -744,17 +771,16 @@ document.write(`
 </div>
 </div>
 </section>
-<section id="histogram">
-<h2><span class="section-number">2.3.3. </span>3. Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h2>
+<section id="id4">
+<h2><span class="section-number">2.3.3. </span>3. ヒストグラム<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c1"># Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.</span>
-
+<span class="c1"># 平均0、標準偏差1の正規分布から 10000 個の乱数を生成します。</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 
-<span class="c1"># Plot a histogram with 50 bins.</span>
+<span class="c1"># 50 のビンでヒストグラムをプロットします。</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -764,38 +790,44 @@ document.write(`
 <img alt="../../_images/b7664f3865cf8dd68a30a4d887222ba02b6ab9b9cbaf67efd07ad043aa1c57e4.png" src="../../_images/b7664f3865cf8dd68a30a4d887222ba02b6ab9b9cbaf67efd07ad043aa1c57e4.png" />
 </div>
 </div>
-<section id="add-another-histogram">
-<h3>Add another histogram<a class="headerlink" href="#add-another-histogram" title="Permalink to this headline">#</a></h3>
+<p>別のヒストグラムを追加します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>np.random.seed(0)
 
-<span class="c1"># Generate 10000 random numbers from a normal distribution with mean 0 and standard deviation 1.</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
-<span class="c1"># Generate 10000 random numbers from a normal distribution with mean 2 and standard deviation 0.5.</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+# 平均0、標準偏差 1 の正規分布から 10000 個の乱数を生成します。
+x = np.random.normal(0, 1, 10000)
+# 平均2、標準偏差 0.5 の正規分布から 10000 個の乱数を生成します。
+y = np.random.normal(2, 0.5, 10000)
 
-<span class="c1"># Plot a histogram with 50 bins.</span>
-<span class="c1"># `alpha` is the transparency of the bars. used to compare several histograms.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+# 50
 
-<span class="c1"># Show the legend. It uses the `label` defined in the `hist()` function.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+のビンでヒストグラムをプロットします。
+# `alpha` は棒の透明度です。複数のヒストグラムを比較するために使用されます。
+plt.hist(x, bins=50, color=&#39;blue&#39;, alpha=0.5, label=&#39;x&#39;)
+plt.hist(y, bins=50, color=&#39;green&#39;, alpha=0.5, label=&#39;y&#39;)
 
-<span class="c1"># Add labels to the axes</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+# 凡例を表示します。これは `hist()` 関数で定義された `label` を使用します。
+plt.legend()
 
-<span class="c1"># Add a title</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram&#39;</span><span class="p">)</span>
+# 軸にラベルを追加
+plt.xlabel(&#39;値&#39;)
+plt.ylabel(&#39;カウント&#39;)
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+# タイトルを追加
+plt.title(&#39;ヒストグラム&#39;)
+
+plt.show()
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/0dc8840ad6e3469f480e2b67375049ca2c456ad0365ec571340944f569fa2b0c.png" src="../../_images/0dc8840ad6e3469f480e2b67375049ca2c456ad0365ec571340944f569fa2b0c.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  Cell In [13], line 10
+    のビンでヒストグラムをプロットします。
+                      ^
+SyntaxError: invalid character &#39;。&#39; (U+3002)
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -805,16 +837,16 @@ document.write(`
 
 <span class="n">year</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;2003&quot;</span><span class="p">,</span> <span class="s2">&quot;2013&quot;</span><span class="p">,</span> <span class="s2">&quot;2023&quot;</span><span class="p">)</span>
 <span class="n">gdps</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;Japan&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">4519.56</span><span class="p">,</span> <span class="mf">5212.33</span><span class="p">,</span> <span class="mf">4409.74</span><span class="p">),</span>
-    <span class="s1">&#39;China&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1656.96</span><span class="p">,</span> <span class="mf">9624.93</span><span class="p">,</span> <span class="mf">19373.59</span><span class="p">),</span>
-    <span class="s1">&#39;America&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">11456.45</span><span class="p">,</span> <span class="mf">16843.23</span><span class="p">,</span> <span class="mf">26854.60</span><span class="p">),</span>
+    <span class="s1">&#39;日本&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">4519.56</span><span class="p">,</span> <span class="mf">5212.33</span><span class="p">,</span> <span class="mf">4409.74</span><span class="p">),</span>
+    <span class="s1">&#39;中国&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1656.96</span><span class="p">,</span> <span class="mf">9624.93</span><span class="p">,</span> <span class="mf">19373.59</span><span class="p">),</span>
+    <span class="s1">&#39;アメリカ&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">11456.45</span><span class="p">,</span> <span class="mf">16843.23</span><span class="p">,</span> <span class="mf">26854.60</span><span class="p">),</span>
 <span class="p">}</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">year</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span>  <span class="c1"># the label locations</span>
-<span class="n">width</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># the width of the bars</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">year</span><span class="p">))</span> <span class="o">*</span> <span class="mi">1</span>  <span class="c1"># ラベルの位置</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># バーの幅</span>
 <span class="n">multiplier</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">layout</span><span class="o">=</span><span class="s1">&#39;constrained&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">country</span><span class="p">,</span> <span class="n">gdp</span> <span class="ow">in</span> <span class="n">gdps</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">offset</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">multiplier</span>
@@ -823,7 +855,7 @@ document.write(`
     <span class="n">multiplier</span> <span class="o">+=</span> <span class="mi">1</span>
 
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;GDP (billion USD)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;GDP (10億USD)&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;GDP&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">width</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -833,13 +865,32 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/4c3f2711787f69f7476d503578c499962f6eeb22f99c55a91c43b4020fadf168.png" src="../../_images/4c3f2711787f69f7476d503578c499962f6eeb22f99c55a91c43b4020fadf168.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20740 (\N{CJK UNIFIED IDEOGRAPH-5104}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26085 (\N{CJK UNIFIED IDEOGRAPH-65E5}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26412 (\N{CJK UNIFIED IDEOGRAPH-672C}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20013 (\N{CJK UNIFIED IDEOGRAPH-4E2D}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 22269 (\N{CJK UNIFIED IDEOGRAPH-56FD}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12450 (\N{KATAKANA LETTER A}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12513 (\N{KATAKANA LETTER ME}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12522 (\N{KATAKANA LETTER RI}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12459 (\N{KATAKANA LETTER KA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/4690ebe65a671c3a5f977dc0e5b262741e5d7330521403e6eaf09185bbbd8d50.png" src="../../_images/4690ebe65a671c3a5f977dc0e5b262741e5d7330521403e6eaf09185bbbd8d50.png" />
 </div>
 </div>
 </section>
-</section>
-<section id="d-plots">
-<h2><span class="section-number">2.3.4. </span>5. 2D plots<a class="headerlink" href="#d-plots" title="Permalink to this headline">#</a></h2>
+<section id="d">
+<h2><span class="section-number">2.3.4. </span>5. 2D プロット<a class="headerlink" href="#d" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -851,7 +902,7 @@ document.write(`
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">im</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data2d</span><span class="p">)</span>
 
-<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Colorbar&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;カラーバー&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;sin(x)sin(y)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -859,12 +910,18 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/1d2b208472d97a0d083b64ce6b18377227d47c6c5347a9d1658a9aa16ae69f2d.png" src="../../_images/1d2b208472d97a0d083b64ce6b18377227d47c6c5347a9d1658a9aa16ae69f2d.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12540 (\N{KATAKANA-HIRAGANA PROLONGED SOUND MARK}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12496 (\N{KATAKANA LETTER BA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/470ac33a984ebd82ed57dc568393cc8c9bb2e7c40e713d39c99a46bc5912a5c0.png" src="../../_images/470ac33a984ebd82ed57dc568393cc8c9bb2e7c40e713d39c99a46bc5912a5c0.png" />
 </div>
 </div>
 </section>
-<section id="d-line-plots">
-<h2><span class="section-number">2.3.5. </span>6. 3D line plots<a class="headerlink" href="#d-line-plots" title="Permalink to this headline">#</a></h2>
+<section id="id5">
+<h2><span class="section-number">2.3.5. </span>6. 3D ラインプロット<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pos</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -882,24 +939,38 @@ document.write(`
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;parametric curve&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;パラメトリック曲線&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;3D Parametric Curve&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;3Dパラメトリック曲線&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/12bc214bab936542ba8531fff84a7dcd53389dc236b8f3d08577036fc3275520.png" src="../../_images/12bc214bab936542ba8531fff84a7dcd53389dc236b8f3d08577036fc3275520.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12497 (\N{KATAKANA LETTER PA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12488 (\N{KATAKANA LETTER TO}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12463 (\N{KATAKANA LETTER KU}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 26354 (\N{CJK UNIFIED IDEOGRAPH-66F2}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+/Users/kensuke/venv/lib/python3.9/site-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32218 (\N{CJK UNIFIED IDEOGRAPH-7DDA}) missing from current font.
+  fig.canvas.print_figure(bytes_io, **kw)
+</pre></div>
+</div>
+<img alt="../../_images/a0ab717b0e3250cd5db62328f0ed143a4e2c571a86db62afaf437852102f3bfa.png" src="../../_images/a0ab717b0e3250cd5db62328f0ed143a4e2c571a86db62afaf437852102f3bfa.png" />
 </div>
 </div>
 </section>
-<section id="d-surface-plot">
-<h2><span class="section-number">2.3.6. </span>7. 3D surface plot<a class="headerlink" href="#d-surface-plot" title="Permalink to this headline">#</a></h2>
+<section id="id6">
+<h2><span class="section-number">2.3.6. </span>7. 3D サーフェスプロット<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -909,21 +980,21 @@ document.write(`
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">subplot_kw</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;projection&quot;</span><span class="p">:</span> <span class="s2">&quot;3d&quot;</span><span class="p">})</span>
 
-<span class="c1"># Make data.</span>
+<span class="c1"># データを作成します。</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
 <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
 <span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
 
-<span class="c1"># Plot the surface.</span>
+<span class="c1"># サーフェスをプロットします。</span>
 <span class="n">surf</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c1"># Customize the z axis.</span>
+<span class="c1"># z軸をカスタマイズします。</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim</span><span class="p">(</span><span class="o">-</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">1.01</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">zaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">LinearLocator</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">zaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{x:.02f}</span><span class="s1">&#39;</span><span class="p">)</span>
 
-<span class="c1"># Add a color bar which maps values to colors.</span>
+<span class="c1"># 値を色にマッピングするカラーバーを追加します。</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1004,19 +1075,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-line">2.3.1. 1. Plot a line</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-color-marker-style-and-line-style">Change color, marker style and line style</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plt-semilogy-plots-the-y-axis-in-log-scale"><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> plots the y-axis in log scale.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.3.1. 1. 直線をプロットする</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">色、マーカースタイル、および線スタイルを変更する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plt-semilogy-y"><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> はy軸を対数スケールでプロットします。</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot">2.3.2. 2. Scatter plot</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histogram">2.3.3. 3. Histogram</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-another-histogram">Add another histogram</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-plots">2.3.4. 5. 2D plots</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-line-plots">2.3.5. 6. 3D line plots</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-surface-plot">2.3.6. 7. 3D surface plot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.3.2. 2. 散布図</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.3.3. 3. ヒストグラム</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d">2.3.4. 5. 2D プロット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.3.5. 6. 3D ラインプロット</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.3.6. 7. 3D サーフェスプロット</a></li>
 </ul>
   </nav></div>
 

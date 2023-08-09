@@ -13,35 +13,32 @@ kernelspec:
 
 # Python and Jupyterlab
 
-> Python is a clear and powerful object-oriented programming language. - python doc
 
-> JupyterLab is a flexible, extensible interface for interactive computing. - jupyter doc
+[Python](https://www.python.org/) とは、シンプルで最も人気のあるプログラミング言語であり、AIや機械学習、データ分析、データ可視化、Web、ゲームなどのさまざまな分野で使用されています。
 
-[Python](https://www.python.org/) is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.
-
-[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
+[JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) は、Python プログラミングのために作られた、Web ベースの次世代型ユーザーインターフェースです。
 
 Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyter-lab, refer to [venv](venv).
 
 +++
 
 ---
-## print() function
+## `print()` 関数
 
-`print()` function is the most basic function in python. It is used to print the value of any variable or expression.
-Here, we will see how to use `print()` function with the usage of jupyter lab(notebook).
+`print()` 関数は、Python で最も基本的な関数です。変数や式の値を表示するために使用されます。
+ここでは、jupyter lab(notebook) の使用方法とともに、`print()` 関数の使い方を見ていきます。
 
 +++
 
-To begin with, let us print string "Hello World" using `print()` function. 
-In jupyter lab(notebook), a code block is called a `cell`. A cell can contain multiple lines of code.
-To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter` key.
+まずは、`print()` 関数を使って文字列 "Hello World" を表示してみましょう。
+jupyter lab(notebook) では、コードブロックを `cell` と呼びます。`cell` には複数行のコードを記述することができます。
+コードを実行するには、`cell` をクリックしてから `Shift+Enter` キーを押します。
 
 ```{code-cell} ipython3
 print("Hello, world!")
 ```
 
-### comment
+### コメント
 
 +++
 
@@ -61,91 +58,95 @@ If you want to comment out multiple lines, you can use `""" """` to write commen
 """
 ```
 
-### Arithmetic operations
+プログラミングにおいて、コードの説明をするためにコメントを書くことがあります。Python では、`#` を使ってコメントを書くことができます。
+
+複数行のコメントを書きたい場合は、`""" """` を使ってコメントを書くことができます（実際には、これは docstrings と呼ばれます）。
+
+### 算術演算
 
 ```{code-cell} ipython3
 print(1+1)
 ```
 
-In programming, every object has a data type. For example, the number `1` has the data type `int`.
-The "Hello World" string has the data type `str`. If the data types are different, the operations will be performed differently.
+プログラミングにおいて、すべてのオブジェクトにはデータ型があります。例えば、数字の `1` はデータ型 `int` を持ちます。
+"Hello World" という文字列はデータ型 `str` を持ちます。データ型が異なる場合、演算は異なる方法で行われます。
 
-For example, `+` operator is used to add two numbers, and `+` operator is used to concatenate two strings.
+例えば、`+` 演算子は2つの数字を足すために使われ、`+` 演算子は2つの文字列を連結するために使われます。
 
 ```{code-cell} ipython3
-# you cannot use strings to do math.
+# 以下のように文字列を使って計算することはできません。
 print(3+4)
 print('3+4')
 print('3'+'4')
 ```
 
 ```{code-cell} ipython3
-# This will be an error. You can't add a number and a string. 
-# You need to convert the string to a number or vice versa.
+# これはエラーになります。数字と文字列を足すことはできません。
+# 文字列を数字に変換するか、数字を文字列に変換する必要があります。
 print(3+'4')
 ```
 
 ```{code-cell} ipython3
-a = 3 # This is a variable. 
-b = '4'
-print(a+b) # This will be the same as the above cell.
+a = 3 # これは変数です。
+b = '4' # これは変数です。
+print(a+b) # 上のセルと同じ結果になります。
 ```
 
 ```{code-cell} ipython3
-# print out several inputs with `,`
+# `,` を使って複数の入力を表示する
 print(a, b)
 ```
 
 ```{code-cell} ipython3
-print(a + int(b)) # This will convert the string to a number.
-print(str(a) + b) # This will convert the number to a string.
+print(a + int(b)) # これは文字列を数字に変換します。
+print(str(a) + b) # これは数字を文字列に変換します。
 ```
 
 ```{code-cell} ipython3
 # Basic arithmetic operations
-print('addition 1+1 = ', 1+1)
-print('subtraction 5-1 = ', 5-1)
-print('multiplication 2*2 = ', 2*2)
-print('division 5/2 = ', 5/2)
-print('modulus 5%2 = ', 5%2)
-print('floor division 5//2 = ', 5//2)
-print('exponentiation 5**2 = ', 5**2)
+print('足し算 1+1 = ', 1+1)
+print('引き算 5-1 = ', 5-1)
+print('掛け算 2*2 = ', 2*2)
+print('割り算 5/2 = ', 5/2)
+print('剰余 5%2 = ', 5%2)
+print('切り捨て割り算 5//2 = ', 5//2)
+print('累乗 5**2 = ', 5**2)
 ```
 
 ```{code-cell} ipython3
-# Instead of using a new line, you can use a semicolon.
+# 改行する代わりにセミコロンを使うこともできます。
 print('adsf'); print('asdf')
 ```
 
-### jupyter lab usage
+### jupyter lab の使い方
 
 +++
 
-Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
-If you want to write in markdown format, right click around the cell and press `m`, then `Shift+Enter`. You go back to code format by pressing `y`.
-Moreover, you can add a new cell by pressing `a` or `b`(`a` is for above, `b` is for below). 
-Others; `x`; cut a cell. `c` (Shift + `c` to copy multi cells); copy a cell. `v`; paste a cell. `z`; undo. 
+基本的に、コードセルはコードを書くために使われます。しかし、コードセルを使ってマークダウン形式でコメントを書くこともできます。
+マークダウン形式で書きたい場合は、セルの周りを右クリックして `m` を押してから `Shift+Enter` を押します。コード形式に戻すには `y` を押します。
+また、`a` または `b` を押すことで新しいセルを追加することができます（`a` は上に、`b` は下に追加されます）。
+その他の操作; `x`; セルを切り取る。`c`（複数のセルをコピーする場合は Shift + `c`）; セルをコピーする。`v`; セルを貼り付ける。`z`; 元に戻す。
 
-[Markdown usage](../basic/markdown.md)
+[マークダウンの使い方](../basic/markdown.md)
 
 +++
 
 ---
-## Collections(list, tuple, set, dictionary)
+## コレクション（リスト、タプル、セット、辞書）
 
-List, tuple, set, dictionary are used to store data in different ways.
+リスト、タプル、セット、辞書は、データを異なる方法で保存するために使われます。
 
 ```{code-cell} ipython3
 l = [3,4,5]
-index = 0 # index starts with 0
+index = 0 # インデックスは 0 から始まります。
 print(l[index])
 
-l[1] = 7 # You can change the value of an element in a list.
+l[1] = 7 # リストの要素の値は、変更することができます。
 print(l)
 ```
 
 ```{code-cell} ipython3
-# You can use different types of data in a list.
+# リストの要素には、異なるデータ型のデータを使うことができます。
 l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 ```
 
@@ -153,8 +154,8 @@ l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 t = (3,4,5)
 
 t[2] = 7
-# You can't change the value of an element in a tuple.
-# However, a tuple uses less memory than a list.
+# タプルの要素の値は、変更することができません。
+# しかし、タプルはリストよりもメモリを少ない使います。
 ```
 
 ```{code-cell} ipython3
@@ -166,17 +167,17 @@ print(s)
 d = {'a':3,'b':4,'c':5}
 print(d['a'])
 
-d['a'] = 6 # You can change the value of an element in a dictionary.
-d['d'] = 7 # You can add a new key-value pair to a dictionary.
+d['a'] = 6 # 辞書の要素の値は、変更することができます。
+d['d'] = 7 # 辞書には新しいキーと値のペアを追加することができます。
 print(d)
 
-print(d.items()) # This will return a list of all the key-value pairs in the dictionary.
-print(d.keys()) # This will return a list of all the keys in the dictionary.
-print(d.values()) # This will return a list of all the values in the dictionary.
+print(d.items()) # `items()` は、辞書のすべてのキーと値のペアをリストとして返します。
+print(d.keys()) # `keys()` は、辞書のすべてのキーをリストとして返します。
+print(d.values()) # `values()` は、辞書のすべての値をリストとして返します。
 ```
 
 ---
-## Open a file
+## ファイルを開く
 
 ```{code-cell} ipython3
 path = './sample.txt'
@@ -188,20 +189,20 @@ with open(path) as f:
 ```
 
 ---
-## For loops
+## For ループ
 
-`for loop` is used to iterate over a collection of items.
+`for loop` は、コレクションの要素を反復処理するために使われます。
 
 ```{code-cell} ipython3
 for i in range(5):
     print(i)
-# Index starts at 0.
+# インデックスは 0 から始まります。
 ```
 
 ```{code-cell} ipython3
 for i in range(5,10):
     print(i)
-# Index starts at 5.
+# インデックスは 5 から始まります。
 # cf. range(5,13,2)
 ```
 
@@ -209,7 +210,7 @@ for i in range(5,10):
 items = ['a','b','c','d','e']
 for i in items:
     print(i)
-# You can use a for loop to iterate over a list, tuple, dictionary, string, and so on.
+# `for loop` は、リスト、タプル、辞書、文字列などを反復処理するために使われます。
 
 print('-------------------------------')
 for i in range(len(items)):
@@ -227,7 +228,7 @@ for _ in range(5):
 ```
 
 ---
-## Comprehension
+## 内包表記
 
 ```{code-cell} ipython3
 [i for i in range(5)]
@@ -246,20 +247,20 @@ data = [3,14,23,28,35,46,55,65,76,87,98,109,120,131,142]
 [x if x>50 else x*10 for x in data]
 ```
 
-You can use list comprehension like below but it is not recommended because it is hard to read.
+リスト内包表記は、以下のように使うこともできますが、読みにくくなるのでおすすめしません。
 
 ```{code-cell} ipython3
-import numpy as np # This is a module. NumPy is a package that contains many useful functions for working with arrays.
+import numpy as np # これはモジュールです。NumPy は、配列を扱うための多くの便利な関数を含むパッケージです。
 a = np.arange(1,51)
 fizz_buzz = ['fizzbuzz' if x%3==0 and x%5==0 else 'fizz' if x%3==0 else 'buzz' if x%5==0 else x for x in a]
 print(fizz_buzz)
 ```
 
 ---
-## Functions
+## 関数
 
-`function` is a block of code which take inputs and returns outputs. It only runs when it is called. 
-Actually, most code we write consists of functions.
+`function` は、入力を受け取り、出力を返すコードのブロックです。呼び出されたときにのみ実行されます。
+実際には、私たちが書くコードのほとんどは、関数で構成されています。
 
 ```{code-cell} ipython3
 def print_hello():
@@ -280,8 +281,8 @@ myfunc(3, 'Hello')
 ```
 
 ```{code-cell} ipython3
-import numpy as np # NumPy is a package that contains many useful functions for working with arrays.
-import matplotlib.pyplot as plt # Matplotlib is a package that contains many useful functions for plotting.
+import numpy as np
+import matplotlib.pyplot as plt # Matplotlib は、グラフを描画するための多くの便利な関数を含むパッケージです。
 
 x = np.linspace(0,10, 100)
 y = np.sin(x)
@@ -296,7 +297,7 @@ plt.title('sin')
 plt.show()
 ```
 
-### lambda functions
+### ラムダ関数
 
 +++
 
@@ -308,5 +309,5 @@ f = lambda x: x**2
 print(f(3))
 ```
 
-## Reference
+## 参考資料
 [Python Beginners Guide](https://wiki.python.org/moin/BeginnersGuide/Programmers)
