@@ -491,35 +491,35 @@ document.write(`
 <section id="id2">
 <h2><span class="section-number">7.1.2. </span>安全なインターネット接続<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>VPNの使用</p></li>
+<li><p>VPN の使用</p></li>
 <li><p><a class="reference external" href="https://developers.cloudflare.com/1.1.1.1/setup/">Cloudfare</a> の有効化</p></li>
-<li><p>ECHの有効化</p></li>
-<li><p>WebRTCの無効化</p></li>
+<li><p>ECH の有効化</p></li>
+<li><p>WebRTC の無効化</p></li>
 </ul>
 <section id="vpn">
 <h3>VPN<a class="headerlink" href="#vpn" title="Permalink to this headline">#</a></h3>
-<p>仮想プライベートネットワーク（VPN）は、IPアドレスの隠蔽、インターネットトラフィックの暗号化、および地域制限のあるコンテンツへのアクセスなどの機能を提供します。</p>
+<p>仮想プライベートネットワーク（VPN）は、IP アドレスの隠蔽、インターネットトラフィックの暗号化、および地域制限のあるコンテンツへのアクセスなどの機能を提供します。</p>
 </section>
 <section id="cloudflare-doh-dns-over-https">
 <h3>Cloudflare を使用した DoH（DNS-over-HTTPS）の有効化<a class="headerlink" href="#cloudflare-doh-dns-over-https" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:preferences#general</span></code> に移動します。</p></li>
+<li><p>Firefox を開き、<code class="docutils literal notranslate"><span class="pre">about:preferences#general</span></code> に移動します。</p></li>
 <li><p>ページを下にスクロールし、<code class="docutils literal notranslate"><span class="pre">ネットワーク設定</span></code> の　<code class="docutils literal notranslate"><span class="pre">設定</span></code> をクリックします。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">DNS</span> <span class="pre">over</span> <span class="pre">HTTPSを有効にする</span></code> を選択し、プロバイダとして <code class="docutils literal notranslate"><span class="pre">Cloudflare</span></code> を選択します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> をクリックしてタブを閉じます。</p></li>
 </ol>
 <p>または</p>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p>Firefox を開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">network.trr</span></code> を検索します。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.mode</span></code> を <code class="docutils literal notranslate"><span class="pre">2</span></code> または <code class="docutils literal notranslate"><span class="pre">3</span></code> に設定します（<code class="docutils literal notranslate"><span class="pre">2</span></code> : TRR優先、DNSにフォールバック、<code class="docutils literal notranslate"><span class="pre">3</span></code> : TRRのみ）。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">network.trr.mode</span></code> を <code class="docutils literal notranslate"><span class="pre">2</span></code> または <code class="docutils literal notranslate"><span class="pre">3</span></code> に設定します（<code class="docutils literal notranslate"><span class="pre">2</span></code> : TRR 優先、DNS にフォールバック、<code class="docutils literal notranslate"><span class="pre">3</span></code> : TRR のみ）。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">network.trr.uri</span></code> を <code class="docutils literal notranslate"><span class="pre">https://mozilla.cloudflare-dns.com/dns-query</span></code> に設定します。</p></li>
 </ol>
 </section>
 <section id="ech">
 <h3>ECH（暗号化されたクライアントハロー）の有効化<a class="headerlink" href="#ech" title="Permalink to this headline">#</a></h3>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p>Firefox を開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">network.dns</span></code> を検索します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">network.dns.echconfig.enabled</span></code> を <code class="docutils literal notranslate"><span class="pre">true</span></code> に設定します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">network.dns.http3_echconfig.enabled</span></code> を <code class="docutils literal notranslate"><span class="pre">true</span></code> に設定します。</p></li>
@@ -530,11 +530,11 @@ document.write(`
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>WebRTC
-👉 WebRTC は Web リアルタイムコミュニケーションの略です。これは、ブラウザ間でプラグインや外部ソフトウェアなしに直接インターネット上でオーディオやビデオ通信を可能にする技術です。ビデオ会議などのリアルタイム通信に役立つ一方、IPアドレスの漏洩の可能性があり、プライバシー上の懸念があります。ブラウザでの WebRTC の無効化は、IPアドレスの漏洩を防ぐのに役立ちます。</p>
+👉 WebRTC は Web リアルタイムコミュニケーションの略です。これは、ブラウザ間でプラグインや外部ソフトウェアなしに直接インターネット上でオーディオやビデオ通信を可能にする技術です。ビデオ会議などのリアルタイム通信に役立つ一方、IP アドレスの漏洩の可能性があり、プライバシー上の懸念があります。ブラウザでの WebRTC の無効化は、IP アドレスの漏洩を防ぐのに役立ちます。</p>
 </div>
-<p>WebRTCの無効化:</p>
+<p>WebRTC の無効化:</p>
 <ol class="arabic simple">
-<li><p>Firefoxを開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
+<li><p>Firefox を開き、<code class="docutils literal notranslate"><span class="pre">about:config</span></code> に移動します。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">media.peerconnection.enabled</span></code> を検索し、<code class="docutils literal notranslate"><span class="pre">false</span></code> に設定します。</p></li>
 </ol>
 <p><a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/webrtc-leak-shield/">WebRTC Leak Shield</a>：この拡張機能を使用すると、上記の設定を簡単に切り替えることができます。</p>
@@ -544,10 +544,10 @@ document.write(`
 <h2><span class="section-number">7.1.3. </span>テスト<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.cloudflare.com/ssl/encrypted-sni/#results">Cloudflare Browser Check</a></p></li>
-<li><p><a class="reference external" href="https://ip8.com/webrtc-test">WebRTCテスト</a></p></li>
-<li><p><a class="reference external" href="https://dnsleaktest.org/dns-leak-test">DNSリークテスト</a></p></li>
+<li><p><a class="reference external" href="https://ip8.com/webrtc-test">WebRTC テスト</a></p></li>
+<li><p><a class="reference external" href="https://dnsleaktest.org/dns-leak-test">DNS リークテスト</a></p></li>
 </ul>
-<p><a class="reference external" href="https://www.cloudflare.com/ssl/encrypted-sni/#results">Cloudflare Browser Check</a>をパスすると、次のように表示されます：</p>
+<p><a class="reference external" href="https://www.cloudflare.com/ssl/encrypted-sni/#results">Cloudflare Browser Check</a> をパスすると、次のように表示されます：</p>
 <a class="reference internal image-reference" href="../../../_images/cloudflare-test.png"><img alt="Cloudflare Browser Check" src="../../../_images/cloudflare-test.png" style="width: 600px;" /></a>
 </section>
 </section>
