@@ -763,41 +763,34 @@ document.write(`
 <p>別のヒストグラムを追加します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>np.random.seed(0)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-# 平均0、標準偏差 1 の正規分布から 10000 個の乱数を生成します。
-x = np.random.normal(0, 1, 10000)
-# 平均2、標準偏差 0.5 の正規分布から 10000 個の乱数を生成します。
-y = np.random.normal(2, 0.5, 10000)
+<span class="c1"># 平均0、標準偏差 1 の正規分布から 10000 個の乱数を生成します。</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="c1"># 平均2、標準偏差 0.5 の正規分布から 10000 個の乱数を生成します。</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 
-# 50
+<span class="c1"># 50 のビンでヒストグラムをプロットします。</span>
+<span class="c1"># `alpha` は棒の透明度です。複数のヒストグラムを比較するために使用されます。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 
-のビンでヒストグラムをプロットします。
-# `alpha` は棒の透明度です。複数のヒストグラムを比較するために使用されます。
-plt.hist(x, bins=50, color=&#39;blue&#39;, alpha=0.5, label=&#39;x&#39;)
-plt.hist(y, bins=50, color=&#39;green&#39;, alpha=0.5, label=&#39;y&#39;)
+<span class="c1"># 凡例を表示します。これは `hist()` 関数で定義された `label` を使用します。</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
-# 凡例を表示します。これは `hist()` 関数で定義された `label` を使用します。
-plt.legend()
+<span class="c1"># 軸にラベルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
 
-# 軸にラベルを追加
-plt.xlabel(&#39;value&#39;)
-plt.ylabel(&#39;count&#39;)
+<span class="c1"># タイトルを追加</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Histogram&#39;</span><span class="p">)</span>
 
-# タイトルを追加
-plt.title(&#39;Histogram&#39;)
-
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  Cell In [13], line 10
-    のビンでヒストグラムをプロットします。
-                      ^
-SyntaxError: invalid character &#39;。&#39; (U+3002)
-</pre></div>
-</div>
+<img alt="../../_images/0dc8840ad6e3469f480e2b67375049ca2c456ad0365ec571340944f569fa2b0c.png" src="../../_images/0dc8840ad6e3469f480e2b67375049ca2c456ad0365ec571340944f569fa2b0c.png" />
 </div>
 </div>
 <div class="cell docutils container">
