@@ -1,6 +1,7 @@
 # Welcome to my Jupyter Book
 
 - [プログラミング基礎](pages/basic/basic.md)
+- [Python](pages/python/python.md)
 - [コーディングルール](pages/coding-rules/coding-rules.md)
 - [Latex](pages/latex/latex.md)
 - [Jupyer book](pages/jb/jb.md)
