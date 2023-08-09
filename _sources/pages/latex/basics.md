@@ -144,7 +144,7 @@ $$
 | `\vdots`       | $\vdots$      |
 | `\ddots`       | $\ddots$      |
 | `\therefore`   | $\therefore$  |
-| `\because`     | $\because
+| `\because`     | $\because$    |
 | `\clubsuit`    | $\clubsuit$   |
 | `\diamondsuit` | $\diamondsuit$|
 | `\heartsuit`   | $\heartsuit$  |
