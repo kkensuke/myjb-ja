@@ -49,7 +49,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # タイトルを追加
-plt.title('正方関数')
+plt.title('Square function')
 
 plt.show()
 ```
@@ -61,7 +61,7 @@ x = np.linspace(-5, 5, 10)
 y = square(x)
 
 # プロット関数内で色、マーカー、および線スタイルを指定できます。
-plt.plot(x, y, color='red', marker='o', linestyle='--', label='ラベル')
+plt.plot(x, y, color='red', marker='o', linestyle='--', label='label')
 
 # 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
 plt.legend()
@@ -71,7 +71,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # タイトルを追加
-plt.title('正方関数')
+plt.title('Square function')
 
 plt.show()
 ```
@@ -89,8 +89,8 @@ y = square(x)
 z = cube(x)
 
 # プロット関数内で色、マーカー、および線スタイルを指定できます。
-plt.plot(x, y, color='red', marker='o', linestyle='--', label='正方')
-plt.plot(x, z, color='blue', marker='x', linestyle='-', label='立方')
+plt.plot(x, y, color='red', marker='o', linestyle='--', label='Square')
+plt.plot(x, z, color='blue', marker='x', linestyle='-', label='Cube')
 
 # 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
 plt.legend()
@@ -100,7 +100,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # タイトルを追加
-plt.title('正方と立方の関数')
+plt.title('Square function and cube function')
 
 plt.show()
 ```
@@ -113,8 +113,8 @@ y = square(x)
 z = cube(x)
 
 # プロット関数内で色、マーカー、および線スタイルを指定できます。
-plt.semilogy(x, y, color='red', marker='o', linestyle='--', label='正方')
-plt.semilogy(x, z, color='blue', marker='x', linestyle='-', label='立方')
+plt.semilogy(x, y, color='red', marker='o', linestyle='--', label='Square')
+plt.semilogy(x, z, color='blue', marker='x', linestyle='-', label='Cube')
 
 # 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
 plt.legend()
@@ -124,7 +124,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # タイトルを追加
-plt.title('正方と立方の関数')
+plt.title('Square function and cube function')
 
 plt.show()
 ```
@@ -134,7 +134,7 @@ x = np.linspace(-5, 5, 10)
 y = np.exp(x)
 
 # プロット関数内で色、マーカー、および線スタイルを指定できます。
-plt.semilogy(x, y, label='指数関数')
+plt.semilogy(x, y, label='Exponential')
 
 # 凡例を表示します。これは `plot()` 関数で定義された `label` を使用します。
 plt.legend()
@@ -144,7 +144,7 @@ plt.xlabel('x')
 plt.ylabel('exp(x)')
 
 # タイトルを追加
-plt.title('指数関数')
+plt.title('Exponential function')
 
 plt.show()
 ```
@@ -205,11 +205,11 @@ plt.hist(y, bins=50, color='green', alpha=0.5, label='y')
 plt.legend()
 
 # 軸にラベルを追加
-plt.xlabel('値')
-plt.ylabel('カウント')
+plt.xlabel('value')
+plt.ylabel('count')
 
 # タイトルを追加
-plt.title('ヒストグラム')
+plt.title('Histogram')
 
 plt.show()
 ```
@@ -220,9 +220,9 @@ import numpy as np
 
 year = ("2003", "2013", "2023")
 gdps = {
-    '日本': (4519.56, 5212.33, 4409.74),
-    '中国': (1656.96, 9624.93, 19373.59),
-    'アメリカ': (11456.45, 16843.23, 26854.60),
+    'Japan': (4519.56, 5212.33, 4409.74),
+    'China': (1656.96, 9624.93, 19373.59),
+    'USA': (11456.45, 16843.23, 26854.60),
 }
 
 x = np.arange(len(year)) * 1  # ラベルの位置
@@ -238,7 +238,7 @@ for country, gdp in gdps.items():
     multiplier += 1
 
 
-ax.set_ylabel('GDP (10億USD)')
+ax.set_ylabel('GDP (billion USD)')
 ax.set_title('GDP')
 ax.set_xticks(x + width, year)
 ax.legend(loc='upper left', ncols=3)
@@ -258,7 +258,7 @@ data2d = np.sin(t)[:, np.newaxis] * np.sin(t)[np.newaxis, :]
 fig, ax = plt.subplots()
 im = ax.imshow(data2d)
 
-fig.colorbar(im, ax=ax, label='カラーバー')
+fig.colorbar(im, ax=ax, label='Colorbar')
 
 ax.set_title('sin(x)sin(y)')
 plt.show()
@@ -282,13 +282,13 @@ x, y, z = pos(t)
 fig = plt.figure(figsize=(6, 6))
 ax = fig.add_subplot(projection='3d')
 
-ax.plot(x, y, z, label='パラメトリック曲線')
+ax.plot(x, y, z, label='parametric curve')
 
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 
-ax.set_title("3Dパラメトリック曲線")
+ax.set_title("3D Parametric Curve")
 plt.show()
 ```
 
