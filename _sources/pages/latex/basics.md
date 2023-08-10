@@ -20,12 +20,12 @@ Latexの基本
 ````{admonition} 例
 
 ```latex
-シュレディンガー方程式は
+シュレディンガー方程式:
 $$
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
 $$
 ```
-シュレディンガー方程式は
+シュレディンガー方程式:
 
 $$
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
