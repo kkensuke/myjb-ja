@@ -95,13 +95,13 @@ bibtex_bibfiles:
 # Launch button settings
 
 launch_buttons:
-  notebook_interface        : jupyterlab            # The interface interactive links will activate ["classic", "jupyterlab"]
+  # notebook_interface        : "jupyterlab"          # or "classic"
   # binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
                                                     # If your Jupyter Book is hosted online on GitHub,
                                                     # you can automatically insert buttons that link to the Jupyter Notebook running in a BinderHub.
-  jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  # jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : false                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
-  colab_url                 : https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
+  # colab_url                 : https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:                           # Information about where the book exists on the web
   url                       : https://github.com/kkensuke/myjb-ja  # The URL to your book's repository
@@ -119,6 +119,7 @@ sphinx:
     myst_heading_anchors    : 3           # The heading level at which to generate anchors. Without this, internal links will not work.
     nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
                                           # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
+    latex_toplevel_sectioning: 'chapter'  # 'part'
     bibtex_reference_style  : author_year # and label, super
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
                                           # By default MathJax version 2 is currently used.
@@ -132,4 +133,3 @@ sphinx:
         macros:
           "ket"             : ["|#1\\rangle",1]      # just an example
           "bra"             : ["\\langle#1|",1]      # just an example
-    latex_toplevel_sectioning: 'chapter'  # 'part'

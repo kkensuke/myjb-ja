@@ -505,13 +505,13 @@ document.write(`
 <li><p>ブランチ（branch）： ブランチとは、メインのプトジェクトのソースコードとは独立した開発ラインで、メインのプトジェクトのソースコードに影響を与えずに新機能を試したいときに使用します。</p></li>
 <li><p>マージ（merge）： マージとは、あるブランチからの変更を別のブランチにまとめることです。これは通常、ある機能が完成してメインのプトジェクトのソースコードに統合する準備ができたときに行います。</p></li>
 </ul>
-<p>これらは、Gitで使われる最も一般的な用語や概念のほんの一部です。Gitを学ぶには時間がかかりますが、チームで働く開発者にとっては重要なスキルです。</p>
+<p>これらは、Git で使われる最も一般的な用語や概念のほんの一部です。Git を学ぶには時間がかかりますが、チームで働く開発者にとっては重要なスキルです。</p>
 </section>
 <section id="id1">
 <h2><span class="section-number">1.7.2. </span>基本コマンド<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <section id="id2">
 <h3>新しいリポジトリの作成<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
-<p>まず、<a class="reference external" href="https://github.com/">GitHubのウェブサイト</a>で初期化せずに新しいリポジトリを作成します。
+<p>まず、<a class="reference external" href="https://github.com/">GitHub のウェブサイト</a>で初期化せずに新しいリポジトリを作成します。
 次に、ローカルコンピュータ上で以下のコマンドを実行します。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mkdir プロジェクト名<span class="o">]</span>
 <span class="o">[</span><span class="nb">cd</span> プロジェクト名<span class="o">]</span>
@@ -550,7 +550,7 @@ git push -u origin main
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>GitHub CLIを使用すると、リポジトリをより簡単に作成できます：<a class="reference internal" href="#github-cli"><span class="std std-ref">GitHub CLIで新しいリポジトリを作成する</span></a></p>
+<p>GitHub CLI を使用すると、リポジトリをより簡単に作成できます：<a class="reference internal" href="#github-cli"><span class="std std-ref">GitHub CLIで新しいリポジトリを作成する</span></a></p>
 </div>
 </section>
 <section id="id4">
@@ -627,7 +627,7 @@ $ git checkout &lt;ブランチ名&gt;
 </section>
 <section id="gitignore">
 <h3>.gitignore<a class="headerlink" href="#gitignore" title="Permalink to this headline">#</a></h3>
-<p>GitHubで追跡したくないファイルを無視するようにGitを設定することができます。
+<p>GitHub で追跡したくないファイルを無視するように Git を設定することができます。
 <code class="docutils literal notranslate"><span class="pre">.git</span></code> と同じディレクトリにある <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> にファイル名を書くだけです。</p>
 <p>ただし、Gitのコントロール下にある各ディレクトリに <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> を毎回作成し、そこにファイル名を書き込むことは面倒です。<a class="reference external" href="https://www.toptal.com/developers/gitignore/api/">gitignore.io ウェブサイト</a>または <a class="reference external" href="https://docs.gitignore.io">gitignore.io CLI</a> を使用して <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> を簡単に作成できます。</p>
 <p>一部のファイルに関しては、毎回 <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> にファイル名を追加することになるかもしれません。<code class="docutils literal notranslate"><span class="pre">~/.gitignore_global</span></code> を作成すれば、すべてのリポジトリにおいて、そこに書かれたファイルの変更を無視できます。</p>
@@ -651,7 +651,7 @@ $ git checkout &lt;ブランチ名&gt;
 <section id="id7">
 <h3>リポジトリの名前を変更したい場合<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p>まず、GitHubのウェブサイトでリポジトリの名前を変更します。</p></li>
+<li><p>まず、GitHub のウェブサイトでリポジトリの名前を変更します。</p></li>
 <li><p>次に、対応する [.git/ -&gt; config] ファイルを開き、[url = https://~.&lt;ここに変更した名前&gt;.git] とします。</p></li>
 </ul>
 </section>
@@ -674,7 +674,7 @@ $ git commit -m <span class="s2">&quot;削除&quot;</span><span class="p">;</spa
 <section id="id9">
 <h3>他のユーザーをプライベートリポジトリに招待する<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p>GitHubのウェブサイトで、リポジトリの設定を開きます。</p></li>
+<li><p>GitHub のウェブサイトで、リポジトリの設定を開きます。</p></li>
 <li><p>左のメニューから「Collaborators」を選択します。</p></li>
 <li><p>「Manage access」にある「Add people」をクリックします。</p></li>
 <li><p>招待したいユーザーのユーザー名を入力します。</p></li>

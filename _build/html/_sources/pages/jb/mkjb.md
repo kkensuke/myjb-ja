@@ -1,88 +1,107 @@
 # Jupyter Book の作成
 
-Jupyter Book をゼロから作成してみましょう。
+> Jupyter Book とは、さまざまな形式のドキュメント（HTML, PDF, ePUB など）を作成する Sphinx というツールと、MyST Markdown というサイエンスのドキュメントに適したマークダウンを融合させたツールです。Jupyter Book は、ドキュメント、研究、教育資料などを公開するために、Jupyter エコシステムで広く使われています。
 
-```zsh
-~/jupyter-book
-	└── test-book
-	    ├── venv
-	    └── test-book
-```
+このページでは、Jupyter Book をゼロから作成してみます！
 
 ## Jupyter Book を作成する
 
 ### ディレクトリを作成する
 最初に、以下のディレクトリ構造を作成し、venv（仮想環境）をアクティベートします。
-```zsh
-$ mkdir -p ~/jupyter-book/test-book
-$ cd ~/jupyter-book/test-book
+
+```bash
+./jupyter-book
+	└── test-book
+	    ├── venv
+```
+
+```bash
+$ mkdir -p ./jupyter-book/test-book
+$ cd ./jupyter-book/test-book
 
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 
 どのPythonが実行されているかを確認します：
-```zsh
-$ which python
+```bash
+(venv)$ which python
 ```
 出力から venv 内の Python が使用されていることがわかります。
 
+
+````{note}
 必要に応じてpipを更新する必要がある場合があります。その場合は、次のコマンドを使用します（`<Username>`をご自分のユーザー名に置き換えてください）。\
 pipを更新する：
-```zsh
-$ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
+```bash
+(venv)$ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 ```
+````
+
 
 ### jupyter-book パッケージをインストールする
-```zsh
+```bash
 (venv)$ pip install -U jupyter-book
 ```
 
 ### 新しい Jupyter Book を作成する。
-```zsh
-$ jb create test-book
-$ cd test-book
-$ jb build .
-$ open /Applications/Safari.app _build/html/index.html
+```bash
+./jupyter-book
+	└── test-book
+	    ├── venv
+	    └── test-book
+                ├── _condig.yml
+                ├── _toc.yml
+                ├── ...
 ```
-（jbはjupyter-bookの略）
+
+```bash
+(venv)$ jb create test-book
+(venv)$ cd test-book
+(venv)$ jb build .
+(venv)$ open /Applications/Safari.app _build/html/index.html
+```
+
+```{note}
+jb は jupyter-book の略です。
+```
+
+無事、ビルドが完了すると、terminal に次のような HTML のファイル URL: `file:///Users/<Username>/path/to/jupyterbook/test-book/test-book/_build/html/index.html`` が出力されるので、それをブラウザに貼り付けて、確認してみてください。
 
 
 ## 公開する
 まず、GitHubのウェブサイト上で `test-book` という名前のリポジトリを初期化せずに作成します。
 次に、ローカルコンピュータ上の `test-book` ディレクトリで以下のコマンドを実行します。
-```zsh
-echo "# test-book" >> README.md
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/<Username>/test-book.git
-git push -u origin main
+```bash
+(venv)$ echo "# test-book" >> README.md
+(venv)$ git init
+(venv)$ git add .
+(venv)$ git commit -m "first commit"
+(venv)$ git branch -M main
+(venv)$ git remote add origin https://github.com/<Username>/test-book.git
+(venv)$ git push -u origin main
 ```
 
-```zsh
-$ pip install ghp-import
-$ ghp-import -n -p -f _build/html
+```bash
+(venv)$ pip install ghp-import
+(venv)$ ghp-import -n -p -f _build/html
 ```
 
-公開されたウェブサイトは `https://\<Username\>.github.io/test-book/intro.html` で確認できます。サイトが公開されるまでに数分かかる場合があります。
+公開されたウェブサイトは `https://<Username>.github.io/test-book/intro.html` で確認できます。サイトが公開されるまでに数分かかる場合があります。
 
 
 ## 更新する
-ソースコードを変更した後、以下のコマンドでウェブサイトを更新できます。
+ソースコードを変更した後は、以下のコマンドでウェブサイトを更新できます。
 
-```zsh
-$ cd test-book
-$ jb build --all .
-$ git add .
-$ git commit -m "コメント"
-$ git push origin main
-```
+```bash
+(venv)$ cd test-book
+(venv)$ jb build --all .
 
-GitHub Pages を更新する
-```zsh
-$ ghp-import -n -p -f _build/html
+(venv)$ git add .
+(venv)$ git commit -m "comment"
+(venv)$ git push origin main
+
+(venv)$ ghp-import -n -p -f _build/html
 ```
 
 

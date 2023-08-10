@@ -479,84 +479,101 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book">
 <h1><span class="section-number">5.1. </span>Jupyter Book の作成<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">#</a></h1>
-<p>Jupyter Book をゼロから作成してみましょう。</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>~/jupyter-book
-	└── test-book
-	    ├── venv
-	    └── test-book
-</pre></div>
-</div>
+<blockquote>
+<div><p>Jupyter Book とは、さまざまな形式のドキュメント（HTML, PDF, ePUB など）を作成する Sphinx というツールと、MyST Markdown というサイエンスのドキュメントに適したマークダウンを融合させたツールです。Jupyter Book は、ドキュメント、研究、教育資料などを公開するために、Jupyter エコシステムで広く使われています。</p>
+</div></blockquote>
+<p>このページでは、Jupyter Book をゼロから作成してみます！</p>
 <section id="id1">
 <h2><span class="section-number">5.1.1. </span>Jupyter Book を作成する<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <section id="id2">
 <h3>ディレクトリを作成する<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>最初に、以下のディレクトリ構造を作成し、venv（仮想環境）をアクティベートします。</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ~/jupyter-book/test-book
-$ <span class="nb">cd</span> ~/jupyter-book/test-book
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
+	└── test-book
+	    ├── venv
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ./jupyter-book/test-book
+$ <span class="nb">cd</span> ./jupyter-book/test-book
 
 $ python3 -m venv venv
 $ <span class="nb">source</span> venv/bin/activate
 </pre></div>
 </div>
 <p>どのPythonが実行されているかを確認します：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ which python
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ which python
 </pre></div>
 </div>
 <p>出力から venv 内の Python が使用されていることがわかります。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>必要に応じてpipを更新する必要がある場合があります。その場合は、次のコマンドを使用します（<code class="docutils literal notranslate"><span class="pre">&lt;Username&gt;</span></code>をご自分のユーザー名に置き換えてください）。<br />
 pipを更新する：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ /Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ /Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 </pre></div>
+</div>
 </div>
 </section>
 <section id="id3">
 <h3>jupyter-book パッケージをインストールする<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
 </pre></div>
 </div>
 </section>
 <section id="id4">
 <h3>新しい Jupyter Book を作成する。<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ jb create test-book
-$ <span class="nb">cd</span> test-book
-$ jb build .
-$ open /Applications/Safari.app _build/html/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
+	└── test-book
+	    ├── venv
+	    └── test-book
+                ├── _condig.yml
+                ├── _toc.yml
+                ├── ...
 </pre></div>
 </div>
-<p>（jbはjupyter-bookの略）</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ jb create test-book
+<span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
+<span class="o">(</span>venv<span class="o">)</span>$ jb build .
+<span class="o">(</span>venv<span class="o">)</span>$ open /Applications/Safari.app _build/html/index.html
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>jb は jupyter-book の略です。</p>
+</div>
+<p>無事、ビルドが完了すると、terminal に次のような HTML のファイル URL: `file:///Users/<Username>/path/to/jupyterbook/test-book/test-book/_build/html/index.html`` が出力されるので、それをブラウザに貼り付けて、確認してみてください。</p>
 </section>
 </section>
 <section id="id5">
 <h2><span class="section-number">5.1.2. </span>公開する<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <p>まず、GitHubのウェブサイト上で <code class="docutils literal notranslate"><span class="pre">test-book</span></code> という名前のリポジトリを初期化せずに作成します。
 次に、ローカルコンピュータ上の <code class="docutils literal notranslate"><span class="pre">test-book</span></code> ディレクトリで以下のコマンドを実行します。</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
-git init
-git add .
-git commit -m <span class="s2">&quot;first commit&quot;</span>
-git branch -M main
-git remote add origin https://github.com/&lt;Username&gt;/test-book.git
-git push -u origin main
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
+<span class="o">(</span>venv<span class="o">)</span>$ git init
+<span class="o">(</span>venv<span class="o">)</span>$ git add .
+<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;first commit&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$ git branch -M main
+<span class="o">(</span>venv<span class="o">)</span>$ git remote add origin https://github.com/&lt;Username&gt;/test-book.git
+<span class="o">(</span>venv<span class="o">)</span>$ git push -u origin main
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ pip install ghp-import
-$ ghp-import -n -p -f _build/html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install ghp-import
+<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
-<p>公開されたウェブサイトは <code class="docutils literal notranslate"><span class="pre">https://\&lt;Username\&gt;.github.io/test-book/intro.html</span></code> で確認できます。サイトが公開されるまでに数分かかる場合があります。</p>
+<p>公開されたウェブサイトは <code class="docutils literal notranslate"><span class="pre">https://&lt;Username&gt;.github.io/test-book/intro.html</span></code> で確認できます。サイトが公開されるまでに数分かかる場合があります。</p>
 </section>
 <section id="id6">
 <h2><span class="section-number">5.1.3. </span>更新する<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
-<p>ソースコードを変更した後、以下のコマンドでウェブサイトを更新できます。</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> test-book
-$ jb build --all .
-$ git add .
-$ git commit -m <span class="s2">&quot;コメント&quot;</span>
-$ git push origin main
-</pre></div>
-</div>
-<p>GitHub Pages を更新する</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ ghp-import -n -p -f _build/html
+<p>ソースコードを変更した後は、以下のコマンドでウェブサイトを更新できます。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
+<span class="o">(</span>venv<span class="o">)</span>$ jb build --all .
+
+<span class="o">(</span>venv<span class="o">)</span>$ git add .
+<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;comment&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$ git push origin main
+
+<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
 </section>
