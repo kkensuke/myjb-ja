@@ -1,28 +1,13 @@
-# Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
 #######################################################################################
 # Book settings
 title                       : My note  # The title of the book. Will be placed in the left navbar.
 author                      : kkensuke           # The author of the book
-#authors                     :
 email                       :
 copyright                   : "2023"           # Copyright year to be placed in the footer
 logo                        : mylogo.png         # A path to the book logo
-#organization                :
-#address                     :
-#contact                     :
-#version                     :
-#release                     :
-#revision                    :
-#status                      :
-#date                        :
-#dedication                  :
 abstract                    : note
-
-# Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-# exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .gitignore, develop]
-#Auto-exclude files not in the toc
 only_build_toc_files        : true
 
 #######################################################################################
@@ -69,16 +54,14 @@ html:
   use_issues_button         : true  # Whether to add an "open an issue" button
   use_multitoc_numbering    : true  # Continuous numbering across parts/chapters
   extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a> <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kkensuke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script> # <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KHZEE5Y57R'); </script>
- # Will be displayed underneath the footer.
-  google_analytics_id       : G-4Q7VES7N4C # A GA id that can be used to track book views.
+  extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a> <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kkensuke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script> # Will be displayed underneath the footer.
+  google_analytics_id       : G-KHZEE5Y57R # A GA id that can be used to track book views.
   home_page_in_navbar       : false # Whether to include your home page in the left Navigation Bar
-  baseurl                   : ""    # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     announcement            : ""    # A banner announcement at the top of the site.
     hypothesis              : true
     utterances              :
-      repo                  : "kkensuke/myjb-ja"
+      repo                  : "kkensuke/myjb"
 
 #######################################################################################
 # LaTeX-specific settings
@@ -95,27 +78,20 @@ bibtex_bibfiles:
 # Launch button settings
 
 launch_buttons:
-  # notebook_interface        : "jupyterlab"          # or "classic"
-  # binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
-                                                    # If your Jupyter Book is hosted online on GitHub,
-                                                    # you can automatically insert buttons that link to the Jupyter Notebook running in a BinderHub.
-  # jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : false                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
   # colab_url                 : https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:                           # Information about where the book exists on the web
-  url                       : https://github.com/kkensuke/myjb-ja  # The URL to your book's repository
-  path_to_book              : /       # A path to your book's folder, relative to the repository root.
+  url                       : https://github.com/kkensuke/myjb  # The URL to your book's repository
+  path_to_book              : ""      # A path to your book's folder, relative to the repository root.
   branch                    : main    # Which branch of the repository should be used when creating links
 
 #######################################################################################
 # Advanced and power-user settings https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
 sphinx:
-  extra_extensions          :             # A list of extra extensions to load by Sphinx (added to those already used by JB).
-  local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
-    html_baseurl            : https://kkensuke.github.io/myjb-ja/intro.html
+    html_baseurl            : https://kkensuke.github.io/myjb/intro.html
     myst_heading_anchors    : 3           # The heading level at which to generate anchors. Without this, internal links will not work.
     nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
                                           # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
