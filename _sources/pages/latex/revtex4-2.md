@@ -1,4 +1,5 @@
 # revtex4-2
+> last modified: {sub-ref}`today`
 
 ## `preamble.tex`
 ```latex

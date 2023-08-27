@@ -1,4 +1,5 @@
 # Python
+> last modified: {sub-ref}`today`
 
 - [Python and JupyterLab](./basics.md)
 - [NumPy](./numpy.md)

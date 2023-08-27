@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>6.4. 便利な VS Code 拡張機能 &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -73,7 +74,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "kkensuke/myjb-ja");
+    script.setAttribute("repo", "kkensuke/myjb");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -89,12 +90,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Q7VES7N4C"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'G-4Q7VES7N4C');
+                gtag('config', 'G-KHZEE5Y57R');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -103,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/tools/usefulVScodeExtensions/usefulVScodeExtensions';</script>
-    <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/tools/usefulVScodeExtensions/usefulVScodeExtensions.html" />
+    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/tools/usefulVScodeExtensions/usefulVScodeExtensions.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="7. その他" href="../../others/others.html" />
@@ -297,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/edit/main//pages/tools/usefulVScodeExtensions/usefulVScodeExtensions.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/tools/usefulVScodeExtensions/usefulVScodeExtensions.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/issues/new?title=Issue%20on%20page%20%2Fpages/tools/usefulVScodeExtensions/usefulVScodeExtensions.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/tools/usefulVScodeExtensions/usefulVScodeExtensions.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -481,69 +482,72 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vs-code">
-<h1><span class="section-number">6.4. </span>便利な VS Code 拡張機能<a class="headerlink" href="#vs-code" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">6.4. </span>便利な VS Code 拡張機能<a class="headerlink" href="#vs-code" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <section id="github-copilot">
-<h2><span class="section-number">6.4.1. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a><a class="headerlink" href="#github-copilot" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.1. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a><a class="headerlink" href="#github-copilot" title="Permalink to this heading">#</a></h2>
 <p>GitHub Copilot は、コードをより速く、より少ない労力で書くのを支援するAIペアプログラマです。数十億行の公開コードを学習した機械学習を使用して、入力中に新しいコード行を提案します。</p>
 </section>
 <section id="better-comments">
-<h2><span class="section-number">6.4.2. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a><a class="headerlink" href="#better-comments" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.2. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a><a class="headerlink" href="#better-comments" title="Permalink to this heading">#</a></h2>
 <p>Better Comments は、よりわかりやすいコメントをコードに作成するのに役立ちます。</p>
 </section>
 <section id="code-runner">
-<h2><span class="section-number">6.4.3. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">Code Runner</a><a class="headerlink" href="#code-runner" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.3. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner">Code Runner</a><a class="headerlink" href="#code-runner" title="Permalink to this heading">#</a></h2>
 <p>複数の言語に対応したコードスニペットやコードファイルを実行します。</p>
 </section>
 <section id="code-spell-checker">
-<h2><span class="section-number">6.4.4. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a><a class="headerlink" href="#code-spell-checker" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.4. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a><a class="headerlink" href="#code-spell-checker" title="Permalink to this heading">#</a></h2>
 <p>コードやドキュメントでうまく動作する基本的なスペルチェッカーです。</p>
 </section>
 <section id="rainbow-csv">
-<h2><span class="section-number">6.4.5. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">Rainbow CSV</a><a class="headerlink" href="#rainbow-csv" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.5. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">Rainbow CSV</a><a class="headerlink" href="#rainbow-csv" title="Permalink to this heading">#</a></h2>
 <p>異なる色でCSVファイルをハイライト表示します。</p>
 </section>
 <section id="error-lens">
-<h2><span class="section-number">6.4.6. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">Error Lens</a><a class="headerlink" href="#error-lens" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.6. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">Error Lens</a><a class="headerlink" href="#error-lens" title="Permalink to this heading">#</a></h2>
 <p>エラーや警告、その他の言語診断のハイライト表示を向上させます。</p>
 </section>
 <section id="grammarly">
-<h2><span class="section-number">6.4.7. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly</a><a class="headerlink" href="#grammarly" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.7. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly</a><a class="headerlink" href="#grammarly" title="Permalink to this heading">#</a></h2>
 <p>VS Code用のGrammarly。Grammarlyはあなたのニーズと文章スタイルに適応し、書くたびに間違いのないコミュニケーションの自信を提供します。</p>
 </section>
 <section id="indent-rainbow">
-<h2><span class="section-number">6.4.8. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">indent-rainbow</a><a class="headerlink" href="#indent-rainbow" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.8. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">indent-rainbow</a><a class="headerlink" href="#indent-rainbow" title="Permalink to this heading">#</a></h2>
 <p>インデントをより見やすくします。</p>
 </section>
 <section id="jupyter-jupyter-keymap">
-<h2><span class="section-number">6.4.9. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter &amp; Jupyter Keymap</a><a class="headerlink" href="#jupyter-jupyter-keymap" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.9. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter">Jupyter &amp; Jupyter Keymap</a><a class="headerlink" href="#jupyter-jupyter-keymap" title="Permalink to this heading">#</a></h2>
 <p>Jupyterノートブックのサポート、インテリセンス、デバッグ、などを含むインタラクティブなプログラミングとコンピューティング。</p>
 </section>
 <section id="latex-workshop">
-<h2><span class="section-number">6.4.10. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">Latex workshop</a><a class="headerlink" href="#latex-workshop" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.10. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">Latex workshop</a><a class="headerlink" href="#latex-workshop" title="Permalink to this heading">#</a></h2>
 <p>プレビュー、コンパイル、自動補完、カラーリングなどでLaTeX組版の効率を向上させます。</p>
 </section>
 <section id="live-share">
-<h2><span class="section-number">6.4.11. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a><a class="headerlink" href="#live-share" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.11. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a><a class="headerlink" href="#live-share" title="Permalink to this heading">#</a></h2>
 <p>お気に入りのツールからリアルタイムの共同開発を快適に行います。</p>
 </section>
 <section id="material-icon-theme">
-<h2><span class="section-number">6.4.12. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a><a class="headerlink" href="#material-icon-theme" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.12. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Material Icon Theme</a><a class="headerlink" href="#material-icon-theme" title="Permalink to this heading">#</a></h2>
 <p>Visual Studio Code 用のマテリアルデザインアイコン。</p>
 </section>
 <section id="python">
-<h2><span class="section-number">6.4.13. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a><a class="headerlink" href="#python" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.13. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a><a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
 <p>IntelliSense（Pylance）、Linting、デバッグ（マルチスレッド、リモート）、Jupyter ノートブック、コードの整形、リファクタリング、ユニットテストなど。</p>
 </section>
 <section id="trainling-spaces">
-<h2><span class="section-number">6.4.14. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces">Trainling Spaces</a><a class="headerlink" href="#trainling-spaces" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.14. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces">Trainling Spaces</a><a class="headerlink" href="#trainling-spaces" title="Permalink to this heading">#</a></h2>
 <p>末尾の空白をハイライト表示して一括削除します！</p>
 </section>
 <section id="vs-code-counter">
-<h2><span class="section-number">6.4.15. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter">VS Code Counter</a><a class="headerlink" href="#vs-code-counter" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.15. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter">VS Code Counter</a><a class="headerlink" href="#vs-code-counter" title="Permalink to this heading">#</a></h2>
 <p>テキスト内の単語数、行数、文字数をカウントします。</p>
 </section>
 <section id="word-counter">
-<h2><span class="section-number">6.4.16. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount">Word Counter</a><a class="headerlink" href="#word-counter" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4.16. </span><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount">Word Counter</a><a class="headerlink" href="#word-counter" title="Permalink to this heading">#</a></h2>
 <p>ステータスバーに単語数と単語数目標を表示します。</p>
 <p><a class="reference external" href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=All%20categories&amp;sortBy=Installs">その他</a></p>
 </section>

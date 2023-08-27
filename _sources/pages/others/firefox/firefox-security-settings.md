@@ -1,4 +1,5 @@
 # Firefox のセキュリティ設定
+> last modified: {sub-ref}`today`
 
 ## セキュリティアドオン
 - [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)

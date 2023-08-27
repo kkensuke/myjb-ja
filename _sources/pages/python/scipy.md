@@ -12,6 +12,7 @@ kernelspec:
 ---
 
 # [SciPY](https://docs.scipy.org/doc/scipy/index.html)
+> last modified: {sub-ref}`today`
 
 > SciPY は、Python の NumPy 拡張をベースとした、**数学的なアルゴリズムと便利な関数のコレクション**です。 - SciPYドキュメント
 

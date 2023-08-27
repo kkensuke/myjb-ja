@@ -11,6 +11,8 @@ kernelspec:
   name: python3
 ---
 # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
+> last modified: {sub-ref}`today`
+
 > SymPy は、数式処理のための Python ライブラリです。 - SymPy ドキュメント
 
 このページでは、SymPyの使用例を見ることができます。

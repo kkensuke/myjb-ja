@@ -1,4 +1,5 @@
 # VS Code での LaTeX 設定
+> last modified: {sub-ref}`today`
 
 ## TexLive のインストール (Mac)
 

@@ -14,6 +14,7 @@ myst:
 ---
 
 # MyST
+> last modified: {sub-ref}`today`
 
 以下では、MyST Markdown の基本的な使用方法を列挙します。MyST は、科学技術文書向けの Markdown の派生版の一つです。
 

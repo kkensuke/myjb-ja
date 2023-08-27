@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.3. エイリアス &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -73,7 +74,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "kkensuke/myjb-ja");
+    script.setAttribute("repo", "kkensuke/myjb");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -89,12 +90,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Q7VES7N4C"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'G-4Q7VES7N4C');
+                gtag('config', 'G-KHZEE5Y57R');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -103,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/basic/alias';</script>
-    <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/basic/alias.html" />
+    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/basic/alias.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1.4. Zsh" href="zsh.html" />
@@ -297,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/edit/main//pages/basic/alias.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/alias.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/issues/new?title=Issue%20on%20page%20%2Fpages/basic/alias.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/basic/alias.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -497,14 +498,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">1.3. </span>エイリアス<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.3. </span>エイリアス<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <p>コマンドラインを使用している場合、頻繁に使用するコマンドがあるはずです。
 一部のコマンドは長く、毎回コピーするのは時間の無駄かもしれません。そのような場合には、コマンドの <code class="docutils literal notranslate"><span class="pre">alias</span></code> を作ると良いでしょう。<code class="docutils literal notranslate"><span class="pre">h</span></code> を <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> のエイリアスとして使用したい場合、<code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">h='cd</span> <span class="pre">~'</span></code> と <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code>（または <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>）に定義します（<code class="docutils literal notranslate"><span class="pre">=</span></code> の両側にはスペースを入れません）。ホームディレクトリにそのようなファイルが見つからない場合は、<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">~/.zshrc</span></code> で作る必要があります。</p>
 <p>以下で便利なエイリアスがいくつか見つかった場合、<code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> に記述してください。</p>
 <section id="id2">
-<h2><span class="section-number">1.3.1. </span>基本<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.1. </span>基本<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <section id="id3">
-<h3>プロンプトのカスタマイズとカラー表示<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h3>プロンプトのカスタマイズとカラー表示<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;%F{082}%n%f %F{051}%~%f %# &quot;</span>
 <span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%T&#39;</span>
 </pre></div>
@@ -521,40 +525,40 @@ document.write(`
 <p>Prompt Expansionについては、<a class="reference external" href="https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html">こちらのリンク</a>を参照してください。</p>
 </section>
 <section id="id4">
-<h3>プロンプトの前に空行を挿入する。<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>precmd<span class="o">()</span> <span class="o">{</span> precmd<span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="o">}</span> <span class="o">}</span>
+<h3>プロンプトの前に空行を挿入する。<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>precmd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>precmd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="id5">
-<h3>ディレクトリの変更<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cs<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="nv">$@</span> <span class="o">&amp;&amp;</span> la <span class="o">}</span>
-<span class="nb">alias</span> <span class="nv">cd</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span>
-<span class="nb">alias</span> ..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
-<span class="nb">alias</span> ...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
-<span class="nb">alias</span> ....<span class="o">=</span><span class="s1">&#39;cd ../../..&#39;</span>
-<span class="nb">alias</span> <span class="nv">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
-<span class="nb">alias</span> <span class="nv">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
-<span class="nb">alias</span> <span class="nv">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
-<span class="nb">alias</span> <span class="nv">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
-<span class="nb">alias</span> /<span class="o">=</span><span class="s1">&#39;cd /&#39;</span>
+<h3>ディレクトリの変更<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cs<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$@</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>la<span class="w"> </span><span class="o">}</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cd</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>....<span class="o">=</span><span class="s1">&#39;cd ../../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>/<span class="o">=</span><span class="s1">&#39;cd /&#39;</span>
 
 <span class="c1"># 最上位のFinderウィンドウの位置に作業ディレクトリを変更します。</span>
-cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="k">$(</span>osascript -e <span class="s1">&#39;tell app &quot;Finder&quot; to POSIX path of (insertion location as alias)&#39;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">}</span>
+cdf<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>osascript<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;tell app &quot;Finder&quot; to POSIX path of (insertion location as alias)&#39;</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="id6">
-<h3>ファイルの表示<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<h3>ファイルの表示<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#alias ls=&#39;ls -F&#39;</span>
-<span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color --group-directories-first -F&#39;</span>
-<span class="nb">alias</span> <span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span>
-<span class="nb">alias</span> <span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
-<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -AhlS&#39;</span>
-<span class="nb">alias</span> <span class="nv">ds</span><span class="o">=</span><span class="s1">&#39;du -d 1 -h 2&gt;/dev/null | sort -h&#39;</span>
-<span class="nb">alias</span> <span class="nv">pwd</span><span class="o">=</span><span class="s1">&#39;sed &quot;s/ /\\\ /g&quot; &lt;&lt;&lt; ${PWD/#$HOME/&quot;~&quot;}&#39;</span>
-<span class="nb">alias</span> <span class="nv">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
-<span class="nb">alias</span> <span class="nv">path</span><span class="o">=</span><span class="s1">&#39;echo -e ${PATH//:/\\n}&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color --group-directories-first -F&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -AhlS&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ds</span><span class="o">=</span><span class="s1">&#39;du -d 1 -h 2&gt;/dev/null | sort -h&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pwd</span><span class="o">=</span><span class="s1">&#39;sed &quot;s/ /\\\ /g&quot; &lt;&lt;&lt; ${PWD/#$HOME/&quot;~&quot;}&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span><span class="s1">&#39;echo -e ${PATH//:/\\n}&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -588,12 +592,12 @@ cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span>
 </div>
 </section>
 <section id="id7">
-<h3>ファイルの編集<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
-<span class="nb">alias</span> <span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">rf</span><span class="o">=</span><span class="s1">&#39;rm -rf&#39;</span>
+<h3>ファイルの編集<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rf</span><span class="o">=</span><span class="s1">&#39;rm -rf&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -602,13 +606,13 @@ cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span>
 </ul>
 </section>
 <section id="id8">
-<h3>検索<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fb<span class="o">()</span> <span class="o">{</span> find . -size +<span class="nv">$2</span>M -type f -name <span class="nv">$1</span> -exec ls -lhS <span class="s2">&quot;{}&quot;</span> +<span class="o">}</span>
-fd<span class="o">()</span> <span class="o">{</span> find . -name <span class="s2">&quot;*.</span><span class="nv">$1</span><span class="s2">&quot;</span> -type f -delete <span class="o">}</span>
-rn<span class="o">()</span> <span class="o">{</span> <span class="k">for</span> filename <span class="k">in</span> *.<span class="nv">$1</span><span class="p">;</span> <span class="k">do</span> mv -f <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="p">|</span> sed -e <span class="s2">&quot;s/</span><span class="nv">$2</span><span class="s2">//g&quot;</span><span class="k">)</span><span class="p">;</span> <span class="k">done</span> <span class="o">}</span>
-dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span class="nv">$2</span> <span class="o">}</span>
-<span class="nb">alias</span> <span class="nv">imgopt</span><span class="o">=</span><span class="s1">&#39;open -a ImageOptim .&#39;</span>
-<span class="nb">alias</span> <span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
+<h3>検索<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fb<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-size<span class="w"> </span>+<span class="nv">$2</span>M<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="nv">$1</span><span class="w"> </span>-exec<span class="w"> </span>ls<span class="w"> </span>-lhS<span class="w"> </span><span class="s2">&quot;{}&quot;</span><span class="w"> </span>+<span class="o">}</span>
+fd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-delete<span class="w"> </span><span class="o">}</span>
+rn<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>filename<span class="w"> </span><span class="k">in</span><span class="w"> </span>*.<span class="nv">$1</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>mv<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;s/</span><span class="nv">$2</span><span class="s2">//g&quot;</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">done</span><span class="w"> </span><span class="o">}</span>
+dif<span class="o">(){</span><span class="w"> </span>diff<span class="w"> </span>--color<span class="w"> </span>-u<span class="w"> </span><span class="nv">$1</span><span class="w"> </span><span class="nv">$2</span><span class="w"> </span><span class="o">}</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">imgopt</span><span class="o">=</span><span class="s1">&#39;open -a ImageOptim .&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -634,13 +638,13 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </div>
 </section>
 <section id="id9">
-<h3>アプリケーションの起動<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">hr</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
-<span class="nb">alias</span> <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">vs</span><span class="o">=</span><span class="s1">&#39;code&#39;</span>
-<span class="nb">alias</span> <span class="nv">fire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">chrome</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">safari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
+<h3>アプリケーションの起動<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">hr</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">c</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">vs</span><span class="o">=</span><span class="s1">&#39;code&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">fire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">chrome</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">safari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -653,14 +657,14 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </ul>
 </section>
 <section id="id10">
-<h3>その他<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
-<span class="nb">alias</span> <span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span> <span class="c1">#reload</span>
+<h3>その他<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span><span class="w"> </span><span class="c1">#reload</span>
 </pre></div>
 </div>
 </section>
 <section id="zip">
-<h3>ZIP 暗号化<a class="headerlink" href="#zip" title="Permalink to this headline">#</a></h3>
+<h3>ZIP 暗号化<a class="headerlink" href="#zip" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zipen</span><span class="p">(){</span>
 	<span class="nb">zip</span> <span class="o">-</span><span class="n">er</span> <span class="n">enc</span><span class="o">.</span><span class="n">zip</span> <span class="s2">&quot;$@&quot;</span>
 <span class="p">}</span>
@@ -676,11 +680,11 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </section>
 </section>
 <section id="mac-os">
-<h2><span class="section-number">1.3.2. </span>Mac OS 設定<a class="headerlink" href="#mac-os" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.2. </span>Mac OS 設定<a class="headerlink" href="#mac-os" title="Permalink to this heading">#</a></h2>
 <section id="finder">
-<h3>Finderで隠しファイルを表示/非表示にする<a class="headerlink" href="#finder" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
-<span class="nb">alias</span> <span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
+<h3>Finderで隠しファイルを表示/非表示にする<a class="headerlink" href="#finder" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -689,50 +693,50 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </div>
 </section>
 <section id="id11">
-<h3>デスクトップのアイコンをすべて非表示/表示する<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">dhide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder&quot;</span>
-<span class="nb">alias</span> <span class="nv">dshow</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder&quot;</span>
+<h3>デスクトップのアイコンをすべて非表示/表示する<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">dhide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">dshow</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="id12">
-<h3>スクリーンショットの設定<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">dwl</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.screencapture location&#39;</span>
-<span class="nb">alias</span> <span class="nv">ddl</span><span class="o">=</span><span class="s1">&#39;defaults delete com.apple.screencapture location&#39;</span>
-<span class="nb">alias</span> <span class="nv">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
+<h3>スクリーンショットの設定<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">dwl</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.screencapture location&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ddl</span><span class="o">=</span><span class="s1">&#39;defaults delete com.apple.screencapture location&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
 </pre></div>
 </div>
 <p>スクリーンショットの保存場所を <code class="docutils literal notranslate"><span class="pre">dwl</span> <span class="pre">~/path/to/dir</span></code> で変更できます。</p>
 </section>
 <section id="id13">
-<h3>スリープ設定<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">sleepon</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 0&#39;</span>
-<span class="nb">alias</span> <span class="nv">sleepoff</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 1&#39;</span>
+<h3>スリープ設定<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">sleepon</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 0&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">sleepoff</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 1&#39;</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="github">
-<h2><span class="section-number">1.3.3. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
-<span class="nb">alias</span> <span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
-<span class="nb">alias</span> <span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
-<span class="nb">alias</span> <span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git commit&#39;</span>
-<span class="nb">alias</span> <span class="nv">gch</span><span class="o">=</span><span class="s1">&#39;git checkout&#39;</span>
-<span class="nb">alias</span> <span class="nv">gcl</span><span class="o">=</span><span class="s1">&#39;git clone&#39;</span>
-<span class="nb">alias</span> <span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff&#39;</span>
-<span class="nb">alias</span> <span class="nv">gf</span><span class="o">=</span><span class="s1">&#39;git fetch&#39;</span>
-<span class="nb">alias</span> <span class="nv">gi</span><span class="o">=</span><span class="s1">&#39;git init&#39;</span>
-<span class="nb">alias</span> <span class="nv">gm</span><span class="o">=</span><span class="s1">&#39;git merge&#39;</span>
-<span class="nb">alias</span> <span class="nv">gps</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
-<span class="nb">alias</span> <span class="nv">gpl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
-<span class="nb">alias</span> <span class="nv">gpom</span><span class="o">=</span><span class="s1">&#39;git push origin main&#39;</span>
-<span class="nb">alias</span> <span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<h2><span class="section-number">1.3.3. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git commit&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gch</span><span class="o">=</span><span class="s1">&#39;git checkout&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gcl</span><span class="o">=</span><span class="s1">&#39;git clone&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gf</span><span class="o">=</span><span class="s1">&#39;git fetch&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gi</span><span class="o">=</span><span class="s1">&#39;git init&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gm</span><span class="o">=</span><span class="s1">&#39;git merge&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gps</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gpl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gpom</span><span class="o">=</span><span class="s1">&#39;git push origin main&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
 </pre></div>
 </div>
 <section id="id14">
-<h3>関数<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gacpm<span class="o">()</span> <span class="o">{</span> git add -A <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git push origin main <span class="o">}</span>
+<h3>関数<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gacpm<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main<span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -740,57 +744,57 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </ul>
 <p>また、次のように新しいリポジトリを1つのコマンドで作成する関数を定義できます。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># $1 = private or public</span>
-ginit<span class="o">()</span> <span class="o">{</span>
-	git init
-	git add .
-	git commit -m <span class="s2">&quot;🎉  Initial commit&quot;</span>
-	gh repo create --<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> --source<span class="o">=</span>. --push
+ginit<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">	</span>git<span class="w"> </span>init
+<span class="w">	</span>git<span class="w"> </span>add<span class="w"> </span>.
+<span class="w">	</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;🎉  Initial commit&quot;</span>
+<span class="w">	</span>gh<span class="w"> </span>repo<span class="w"> </span>create<span class="w"> </span>--<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span>--source<span class="o">=</span>.<span class="w"> </span>--push
 <span class="o">}</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">gh</span></code> コマンドを使用するには、<a class="reference external" href="https://cli.github.com/">GitHub CLI</a> をインストールする必要があります。</p>
 </section>
 <section id="gitignore-io">
-<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a><a class="headerlink" href="#gitignore-io" title="Permalink to this headline">#</a></h3>
+<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a><a class="headerlink" href="#gitignore-io" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="http://gitignore.io">gitignore.io</a> を使用して .gitignore ファイルを簡単に作成できます</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> gi<span class="o">()</span> <span class="o">{</span> curl -sLw n https://www.toptal.com/developers/gitignore/api/<span class="nv">$@</span> <span class="p">;</span><span class="o">}</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>gi<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>curl<span class="w"> </span>-sLw<span class="w"> </span>n<span class="w"> </span>https://www.toptal.com/developers/gitignore/api/<span class="nv">$@</span><span class="w"> </span><span class="p">;</span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="python">
-<h2><span class="section-number">1.3.4. </span>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">wpy</span><span class="o">=</span><span class="s1">&#39;which python&#39;</span>
+<h2><span class="section-number">1.3.4. </span>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">wpy</span><span class="o">=</span><span class="s1">&#39;which python&#39;</span>
 
-<span class="nb">alias</span> <span class="nv">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
-<span class="nb">alias</span> <span class="nv">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
-<span class="nb">alias</span> <span class="nv">puin</span><span class="o">=</span><span class="s1">&#39;pip uninstall&#39;</span>
-<span class="nb">alias</span> <span class="nv">pup</span><span class="o">=</span><span class="s1">&#39;pip install --upgrade pip&#39;</span>
-<span class="nb">alias</span> <span class="nv">pinreq</span><span class="o">=</span><span class="s1">&#39;pip install -r requirements.txt&#39;</span>
-<span class="nb">alias</span> <span class="nv">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
-<span class="nb">alias</span> <span class="nv">pfr</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze &gt; requirements.txt&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">puin</span><span class="o">=</span><span class="s1">&#39;pip uninstall&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pup</span><span class="o">=</span><span class="s1">&#39;pip install --upgrade pip&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pinreq</span><span class="o">=</span><span class="s1">&#39;pip install -r requirements.txt&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pfr</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze &gt; requirements.txt&#39;</span>
 </pre></div>
 </div>
 <section id="id15">
-<h3>仮想環境の作成、アクティベート、ディアクティベート<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">mkv</span><span class="o">=</span><span class="s1">&#39;python3 -m venv venv; acv; pip install --upgrade pip&#39;</span>
-<span class="nb">alias</span> <span class="nv">acv</span><span class="o">=</span><span class="s1">&#39;source venv/bin/activate&#39;</span>
-<span class="nb">alias</span> <span class="nv">deac</span><span class="o">=</span><span class="s1">&#39;deactivate&#39;</span>
+<h3>仮想環境の作成、アクティベート、ディアクティベート<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">mkv</span><span class="o">=</span><span class="s1">&#39;python3 -m venv venv; acv; pip install --upgrade pip&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">acv</span><span class="o">=</span><span class="s1">&#39;source venv/bin/activate&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">deac</span><span class="o">=</span><span class="s1">&#39;deactivate&#39;</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="latex">
-<h2><span class="section-number">1.3.5. </span>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.5. </span>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
 <section id="latex-template">
-<h3>latex-template ディレクトリをコピー<a class="headerlink" href="#latex-template" title="Permalink to this headline">#</a></h3>
+<h3>latex-template ディレクトリをコピー<a class="headerlink" href="#latex-template" title="Permalink to this heading">#</a></h3>
 <p>LaTeX ドキュメントを作成することが多い場合、テンプレートディレクトリを作成すると便利です。この関数を使用して、テンプレートディレクトリを任意の場所にコピーできます。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mklt<span class="o">(){</span>
-	cp -r ~/latex-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="w">	</span>cp<span class="w"> </span>-r<span class="w"> </span>~/latex-template<span class="w"> </span>./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 
 mkbt<span class="o">(){</span>
-	cp -r ~/beamer-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="w">	</span>cp<span class="w"> </span>-r<span class="w"> </span>~/beamer-template<span class="w"> </span>./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>

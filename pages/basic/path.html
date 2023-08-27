@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.2. $PATH &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -73,7 +74,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "kkensuke/myjb-ja");
+    script.setAttribute("repo", "kkensuke/myjb");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -89,12 +90,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Q7VES7N4C"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'G-4Q7VES7N4C');
+                gtag('config', 'G-KHZEE5Y57R');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -103,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/basic/path';</script>
-    <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/basic/path.html" />
+    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/basic/path.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1.3. エイリアス" href="alias.html" />
@@ -297,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/edit/main//pages/basic/path.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/path.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/issues/new?title=Issue%20on%20page%20%2Fpages/basic/path.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/basic/path.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -471,12 +472,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="path">
-<h1><span class="section-number">1.2. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.2. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <p>パス (path) は通常、ディレクトリツリー内のファイル/ディレクトリの位置を識別するための文字列を示します。
 PATH は環境変数の1つであり、上記で説明したパスとは少し異なります。</p>
 <p>シェルでコマンドを入力すると、シェルはそのコマンドを見つけて実行する必要があります。PATH は、入力したコマンドをシェルが検索すべき場所を指定します。</p>
 <p>PATH を確認するには、次のコマンドを実行します：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
 <span class="c1"># /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
 </pre></div>
 </div>
@@ -487,26 +491,26 @@ PATH は環境変数の1つであり、上記で説明したパスとは少し�
 </div>
 <p>コマンドを入力すると、シェルはまず最初に <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> を検索します。シェルがコマンドを見つけたら、コマンドを実行します。見つからない場合は、次に <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code> を検索します。コマンドを見つけたら実行します。見つからない場合は、<code class="docutils literal notranslate"><span class="pre">/bin</span></code> を検索します。この流れはコマンドが見つかるまで繰り返されます。そして、最初に見つかったコマンドだけが実行されます。PATHのすべてのディレクトリでコマンドを見つけられなかった場合、シェルは <code class="docutils literal notranslate"><span class="pre">zsh:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">xxx</span></code> と返します。</p>
 <p>コマンド <code class="docutils literal notranslate"><span class="pre">which</span></code> は以下でコマンド <code class="docutils literal notranslate"><span class="pre">ls</span></code> が存在するディレクトリを表示します。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which ls
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>ls
 <span class="c1"># /bin/ls</span>
 </pre></div>
 </div>
 <section id="id1">
-<h2><span class="section-number">1.2.1. </span>コマンドの検索パスを追加する<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.2.1. </span>コマンドの検索パスを追加する<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>次のコードを <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> または <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> に置いて、PATH にディレクトリを追加します。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;コマンドの検索パス&gt;
-（または <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;コマンドの検索パス&gt;:<span class="nv">$PATH</span>）
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;コマンドの検索パス&gt;
+（または<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>&lt;コマンドの検索パス&gt;:<span class="nv">$PATH</span>）
 </pre></div>
 </div>
 <p>そして変更を保存します。</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
-<span class="nb">source</span> ~/.bashrc
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>~/.zshrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
 </pre></div>
 </div>
 </section>
 <section id="id2">
-<h2><span class="section-number">1.2.2. </span>環境変数<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>% printenv
+<h2><span class="section-number">1.2.2. </span>環境変数<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>printenv
 ...
 <span class="nv">SHELL</span><span class="o">=</span>/bin/zsh
 <span class="nv">HOME</span><span class="o">=</span>/Users/asdf
@@ -517,21 +521,21 @@ PATH は環境変数の1つであり、上記で説明したパスとは少し�
 </pre></div>
 </div>
 <section id="id3">
-<h3>新しい環境変数を作成する<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
-<span class="nb">echo</span> <span class="nv">$US</span>
+<h3>新しい環境変数を作成する<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">US</span><span class="o">=</span>/usr/sbin
+<span class="nb">echo</span><span class="w"> </span><span class="nv">$US</span>
 <span class="c1"># /usr/sbin</span>
 </pre></div>
 </div>
 <p>以下の各コマンドは同じ結果を表示します</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
-ls <span class="nv">$US</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/usr/sbin
+ls<span class="w"> </span><span class="nv">$US</span>
 </pre></div>
 </div>
 </section>
 <section id="id4">
-<h3>環境変数を削除する<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> US
+<h3>環境変数を削除する<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span><span class="w"> </span>US
 </pre></div>
 </div>
 </section>

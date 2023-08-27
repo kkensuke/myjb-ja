@@ -1,4 +1,5 @@
 # 便利な Mac アプリ
+> last modified: {sub-ref}`today`
 
 こちらの推奨アプリは基本的に無料です。
 
