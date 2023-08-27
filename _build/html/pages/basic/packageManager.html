@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.9. Homebrew と venv &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -73,7 +74,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "kkensuke/myjb-ja");
+    script.setAttribute("repo", "kkensuke/myjb");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -89,12 +90,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Q7VES7N4C"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-KHZEE5Y57R"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
                 gtag('js', new Date());
-                gtag('config', 'G-4Q7VES7N4C');
+                gtag('config', 'G-KHZEE5Y57R');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -103,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/basic/packageManager';</script>
-    <link rel="canonical" href="https://kkensuke.github.io/myjb-ja/intro.html/pages/basic/packageManager.html" />
+    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/basic/packageManager.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="2. Python" href="../python/python.html" />
@@ -297,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/edit/main//pages/basic/packageManager.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/packageManager.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +332,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb-ja/issues/new?title=Issue%20on%20page%20%2Fpages/basic/packageManager.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/basic/packageManager.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -468,7 +469,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="homebrew-venv">
-<h1><span class="section-number">1.9. </span>Homebrew と venv<a class="headerlink" href="#homebrew-venv" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.9. </span>Homebrew と venv<a class="headerlink" href="#homebrew-venv" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <p>パッケージマネージャとは何ですか？</p>
 <blockquote>
 <div><p>パッケージマネージャまたはパッケージ管理システムは、コンピュータプログラムのインストール、アップグレード、設定、削除のプロセスを一貫した方法で自動化するためのソフトウェアツールのコレクションです。 - Wikipedia</p>
@@ -491,72 +495,72 @@ document.write(`
 </ul>
 <p>このページでは、Homebrew をインストールと venv の作成について説明します。</p>
 <section id="homebrew">
-<h2><span class="section-number">1.9.1. </span><a class="reference external" href="https://docs.brew.sh/Installation">Homebrew</a><a class="headerlink" href="#homebrew" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.9.1. </span><a class="reference external" href="https://docs.brew.sh/Installation">Homebrew</a><a class="headerlink" href="#homebrew" title="Permalink to this heading">#</a></h2>
 <p>Homebrewは、macOS（または Linux）を補完するパッケージマネージャです。
 インストールするには、ターミナルに次のコードを入力します（最新のコードを<a class="reference external" href="https://brew.sh/">ここで</a>確認する必要があります）;</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 <p>次の出力が表示されます：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="o">==</span>&gt; Next steps:
-- Run these two commands <span class="k">in</span> your terminal to add Homebrew to your PATH:
-    <span class="nb">echo</span> <span class="s1">&#39;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#39;</span> &gt;&gt; /Users/kensuke/.zprofile
-    <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>/opt/homebrew/bin/brew shellenv<span class="k">)</span><span class="s2">&quot;</span>
-- Run brew <span class="nb">help</span> to get started
-- Further documentation:
-    https://docs.brew.sh
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="o">==</span>&gt;<span class="w"> </span>Next<span class="w"> </span>steps:
+-<span class="w"> </span>Run<span class="w"> </span>these<span class="w"> </span>two<span class="w"> </span>commands<span class="w"> </span><span class="k">in</span><span class="w"> </span>your<span class="w"> </span>terminal<span class="w"> </span>to<span class="w"> </span>add<span class="w"> </span>Homebrew<span class="w"> </span>to<span class="w"> </span>your<span class="w"> </span>PATH:
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/Users/kensuke/.zprofile
+<span class="w">    </span><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>/opt/homebrew/bin/brew<span class="w"> </span>shellenv<span class="k">)</span><span class="s2">&quot;</span>
+-<span class="w"> </span>Run<span class="w"> </span>brew<span class="w"> </span><span class="nb">help</span><span class="w"> </span>to<span class="w"> </span>get<span class="w"> </span>started
+-<span class="w"> </span>Further<span class="w"> </span>documentation:
+<span class="w">    </span>https://docs.brew.sh
 </pre></div>
 </div>
 <p>Homebrew を PATH に追加するために次を入力します（Usernameを変更してください）：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s1">&#39;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#39;</span> &gt;&gt; /Users/Username/.zprofile
-<span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>/opt/homebrew/bin/brew shellenv<span class="k">)</span><span class="s2">&quot;</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/Users/Username/.zprofile
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>/opt/homebrew/bin/brew<span class="w"> </span>shellenv<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 <p>成功したかどうかを確認しましょう！</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew --version
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>--version
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">Homebrew</span> <span class="pre">x.x.x</span></code> と表示された場合、成功です。</p>
 </section>
 <section id="venv">
-<span id="id1"></span><h2><span class="section-number">1.9.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this headline">#</a></h2>
+<span id="id1"></span><h2><span class="section-number">1.9.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this heading">#</a></h2>
 <p>Python の仮想環境を作成するには、venv が最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。venv を作成しましょう。</p>
 <p>venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python3 -m venv ~/test
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/test
 </pre></div>
 </div>
 <p>次にvenvをアクティベートします：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> test/bin/activate
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>test/bin/activate
 </pre></div>
 </div>
 <p>または</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>. test/bin/activate
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>.<span class="w"> </span>test/bin/activate
 </pre></div>
 </div>
 <p>これでvenvがアクティブになります。ターミナルのユーザー名の左側に venv の名前が  <code class="docutils literal notranslate"><span class="pre">(test)</span> <span class="pre">Username&#64;MacBook-Pro</span> <span class="pre">~</span> <span class="pre">%</span></code> のように表示されます。
 Pythonのバージョンを確認してみましょう：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python -V
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-V
 </pre></div>
 </div>
 <p>すると <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.x.x</span></code> が表示されます。</p>
 <p>これで新しい venv を作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> コマンドで venv 内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
 何かをインストールする前に、<code class="docutils literal notranslate"><span class="pre">pip</span></code> をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャです（以下の Username を変更してください）：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/&lt;Username&gt;/test/bin/python3 -m pip install --upgrade pip
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/&lt;Username&gt;/test/bin/python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 </pre></div>
 </div>
 <p>次にパッケージをインストールしてみましょう（ここでは numpy を使用します）！</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip install numpy
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>numpy
 </pre></div>
 </div>
 <p>そして確認してみましょう：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip list --format<span class="o">=</span>freeze
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>list<span class="w"> </span>--format<span class="o">=</span>freeze
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">numpy==x.xx.x</span></code> のように表示されます。</p>
 <p>初心者として Python を使用する場合は、matplotlib、pandas、jupyter-lab をインストールすることをお勧めします；</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip install matplotlib
-pip install jupyterlab
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
 </pre></div>
 </div>
 <p>Matplotlib は可視化のためのライブラリ、pandas はデータ分析と操作のためのライブラリ、jupyter-lab はウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
@@ -565,13 +569,13 @@ venv を非アクティブにするには、ターミナルで単に <code class
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>venv を削除する場合は、ターミナルで次を入力して削除します：</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm -rf ~/test
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-rf<span class="w"> </span>~/test
 </pre></div>
 </div>
 </div>
 </section>
 <section id="jupyter-lab">
-<h2><span class="section-number">1.9.3. </span>Jupyter-labを使用しましょう！<a class="headerlink" href="#jupyter-lab" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.9.3. </span>Jupyter-labを使用しましょう！<a class="headerlink" href="#jupyter-lab" title="Permalink to this heading">#</a></h2>
 <p>jupyter-lab をインストールしたので、使ってみましょう！！</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter-lab
 </pre></div>

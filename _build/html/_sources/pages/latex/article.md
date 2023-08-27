@@ -1,4 +1,5 @@
 # article
+> last modified: {sub-ref}`today`
 
 ## `preamble.tex`
 ```latex

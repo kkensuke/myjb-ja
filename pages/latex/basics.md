@@ -1,5 +1,6 @@
 Latexの基本
 ===
+> last modified: {sub-ref}`today`
 
 ## インライン数式
 

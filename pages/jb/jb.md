@@ -1,4 +1,5 @@
-# [Jupyter Book](https://jupyterbook.org/en/stable/intro.html)
+# Jupyter Book
+> last modified: {sub-ref}`today`
 
 - [Jupyter book](./mkjb.md)
 - [MyST](./myst.md)

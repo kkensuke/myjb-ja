@@ -1,4 +1,5 @@
 # GitHub
+> last modified: {sub-ref}`today`
 
 ```{image} ./img/GitHub-flow.png
 :name: flow

@@ -12,6 +12,7 @@ kernelspec:
 ---
 
 # [Matplotlib](https://matplotlib.org/)
+> last modified: {sub-ref}`today`
 
 Matplotlib は、Python でさまざまなグラフを描画するための包括的なライブラリです。
 

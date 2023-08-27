@@ -1,4 +1,5 @@
 # 命名規則
+> last modified: {sub-ref}`today`
 
 ## Pythonの命名規則
 

@@ -1,4 +1,5 @@
 # プログラミング基礎
+> last modified: {sub-ref}`today`
 
 - [コマンドライン](./linux.md)
 - [$PATH](./path.md)
