@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/latex.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.4. VS Code での LaTeX 設定" href="settings.html" />
+    <link rel="next" title="4.1. VS Code での LaTeX 設定" href="settings.html" />
     <link rel="prev" title="3.1. 命名規則" href="../coding-rules/naming.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -219,12 +219,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">4. LaTeX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="settings.html">4.4. VS Code での LaTeX 設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="basics.html">4.5. Latexの基本</a></li>
-<li class="toctree-l2"><a class="reference internal" href="article.html">4.6. article</a></li>
-<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.7. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.8. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.9. newcommands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">4.1. VS Code での LaTeX 設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">4.2. Latexの基本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">4.3. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.4. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.5. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.6. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -433,9 +433,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -451,16 +449,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-latex">4.1. <span class="xref myst">VS Code での <span class="math notranslate nohighlight">\(\LaTeX\)</span> 設定</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2. <span class="xref myst">LaTeXの基本</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.3. プリアンブル</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -473,16 +461,22 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="latex">
 <h1><span class="section-number">4. </span>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last modified: Aug 27, 2023</p>
+<div><p>last modified: Aug 31, 2023</p>
 </div></blockquote>
-<section id="vs-code-latex">
-<h2><span class="section-number">4.1. </span><a class="reference internal" href="settings.html"><span class="doc std std-doc">VS Code での <span class="math notranslate nohighlight">\(\LaTeX\)</span> 設定</span></a><a class="headerlink" href="#vs-code-latex" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="id1">
-<h2><span class="section-number">4.2. </span><a class="reference internal" href="basics.html"><span class="doc std std-doc">LaTeXの基本</span></a><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-</section>
-<section id="id2">
-<h2><span class="section-number">4.3. </span>プリアンブル<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\LaTeX\)</span></p>
+<p><span class="math notranslate nohighlight">\(\LaTeX\)</span> とは、文書作成のためのマークアップ言語です。<span class="math notranslate nohighlight">\(\LaTeX\)</span> で作成された文書は、ソースファイルをコンパイルにより PDF に変換されます。<span class="math notranslate nohighlight">\(\LaTeX\)</span> は、数式の記述に優れていて、論文やスライド、書籍などの作成に適しています。</p>
+</div>
+<p>このセクションでは、VS Code での <span class="math notranslate nohighlight">\(\LaTeX\)</span> の設定と、<span class="math notranslate nohighlight">\(\LaTeX\)</span> の基本的な使い方について説明します。</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="settings.html"><span class="doc std std-doc">VS Code での <span class="math notranslate nohighlight">\(\LaTeX\)</span> 設定</span></a></p></li>
+<li><p><a class="reference internal" href="basics.html"><span class="doc std std-doc">LaTeXの基本</span></a></p></li>
+</ul>
+<hr class="docutils" />
+<div class="note admonition">
+<p class="admonition-title">Preamble</p>
+<p>プリアンブルとは、文書クラスを設定したり、パッケージを読み込んだり、コマンドを定義したり、ドキュメントのオプションを設定したりすることができる部分です。<code class="docutils literal notranslate"><span class="pre">\documentclass</span></code> と <code class="docutils literal notranslate"><span class="pre">\begin{document}</span></code> の間に置かれます。また、プリアンブルを別のファイルに置いて、<code class="docutils literal notranslate"><span class="pre">\input{preamble.tex}</span></code> で読み込むこともできます。</p>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code> 内では、パッケージを読み込んだり、コマンドを定義したり、ドキュメントのオプションを設定したりすることができます。</p>
 <p>パッケージ同士やドキュメントクラス間の競合により、一部のパッケージを使用できないことがあります。そのため、文書クラスに応じてプリアンブル内の設定を変更する必要があります。</p>
 <p>また、パッケージ同士の競合にも注意が必要です。一部のパッケージを同時に使用できない場合や、特定の順序で読み込む必要がある場合があります。</p>
@@ -494,7 +488,6 @@ document.write(`
 <li><p><a class="reference internal" href="newcommands.html"><span class="doc std std-doc">\newcommands</span></a></p></li>
 </ul>
 <p>これらのセクションに関連するすべてのファイルを<a class="reference external" href="https://github.com/kkensuke/latex-template/tree/main">こちら</a>からダウンロードできます。</p>
-</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -544,7 +537,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.4. </span>VS Code での LaTeX 設定</p>
+        <p class="prev-next-title"><span class="section-number">4.1. </span>VS Code での LaTeX 設定</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -557,22 +550,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-code-latex">4.1. <span class="xref myst">VS Code での <span class="math notranslate nohighlight">\(\LaTeX\)</span> 設定</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2. <span class="xref myst">LaTeXの基本</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.3. プリアンブル</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

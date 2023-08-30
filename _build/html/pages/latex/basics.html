@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4.5. Latexの基本 &#8212; My note</title>
+    <title>4.2. Latexの基本 &#8212; My note</title>
   
   
   
@@ -109,8 +109,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/basics.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.6. article" href="article.html" />
-    <link rel="prev" title="4.4. VS Code での LaTeX 設定" href="settings.html" />
+    <link rel="next" title="4.3. article" href="article.html" />
+    <link rel="prev" title="4.1. VS Code での LaTeX 設定" href="settings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -219,12 +219,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="latex.html">4. LaTeX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="settings.html">4.4. VS Code での LaTeX 設定</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.5. Latexの基本</a></li>
-<li class="toctree-l2"><a class="reference internal" href="article.html">4.6. article</a></li>
-<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.7. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.8. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.9. newcommands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">4.1. VS Code での LaTeX 設定</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.2. Latexの基本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">4.3. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.4. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.5. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.6. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -456,9 +456,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.5.1. インライン数式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.5.2. ディスプレイ数式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.5.3. 基本的な記号</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2.1. インライン数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.2.2. ディスプレイ数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.2.3. 基本的な記号</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ギリシャ文字</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">演算子</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">大きな演算子</a></li>
@@ -472,12 +472,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">行列</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath">4.5.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath">4.2.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cases"><code class="docutils literal notranslate"><span class="pre">cases</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align"><code class="docutils literal notranslate"><span class="pre">align</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics">4.5.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics">4.2.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qty"><code class="docutils literal notranslate"><span class="pre">\qty</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dv"><code class="docutils literal notranslate"><span class="pre">dv</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdv"><code class="docutils literal notranslate"><span class="pre">pdv</span></code></a></li>
@@ -505,12 +505,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="latex">
-<h1><span class="section-number">4.5. </span>Latexの基本<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">4.2. </span>Latexの基本<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last modified: Aug 27, 2023</p>
+<div><p>last modified: Aug 31, 2023</p>
 </div></blockquote>
 <section id="id1">
-<h2><span class="section-number">4.5.1. </span>インライン数式<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2.1. </span>インライン数式<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">$</span></code> を使ってインライン数式を書くことができます。</p>
 <div class="admonition- admonition">
 <p class="admonition-title">例</p>
@@ -521,7 +521,7 @@ document.write(`
 </div>
 </section>
 <section id="id2">
-<h2><span class="section-number">4.5.2. </span>ディスプレイ数式<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2.2. </span>ディスプレイ数式<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">$$</span></code> または <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">\]</span></code> を使用してディスプレイ数式を書くことができます。</p>
 <div class="admonition- admonition">
 <p class="admonition-title">例</p>
@@ -554,7 +554,7 @@ document.write(`
 </div>
 </section>
 <section id="id3">
-<h2><span class="section-number">4.5.3. </span>基本的な記号<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2.3. </span>基本的な記号<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <section id="id4">
 <h3>ギリシャ文字<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
 <table class="table">
@@ -1251,7 +1251,7 @@ document.write(`
 </section>
 </section>
 <section id="amsmath">
-<h2><span class="section-number">4.5.4. </span><code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ<a class="headerlink" href="#amsmath" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2.4. </span><code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ<a class="headerlink" href="#amsmath" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージを使うと、<code class="docutils literal notranslate"><span class="pre">cases</span></code> や <code class="docutils literal notranslate"><span class="pre">align</span></code> などのコマンドを使うことができます。</p>
 <section id="cases">
 <h3><code class="docutils literal notranslate"><span class="pre">cases</span></code><a class="headerlink" href="#cases" title="Permalink to this heading">#</a></h3>
@@ -1296,7 +1296,7 @@ document.write(`
 </section>
 </section>
 <section id="physics">
-<h2><span class="section-number">4.5.5. </span><code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ<a class="headerlink" href="#physics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.2.5. </span><code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ<a class="headerlink" href="#physics" title="Permalink to this heading">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージを使うと、<code class="docutils literal notranslate"><span class="pre">\qty</span></code> や <code class="docutils literal notranslate"><span class="pre">\dv</span></code>、<code class="docutils literal notranslate"><span class="pre">pdv</span></code>、<code class="docutils literal notranslate"><span class="pre">\eval</span></code>、<code class="docutils literal notranslate"><span class="pre">\order</span></code>、<code class="docutils literal notranslate"><span class="pre">\abs</span></code>、<code class="docutils literal notranslate"><span class="pre">\norm</span></code>、<code class="docutils literal notranslate"><span class="pre">\commutator</span></code> [または <code class="docutils literal notranslate"><span class="pre">\comm</span></code>]、<code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> [または <code class="docutils literal notranslate"><span class="pre">\acomm</span></code>] などのコマンドを使うことができます。</p>
 <section id="qty">
 <h3><code class="docutils literal notranslate"><span class="pre">\qty</span></code><a class="headerlink" href="#qty" title="Permalink to this heading">#</a></h3>
@@ -1634,7 +1634,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4.4. </span>VS Code での LaTeX 設定</p>
+        <p class="prev-next-title"><span class="section-number">4.1. </span>VS Code での LaTeX 設定</p>
       </div>
     </a>
     <a class="right-next"
@@ -1642,7 +1642,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.6. </span>article</p>
+        <p class="prev-next-title"><span class="section-number">4.3. </span>article</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1664,9 +1664,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.5.1. インライン数式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.5.2. ディスプレイ数式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.5.3. 基本的な記号</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.2.1. インライン数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.2.2. ディスプレイ数式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.2.3. 基本的な記号</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">ギリシャ文字</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">演算子</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">大きな演算子</a></li>
@@ -1680,12 +1680,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">行列</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath">4.5.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath">4.2.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> パッケージ</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cases"><code class="docutils literal notranslate"><span class="pre">cases</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align"><code class="docutils literal notranslate"><span class="pre">align</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics">4.5.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics">4.2.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> パッケージ</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qty"><code class="docutils literal notranslate"><span class="pre">\qty</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dv"><code class="docutils literal notranslate"><span class="pre">dv</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdv"><code class="docutils literal notranslate"><span class="pre">pdv</span></code></a></li>
