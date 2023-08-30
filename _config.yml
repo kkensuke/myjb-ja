@@ -89,6 +89,8 @@ repository:                           # Information about where the book exists 
 #######################################################################################
 # Advanced and power-user settings https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
 sphinx:
+  extra_extensions:
+    - sphinx_proof
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
     html_baseurl            : https://kkensuke.github.io/myjb/intro.html

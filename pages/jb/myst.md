@@ -696,6 +696,49 @@ sphinx:
 
 https://sphinx-proof.readthedocs.io/en/latest/syntax.html
 
+### Example
+
+>````
+>```{prf:theorem} My theorem
+>:nonumber:
+>
+>This is my theorem.
+>```
+>````
+>
+>>```{prf:theorem} My theorem
+>>:nonumber:
+>>
+>>This is my theorem.
+>>```
+
+
+>````
+>```{prf:proof} My proof
+>
+>This is my proof.
+>```
+>````
+>
+>>```{prf:proof} My proof
+>>
+>>This is my proof.
+>>```
+
+
+>````
+>```{prf:remark} My remark
+>:nonumber:
+>
+>This is my remark.
+>```
+>````
+>
+>>```{prf:remark} My remark
+>>:nonumber:
+>>
+>>This is my remark.
+>>```
 
 
 # ビルドと出力の公開

@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -511,7 +512,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#div">5.3.20. カスタム&lt;div&gt; ブロック</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">5.3.21. マークの欠落を確認する</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">5.3.22. レイアウト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">5.3.23. 証明、定理、アルゴリズム</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">5.3.23. 証明、定理、アルゴリズム</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">5.4. ビルドと出力の公開</a><ul class="visible nav section-nav flex-column">
@@ -1353,6 +1357,55 @@ substitutions:
 </pre></div>
 </div>
 <p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:theorem} My theorem
+:nonumber:
+
+This is my theorem.
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="proof theorem admonition" id="theorem-0">
+<p class="admonition-title"><span>Theorem </span> (My theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>This is my theorem.</p>
+</section>
+</div></div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:proof} My proof
+
+This is my proof.
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="proof admonition" id="proof">
+<p>Proof. My proof</p>
+<p>This is my proof.</p>
+</div>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:remark} My remark
+:nonumber:
+
+This is my remark.
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="proof remark admonition" id="remark-1">
+<p class="admonition-title"><span>Remark </span> (My remark)</p>
+<section class="remark-content" id="proof-content">
+<p>This is my remark.</p>
+</section>
+</div></div></blockquote>
+</div></blockquote>
+</section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id35">
@@ -1569,7 +1622,10 @@ substitutions:
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#div">5.3.20. カスタム&lt;div&gt; ブロック</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">5.3.21. マークの欠落を確認する</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">5.3.22. レイアウト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">5.3.23. 証明、定理、アルゴリズム</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">5.3.23. 証明、定理、アルゴリズム</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">5.4. ビルドと出力の公開</a><ul class="visible nav section-nav flex-column">
