@@ -702,17 +702,6 @@ document.write(`
 <section id="id17">
 <h2><span class="section-number">5.3.10. </span>注意書き<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} これはタイトルです
-タイトル付きの注意書きの例です。
-```
-</pre></div>
-</div>
-<div class="admonition- admonition">
-<p class="admonition-title">これはタイトルです</p>
-<p>タイトル付きの注意書きの例です。</p>
-</div>
-</div></blockquote>
-<blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note} ノートは**引数なし**で必要です。
 だからここから内容が始まります。
 ```
@@ -824,20 +813,17 @@ document.write(`
 </div>
 </div></blockquote>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-success mr-1` これはロールの例（チェックマークと成功の色）です。
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} これはタイトルです
+:class: tip
+
+タイトル付きの adomonition の例です。
+```
 </pre></div>
 </div>
-<blockquote>
-<div><p><span class="fa fa-check, text-success mr-1"></span> これはロールの例（チェックマークと成功の色）です。</p>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-info mr-1` これはロールの例（チェックマークと情報の色）です。
-</pre></div>
+<div class="tip admonition">
+<p class="admonition-title">これはタイトルです</p>
+<p>タイトル付きの adomonition の例です。</p>
 </div>
-<blockquote>
-<div><p><span class="fa fa-check, text-info mr-1"></span> これはロールの例（チェックマークと情報の色）です。</p>
-</div></blockquote>
 </div></blockquote>
 <section id="id18">
 <h3>図のパラメータ<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
