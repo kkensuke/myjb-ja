@@ -1,4 +1,5 @@
 # Welcome to my Jupyter Book
+> last modified: {sub-ref}`today`
 
 - [プログラミング基礎](pages/basic/basic.md)
 - [Python](pages/python/python.md)

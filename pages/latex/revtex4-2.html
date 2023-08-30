@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4.7. revtex4-2 &#8212; My note</title>
+    <title>4.4. revtex4-2 &#8212; My note</title>
   
   
   
@@ -107,8 +107,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/revtex4-2.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.8. beamer" href="beamer.html" />
-    <link rel="prev" title="4.6. article" href="article.html" />
+    <link rel="next" title="4.5. beamer" href="beamer.html" />
+    <link rel="prev" title="4.3. article" href="article.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -217,12 +217,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="latex.html">4. LaTeX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="settings.html">4.4. VS Code での LaTeX 設定</a></li>
-<li class="toctree-l2"><a class="reference internal" href="basics.html">4.5. Latexの基本</a></li>
-<li class="toctree-l2"><a class="reference internal" href="article.html">4.6. article</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.7. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.8. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.9. newcommands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html">4.1. VS Code での LaTeX 設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">4.2. Latexの基本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">4.3. article</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.4. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.5. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.6. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -454,8 +454,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.7.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.7.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.4.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.4.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -468,12 +468,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="revtex4-2">
-<h1><span class="section-number">4.7. </span>revtex4-2<a class="headerlink" href="#revtex4-2" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">4.4. </span>revtex4-2<a class="headerlink" href="#revtex4-2" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last modified: Aug 27, 2023</p>
+<div><p>last modified: Aug 31, 2023</p>
 </div></blockquote>
 <section id="preamble-tex">
-<h2><span class="section-number">4.7.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.4.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% set margins</span>
 <span class="k">\usepackage</span><span class="na">[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]</span><span class="nb">{</span>geometry<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="na">[dvipdfmx]</span><span class="nb">{</span>graphicx,hyperref,xcolor<span class="nb">}</span>
@@ -530,7 +530,7 @@ document.write(`
 </div>
 </section>
 <section id="main-tex">
-<h2><span class="section-number">4.7.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.4.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[dvipdfmx,twocolumn,preprintnumbers,superscriptaddress,nofootinbib]</span><span class="nb">{</span>revtex4-2<span class="nb">}</span>
 <span class="c">% landscape</span>
 <span class="c">% footinbib for PRL</span>
@@ -610,7 +610,7 @@ asdf asdf asdf asdf asdf asdf
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4.6. </span>article</p>
+        <p class="prev-next-title"><span class="section-number">4.3. </span>article</p>
       </div>
     </a>
     <a class="right-next"
@@ -618,7 +618,7 @@ asdf asdf asdf asdf asdf asdf
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.8. </span>beamer</p>
+        <p class="prev-next-title"><span class="section-number">4.5. </span>beamer</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -640,8 +640,8 @@ asdf asdf asdf asdf asdf asdf
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.7.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.7.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.4.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.4.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
 </ul>
   </nav></div>
 
