@@ -130,9 +130,9 @@ simple class
 simple and no-icon class
 :::
 
-:::{admonition} Peter Parker
+:::{admonition} Uncle Ben, Spider-Man (2002)
 :class: quote
-With great power comes great responsibility.
+Remember, with great power comes great responsibility.
 :::
 ::::
 
