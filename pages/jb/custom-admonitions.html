@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
@@ -500,6 +501,41 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
+note
+:::
+
+:::{attention}
+attention
+:::
+
+:::{important}
+important
+:::
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>note</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>attention</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>important</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="no-icon-class">
 <h2><span class="section-number">5.6.3. </span>No icon class<a class="headerlink" href="#no-icon-class" title="Permalink to this heading">#</a></h2>
@@ -518,6 +554,35 @@ document.write(`
 <span class="w">    </span><span class="k">padding-left</span><span class="p">:</span><span class="w"> </span><span class="mf">.6</span><span class="kt">rem</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
+:class: no-icon
+note without icon
+:::
+
+:::{admonition} Title
+:class: no-icon
+admonition without icon
+:::
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="no-icon admonition note">
+<p class="admonition-title">Note</p>
+<p>note without icon</p>
+</div>
+<div class="no-icon admonition">
+<p class="admonition-title">Title</p>
+<p>admonition without icon</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="new-admonitions-1">
@@ -557,6 +622,62 @@ document.write(`
 <span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f10e&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} asdf
+:class: extra-credit
+&quot;extra credit&quot; as class
+:::
+
+:::{admonition} asdf
+:class: extra-credit no-icon
+extra credit and no-icon class
+:::
+
+:::{admonition} Title
+:class: simple
+simple class
+:::
+
+:::{admonition} Title
+:class: simple no-icon
+simple and no-icon class
+:::
+
+:::{admonition} Peter Parker
+:class: quote
+With great power comes great responsibility.
+:::
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="extra-credit admonition">
+<p class="admonition-title">asdf</p>
+<p>“extra credit” as class</p>
+</div>
+<div class="extra-credit no-icon admonition">
+<p class="admonition-title">asdf</p>
+<p>extra credit and no-icon class</p>
+</div>
+<div class="simple admonition">
+<p class="admonition-title">Title</p>
+<p>simple class</p>
+</div>
+<div class="simple no-icon admonition">
+<p class="admonition-title">Title</p>
+<p>simple and no-icon class</p>
+</div>
+<div class="quote admonition">
+<p class="admonition-title">Peter Parker</p>
+<p>With great power comes great responsibility.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="new-admonitions-2">
@@ -610,6 +731,73 @@ document.write(`
 <span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\3f&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} extra credit
+extra-credit class (letter case doesn’t matter)
+:::
+
+:::{admonition} Extra credit
+extra-credit class (letter case doesn’t matter)
+:::
+
+:::{admonition} EXTRA CREDIT
+extra-credit class (letter case doesn’t matter)
+:::
+
+:::{admonition} abstract
+abstract class (letter case doesn’t matter)
+:::
+
+:::{admonition} Comment
+comment class (letter case doesn’t matter)
+:::
+
+:::{admonition} Example
+example class (letter case doesn’t matter)
+:::
+
+:::{admonition} question
+question class (letter case doesn’t matter)
+:::
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="admonition-extra-credit admonition">
+<p class="admonition-title">extra credit</p>
+<p>extra-credit class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-extra-credit admonition">
+<p class="admonition-title">Extra credit</p>
+<p>extra-credit class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-extra-credit admonition">
+<p class="admonition-title">EXTRA CREDIT</p>
+<p>extra-credit class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-abstract admonition">
+<p class="admonition-title">abstract</p>
+<p>abstract class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-comment admonition">
+<p class="admonition-title">Comment</p>
+<p>comment class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>example class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-question admonition">
+<p class="admonition-title">question</p>
+<p>question class (letter case doesn’t matter)</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="remove-icons-from-sphinx-proof">
@@ -700,6 +888,53 @@ document.write(`
 <span class="w">    </span><span class="k">padding-left</span><span class="p">:</span><span class="w"> </span><span class="mf">.6</span><span class="kt">rem</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{prf:theorem}
+asdf
+:::
+
+:::{prf:lemma}
+asdf
+:::
+
+:::{prf:remark}
+asdf
+:::
+
+:::{prf:example}
+asdf
+:::
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="proof theorem admonition" id="theorem-0">
+<p class="admonition-title"><span class="caption-number">Theorem 5.1 </span></p>
+<section class="theorem-content" id="proof-content">
+<p>asdf</p>
+</section>
+</div><div class="proof lemma admonition" id="lemma-1">
+<p class="admonition-title"><span class="caption-number">Lemma 5.1 </span></p>
+<section class="lemma-content" id="proof-content">
+<p>asdf</p>
+</section>
+</div><div class="proof remark admonition" id="remark-2">
+<p class="admonition-title"><span class="caption-number">Remark 5.1 </span></p>
+<section class="remark-content" id="proof-content">
+<p>asdf</p>
+</section>
+</div><div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 5.1 </span></p>
+<section class="example-content" id="proof-content">
+<p>asdf</p>
+</section>
+</div></div>
+</div>
+</div>
 </div>
 </section>
 </section>
