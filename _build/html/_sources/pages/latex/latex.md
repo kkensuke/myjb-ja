@@ -13,6 +13,7 @@ $\LaTeX$ とは、文書作成のためのマークアップ言語です。$\LaT
 - [LaTeXの基本](./basics.md)
 
 ---
+
 :::{admonition} Preamble
 :class: note
 
