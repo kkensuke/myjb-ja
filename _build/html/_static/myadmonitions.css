@@ -51,9 +51,11 @@ div.extra-credit .admonition-title:after {
 }
 /* quote class for admonitions */
 div.quote {
+    font-style: italic;
     border-left-color: rgba(146, 146, 146, 1);
 }
 div.quote .admonition-title {
+    font-style: italic;
     background-color:  rgba(146, 146, 146, .1);
 }
 div.quote .admonition-title:after {
