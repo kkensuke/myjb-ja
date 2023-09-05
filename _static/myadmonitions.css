@@ -79,32 +79,43 @@ div.admonition-abstract {
     border-left-color: rgba(246, 0, 16, 1);
 }
 div.admonition-abstract .admonition-title {
-    background-color: rgba(246, 0, 16, .35);
+    background-color: rgba(255, 0, 16, .3);
 }
 div.admonition-abstract .admonition-title:after {
-    color: rgba(200, 0, 16, 1);
+    color: rgba(233, 0, 16, 1);
     content: "\f135";
+}
+/* comment class for admonitions */
+/* div.admonition-comment {
+    border-left-color:  rgba(235, 193, 7, 1);
+}
+div.admonition-comment .admonition-title {
+    background-color:  rgba(255, 193, 7, .2);
+} */
+div.admonition-comment .admonition-title:after {
+    content: "\f075";
+/*     color:  rgba(235, 193, 7, 1); */
 }
 /* example class for admonitions */
 div.admonition-example {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    border-left-color:  rgba(100, 100, 100, 1);
 }
 div.admonition-example .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    background-color:  rgba(100, 100, 100, .01);
 }
 div.admonition-example .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(100, 100, 100, 1);
     content: "\f0c3";
 }
 /* question class for admonitions */
 div.admonition-question {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    border-left-color:  rgba(100, 100, 100, 1);
 }
 div.admonition-question .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    background-color:  rgba(100, 100, 100, .01);
 }
 div.admonition-question .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(100, 100, 100, 1);
     content: "\3f";
 }
 

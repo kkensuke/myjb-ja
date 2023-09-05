@@ -24,7 +24,7 @@ div.important .admonition-title:after {
 }
 :::
 
-::::
+::::{example}
 :::{note}
 note
 :::
@@ -37,18 +37,6 @@ attention
 important
 :::
 ::::
-
-:::{note}
-note
-:::
-
-:::{attention}
-attention
-:::
-
-:::{important}
-important
-:::
 
 
 ## No icon class
@@ -69,7 +57,7 @@ div.note.no-icon > .admonition-title {
 }
 :::
 
-::::
+::::{example}
 :::{note}
 :class: no-icon
 note without icon
@@ -80,16 +68,6 @@ note without icon
 admonition without icon
 :::
 ::::
-
-:::{note}
-:class: no-icon
-note without icon
-:::
-
-:::{admonition} Title
-:class: no-icon
-admonition without icon
-:::
 
 
 ## New admonitions 1
@@ -117,68 +95,46 @@ div.extra-credit .admonition-title:after {
 }
 /* quote class for admonitions */
 div.quote {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    font-style: italic;
+    border-left-color: rgba(146, 146, 146, 1);
 }
 div.quote .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    font-style: italic;
+    background-color:  rgba(146, 146, 146, .1);
 }
 div.quote .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(146, 146, 146, 1);
     content: "\f10e";
 }
 :::
 
-::::
-```{admonition} asdf
+
+::::{example}
+:::{admonition} asdf
 :class: extra-credit
 "extra credit" as class
-```
+:::
 
-```{admonition} asdf
+:::{admonition} asdf
 :class: extra-credit no-icon
 extra credit and no-icon class
-```
+:::
 
-```{admonition} Title
+:::{admonition} Title
 :class: simple
 simple class
-```
+:::
 
-```{admonition} Title
+:::{admonition} Title
 :class: simple no-icon
 simple and no-icon class
-```
+:::
 
-```{admonition} Peter Parker
-:class: quote
-quote class
-```
-::::
-
-```{admonition} asdf
-:class: extra-credit
-extra-credit class
-```
-
-```{admonition} asdf
-:class: extra-credit no-icon
-extra-credit and no-icon class
-```
-
-```{admonition} Title
-:class: simple
-simple class
-```
-
-```{admonition} Title
-:class: simple no-icon
-simple and no-icon class
-```
-
-```{admonition} Peter Parker
+:::{admonition} Peter Parker
 :class: quote
 With great power comes great responsibility.
-```
+:::
+::::
 
 
 ## New admonitions 2
@@ -205,6 +161,10 @@ div.admonition-abstract .admonition-title:after {
     color: rgba(200, 0, 16, 1);
     content: "\f135";
 }
+/* comment class for admonitions */
+div.admonition-comment .admonition-title:after {
+    content: "\f075";
+}
 /* example class for admonitions */
 div.admonition-example {
     border-left-color:  rgba(var(--pst-color-success), 1);
@@ -229,55 +189,35 @@ div.admonition-question .admonition-title:after {
 }
 :::
 
-::::
-```{admonition} extra credit
+::::{example}
+:::{admonition} extra credit
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} Extra credit
+:::{admonition} Extra credit
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} EXTRA CREDIT
+:::{admonition} EXTRA CREDIT
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} abstract
+:::{admonition} abstract
 abstract class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} Example
+:::{admonition} Comment
+comment class (letter case doesn’t matter)
+:::
+
+:::{admonition} Example
 example class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} question
+:::{admonition} question
 question class (letter case doesn’t matter)
-```
+:::
 ::::
-
-```{admonition} extra credit
-extra-credit class (letter case doesn’t matter)
-```
-
-```{admonition} Extra credit
-extra-credit class (letter case doesn’t matter)
-```
-
-```{admonition} EXTRA CREDIT
-extra-credit class (letter case doesn’t matter)
-```
-
-```{admonition} Abstract
-abstract class (letter case doesn’t matter)
-```
-
-```{admonition} Example
-example class (letter case doesn’t matter)
-```
-
-```{admonition} Question
-question class (letter case doesn’t matter)
-```
 
 
 ## Remove icons from `sphinx-proof`
@@ -370,36 +310,20 @@ div.algorithm p.admonition-title {
 }
 :::
 
+::::{example}
+:::{prf:theorem}
+asdf
+:::
+
+:::{prf:lemma}
+asdf
+:::
+
+:::{prf:remark}
+asdf
+:::
+
+:::{prf:example}
+asdf
+:::
 ::::
-```{prf:theorem}
-asdf
-```
-
-```{prf:lemma}
-asdf
-```
-
-```{prf:remark}
-asdf
-```
-
-```{prf:example}
-asdf
-```
-::::
-
-```{prf:theorem}
-asdf
-```
-
-```{prf:lemma}
-asdf
-```
-
-```{prf:remark}
-asdf
-```
-
-```{prf:example}
-asdf
-```
