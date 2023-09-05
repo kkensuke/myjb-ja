@@ -91,6 +91,8 @@ repository:                           # Information about where the book exists 
 sphinx:
   extra_extensions:
     - sphinx_proof
+    - sphinx_examples
+    - sphinx_design
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
     html_baseurl            : https://kkensuke.github.io/myjb/intro.html
