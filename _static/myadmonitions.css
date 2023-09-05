@@ -30,13 +30,13 @@ div.note.no-icon > .admonition-title {
 
 /* simple class for admonitions */
 div.simple {
-    border-left-color: rgba(var(--pst-color-success), .1);
+    border-left-color: rgba(146, 146, 146, 1);
 }
 div.simple .admonition-title {
-    background-color: rgba(var(--pst-color-success), .1)
+    background-color: rgba(146, 146, 146, .1);
 }
 div.simple .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(146, 146, 146, 1);
 }
 /* extra-credit class for admonitions */
 div.extra-credit {
@@ -48,6 +48,17 @@ div.extra-credit .admonition-title {
 div.extra-credit .admonition-title:after {
     color: rgba(0, 146, 16, 1);
     content: '\f19d';
+}
+/* quote class for admonitions */
+div.quote {
+    border-left-color: rgba(146, 146, 146, 1);
+}
+div.quote .admonition-title {
+    background-color:  rgba(146, 146, 146, .1);
+}
+div.quote .admonition-title:after {
+    color: rgba(146, 146, 146, 1);
+    content: "\f10e";
 }
 
 /* extra-credit class as title for admonitions */
@@ -72,6 +83,17 @@ div.admonition-abstract .admonition-title:after {
     color: rgba(200, 0, 16, 1);
     content: "\f135";
 }
+/* example class for admonitions */
+div.admonition-example {
+    border-left-color:  rgba(var(--pst-color-success), 1);
+}
+div.admonition-example .admonition-title {
+    background-color:  rgba(var(--pst-color-success), .1);
+}
+div.admonition-example .admonition-title:after {
+    color: rgba(var(--pst-color-success), 1);
+    content: "\f0c3";
+}
 /* question class for admonitions */
 div.admonition-question {
     border-left-color:  rgba(var(--pst-color-success), 1);
@@ -83,7 +105,6 @@ div.admonition-question .admonition-title:after {
     color: rgba(var(--pst-color-success), 1);
     content: "\3f";
 }
-
 
 
 /* remove icons from spinx-proof */

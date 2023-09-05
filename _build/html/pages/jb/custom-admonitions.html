@@ -589,6 +589,17 @@ document.write(`
 <span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">146</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
 <span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;\f19d&#39;</span><span class="p">;</span>
 <span class="p">}</span>
+<span class="c">/* quote class for admonitions */</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">quote</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border-left-color</span><span class="p">:</span><span class="w">  </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">quote</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w">  </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mf">.1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">quote</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f10e&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} asdf
@@ -610,6 +621,11 @@ simple class
 :class: simple no-icon
 simple and no-icon class
 ```
+
+```{admonition} Peter Parker
+:class: quote
+simple class
+```
 </pre></div>
 </div>
 <div class="extra-credit admonition">
@@ -627,6 +643,10 @@ simple and no-icon class
 <div class="simple no-icon admonition">
 <p class="admonition-title">Title</p>
 <p>simple and no-icon class</p>
+</div>
+<div class="quote admonition">
+<p class="admonition-title">Peter Parker</p>
+<p>quote class</p>
 </div>
 </section>
 <section id="new-admonitions-2">
@@ -652,6 +672,17 @@ simple and no-icon class
 <span class="nt">div</span><span class="p">.</span><span class="nc">admonition-abstract</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
 <span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f135&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c">/* example class for admonitions */</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">admonition-example</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border-left-color</span><span class="p">:</span><span class="w">  </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">admonition-example</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w">  </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mf">.1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="p">.</span><span class="nc">admonition-example</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\f0c3&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c">/* question class for admonitions */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">admonition-question</span><span class="w"> </span><span class="p">{</span>
@@ -682,23 +713,11 @@ extra-credit class (letter case doesn’t matter)
 abstract class (letter case doesn’t matter)
 ```
 
-```{admonition} Abstract
-abstract class (letter case doesn’t matter)
-```
-
-```{admonition} ABSTRACT
-abstract class (letter case doesn’t matter)
+```{admonition} example
+example class (letter case doesn’t matter)
 ```
 
 ```{admonition} question
-question class (letter case doesn’t matter)
-```
-
-```{admonition} Question
-question class (letter case doesn’t matter)
-```
-
-```{admonition} QUESTION
 question class (letter case doesn’t matter)
 ```
 </pre></div>
@@ -716,27 +735,15 @@ question class (letter case doesn’t matter)
 <p>extra-credit class (letter case doesn’t matter)</p>
 </div>
 <div class="admonition-abstract admonition">
-<p class="admonition-title">abstract</p>
-<p>abstract class (letter case doesn’t matter)</p>
-</div>
-<div class="admonition-abstract admonition">
 <p class="admonition-title">Abstract</p>
 <p>abstract class (letter case doesn’t matter)</p>
 </div>
-<div class="admonition-abstract admonition">
-<p class="admonition-title">ABSTRACT</p>
-<p>abstract class (letter case doesn’t matter)</p>
-</div>
-<div class="admonition-question admonition">
-<p class="admonition-title">question</p>
-<p>question class (letter case doesn’t matter)</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>example class (letter case doesn’t matter)</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title">Question</p>
-<p>question class (letter case doesn’t matter)</p>
-</div>
-<div class="admonition-question admonition">
-<p class="admonition-title">QUESTION</p>
 <p>question class (letter case doesn’t matter)</p>
 </div>
 </section>
@@ -842,6 +849,11 @@ question class (letter case doesn’t matter)
 </div><div class="proof remark admonition" id="remark-2">
 <p class="admonition-title"><span class="caption-number">Remark 5.1 </span></p>
 <section class="remark-content" id="proof-content">
+<p>asdf</p>
+</section>
+</div><div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 5.1 </span></p>
+<section class="example-content" id="proof-content">
 <p>asdf</p>
 </section>
 </div></section>

@@ -1,12 +1,12 @@
 # Custom Admonitions
 > last modified: {sub-ref}`today`
 
-## `myadmonitions.css`
 
+## `myadmonitions.css`
 First, Make `_static/myadmonitions.css` in your book.
 
-## Change icons for pre-defined admonitions
 
+## Change icons for pre-defined admonitions
 You can choose icon for admonitions from [Fontawsome](https://fontawesome.com/search?o=r&m=free&f=brands%2Cclassic%2Csharp)
 
 :::css
@@ -50,8 +50,8 @@ attention
 important
 :::
 
-## No icon class
 
+## No icon class
 :::css
 /** No icon for admonitions with no-icon class */
 div.admonition.no-icon > .admonition-title::after {
@@ -91,6 +91,7 @@ note without icon
 admonition without icon
 :::
 
+
 ## New admonitions 1
 :::css
 /* simple class for admonitions */
@@ -114,6 +115,17 @@ div.extra-credit .admonition-title:after {
     color: rgba(0, 146, 16, 1);
     content: '\f19d';
 }
+/* quote class for admonitions */
+div.quote {
+    border-left-color:  rgba(var(--pst-color-success), 1);
+}
+div.quote .admonition-title {
+    background-color:  rgba(var(--pst-color-success), .1);
+}
+div.quote .admonition-title:after {
+    color: rgba(var(--pst-color-success), 1);
+    content: "\f10e";
+}
 :::
 
 ::::
@@ -136,6 +148,11 @@ simple class
 :class: simple no-icon
 simple and no-icon class
 ```
+
+```{admonition} Peter Parker
+:class: quote
+simple class
+```
 ::::
 
 ```{admonition} asdf
@@ -157,6 +174,12 @@ simple class
 :class: simple no-icon
 simple and no-icon class
 ```
+
+```{admonition} Peter Parker
+:class: quote
+quote class
+```
+
 
 ## New admonitions 2
 :::css
@@ -181,6 +204,17 @@ div.admonition-abstract .admonition-title {
 div.admonition-abstract .admonition-title:after {
     color: rgba(200, 0, 16, 1);
     content: "\f135";
+}
+/* example class for admonitions */
+div.admonition-example {
+    border-left-color:  rgba(var(--pst-color-success), 1);
+}
+div.admonition-example .admonition-title {
+    background-color:  rgba(var(--pst-color-success), .1);
+}
+div.admonition-example .admonition-title:after {
+    color: rgba(var(--pst-color-success), 1);
+    content: "\f0c3";
 }
 /* question class for admonitions */
 div.admonition-question {
@@ -212,23 +246,11 @@ extra-credit class (letter case doesn’t matter)
 abstract class (letter case doesn’t matter)
 ```
 
-```{admonition} Abstract
-abstract class (letter case doesn’t matter)
-```
-
-```{admonition} ABSTRACT
-abstract class (letter case doesn’t matter)
+```{admonition} example
+example class (letter case doesn’t matter)
 ```
 
 ```{admonition} question
-question class (letter case doesn’t matter)
-```
-
-```{admonition} Question
-question class (letter case doesn’t matter)
-```
-
-```{admonition} QUESTION
 question class (letter case doesn’t matter)
 ```
 ::::
@@ -245,29 +267,18 @@ extra-credit class (letter case doesn’t matter)
 extra-credit class (letter case doesn’t matter)
 ```
 
-```{admonition} abstract
-abstract class (letter case doesn’t matter)
-```
-
 ```{admonition} Abstract
 abstract class (letter case doesn’t matter)
 ```
 
-```{admonition} ABSTRACT
-abstract class (letter case doesn’t matter)
-```
-
-```{admonition} question
-question class (letter case doesn’t matter)
+```{admonition} Example
+example class (letter case doesn’t matter)
 ```
 
 ```{admonition} Question
 question class (letter case doesn’t matter)
 ```
 
-```{admonition} QUESTION
-question class (letter case doesn’t matter)
-```
 
 ## Remove icons from `sphinx-proof`
 
@@ -368,5 +379,9 @@ asdf
 ```
 
 ```{prf:remark}
+asdf
+```
+
+```{prf:example}
 asdf
 ```
