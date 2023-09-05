@@ -151,7 +151,7 @@ simple and no-icon class
 
 ```{admonition} Peter Parker
 :class: quote
-simple class
+quote class
 ```
 ::::
 
@@ -177,7 +177,7 @@ simple and no-icon class
 
 ```{admonition} Peter Parker
 :class: quote
-quote class
+With great power comes great responsibility.
 ```
 
 
@@ -246,7 +246,7 @@ extra-credit class (letter case doesn’t matter)
 abstract class (letter case doesn’t matter)
 ```
 
-```{admonition} example
+```{admonition} Example
 example class (letter case doesn’t matter)
 ```
 
@@ -369,6 +369,24 @@ div.algorithm p.admonition-title {
     padding-left: .6rem;
 }
 :::
+
+::::
+```{prf:theorem}
+asdf
+```
+
+```{prf:lemma}
+asdf
+```
+
+```{prf:remark}
+asdf
+```
+
+```{prf:example}
+asdf
+```
+::::
 
 ```{prf:theorem}
 asdf
