@@ -1,4 +1,4 @@
-# 便利なウェブアプリ
+# Web アプリ
 > last modified: {sub-ref}`today`
 
 ## [10 minutes mail](https://10minemail.com/en/)

@@ -1,4 +1,4 @@
-# 便利な VS Code 拡張機能
+# VS Code 拡張機能
 > last modified: {sub-ref}`today`
 
 ## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)

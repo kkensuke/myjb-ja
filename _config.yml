@@ -46,7 +46,7 @@ parse:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : ""    # A path to a favicon image
+  favicon                   : "mylogo.png"    # A path to a favicon image
   use_edit_page_button      : true  # Add GitHub buttons to your book
                                     # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
                                     # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in

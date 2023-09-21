@@ -202,7 +202,7 @@ extra-credit class (letter case doesn’t matter)
 extra-credit class (letter case doesn’t matter)
 :::
 
-:::{admonition} abstract
+:::{admonition} Abstract
 abstract class (letter case doesn’t matter)
 :::
 
@@ -214,7 +214,7 @@ comment class (letter case doesn’t matter)
 example class (letter case doesn’t matter)
 :::
 
-:::{admonition} question
+:::{admonition} Question
 question class (letter case doesn’t matter)
 :::
 ::::

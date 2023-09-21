@@ -9,8 +9,27 @@ $\LaTeX$ とは、文書作成のためのマークアップ言語です。$\LaT
 
 このセクションでは、VS Code での $\LaTeX$ の設定と、$\LaTeX$ の基本的な使い方について説明します。
 
-- [VS Code での $\LaTeX$ 設定](./settings.md)
-- [LaTeXの基本](./basics.md)
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: settings
+:link-type: doc
+
+VS Code での $\LaTeX$ 設定
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: basics
+:link-type: doc
+
+LaTeXの基本
+:::
+::::
 
 ---
 
@@ -28,9 +47,44 @@ $\LaTeX$ とは、文書作成のためのマークアップ言語です。$\LaT
 
 いくつかの文書クラスに対するプリアンブルの例を見てみましょう。
 
-- [article](./article.md)
-- [revtex4-2](./revtex4-2.md)
-- [beamer](./beamer.md)
-- [\newcommands](./newcommands.md)
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 3
+:link: article
+:link-type: doc
+
+article
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 3
+:link: revtex4-2
+:link-type: doc
+
+revtex4-2
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 3
+:link: beamer
+:link-type: doc
+
+beamer
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 3
+:link: newcommands
+:link-type: doc
+
+\newcommands
+:::
+::::
 
 これらのセクションに関連するすべてのファイルを[こちら](https://github.com/kkensuke/latex-template/tree/main)からダウンロードできます。
