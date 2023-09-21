@@ -13,18 +13,18 @@ div.important .admonition-title:after {
 
 
 /** No icon for admonitions with no-icon class */
-div.admonition.no-icon > .admonition-title::after {
-    content: none !important;
-}
 div.admonition.no-icon > .admonition-title {
     padding-left: .6rem;
 }
-/** No icon for note with no-icon class */
-div.note.no-icon > .admonition-title::after {
+div.admonition.no-icon > .admonition-title::after {
     content: none !important;
 }
+/** No icon for note with no-icon class */
 div.note.no-icon > .admonition-title {
     padding-left: .6rem;
+}
+div.note.no-icon > .admonition-title::after {
+    content: none !important;
 }
 
 
@@ -33,10 +33,11 @@ div.simple {
     border-left-color: rgba(146, 146, 146, 1);
 }
 div.simple .admonition-title {
+    padding-left: .6rem;
     background-color: rgba(146, 146, 146, .1);
 }
 div.simple .admonition-title:after {
-    color: rgba(146, 146, 146, 1);
+    content: none !important;
 }
 /* extra-credit class for admonitions */
 div.extra-credit {
@@ -84,6 +85,17 @@ div.admonition-abstract .admonition-title {
 div.admonition-abstract .admonition-title:after {
     color: rgba(233, 0, 16, 1);
     content: "\f135";
+}
+/* setting class for admonitions */
+div.admonition-setting {
+    border-left-color: rgba(146, 146, 146, 1);
+}
+div.admonition-setting .admonition-title {
+    background-color: rgba(146, 146, 146, .1);
+}
+div.admonition-setting .admonition-title:after {
+    color: rgba(146, 146, 146, 1);
+    content: "\f013";
 }
 /* comment class for admonitions */
 /* div.admonition-comment {

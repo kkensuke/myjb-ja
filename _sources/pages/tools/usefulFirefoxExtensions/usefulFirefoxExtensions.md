@@ -1,4 +1,4 @@
-# 便利な Firefox 拡張機能
+# Firefox 拡張機能
 > last modified: {sub-ref}`today`
 
 ## セキュリティ

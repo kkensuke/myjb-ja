@@ -1,7 +1,42 @@
 # ツール
 > last modified: {sub-ref}`today`
 
-- [便利な Web アプリ](usefulWebApps/usefulWebApps.md)
-- [便利な Mac アプリ](usefulMacApps/usefulMacApps.md)
-- [便利な Firefox の拡張機能](usefulFirefoxExtensions/usefulFirefoxExtensions.md)
-- [便利な VScode 拡張機能](usefulVScodeExtensions/usefulVScodeExtensions.md)
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: usefulWebApps/usefulWebApps
+:link-type: doc
+
+Web Apps
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: usefulMacApps/usefulMacApps
+:link-type: doc
+
+Mac Apps
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: usefulFirefoxExtensions/usefulFirefoxExtensions
+:link-type: doc
+
+Firefox Extensions
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: usefulVScodeExtensions/usefulVScodeExtensions
+:link-type: doc
+
+VScode Extensions
+:::
+::::
