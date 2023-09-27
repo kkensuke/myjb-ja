@@ -1,4 +1,14 @@
 ---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.15.0
+kernelspec:
+  display_name: 'Python 3.8.9 (''venv'': venv)'
+  language: python
+  name: python3
 myst:
   substitutions:
     key1: "I'm a **substitution**"
@@ -12,600 +22,422 @@ myst:
       :width: 200px
       ```
 ---
-
-# MyST
+#  MyST
 > last modified: {sub-ref}`today`
 
-以下では、MyST Markdown の基本的な使用方法を列挙します。MyST は、科学技術文書向けの Markdown の派生版の一つです。
+% This file provide you the MyST syntax.
 
->## 見出し
+## Heading
 >```
-># 見出しレベル 1
->## 見出しレベル 2
->### 見出しレベル 3
->#### 見出しレベル 4
->##### 見出しレベル 5
->###### 見出しレベル 6
+># Heading level 1
+>## Heading level 2
+>### Heading level 3
+>#### Heading level 4
+>##### Heading level 5
+>###### Heading level 6
 >```
 >>
->># 見出しレベル 1
->>## 見出しレベル 2
->>### 見出しレベル 3
->>#### 見出しレベル 4
->>##### 見出しレベル 5
->>###### 見出しレベル 6
->>
+>># Heading level 1
+>>## Heading level 2
+>>### Heading level 3
+>>#### Heading level 4
+>>##### Heading level 5
+>>###### Heading level 6
 
 
-## ターゲット見出し
+## Target headers
 >```
 >(target)=
 >### target
 >...
->[targetを見る](target)
+>see [target](target)
 >```
 (target)=
 ### target
 ...
-[targetを見る](target)
+see [target](target)
 
-## 引用
->```
->> これは引用です
->```
->>これは引用です
+## Quote
+
+:::{example}
+> this is a quote
+:::
 
 
-## 行末記号
->```
->これはテキストの終わりです。
->---
->```
->>これはテキストの終わりです。
->>---
+## End line
+:::{example}
+some text
 
-## 行コメント
->```
->% これは行コメントです。
->```
->>% これは行コメントです。
-## ブロックの区切り
->```
->これはブロックの例です
->+++ {"meta": "data"}
->ブロックの区切り
->```
->>これはブロックの例です
->>+++ {"meta": "data"}
->>ブロックの区切り
+---
+some text.
+:::
 
-## リスト
->```
->1. 最初の項目
->2. 2番目の項目
->    * 最初のサブ項目
->    * 2番目のサブ項目
->      * 3番目のサブサブ項目
->```
->>1. 最初の項目
->>2. 2番目の項目
->>    * 最初のサブ項目
->>    * 2番目のサブ項目
->>      * 3番目のサブサブ項目
+## Line comment
+:::{example}
+% This is a line comment.
+:::
 
-## テーブル
->````
->```{list-table} このテーブルのタイトル
->:header-rows: 1
->:name: example-table
->
->* - 訓練
->  - 検証
->* - 0
->  - 5
->* - 13720
->  - 2744
->```
->````
->
-```{list-table} このテーブルのタイトル
+## Block break
+:::{example}
+This is an example of
++++ {"meta": "data"}
+a block break
+:::
+
+## List
+:::{example}
+1. First item
+2. Second item
+    * First sub-item
+    * Second sub-item
+      * Third subsub-item
+:::
+
+## Table
+::::{example}
+:::{list-table} This table title
 :header-rows: 1
 :name: example-table
 
-* - 訓練
-  - 検証
+* - Training
+  - Validation
 * - 0
   - 5
 * - 13720
   - 2744
+:::
+::::
+
+## admonition
+
+::::{example}
+:::{note} Notes require **no** arguments,
+so content can start here.
+:::
+::::
+
+
+::::{example}
+:::{warning}
+Warning
+:::
+::::
+
+
+::::{example}
+:::{tip}
+Tip
+:::
+::::
+
+
+::::{example}
+:::{caution}
+Caution
+:::
+::::
+
+
+::::{example}
+:::{attention}
+Attention
+:::
+::::
+
+
+::::{example}
+:::{danger}
+Danger
+:::
+::::
+
+
+::::{example}
+:::{error}
+Error
+:::
+::::
+
+
+::::{example}
+:::{hint}
+hint
+:::
+::::
+
+
+::::{example}
+:::{important}
+Important
+:::
+::::
+
+
+::::{example}
+:::{seealso}
+see also
+:::
+::::
+
+
+::::{example}
+:::{admonition} This is a title
+:class: tip
+
+An example of an admonition with a title.
+:::
+::::
+
+
+### Figure parameters
+
+The following options are supported:
+
+`scale` : integer percentage
+: Uniformly scale the figure. The default is “100” which indicates no scaling. The symbol “%” is optional.
+
+`width` : length or percentage
+: You can set the figure width in the following units: “em”, “ex”, “px”,“in” ,“cm”, “mm”, “pt”, “pc”, “%”.
+
+`height` : length
+: You can set the figure height in the following units: “em”, “ex”, “px”, “in”, “cm”, “mm”, “pt”, “pc”.
+
+`alt` : text
+: Text to be displayed if the figure cannot be displayed or if the reader is using assistive technologies. Generally entails a short description of the figure.
+
+`align` : “left”, “center”, or “right”
+: Align the figure left, center, or right. Default alignment is center.
+
+`name` : text
+: A unique identifier for your figure that you can use to reference it with {ref} or {numref} roles. Cannot contain spaces or special characters.
+
+`figclass` : text
+: Value of the figure’s class attribute which can be used to add custom CSS or JavaScript. Predefined options include:
+
+## Math
+
+:::{example}
+This is an example of an inline equation $z=\sqrt{x^2+y^2}$.
+:::
+
+
+:::{example}
+$$z=\sqrt{x^2+y^2}$$ (mylabel)
+equation ref: {eq}`mylabel`
+:::
+
+
+## Executable code
+
+::::md
+```{code-cell} ipython3
+note = "Python syntax highlighting"
+print(note)
 ```
-
-
-## 注意書き
-
->````
->```{note} ノートは**引数なし**で必要です。
->だからここから内容が始まります。
->```
->````
->```{note} ノートは**引数なし**で必要です。
->だからここから内容が始まります。
->```
-
->````
->```{warning}
->警告
->```
->````
->```{warning}
->警告
->```
-
->````
->```{tip}
->ヒント
->```
->````
->```{tip}
->ヒント
->```
-
->````
->```{caution}
->注意
->```
->````
->```{caution}
->注意
->```
-
->````
->```{attention}
->注意
->```
->````
->```{attention}
->注意
->```
-
->````
->```{danger}
->危険
->```
->````
->```{danger}
->危険
->```
-
->````
->```{error}
->エラー
->```
->````
->```{error}
->エラー
->```
-
->````
->```{hint}
->ヒント
->```
->````
->```{hint}
->ヒント
->```
-
-
->````
->```{important}
->重要
->```
->````
->```{important}
->重要
->```
-
->````
->```{seealso}
->関連項目
->```
->````
->```{seealso}
->関連項目
->```
-
->````
->```{admonition} これはタイトルです
->:class: tip
->
->タイトル付きの adomonition の例です。
->```
->````
->```{admonition} これはタイトルです
->:class: tip
->
->タイトル付きの adomonition の例です。
->```
-
-
-### 図のパラメータ
-
-次のオプションがサポートされています：
-
-`scale` : 整数パーセンテージ
-: 図を均一にスケーリングします。デフォルトは「100」で、スケーリングは行われません。記号「%」は省略可能です。
-
-`width` : 長さまたはパーセンテージ
-: 図の幅を次の単位で設定できます：「em」、「ex」、「px」、「in」、「cm」、「mm」、「pt」、「pc」、「%」。
-
-`height` : 長さ
-: 図の高さを次の単位で設定できます：「em」、「ex」、「px」、「in」、「cm」、「mm」、「pt」、「pc」。
-
-`alt` : テキスト
-: 図が表示されない場合や読者が補助技術を使用している場合に表示されるテキスト。通常、図の簡単な説明を記述します。
-
-`align` : 「left」、「center」、または「right」
-: 図を左寄せ、中央揃え、または右寄せに配置します。デフォルトの配置は中央揃えです。
-
-`name` : テキスト
-: 図の固有の識別子で、{ref} や {numref} ロールで参照するために使用できます。スペースや特殊文字を含めることはできません。
-
-`figclass` : テキスト
-: 図の class 属性の値を設定します。これにより、カスタム CSS や JavaScript を追加できます。事前定義されたオプションには次のものがあります：
-
-## 数式
->```
->これはインラインの数式です $z=\sqrt{x^2+y^2}$。
->```
->>これはインラインの数式です $z=\sqrt{x^2+y^2}$。
-
->```
->$$
->z=\sqrt{x^2+y^2}
->$$ (mylabel)
->式の参照: {eq}`mylabel`
->```
->>$$z=\sqrt{x^2+y^2}$$ (mylabel)
->>式の参照: {eq}`mylabel`
-
-
-<!-- 
-## 実行可能なコード
+::::
 
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
--->
 
+## Reference documents
+:::{example}
+See {doc}`../basic/alias` for more information.
+:::
 
-## 参考文献
+## Toggle
+:::::{example}
+::::{toggle}
+```python
+print('hello')
+```
+::::
+:::::
 
->```
->{doc}`../basic/alias`を参照してください。
->```
->>>{doc}`../basic/alias`を参照してください。
+## Margin
+::::{example}
+:::{margin} **My margin title**
+Here is my margin content, it is pretty cool!
+:::
+::::
+---
 
-## トグル
->`````
->````{toggle}
->```python
->print('こんにちは')
->```
->````
->`````
->>````{toggle}
->>```python
->>print('こんにちは')
->>```
->>````
-
-## マージン
->````
->```{margin} **マージンタイトル**
->ここにマージンコンテンツがあります、かなりクールです！
->```
->````
->>```{margin} **マージンタイトル**
->>ここにマージンコンテンツがあります、かなりクールです！
->>```
->---
-
->```
->:::{tip}
->:class: margin toggle
->このノートはマージンに表示されます！
->:::
->```
->>:::{tip}
->>:class: margin toggle
->>このノートはマージンに表示されます！
->>:::
+::::{example}
+:::{tip}
+:class: margin toggle
+This note will be in the margin!
+:::
+::::
 ---
 
 % :class: toggle = :class: dropdown?
 
->````
->``{figure} ./gitHub/img/GitHub-flow.png
->---
->figclass: margin
->alt: My figure text
->name: myfig4
->---
->そして、ここが図のキャプションです
->```
->````
->>```{figure} ../basic/github/img/GitHub-flow.png
->>---
->>figclass: margin
->>alt: My figure text
->>name: myfig4
->>---
->>そして、ここが図のキャプションです
->>```
-
-<!--
-```{typescript}
-asdf
-asdf
-asdf
+::::{example}
+```{figure} ../basic/github/img/GitHub-flow.png
+---
+figclass: margin
+alt: My figure text
+name: myfig4
+---
+And here is my figure caption
 ```
--->
+::::
 
 
-## パネル
+## Panel
 https://sphinx-design.readthedocs.io/en/latest/cards.html
 
->`````
->````{card}
->パネルヘッダー1
->^^^
->パネルボディ1
->+++
->パネルフッター1
->````
->`````
->>````{card}
->>パネルヘッダー1
->>^^^
->>パネルボディ1
->>+++
->>パネルフッター1
->>````
+::::{example}
+```{card}
+Panel header 1
+^^^
+Panel body 1
++++
+Panel footer 1
+```
+::::
 
-## バッジ
->```
->{bdg}`plain badge`
->{bdg-primary}`primary` {bdg-primary-line}`primary-line`
->{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
->{bdg-success}`success` {bdg-success-line}`success-line`
->{bdg-info}`info` {bdg-info-line}`info-line`
->{bdg-warning}`warning` {bdg-warning-line}`warning-line`
->{bdg-danger}`danger` {bdg-danger-line}`danger-line`
->{bdg-light}`light` {bdg-light-line}`light-line`
->{bdg-dark}`dark` {bdg-dark-line}`dark-line`
->```
->>{bdg}`plain badge`
->>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
->>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
->>{bdg-success}`success` {bdg-success-line}`success-line`
->>{bdg-info}`info` {bdg-info-line}`info-line`
->>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
->>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
->>{bdg-light}`light` {bdg-light-line}`light-line`
->>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
+## Badge
+:::{example}
+{bdg}`plain badge`
+{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+{bdg-success}`success` {bdg-success-line}`success-line`
+{bdg-info}`info` {bdg-info-line}`info-line`
+{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+{bdg-light}`light` {bdg-light-line}`light-line`
+{bdg-dark}`dark` {bdg-dark-line}`dark-line`
+:::
 
 
 %{link-badge}`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
 %{link-badge}`https://example.com,"my, text",cls=badge-dark text-white`
 %{link-badge}`panels/usage,my reference,ref,badge-success text-white,hallo`
 
-### ドロップダウン
->`````
->````{dropdown}
->:animate: fade-in-slide-down
->```
->git add .
->git commit -m "update"
->git push origin main
->```
->````
->`````
->>````{dropdown}
->>:animate: fade-in-slide-down
->>```
->>git add .
->>git commit -m "update"
->>git push origin main
->>```
->>````
+### dropdown
+:::::{example}
+````{dropdown}
+:animate: fade-in-slide-down
 
-% fade-in, fade-in-slide-down : 初めてフェードインするときのフェードイン
->````
->```{admonition} ボタンをクリックして表示！
->:class: dropdown
->隠れたトグルコンテンツがあります！
->```
->````
->
->>```{admonition} ボタンをクリックして表示！
->>:class: dropdown
->>隠れたトグルコンテンツがあります！
->>```
+```
+git add .
+git commit -m "update"
+git push origin main
+```
+````
+:::::
 
-## 定義リスト
->```
->用語1
->: 定義
->
->用語2
->: 定義
->```
->>用語1
->>: 定義
->>
->>用語2
->>: 定義
 
->````
->```{glossary}
->用語1
->  用語1の説明
->
->2番目の用語
->  2番目の用語の説明
->```
->````
->>```{glossary}
->>用語1
->>  用語1の説明
->>
->>2番目の用語
->>  2番目の用語の説明
->>```
+::::{example}
+:::{admonition} Click the button to reveal!
+:class: dropdown
 
->````
->```{epigraph}
->ここにクールな引用があります。
->
->-- Jo the Jovyan
->```
->````
->>```{epigraph}
->>ここにクールな引用があります。
->>
->>-- Jo the Jovyan
->>```
+Some hidden toggle content!
+:::
+::::
 
-### タブ
+## Definition lists
+:::{example}
+Term 1
+: Definition
+
+Term 2
+: Definition
+:::
+
+
+::::{example}
+```{glossary}
+Term one
+  An indented explanation of term 1
+
+A second term
+  An indented explanation of term2
+```
+::::
+
+
+::::{example}
+```{epigraph}
+Here is a cool quotation.
+
+-- Jo the Jovyan
+```
+::::
+
+### tabs
 
 ex1
->`````
->````{tab-set}
->```{tab-item} タブ1のタイトル
->最初のタブ
->```
->
->```{tab-item} タブ2のタイトル
->`some code`を含む2番目のタブ！
->```
->````
->`````
->>````{tab-set}
->>```{tab-item} タブ1のタイトル
->>最初のタブ
->>```
->>
->>```{tab-item} タブ2のタイトル
->>`some code`を含む2番目のタブ！
->>```
->>````
+:::::{example}
+````{tab-set}
+```{tab-item} Tab 1 title
+My first tab
+```
+
+```{tab-item} Tab 2 title
+My second tab with `some code`!
+```
+````
+:::::
 
 ex2
->``````
->`````{tab-set}
->````{tab-item} c++
->
->```{code-block} c++
->
->int main(const int argc, const char **argv) {
->  return 0;
->}
->```
->````
->
->````{tab-item} python
->
->```{code-block} python
->
->def main():
->    return
->```
->````
->
->````{tab-item} java
->
->```{code-block} java
->
->class Main {
->    public static void main(String[] args) {
->    }
->}
->```
->````
->
->````{tab-item} julia
->
->```{code-block} julia
->
->function main()
->end
->```
->````
->
->````{tab-item} fortran
->
->```{code-block} fortran
->
->PROGRAM main
->END PROGRAM main
->```
->````
->`````
->``````
->>`````{tab-set}
->>````{tab-item} c++
->>
->>```{code-block} c++
->>
->>int main(const int argc, const char **argv) {
->>  return 0;
->>}
->>```
->>````
->>
->>````{tab-item} python
->>
->>```{code-block} python
->>
->>def main():
->>    return
->>```
->>````
->>
->>````{tab-item} java
->>
->>```{code-block} java
->>
->>class Main {
->>    public static void main(String[] args) {
->>    }
->>}
->>```
->>````
->>
->>````{tab-item} julia
->>
->>```{code-block} julia
->>
->>function main()
->>end
->>```
->>````
->>
->>````{tab-item} fortran
->>
->>```{code-block} fortran
->>
->>PROGRAM main
->>END PROGRAM main
->>```
->>````
->>`````
+::::::{example}
+`````{tab-set}
+````{tab-item} c++
+
+```{code-block} c++
+
+int main(const int argc, const char **argv) {
+  return 0;
+}
+```
+````
+
+````{tab-item} python
+
+```{code-block} python
+
+def main():
+    return
+```
+````
+
+````{tab-item} java
+
+```{code-block} java
+
+class Main {
+    public static void main(String[] args) {
+    }
+}
+```
+````
+
+````{tab-item} julia
+
+```{code-block} julia
+
+function main()
+end
+```
+````
+
+````{tab-item} fortran
+
+```{code-block} fortran
+
+PROGRAM main
+END PROGRAM main
+```
+````
+`````
+::::::
 
 ## key
 
-サブスティテューションを使用するには、最初に次のようにページのトップにフロントマターのコンテンツを追加します：
+To use a substitution, first add front-matter content to the top of a page like so:
 ````
 ---
 substitutions:
@@ -616,77 +448,71 @@ substitutions:
     ```
 ---
 ````
-そして、次のように使用します： `{{image}}`
+and use like this: `{{image}}`
 
 {{image}}
 
 
-### 本全体のサブスティテューションを定義する
+### Define substitutions for your whole book
 
-また、次の構成を使用して本全体のサブスティテューション変数を定義することもできます：
+You can also define book-level substitution variables with the following configuration:
 
 ```
 parse:
   myst_substitutions:
     key0: global-value
 ```
-グローバル値: {{key0}}
+global value: {{key0}}
 
 
-### フォーマットのサブスティテューション
-Sphinx 構成の `substitutions` オプションを使用して、次のようにサブスティテューションを定義できます：
+### Formatting substitutions
+The original key1: {{ key1 }}
+{{ key1 | replace("a substitution", "the best substitution")}}
 ```
 substitutions:
-  repo_url: [私のリポジトリURL](https://github.com/executablebooks/jupyter-book)
+  repo_url: [my repo url](https://github.com/executablebooks/jupyter-book)
 ```
 
-## 脚注
->```
->これは脚注[^mylabel]です。
->[^mylabel]: 私の脚注テキスト。
->```
->>これは脚注[^mylabel]です。
->>[^mylabel]: 私の脚注テキスト。
+## Footnotes
+:::{example}
+This is a footnote[^mylabel].
+[^mylabel]: My footnote text.
+:::
 
 
-## カスタム\<div> ブロック
->````
->```{div} my-class
->**いくつかのコンテンツ。**
->```
->````
->>```{div} my-class
->>**いくつかのコンテンツ。**
->>```
+## Custom \<div> blocks
+::::{example}
+:::{div} my-class
+**Some content.**
+:::
+::::
 
 
-## マークの欠落を確認する
-Jupyter Book をビルドする際に、欠落している参照を確認できます。これを行うには、次のオプションを使用してください：
+## Check for missing references
+You can check for missing references when building a Jupyter Book. To do so, use the following options:
 ```shell
 jupyter-book build -W -n --keep-going docs/
 ```
 
-## レイアウト
+## Layout
 full-width
->````
->```{note}
->:class: full-width
->全幅を取るノートです
->```
->````
->>```{note}
->>:class: full-width
->>全幅を取るノートです
->>```
 
-## 証明、定理、アルゴリズム
+::::{example}
+:::{note}
+:class: full-width
+Here's a note that will take the full width
+:::
+::::
 
-これは現在はJupyter Bookのデフォルトパッケージには含まれていないもので、比較的新しいパッケージです。
+
+## Proofs, Theorems, and Algorithms
+
+This is not currently a default package in jupyter-book as is a relatively new package.
 ```
 pip install sphinx-proof
 ```
 
-インストール後に _config.yml で有効にする必要があります。
+It needs to be enabled through the _config.yml after installation.
 
 ```yaml
 sphinx:
@@ -697,92 +523,75 @@ sphinx:
 https://sphinx-proof.readthedocs.io/en/latest/syntax.html
 
 ### Example
+::::{example}
+:::{prf:theorem} My theorem
+:nonumber:
 
->````
->```{prf:theorem} My theorem
->:nonumber:
->
->This is my theorem.
->```
->````
->
->>```{prf:theorem} My theorem
->>:nonumber:
->>
->>This is my theorem.
->>```
+This is my theorem.
+:::
+::::
 
 
->````
->```{prf:proof} My proof
->
->This is my proof.
->```
->````
->
->>```{prf:proof} My proof
->>
->>This is my proof.
->>```
+::::{example}
+:::{prf:proof} My proof
+
+This is my proof.
+:::
+::::
 
 
->````
->```{prf:remark} My remark
->:nonumber:
->
->This is my remark.
->```
->````
->
->>```{prf:remark} My remark
->>:nonumber:
->>
->>This is my remark.
->>```
+::::{example}
+:::{prf:remark} My remark
+:nonumber:
+
+This is my remark.
+:::
+::::
 
 
-# ビルドと出力の公開
+# Build and publish outputs
 
-## 本のバッジを生成する
-[![Jupyter Book バッジ](https://jupyterbook.org/badge.svg)](<https://github.com/kk564/jb-test.git>)
-さらに、[shields.io](https://shields.io/) から直接バッジを生成することもできます。こちらは、Jupyter Book のロゴのベース64エンコードバージョンを使用した自動生成バッジの URL です。ご自由に変更してください！
+## Generate a badge for your book
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](<https://github.com/kk564/jb-test.git>)
+Additionally, you can generate a badge directly from [shields.io](https://shields.io/). Here’s the URL to auto-generate the badge above, using a base64-encoded version of the Jupyter Book logo. Feel free to modify this as you wish!
 
-## LaTeXを使用してPDFをビルドする
+## Build a PDF using LaTeX
 
-### 本スタイルのPDF
+### Book Style PDF
 
-LaTeX を使用してプロジェクトの PDF をビルドするには、次のコマンドを使用します：
+To build a PDF of your project using LaTeX, use the following command:
 ```
 jupyter-book build mybookname/ --builder pdflatex [--individualpages]
 
-または
+or
 jb build mybookname/ --builder pdflatex [--individualpages]
 ```
 
 
 ````{note}
-LaTeXファイルを生成するだけの場合は、次のコマンドを使用できます：
+If you would just like to generate the latex file you may use:
 ```bash
 jb build mybookname/ --builder latex
 ```
 ````
 
 
-## 本内の外部リンクをチェックする
+## Check external links in your book
 
-本の外部リンクが有効であることを確認したい場合は、Jupyter Book で Sphinx リンクチェッカーを実行します。これにより、外部リンクの各々がチェックされます。
+If you’d like to make sure that the links outside of your book are valid, run the Sphinx link checker with Jupyter Book. This will check each of your external links and ensure that they resolve.
 
-リンクチェッカーを実行するには、次のコマンドを使用します：
+Note that you must ensure each link is the right target, the link checker will only ensure that it resolves.
+To run the link checker, use the following command:
 ```
 jupyter-book build mybookname/ --builder linkcheck
 ```
-`Jupyter Book` の各リンクのステータスが表示され、必要に応じて不正なリンクを後で解決できるようになります。
+It will print the status of each link in your book so that you may resolve any incorrect links later on.
 
-## アクセシビリティの向上のための設定
+## Configuring to Improve Accessibility
 
-本で使用される主要な言語を宣言することで、スクリーンリーダーやブラウザの翻訳ツールがサポートされます。
+Declaring the primary language used in your book assists screen reader and browser translation tools.
 
-言語は、言語オプションに適切な言語コードを提供することで設定できます。これは、`_config.yml` ファイルの sphinx 構成内の language オプションに記述します：
+Language can be configured by providing the appropriate language code to the language option, under sphinx configuration in your _config.yml file:
 ```yaml
 sphinx:
   config:
@@ -790,20 +599,18 @@ sphinx:
 ```
 
 
-## TeXマクロの定義
+## Defining TeX macros
 
-TeX ブロックの Macros オプションの下で、本全体に LaTeX マクロを定義できます。例として、次の2つのマクロは Sphinx 構成内で事前に定義されています
+You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following macros have been pre-defined in the Sphinx configuration
 ```yaml
 sphinx:
-  config                    :             # Sphinx構成を直接上書きするキーバリューペア
+  config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-                                          # デフォルトではMathJaxバージョン2が使用されています。
-                                          # 多くの数式を使用している場合は、バージョン3を試してみることができ、
-                                          # 読み込み速度を60-80%向上させると報告されています。
-
-:
+                                          # By default MathJax version 2 is currently used.
+                                          # If you are using a lot of math, you may want to try using version 3
+                                          # , which claims to improve load speeds by 60 - 80%:
     mathjax3_config:
-      loader:                             # physicsパッケージを使用したい場合は、これをロードし、以下のパッケージリストに追加する必要があります。
+      loader:                             # If you want to use physics package, you need to load it and add it to the packages list below.
         load                : ['[tex]/physics']
       tex:
         packages            : { '[+]': ['physics'] }
@@ -815,7 +622,7 @@ sphinx:
 ```
 
 
-また、特定のファイル用の TeX マクロを定義するには、math ディレクティブの下にファイルの先頭にそれらを導入します。例：
+You can also define TeX macros for a specific file by introducing them at the beginning of the file under a math directive. For example
 
 ````
 ```latex
@@ -827,5 +634,5 @@ sphinx:
 ````
 
 
-# 参考文献
+# Reference
 - [Jupyter Book](https://jupyterbook.org/en/stable/start/your-first-book.html)

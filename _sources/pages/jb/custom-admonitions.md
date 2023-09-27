@@ -80,7 +80,7 @@ div.simple .admonition-title {
     background-color: rgba(var(--pst-color-success), .1)
 }
 div.simple .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    content: none !important;
 }
 /* extra-credit class for admonitions */
 div.extra-credit {
@@ -123,11 +123,6 @@ extra credit and no-icon class
 :::{admonition} Title
 :class: simple
 simple class
-:::
-
-:::{admonition} Title
-:class: simple no-icon
-simple and no-icon class
 :::
 
 :::{admonition} Uncle Ben, Spider-Man (2002)

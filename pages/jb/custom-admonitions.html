@@ -239,10 +239,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. ツール</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. 便利なウェブアプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. 便利な Mac アプリ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. 便利な Firefox 拡張機能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. 便利な VS Code 拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulWebApps/usefulWebApps.html">6.1. Web アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulMacApps/usefulMacApps.html">6.2. Mac アプリ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulFirefoxExtensions/usefulFirefoxExtensions.html">6.3. Firefox 拡張機能</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tools/usefulVScodeExtensions/usefulVScodeExtensions.html">6.4. VS Code 拡張機能</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../others/others.html">7. その他</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -479,7 +479,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="custom-admonitions">
 <h1><span class="section-number">5.6. </span>Custom Admonitions<a class="headerlink" href="#custom-admonitions" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last modified: Sep 22, 2023</p>
+<div><p>last modified: Sep 27, 2023</p>
 </div></blockquote>
 <section id="myadmonitions-css">
 <h2><span class="section-number">5.6.1. </span><code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code><a class="headerlink" href="#myadmonitions-css" title="Permalink to this heading">#</a></h2>
@@ -596,7 +596,7 @@ admonition without icon
 <span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mf">.1</span><span class="p">)</span>
 <span class="p">}</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">simple</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="c">/* extra-credit class for admonitions */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">extra-credit</span><span class="w"> </span><span class="p">{</span>
@@ -642,11 +642,6 @@ extra credit and no-icon class
 simple class
 :::
 
-:::{admonition} Title
-:class: simple no-icon
-simple and no-icon class
-:::
-
 :::{admonition} Uncle Ben, Spider-Man (2002)
 :class: quote
 Remember, with great power comes great responsibility.
@@ -667,10 +662,6 @@ Remember, with great power comes great responsibility.
 <div class="simple admonition">
 <p class="admonition-title">Title</p>
 <p>simple class</p>
-</div>
-<div class="simple no-icon admonition">
-<p class="admonition-title">Title</p>
-<p>simple and no-icon class</p>
 </div>
 <div class="quote admonition">
 <p class="admonition-title">Uncle Ben, Spider-Man (2002)</p>
