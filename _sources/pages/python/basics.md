@@ -12,7 +12,7 @@ kernelspec:
 ---
 
 # Python and Jupyterlab
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 [Python](https://www.python.org/) とは、シンプルで最も人気のあるプログラミング言語であり、AIや機械学習、データ分析、データ可視化、Web、ゲームなどのさまざまな分野で使用されています。
 

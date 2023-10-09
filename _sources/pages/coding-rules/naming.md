@@ -1,5 +1,5 @@
 # 命名規則
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ## Pythonの命名規則
 

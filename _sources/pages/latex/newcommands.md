@@ -1,5 +1,5 @@
 # newcommands
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 以下に私のお気に入りの `\newcommand` のリストを示します。ドキュメントクラスにあまり依存しないと思うので、役に立つと思ったらプリアンブルに追加してください。
 

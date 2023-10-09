@@ -1,5 +1,4 @@
 # Welcome to my Jupyter Book
-> last modified: {sub-ref}`today`
 
 
 ::::{grid}

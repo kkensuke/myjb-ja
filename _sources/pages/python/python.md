@@ -1,5 +1,5 @@
 # Python
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 
 ::::{grid}

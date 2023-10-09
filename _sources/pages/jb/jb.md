@@ -1,5 +1,5 @@
 # Jupyter Book
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 :::{admonition} Jupyter Book
 :class: important

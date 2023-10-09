@@ -1,5 +1,5 @@
 # Homebrew と venv
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 パッケージマネージャとは何ですか？
 > パッケージマネージャまたはパッケージ管理システムは、コンピュータプログラムのインストール、アップグレード、設定、削除のプロセスを一貫した方法で自動化するためのソフトウェアツールのコレクションです。 - Wikipedia

@@ -1,5 +1,5 @@
 # Jupyter Book の作成
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 > [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) とは、さまざまな形式のドキュメント（HTML, PDF, ePUB など）を作成する Sphinx というツールと、MyST Markdown というサイエンスのドキュメントに適したマークダウンを融合させたツールです。Jupyter Book は、ドキュメント、研究、教育資料などを公開するために、Jupyter エコシステムで広く使われています。
 
