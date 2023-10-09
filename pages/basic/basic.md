@@ -1,5 +1,5 @@
 # プログラミング基礎
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ::::{grid}
 :gutter: 2

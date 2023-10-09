@@ -1,5 +1,5 @@
 # Firefox 拡張機能
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ## セキュリティ
 ### [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)

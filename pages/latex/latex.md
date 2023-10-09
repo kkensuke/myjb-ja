@@ -1,5 +1,5 @@
 # LaTeX
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 :::{admonition} $\LaTeX$
 :class: important
@@ -27,7 +27,7 @@ VS Code での $\LaTeX$ 設定
 :link: basics
 :link-type: doc
 
-LaTeXの基本
+$\LaTeX$ の基本
 :::
 ::::
 

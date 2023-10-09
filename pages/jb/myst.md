@@ -23,7 +23,7 @@ myst:
       ```
 ---
 #  MyST
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 % This file provide you the MyST syntax.
 

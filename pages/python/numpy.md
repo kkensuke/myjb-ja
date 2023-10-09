@@ -11,7 +11,7 @@ kernelspec:
   name: python3
 ---
 # Numpy
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 Numpyは、科学計算のためのPythonライブラリです。高性能な多次元配列や行列を提供し、これらのオブジェクトを効率的に操作するためのツールを提供します。
 

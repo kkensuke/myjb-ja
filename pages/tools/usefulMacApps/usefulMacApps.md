@@ -1,5 +1,5 @@
 # Mac アプリ
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 こちらの推奨アプリは基本的に無料です。
 

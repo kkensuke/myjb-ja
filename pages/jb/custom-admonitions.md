@@ -1,5 +1,5 @@
 # Custom Admonitions
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 
 ## `myadmonitions.css`
@@ -162,24 +162,24 @@ div.admonition-comment .admonition-title:after {
 }
 /* example class for admonitions */
 div.admonition-example {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    border-left-color:  rgba(100, 100, 100, 1);
 }
 div.admonition-example .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    background-color:  rgba(100, 100, 100, .01);
 }
 div.admonition-example .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(100, 100, 100, 1);
     content: "\f0c3";
 }
 /* question class for admonitions */
 div.admonition-question {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    border-left-color:  rgba(100, 100, 100, 1);
 }
 div.admonition-question .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    background-color:  rgba(100, 100, 100, .01);
 }
 div.admonition-question .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(100, 100, 100, 1);
     content: "\3f";
 }
 :::

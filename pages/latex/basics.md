@@ -1,6 +1,6 @@
 Latexの基本
 ===
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ## インライン数式
 
