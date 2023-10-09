@@ -7,7 +7,7 @@ First, Make `_static/myadmonitions.css` in your book.
 
 
 ## Change icons for pre-defined admonitions
-You can choose icon for admonitions from [Fontawsome](https://fontawesome.com/search?o=r&m=free&f=brands%2Cclassic%2Csharp)
+You can choose icons for admonitions from [Fontawsome](https://fontawesome.com/search?o=r&m=free&f=brands%2Cclassic%2Csharp)
 
 :::css
 /* change icon for note */
