@@ -1,5 +1,7 @@
 # revtex4-2
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## `preamble.tex`
 ```latex
@@ -18,6 +20,8 @@
 \usepackage{tikz}
 % comment
 \usepackage{comment}
+% dummy text
+\usepackage{lipsum}
 % image position
 \usepackage{here}
 % Align table columns on decimal point
@@ -26,7 +30,7 @@
 
 % style setting
 % ---------------------------------------------------------------------------- %
-\allowdisplaybreaks[1]
+\allowdisplaybreaks[1] % allow page breaks in equations. takes an integer from 0-4. 4 is the most permissive.
 \renewcommand{\baselinestretch}{1}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}}
 % ---------------------------------------------------------------------------- %
@@ -66,36 +70,71 @@
 % footinbib for PRL
 
 \input{preamble}
-\allowdisplaybreaks[1]
 
 \begin{document}
 
 
-\title{Asdf of asdf for asdf}
+\title{Title}
 
-\author{Qwerty Qwerty}
-    \email[]{qwerty(at)asdf.asdf.ac.jp}
+\author{Name 1}
+    \email[]{name1(at)asdf.ac.jp}
     \affiliation{
-    Dept.\ of Physics, The University of Qwerty, address
+    Dept.\ of Physics, The University of ~, address, city, country
     }
 
-    \author{Asdf Asdf}
-    \email[]{asdf(at)asdf.asdf.ac.jp}
+\author{Name 2}
+    \email[]{name2(at)asdf.ac.jp}
     \affiliation{
-    Dept.\ of Physics, The University of Asdf, address
+    Dept.\ of Physics, The University of ~, address, city, country
     }
 
 \date{\today}
 
 \begin{abstract}
-    abstract.
+    \lipsum[1]
 \end{abstract}
+
 
 \maketitle
 
 
-\section{Introduction}
-asdf asdf asdf asdf asdf asdf
+\input{sections/introduction.tex}
+\input{sections/asdf.tex}
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{ref}
+
+\newpage
+\appendix
+\input{sections/appendix.tex}
 
 \end{document}
 ```
+
+### `sections/introduction.tex`
+```latex
+\section{Introduction}
+\lipsum[1-5]
+```
+
+### `sections/asdf.tex`
+```latex
+\section{asdf}
+\lipsum[1-5]
+```
+
+### `sections/appendix.tex`
+```latex
+\section{Apple}
+\lipsum[1-4]
+```
+
+
+## Output
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/revtex4-2.pdf"></iframe>
+    <p>
+        Your browser does not support PDF files.
+        <a href="pdf/revtex4-2.pdf">Download the file instead</a>
+    </p>
+</div>

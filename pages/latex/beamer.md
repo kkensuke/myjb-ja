@@ -1,5 +1,7 @@
 # beamer
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## `preamble.tex`
 ```latex
@@ -11,14 +13,21 @@
 \usepackage{algorithm,algorithmic}
 % vector graphics
 \usepackage{tikz}
+\usetikzlibrary{quantikz}
 % comment
 \usepackage{comment}
+% dummy text
+\usepackage{lipsum}
 % image position
 \usepackage{here}
+```
+
+
+## `beamer-preamble.tex`
+```latex
 % figure caption
 \usepackage{caption}
 \captionsetup[figure]{labelformat=empty}
-
 % font family
 \usepackage{helvet}
 \renewcommand{\kanjifamilydefault}{\gtdefault} % for japanese
@@ -159,30 +168,37 @@
 
 ## `main.tex`
 ```latex
-\documentclass[10pt,aspectratio=169]{beamer}
+\documentclass[dvipdfmx,10pt,aspectratio=169]{beamer}
+
 
 \input{beamer-preamble.tex}
 \input{preamble.tex}
 
 
 \title{Title}
-%\subtitle{Subtitle}
+\subtitle{Subtitle}
 
-\author{Qwerty Qwerty\inst{1} \and Asdf Asdf\inst{2}}
-\institute{\inst{1} Dept.\ of Physics, The University of Qwerty \quad \inst{2} Dept.\ of Physics, The University of Asdf}
+\author{Name 1\inst{1} \and Name 2\inst{2}}
+\institute[a]{\inst{1} Dept.\ of Physics, The University of \quad \inst{2} Dept.\ of Physics, The University of}
 
 \date{\today}
-%\logo{\includegraphics[width=2cm]{logo.png}}
+%\logo{\includegraphics[width=2cm]{icepp-logo.png}}
 
 \begin{document}
 
 \frame{\titlepage}
+
+
+
+
 \begin{frame}{Table of Contents}
     \tableofcontents
 \end{frame}
 
 
-\section{abcd}
+
+
+\section{section1}
 
 \begin{frame}{Motivation}
     \begin{itemize}
@@ -190,6 +206,8 @@
         \item b
     \end{itemize}
 \end{frame}
+
+
 
 
 \begin{frame}
@@ -202,7 +220,36 @@
 \end{frame}
 
 
-\section{efgh}
+
+
+
+\section{section2}
+
+\begin{frame}{VQA}
+    \begin{center}
+        \begin{tikzpicture}
+            \node[scale=1.6]{
+            \begin{quantikz}
+                \lstick{$\ket{0}$} & \gate[3,bundle={2}][3cm]{U(\bth)} & \meter{} \\
+                & & \qwbundle[alternate]{}  \\
+                \lstick{$\ket{0}$} & \qw & \meter{} \\
+            \end{quantikz}};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+    \begin{definition}Barren plateaus\cite{mcclean2018barren}
+        $$ \mathbb{E}_{\boldsymbol{\theta}}\left[\frac{\partial C(\boldsymbol{\theta})}{\partial \theta_\nu}\right] = 0, \,\,\mathbb{V}_{\boldsymbol{\theta}}\left[\frac{\partial C(\boldsymbol{\theta})}{\partial \theta_\nu}\right] = \mathcal{O}(e^{-\alpha n}), \,\,\alpha > 0 $$
+    \end{definition}
+\end{frame}
+
+
+
 
 \begin{frame}
     \begin{theorem}
@@ -214,6 +261,9 @@
     \end{proof}
 
 \end{frame}
+
+
+
 
 
 \begin{frame}
@@ -235,6 +285,24 @@
 \end{frame}
 
 
+
+
+
+\section{section3}
+
+\begin{frame}{Table}
+    \begin{table}[]
+        \begin{tabular}{|l|c|c|}
+        \hline
+        a & b & c \\ \hline
+        d & e & f \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+
+
 \begin{frame}{Reference}
     \scriptsize
     \beamertemplatetextbibitems
@@ -242,5 +310,18 @@
     \bibliography{ref}
 \end{frame}
 
+
+
+
 \end{document}
 ```
+
+
+## Output
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/beamer.pdf"></iframe>
+    <p>
+        Your browser does not support PDF files.
+        <a href="pdf/beamer.pdf">Download the file instead</a>
+    </p>
+</div>
