@@ -85,6 +85,15 @@ beamer
 
 \newcommands
 :::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 3
+:link: thesis
+:link-type: doc
+
+thesis
+:::
 ::::
 
 これらのセクションに関連するすべてのファイルを[こちら](https://github.com/kkensuke/latex-template/tree/main)からダウンロードできます。
