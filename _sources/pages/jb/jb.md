@@ -31,6 +31,15 @@ MyST
 :::{grid-item-card}
 :class-item: sd-font-weight-light sd-fs-5 sd-text-center
 :columns: 6
+:link: embedding
+:link-type: doc
+
+Embedding
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
 :link: custom-admonitions
 :link-type: doc
 
