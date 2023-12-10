@@ -69,6 +69,7 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
                 "name": "pbibtex",
                 "command": "pbibtex",
                 "args": [
+                    // 日本語のためのオプション
                     "-kanji=utf8",
                     "%DOCFILE%"
                 ]
@@ -106,9 +107,8 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
     }
     ```
 
-## さあ、あなたの $\LaTeX$ ファイルをコンパイルしましょう！
-
-テスト用の LaTeX ディレクトリを作成しましょう。[こちら](https://github.com/kkensuke/latex-template)から `article-template` をダウンロードしてください。次に、VS Code でディレクトリを開きます。`intro.tex` を編集し、`cmd + S`（Mac）でコンパイルします。最終的に、同じディレクトリに変更された `main.pdf` が保存されます。
+## $\LaTeX$ ファイルをコンパイルしよう！
+テスト用の LaTeX ディレクトリを作成しましょう。[こちら](https://github.com/kkensuke/latex-template)から `article-template` をダウンロードしてください。そして、VS Code でディレクトリを開きます。`intro.tex` を編集し、`cmd + S`（Mac）でコンパイルします。すると、同じディレクトリに変更された `main.pdf` が保存されます。
 
 ディレクトリ構造は次の通りです：
 ```
@@ -125,8 +125,7 @@ article-template
     `-- appendix.tex
 ```
 
-上記のように `main.tex` を複数のファイルに分割し、次のように `main.tex` でそれらをインクルードすることができます：
-
+上記のように `main.tex` を複数のファイルに分割し、次のようにしてそれらを読み込ませることができます。
 ```latex
 \begin{document}
 \maketitle
