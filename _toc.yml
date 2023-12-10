@@ -50,6 +50,7 @@ parts:
       - file: pages/jb/mkjb
       - file: pages/jb/myst
       - file: pages/jb/custom-admonitions
+      - file: pages/jb/embedding
     - file: pages/tools/tools
       sections:
       - file: pages/tools/usefulWebApps/usefulWebApps
