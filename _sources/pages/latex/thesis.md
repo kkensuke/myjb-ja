@@ -216,3 +216,5 @@
         <a href="pdf/thesis.pdf">Download the file instead</a>
     </p>
 </div>
+
+もし、`report` クラスを使いたい場合は、最初の行の `article` を `report` に変更してください。

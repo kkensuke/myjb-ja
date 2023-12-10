@@ -461,7 +461,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.3.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.3.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.3.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-intro-tex"><code class="docutils literal notranslate"><span class="pre">sections/intro.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-asdf-tex"><code class="docutils literal notranslate"><span class="pre">sections/asdf.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-appendix-tex"><code class="docutils literal notranslate"><span class="pre">sections/appendix.tex</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.3.3. Output</a></li>
 </ul>
             </nav>
         </div>
@@ -478,6 +484,7 @@ document.write(`
 <blockquote>
 <div><p>last update: Dec 10, 2023</p>
 </div></blockquote>
+<div style="width: 790px;"></div>
 <section id="preamble-tex">
 <h2><span class="section-number">4.3.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% set margins</span>
@@ -505,7 +512,7 @@ document.write(`
 
 <span class="c">% style setting</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
-<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
+<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span> <span class="c">% allow page breaks in equations. takes an integer from 0-4. 4 is the most permissive.</span>
 <span class="k">\renewcommand\Authfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>14<span class="nb">}{</span>14.4<span class="nb">}</span><span class="k">\selectfont</span><span class="nb">}</span>
 <span class="k">\renewcommand\Affilfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>10<span class="nb">}{</span>10.8<span class="nb">}</span><span class="k">\itshape</span><span class="nb">}</span>
 <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\baselinestretch</span><span class="nb">}{</span>1.25<span class="nb">}</span>
@@ -540,26 +547,63 @@ document.write(`
 </section>
 <section id="main-tex">
 <h2><span class="section-number">4.3.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
-<p>もし、<code class="docutils literal notranslate"><span class="pre">report</span></code> クラスを使いたい場合は、最初の行の <code class="docutils literal notranslate"><span class="pre">article</span></code> を <code class="docutils literal notranslate"><span class="pre">report</span></code> に変更してください。</p>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<p>If you want to use <code class="docutils literal notranslate"><span class="pre">report</span></code> class, change <code class="docutils literal notranslate"><span class="pre">article</span></code> to <code class="docutils literal notranslate"><span class="pre">report</span></code> in the first line.</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[12pt,dvipdfmx]</span><span class="nb">{</span>article<span class="nb">}</span>
 <span class="k">\input</span><span class="nb">{</span>preamble<span class="nb">}</span>
-<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
 
 <span class="k">\title</span><span class="nb">{</span>Title<span class="nb">}</span>
-<span class="k">\author</span><span class="nb">{</span>Author<span class="nb">}</span>
-<span class="k">\affil</span><span class="nb">{</span>Dept.<span class="k">\ </span>of Physics, The University of Asdf, address<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Your Name<span class="nb">}</span>
+<span class="k">\affil</span><span class="nb">{</span>Dept.<span class="k">\ </span>of Physics, The University of ~, address, city, country<span class="nb">}</span>
 <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 <span class="k">\maketitle</span>
 <span class="k">\tableofcontents</span>
 
-<span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
-asdf asdf asdf asdf asdf asdf
+
+<span class="k">\input</span><span class="nb">{</span>sections/intro.tex<span class="nb">}</span>
+<span class="k">\input</span><span class="nb">{</span>sections/asdf.tex<span class="nb">}</span>
+
+<span class="k">\newpage</span>
+<span class="k">\bibliographystyle</span><span class="nb">{</span>abbrv<span class="nb">}</span>
+<span class="k">\bibliography</span><span class="nb">{</span>ref<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\appendix</span>
+<span class="k">\input</span><span class="nb">{</span>sections/appendix.tex<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </pre></div>
 </div>
+<section id="sections-intro-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">sections/intro.tex</span></code><a class="headerlink" href="#sections-intro-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+</pre></div>
+</div>
 </section>
+<section id="sections-asdf-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">sections/asdf.tex</span></code><a class="headerlink" href="#sections-asdf-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\section</span><span class="nb">{</span>asdf<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[2]</span>
+</pre></div>
+</div>
+</section>
+<section id="sections-appendix-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">sections/appendix.tex</span></code><a class="headerlink" href="#sections-appendix-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\section</span><span class="nb">{</span>Apple<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[3]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="output">
+<h2><span class="section-number">4.3.3. </span>Output<a class="headerlink" href="#output" title="Permalink to this heading">#</a></h2>
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/article.pdf"></iframe>
+    <p>
+        Your browser does not support PDF files.
+        <a href="pdf/article.pdf">Download the file instead</a>
+    </p>
+</div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -630,7 +674,13 @@ asdf asdf asdf asdf asdf asdf
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.3.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.3.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.3.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-intro-tex"><code class="docutils literal notranslate"><span class="pre">sections/intro.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-asdf-tex"><code class="docutils literal notranslate"><span class="pre">sections/asdf.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sections-appendix-tex"><code class="docutils literal notranslate"><span class="pre">sections/appendix.tex</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.3.3. Output</a></li>
 </ul>
   </nav></div>
 

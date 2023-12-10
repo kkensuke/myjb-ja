@@ -461,7 +461,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.6.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.6.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beamer-preamble-tex">4.6.2. <code class="docutils literal notranslate"><span class="pre">beamer-preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.6.3. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.6.4. Output</a></li>
 </ul>
             </nav>
         </div>
@@ -478,6 +480,7 @@ document.write(`
 <blockquote>
 <div><p>last update: Dec 10, 2023</p>
 </div></blockquote>
+<div style="width: 790px;"></div>
 <section id="preamble-tex">
 <h2><span class="section-number">4.6.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% mathtools: math tools, mathrsfs: RSFS fonts</span>
@@ -488,14 +491,21 @@ document.write(`
 <span class="k">\usepackage</span><span class="nb">{</span>algorithm,algorithmic<span class="nb">}</span>
 <span class="c">% vector graphics</span>
 <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
+<span class="k">\usetikzlibrary</span><span class="nb">{</span>quantikz<span class="nb">}</span>
 <span class="c">% comment</span>
 <span class="k">\usepackage</span><span class="nb">{</span>comment<span class="nb">}</span>
+<span class="c">% dummy text</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
 <span class="c">% image position</span>
 <span class="k">\usepackage</span><span class="nb">{</span>here<span class="nb">}</span>
-<span class="c">% figure caption</span>
+</pre></div>
+</div>
+</section>
+<section id="beamer-preamble-tex">
+<h2><span class="section-number">4.6.2. </span><code class="docutils literal notranslate"><span class="pre">beamer-preamble.tex</span></code><a class="headerlink" href="#beamer-preamble-tex" title="Permalink to this heading">#</a></h2>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% figure caption</span>
 <span class="k">\usepackage</span><span class="nb">{</span>caption<span class="nb">}</span>
 <span class="k">\captionsetup</span><span class="na">[figure]</span><span class="nb">{</span>labelformat=empty<span class="nb">}</span>
-
 <span class="c">% font family</span>
 <span class="k">\usepackage</span><span class="nb">{</span>helvet<span class="nb">}</span>
 <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\kanjifamilydefault</span><span class="nb">}{</span><span class="k">\gtdefault</span><span class="nb">}</span> <span class="c">% for japanese</span>
@@ -633,31 +643,38 @@ document.write(`
 </div>
 </section>
 <section id="main-tex">
-<h2><span class="section-number">4.6.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[10pt,aspectratio=169]</span><span class="nb">{</span>beamer<span class="nb">}</span>
+<h2><span class="section-number">4.6.3. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[dvipdfmx,10pt,aspectratio=169]</span><span class="nb">{</span>beamer<span class="nb">}</span>
+
 
 <span class="k">\input</span><span class="nb">{</span>beamer-preamble.tex<span class="nb">}</span>
 <span class="k">\input</span><span class="nb">{</span>preamble.tex<span class="nb">}</span>
 
 
 <span class="k">\title</span><span class="nb">{</span>Title<span class="nb">}</span>
-<span class="c">%\subtitle{Subtitle}</span>
+<span class="k">\subtitle</span><span class="nb">{</span>Subtitle<span class="nb">}</span>
 
-<span class="k">\author</span><span class="nb">{</span>Qwerty Qwerty<span class="k">\inst</span><span class="nb">{</span>1<span class="nb">}</span> <span class="k">\and</span> Asdf Asdf<span class="k">\inst</span><span class="nb">{</span>2<span class="nb">}}</span>
-<span class="k">\institute</span><span class="nb">{</span><span class="k">\inst</span><span class="nb">{</span>1<span class="nb">}</span> Dept.<span class="k">\ </span>of Physics, The University of Qwerty <span class="k">\quad</span> <span class="k">\inst</span><span class="nb">{</span>2<span class="nb">}</span> Dept.<span class="k">\ </span>of Physics, The University of Asdf<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>Name 1<span class="k">\inst</span><span class="nb">{</span>1<span class="nb">}</span> <span class="k">\and</span> Name 2<span class="k">\inst</span><span class="nb">{</span>2<span class="nb">}}</span>
+<span class="k">\institute</span><span class="na">[a]</span><span class="nb">{</span><span class="k">\inst</span><span class="nb">{</span>1<span class="nb">}</span> Dept.<span class="k">\ </span>of Physics, The University of <span class="k">\quad</span> <span class="k">\inst</span><span class="nb">{</span>2<span class="nb">}</span> Dept.<span class="k">\ </span>of Physics, The University of<span class="nb">}</span>
 
 <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
-<span class="c">%\logo{\includegraphics[width=2cm]{logo.png}}</span>
+<span class="c">%\logo{\includegraphics[width=2cm]{icepp-logo.png}}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 
 <span class="k">\frame</span><span class="nb">{</span><span class="k">\titlepage</span><span class="nb">}</span>
+
+
+
+
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Table of Contents<span class="nb">}</span>
     <span class="k">\tableofcontents</span>
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
 
 
-<span class="k">\section</span><span class="nb">{</span>abcd<span class="nb">}</span>
+
+
+<span class="k">\section</span><span class="nb">{</span>section1<span class="nb">}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Motivation<span class="nb">}</span>
     <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
@@ -665,6 +682,8 @@ document.write(`
         <span class="k">\item</span> b
     <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+
 
 
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
@@ -677,7 +696,36 @@ document.write(`
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
 
 
-<span class="k">\section</span><span class="nb">{</span>efgh<span class="nb">}</span>
+
+
+
+<span class="k">\section</span><span class="nb">{</span>section2<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>VQA<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+        <span class="k">\begin</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+            <span class="k">\node</span><span class="na">[scale=1.6]</span><span class="nb">{</span>
+            <span class="k">\begin</span><span class="nb">{</span>quantikz<span class="nb">}</span>
+                <span class="k">\lstick</span><span class="nb">{</span><span class="s">$</span><span class="nv">\ket</span><span class="nb">{</span><span class="m">0</span><span class="nb">}</span><span class="s">$</span><span class="nb">}</span> <span class="nb">&amp;</span> <span class="k">\gate</span><span class="na">[3,bundle={2}][3cm]</span><span class="nb">{</span>U(<span class="k">\bth</span>)<span class="nb">}</span> <span class="nb">&amp;</span> <span class="k">\meter</span><span class="nb">{}</span> <span class="k">\\</span>
+                <span class="nb">&amp;</span> <span class="nb">&amp;</span> <span class="k">\qwbundle</span><span class="na">[alternate]</span><span class="nb">{}</span>  <span class="k">\\</span>
+                <span class="k">\lstick</span><span class="nb">{</span><span class="s">$</span><span class="nv">\ket</span><span class="nb">{</span><span class="m">0</span><span class="nb">}</span><span class="s">$</span><span class="nb">}</span> <span class="nb">&amp;</span> <span class="k">\qw</span> <span class="nb">&amp;</span> <span class="k">\meter</span><span class="nb">{}</span> <span class="k">\\</span>
+            <span class="k">\end</span><span class="nb">{</span>quantikz<span class="nb">}}</span>;
+        <span class="k">\end</span><span class="nb">{</span>tikzpicture<span class="nb">}</span>
+    <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+
+
+
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>definition<span class="nb">}</span>Barren plateaus<span class="k">\cite</span><span class="nb">{</span>mcclean2018barren<span class="nb">}</span>
+        <span class="sb">$$</span><span class="nb"> </span><span class="nv">\mathbb</span><span class="nb">{E}_{</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\theta</span><span class="nb">}}</span><span class="nv">\left</span><span class="o">[</span><span class="nv">\frac</span><span class="nb">{</span><span class="nv">\partial</span><span class="nb"> C</span><span class="o">(</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\theta</span><span class="nb">}</span><span class="o">)</span><span class="nb">}{</span><span class="nv">\partial</span><span class="nb"> </span><span class="nv">\theta</span><span class="nb">_</span><span class="nv">\nu</span><span class="nb">}</span><span class="nv">\right</span><span class="o">]</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">0</span><span class="nb">, </span><span class="nv">\,\,\mathbb</span><span class="nb">{V}_{</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\theta</span><span class="nb">}}</span><span class="nv">\left</span><span class="o">[</span><span class="nv">\frac</span><span class="nb">{</span><span class="nv">\partial</span><span class="nb"> C</span><span class="o">(</span><span class="nv">\boldsymbol</span><span class="nb">{</span><span class="nv">\theta</span><span class="nb">}</span><span class="o">)</span><span class="nb">}{</span><span class="nv">\partial</span><span class="nb"> </span><span class="nv">\theta</span><span class="nb">_</span><span class="nv">\nu</span><span class="nb">}</span><span class="nv">\right</span><span class="o">]</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\mathcal</span><span class="nb">{O}</span><span class="o">(</span><span class="nb">e^{</span><span class="o">-</span><span class="nv">\alpha</span><span class="nb"> n}</span><span class="o">)</span><span class="nb">, </span><span class="nv">\,\,\alpha</span><span class="nb"> &gt; </span><span class="m">0</span><span class="nb"> </span><span class="s">$$</span>
+    <span class="k">\end</span><span class="nb">{</span>definition<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+
+
 
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
     <span class="k">\begin</span><span class="nb">{</span>theorem<span class="nb">}</span>
@@ -689,6 +737,9 @@ document.write(`
     <span class="k">\end</span><span class="nb">{</span>proof<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+
+
 
 
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
@@ -710,6 +761,24 @@ document.write(`
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
 
 
+
+
+
+<span class="k">\section</span><span class="nb">{</span>section3<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Table<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[]
+        <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|l|c|c|<span class="nb">}</span>
+        <span class="k">\hline</span>
+        a <span class="nb">&amp;</span> b <span class="nb">&amp;</span> c <span class="k">\\</span> <span class="k">\hline</span>
+        d <span class="nb">&amp;</span> e <span class="nb">&amp;</span> f <span class="k">\\</span> <span class="k">\hline</span>
+        <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+    <span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+
+
+
+
 <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}{</span>Reference<span class="nb">}</span>
     <span class="k">\scriptsize</span>
     <span class="k">\beamertemplatetextbibitems</span>
@@ -717,10 +786,22 @@ document.write(`
     <span class="k">\bibliography</span><span class="nb">{</span>ref<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
 
+
+
+
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </pre></div>
 </div>
 </section>
+<section id="output">
+<h2><span class="section-number">4.6.4. </span>Output<a class="headerlink" href="#output" title="Permalink to this heading">#</a></h2>
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/beamer.pdf"></iframe>
+    <p>
+        Your browser does not support PDF files.
+        <a href="pdf/beamer.pdf">Download the file instead</a>
+    </p>
+</div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -791,7 +872,9 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.6.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.6.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beamer-preamble-tex">4.6.2. <code class="docutils literal notranslate"><span class="pre">beamer-preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.6.3. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.6.4. Output</a></li>
 </ul>
   </nav></div>
 
