@@ -37,6 +37,7 @@ parts:
       - file: pages/latex/basics
       - file: pages/latex/article
       - file: pages/latex/revtex4-2
+      - file: pages/latex/thesis
       - file: pages/latex/beamer
       - file: pages/latex/newcommands
     # - file: pages/qc/qc
