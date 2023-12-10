@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4.4. revtex4-2 &#8212; My note</title>
+    <title>4.5. Thesis &#8212; My note</title>
   
   
   
@@ -106,13 +106,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/latex/revtex4-2';</script>
-    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/revtex4-2.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/latex/thesis';</script>
+    <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/thesis.html" />
     <link rel="shortcut icon" href="../../_static/mylogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.5. Thesis" href="thesis.html" />
-    <link rel="prev" title="4.3. article" href="article.html" />
+    <link rel="next" title="4.6. beamer" href="beamer.html" />
+    <link rel="prev" title="4.4. revtex4-2" href="revtex4-2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -224,8 +224,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="settings.html">4.1. VS Code での LaTeX 設定</a></li>
 <li class="toctree-l2"><a class="reference internal" href="basics.html">4.2. Latexの基本</a></li>
 <li class="toctree-l2"><a class="reference internal" href="article.html">4.3. article</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.4. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="thesis.html">4.5. Thesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.4. revtex4-2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.5. Thesis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="beamer.html">4.6. beamer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.7. newcommands</a></li>
 </ul>
@@ -321,7 +321,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/latex/revtex4-2.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/latex/thesis.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -338,7 +338,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/latex/revtex4-2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fpages/latex/thesis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/pages/latex/revtex4-2.md" target="_blank"
+      <li><a href="../../_sources/pages/latex/thesis.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -450,7 +450,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>revtex4-2</h1>
+    <h1>Thesis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -460,8 +460,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.4.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.4.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.5.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.5.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-title-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-title.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-abstract-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-abstract.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-symbols-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-symbols.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-intro-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-intro.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-1-asdf-tex"><code class="docutils literal notranslate"><span class="pre">chapters/1-asdf.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-9-appendix-tex"><code class="docutils literal notranslate"><span class="pre">chapters/9-appendix.tex</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.5.3. Output</a></li>
 </ul>
             </nav>
         </div>
@@ -473,16 +482,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="revtex4-2">
-<h1><span class="section-number">4.4. </span>revtex4-2<a class="headerlink" href="#revtex4-2" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="thesis">
+<h1><span class="section-number">4.5. </span>Thesis<a class="headerlink" href="#thesis" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>last update: Dec 10, 2023</p>
 </div></blockquote>
+<div style="width: 790px;"></div>
 <section id="preamble-tex">
-<h2><span class="section-number">4.4.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">4.5.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this heading">#</a></h2>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% set margins</span>
 <span class="k">\usepackage</span><span class="na">[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]</span><span class="nb">{</span>geometry<span class="nb">}</span>
-<span class="k">\usepackage</span><span class="na">[dvipdfmx]</span><span class="nb">{</span>graphicx,hyperref,xcolor<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="na">[dvipdfmx]</span><span class="nb">{</span>graphicx,hyperref,color<span class="nb">}</span>
 <span class="c">% math</span>
 <span class="k">\usepackage</span><span class="nb">{</span>amsmath,amsthm,amssymb,mathtools,mathrsfs<span class="nb">}</span>
 <span class="c">% physics</span>
@@ -495,17 +505,31 @@ document.write(`
 <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
 <span class="c">% comment</span>
 <span class="k">\usepackage</span><span class="nb">{</span>comment<span class="nb">}</span>
+<span class="c">% dummy text</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lipsum<span class="nb">}</span>
 <span class="c">% image position</span>
 <span class="k">\usepackage</span><span class="nb">{</span>here<span class="nb">}</span>
 <span class="c">% Align table columns on decimal point</span>
 <span class="k">\usepackage</span><span class="nb">{</span>dcolumn<span class="nb">}</span>
+<span class="c">% author</span>
+<span class="k">\usepackage</span><span class="nb">{</span>authblk<span class="nb">}</span>
+<span class="c">% url</span>
+<span class="k">\usepackage</span><span class="nb">{</span>url<span class="nb">}</span>
+<span class="c">% color</span>
+<span class="k">\usepackage</span><span class="nb">{</span>xcolor<span class="nb">}</span>
+<span class="k">\hypersetup</span><span class="nb">{</span>
+    colorlinks=true,
+    linkcolor=blue,
+    <span class="c">%urlcolor=cyan,</span>
+<span class="nb">}</span>
 
 
 <span class="c">% style setting</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
-<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
-<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\baselinestretch</span><span class="nb">}{</span>1<span class="nb">}</span>
-<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\abstractname</span><span class="nb">}{</span><span class="k">\vspace</span><span class="nb">{</span>-<span class="k">\baselineskip</span><span class="nb">}}</span>
+<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span> <span class="c">% allow page breaks in equations. takes an integer from 0-4. 4 is the most permissive.</span>
+<span class="k">\renewcommand\Authfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>14<span class="nb">}{</span>14.4<span class="nb">}</span><span class="k">\selectfont</span><span class="nb">}</span>
+<span class="k">\renewcommand\Affilfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>10<span class="nb">}{</span>10.8<span class="nb">}</span><span class="k">\itshape</span><span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\baselinestretch</span><span class="nb">}{</span>1.25<span class="nb">}</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
 
 
@@ -536,47 +560,153 @@ document.write(`
 </div>
 </section>
 <section id="main-tex">
-<h2><span class="section-number">4.4.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[dvipdfmx,twocolumn,preprintnumbers,superscriptaddress,nofootinbib]</span><span class="nb">{</span>revtex4-2<span class="nb">}</span>
-<span class="c">% landscape</span>
-<span class="c">% footinbib for PRL</span>
-
+<h2><span class="section-number">4.5.2. </span><code class="docutils literal notranslate"><span class="pre">main.tex</span></code><a class="headerlink" href="#main-tex" title="Permalink to this heading">#</a></h2>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[12pt,dvipdfmx]</span><span class="nb">{</span>report<span class="nb">}</span>
 <span class="k">\input</span><span class="nb">{</span>preamble<span class="nb">}</span>
-<span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
+
+
+<span class="k">\title</span><span class="nb">{}</span>
+<span class="k">\author</span><span class="nb">{}</span>
+<span class="k">\affil</span><span class="nb">{}</span>
+<span class="k">\date</span><span class="nb">{}</span>
 
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 
 
-<span class="k">\title</span><span class="nb">{</span>Asdf of asdf for asdf<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/0-title.tex<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/0-abstract.tex<span class="nb">}</span>
 
-<span class="k">\author</span><span class="nb">{</span>Qwerty Qwerty<span class="nb">}</span>
-    <span class="k">\email</span><span class="na">[]</span><span class="nb">{</span>qwerty(at)asdf.asdf.ac.jp<span class="nb">}</span>
-    <span class="k">\affiliation</span><span class="nb">{</span>
-    Dept.<span class="k">\ </span>of Physics, The University of Qwerty, address
-    <span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\tableofcontents</span>
 
-    <span class="k">\author</span><span class="nb">{</span>Asdf Asdf<span class="nb">}</span>
-    <span class="k">\email</span><span class="na">[]</span><span class="nb">{</span>asdf(at)asdf.asdf.ac.jp<span class="nb">}</span>
-    <span class="k">\affiliation</span><span class="nb">{</span>
-    Dept.<span class="k">\ </span>of Physics, The University of Asdf, address
-    <span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/0-symbols.tex<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/0-intro.tex<span class="nb">}</span>
 
-<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/1-asdf.tex<span class="nb">}</span>
 
-<span class="k">\begin</span><span class="nb">{</span>abstract<span class="nb">}</span>
-    abstract.
-<span class="k">\end</span><span class="nb">{</span>abstract<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\bibliographystyle</span><span class="nb">{</span>unsrt<span class="nb">}</span>
+<span class="k">\bibliography</span><span class="nb">{</span>ref<span class="nb">}</span>
 
-<span class="k">\maketitle</span>
-
-
-<span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
-asdf asdf asdf asdf asdf asdf
+<span class="k">\newpage</span>
+<span class="k">\appendix</span>
+<span class="k">\input</span><span class="nb">{</span>chapters/9-appendix.tex<span class="nb">}</span>
 
 <span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </pre></div>
 </div>
+<section id="chapters-0-title-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/0-title.tex</span></code><a class="headerlink" href="#chapters-0-title-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+        <span class="k">\vspace*</span><span class="nb">{</span>1cm<span class="nb">}</span>
+
+        <span class="k">\textbf</span><span class="nb">{</span><span class="k">\LARGE</span> Title<span class="nb">}</span>
+
+        <span class="k">\vspace</span><span class="nb">{</span>0.5cm<span class="nb">}</span>
+        <span class="c">% {\LARGE Thesis Subtitle}</span>
+
+        <span class="k">\vspace</span><span class="nb">{</span>1.5cm<span class="nb">}</span>
+
+        <span class="k">\textbf</span><span class="nb">{</span><span class="k">\LARGE</span> Your Name<span class="nb">}</span>
+
+        <span class="k">\vfill</span>
+
+        <span class="k">\Large</span>
+        A thesis presented for the degree of ...
+
+        <span class="c">% \includegraphics[width=0.4\textwidth]{university.png}</span>
+
+        Department of Physics, Graduate School of Science,<span class="k">\\</span>
+        The University of ..., Country<span class="k">\\</span>
+        <span class="k">\today</span>
+
+    <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+</pre></div>
+</div>
 </section>
+<section id="chapters-0-abstract-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/0-abstract.tex</span></code><a class="headerlink" href="#chapters-0-abstract-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\thispagestyle</span><span class="nb">{</span>plain<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+    <span class="k">\null\vspace</span><span class="nb">{</span><span class="k">\fill</span><span class="nb">}</span>
+    
+    <span class="k">\textbf</span><span class="nb">{</span><span class="k">\Large</span> Abstract<span class="nb">}</span>
+    
+    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+    
+    <span class="k">\vspace</span><span class="nb">{</span><span class="k">\fill</span><span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+</pre></div>
+</div>
+</section>
+<section id="chapters-0-symbols-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/0-symbols.tex</span></code><a class="headerlink" href="#chapters-0-symbols-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\chapter*</span><span class="nb">{</span>List of Symbols<span class="nb">}</span>
+<span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>List of Symbols<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>c p<span class="nb">{</span>1<span class="k">\textwidth</span><span class="nb">}}</span>
+    <span class="s">$</span><span class="nv">\bbR</span><span class="s">$</span> <span class="nb">&amp;</span> Real number <span class="k">\\</span>
+    <span class="s">$</span><span class="nv">\bbC</span><span class="s">$</span> <span class="nb">&amp;</span> Complex number <span class="k">\\</span>
+    <span class="s">$</span><span class="nv">\delta</span><span class="nb">_{ij}</span><span class="s">$</span> <span class="nb">&amp;</span> Kronecker delta <span class="k">\\</span>
+    <span class="s">$</span><span class="nb">I</span><span class="s">$</span> <span class="nb">&amp;</span> Identity matrix <span class="k">\\</span>
+    <span class="s">$</span><span class="nv">\calH</span><span class="s">$</span> <span class="nb">&amp;</span> Hilbert space <span class="k">\\</span>
+    <span class="s">$</span><span class="nv">\calO</span><span class="s">$</span> <span class="nb">&amp;</span> Big-O notation <span class="k">\\</span>
+    <span class="s">$</span><span class="nb">i,j,k,l;</span><span class="nv">\;</span><span class="nb"> p,q,r,s</span><span class="s">$</span> <span class="nb">&amp;</span> Indices <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+
+
+
+<span class="k">\chapter*</span><span class="nb">{</span>Glossary and Abbreviations<span class="nb">}</span>
+<span class="k">\addcontentsline</span><span class="nb">{</span>toc<span class="nb">}{</span>chapter<span class="nb">}{</span>Glossary and Abbreviations<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>c p<span class="nb">{</span>1<span class="k">\textwidth</span><span class="nb">}}</span>
+    ML <span class="nb">&amp;</span> Machine Learning <span class="k">\\</span>
+    TN <span class="nb">&amp;</span> Tensor Network <span class="k">\\</span>
+    MPS <span class="nb">&amp;</span> Matrix Product State <span class="k">\\</span>
+    SPSA <span class="nb">&amp;</span> Simultaneous Perturbation Stochastic Approximation <span class="k">\\</span>
+    RKHS <span class="nb">&amp;</span> Reproducing Kernel Hilbert Space <span class="k">\\</span>
+    SVM <span class="nb">&amp;</span> Support Vector Machine <span class="k">\\</span>
+    SGD <span class="nb">&amp;</span> Stochastic Gradient Descent <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</pre></div>
+</div>
+</section>
+<section id="chapters-0-intro-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/0-intro.tex</span></code><a class="headerlink" href="#chapters-0-intro-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\chapter</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+</pre></div>
+</div>
+</section>
+<section id="chapters-1-asdf-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/1-asdf.tex</span></code><a class="headerlink" href="#chapters-1-asdf-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\chapter</span><span class="nb">{</span>asdf<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+</pre></div>
+</div>
+</section>
+<section id="chapters-9-appendix-tex">
+<h3><code class="docutils literal notranslate"><span class="pre">chapters/9-appendix.tex</span></code><a class="headerlink" href="#chapters-9-appendix-tex" title="Permalink to this heading">#</a></h3>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\chapter</span><span class="nb">{</span>Apple<span class="nb">}</span>
+<span class="k">\lipsum</span><span class="na">[1]</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="output">
+<h2><span class="section-number">4.5.3. </span>Output<a class="headerlink" href="#output" title="Permalink to this heading">#</a></h2>
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/thesis.pdf"></iframe>
+    <p>
+        Your browser does not support PDF files.
+        <a href="pdf/thesis.pdf">Download the file instead</a>
+    </p>
+</div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -611,20 +741,20 @@ asdf asdf asdf asdf asdf asdf
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="article.html"
+       href="revtex4-2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4.3. </span>article</p>
+        <p class="prev-next-title"><span class="section-number">4.4. </span>revtex4-2</p>
       </div>
     </a>
     <a class="right-next"
-       href="thesis.html"
+       href="beamer.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.5. </span>Thesis</p>
+        <p class="prev-next-title"><span class="section-number">4.6. </span>beamer</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -646,8 +776,17 @@ asdf asdf asdf asdf asdf asdf
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.4.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.4.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preamble-tex">4.5.1. <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#main-tex">4.5.2. <code class="docutils literal notranslate"><span class="pre">main.tex</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-title-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-title.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-abstract-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-abstract.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-symbols-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-symbols.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-0-intro-tex"><code class="docutils literal notranslate"><span class="pre">chapters/0-intro.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-1-asdf-tex"><code class="docutils literal notranslate"><span class="pre">chapters/1-asdf.tex</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chapters-9-appendix-tex"><code class="docutils literal notranslate"><span class="pre">chapters/9-appendix.tex</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output">4.5.3. Output</a></li>
 </ul>
   </nav></div>
 
