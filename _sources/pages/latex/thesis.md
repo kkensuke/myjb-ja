@@ -42,12 +42,11 @@
 \linenumbers % comment out to hide line number
 % make header
 \usepackage{fancyhdr}
-\pagestyle{fancy}
 \lhead{\leftmark}
 \rhead{}
 \cfoot{\thepage} % remove page number at the bottom
-\renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}} % leftmark for english
-% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese
+\renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese
+% \renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}} % leftmark for english
 % \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark
 
 
@@ -99,20 +98,17 @@
 
 \begin{document}
 
-
 \newpage
 \input{chapters/0-title.tex}
 \newpage
 \input{chapters/0-abstract.tex}
-
 \newpage
 \tableofcontents
-
 \newpage
 \input{chapters/0-symbols.tex}
 \newpage
+\pagestyle{fancy}
 \input{chapters/0-intro.tex}
-
 \newpage
 \input{chapters/1-asdf.tex}
 
@@ -129,32 +125,34 @@
 
 ### `chapters/0-title.tex`
 ```latex
+\newgeometry{top=20truemm,bottom=20truemm,left=10truemm,right=10truemm}
 \begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
-
-        \textbf{\LARGE Title}
-
+    \begin{center}        
+        \vspace*{3cm}
+        
+        {\Large 20XX年度　修士論文}
+        \vspace{5cm}
+ 
+        {\Large 。。。。。の。。。。に関する研究\\ }
         \vspace{0.5cm}
-        % {\LARGE Thesis Subtitle}
-
-        \vspace{1.5cm}
-
-        \textbf{\LARGE Your Name}
-
+        {\fontsize{15pt}{0cm}\selectfont (Analysis of ......... in ..........)}
+        
+        
+        \vspace{5cm}
+        
         \vfill
-
-        \Large
-        A thesis presented for the degree of ...
-
-        % \includegraphics[width=0.4\textwidth]{university.png}
-
-        Department of Physics, Graduate School of Science,\\
-        The University of ..., Country\\
-        \today
-
+        
+        {\large XX大学大学院 理学系研究科 物理学専攻 XX研究室}
+        
+        \vspace{0.5cm}
+        {\Large 名前　名前}
+        
+        \vspace{1cm}
+        {\Large \today}
+        
     \end{center}
 \end{titlepage}
+\restoregeometry
 ```
 
 ### `chapters/0-abstract.tex`

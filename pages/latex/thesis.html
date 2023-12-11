@@ -528,12 +528,11 @@ document.write(`
 <span class="k">\linenumbers</span> <span class="c">% comment out to hide line number</span>
 <span class="c">% make header</span>
 <span class="k">\usepackage</span><span class="nb">{</span>fancyhdr<span class="nb">}</span>
-<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
 <span class="k">\lhead</span><span class="nb">{</span><span class="k">\leftmark</span><span class="nb">}</span>
 <span class="k">\rhead</span><span class="nb">{}</span>
 <span class="k">\cfoot</span><span class="nb">{</span><span class="k">\thepage</span><span class="nb">}</span> <span class="c">% remove page number at the bottom</span>
-<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\chaptermark</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\markboth</span><span class="nb">{</span>Chpater <span class="k">\thechapter</span>.<span class="k">\ </span>#1<span class="nb">}{}}</span> <span class="c">% leftmark for english</span>
-<span class="c">% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\chaptermark</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\markboth</span><span class="nb">{</span>第<span class="k">\ \normalfont\thechapter\ </span>章~#1<span class="nb">}{}}</span> <span class="c">% leftmark for japanese</span>
+<span class="c">% \renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}} % leftmark for english</span>
 <span class="c">% \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark</span>
 
 
@@ -585,20 +584,17 @@ document.write(`
 
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-title.tex<span class="nb">}</span>
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-abstract.tex<span class="nb">}</span>
-
 <span class="k">\newpage</span>
 <span class="k">\tableofcontents</span>
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-symbols.tex<span class="nb">}</span>
 <span class="k">\newpage</span>
+<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-intro.tex<span class="nb">}</span>
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/1-asdf.tex<span class="nb">}</span>
 
@@ -615,32 +611,34 @@ document.write(`
 </div>
 <section id="chapters-0-title-tex">
 <h3><code class="docutils literal notranslate"><span class="pre">chapters/0-title.tex</span></code><a class="headerlink" href="#chapters-0-title-tex" title="Permalink to this heading">#</a></h3>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>titlepage<span class="nb">}</span>
-    <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
-        <span class="k">\vspace*</span><span class="nb">{</span>1cm<span class="nb">}</span>
-
-        <span class="k">\textbf</span><span class="nb">{</span><span class="k">\LARGE</span> Title<span class="nb">}</span>
-
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\newgeometry</span><span class="nb">{</span>top=20truemm,bottom=20truemm,left=10truemm,right=10truemm<span class="nb">}</span>
+<span class="k">\begin</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+    <span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>        
+        <span class="k">\vspace*</span><span class="nb">{</span>3cm<span class="nb">}</span>
+        
+        <span class="nb">{</span><span class="k">\Large</span> 20XX年度　修士論文<span class="nb">}</span>
+        <span class="k">\vspace</span><span class="nb">{</span>5cm<span class="nb">}</span>
+ 
+        <span class="nb">{</span><span class="k">\Large</span> 。。。。。の。。。。に関する研究<span class="k">\\</span> <span class="nb">}</span>
         <span class="k">\vspace</span><span class="nb">{</span>0.5cm<span class="nb">}</span>
-        <span class="c">% {\LARGE Thesis Subtitle}</span>
-
-        <span class="k">\vspace</span><span class="nb">{</span>1.5cm<span class="nb">}</span>
-
-        <span class="k">\textbf</span><span class="nb">{</span><span class="k">\LARGE</span> Your Name<span class="nb">}</span>
-
+        <span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>15pt<span class="nb">}{</span>0cm<span class="nb">}</span><span class="k">\selectfont</span> (Analysis of ......... in ..........)<span class="nb">}</span>
+        
+        
+        <span class="k">\vspace</span><span class="nb">{</span>5cm<span class="nb">}</span>
+        
         <span class="k">\vfill</span>
-
-        <span class="k">\Large</span>
-        A thesis presented for the degree of ...
-
-        <span class="c">% \includegraphics[width=0.4\textwidth]{university.png}</span>
-
-        Department of Physics, Graduate School of Science,<span class="k">\\</span>
-        The University of ..., Country<span class="k">\\</span>
-        <span class="k">\today</span>
-
+        
+        <span class="nb">{</span><span class="k">\large</span> XX大学大学院 理学系研究科 物理学専攻 XX研究室<span class="nb">}</span>
+        
+        <span class="k">\vspace</span><span class="nb">{</span>0.5cm<span class="nb">}</span>
+        <span class="nb">{</span><span class="k">\Large</span> 名前　名前<span class="nb">}</span>
+        
+        <span class="k">\vspace</span><span class="nb">{</span>1cm<span class="nb">}</span>
+        <span class="nb">{</span><span class="k">\Large</span> <span class="k">\today</span><span class="nb">}</span>
+        
     <span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
 <span class="k">\end</span><span class="nb">{</span>titlepage<span class="nb">}</span>
+<span class="k">\restoregeometry</span>
 </pre></div>
 </div>
 </section>
