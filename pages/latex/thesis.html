@@ -523,6 +523,18 @@ document.write(`
     linkcolor=blue,
     <span class="c">%urlcolor=cyan,</span>
 <span class="nb">}</span>
+<span class="c">% show line number</span>
+<span class="k">\usepackage</span><span class="nb">{</span>lineno<span class="nb">}</span>
+<span class="k">\linenumbers</span> <span class="c">% comment out to hide line number</span>
+<span class="c">% make header</span>
+<span class="k">\usepackage</span><span class="nb">{</span>fancyhdr<span class="nb">}</span>
+<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
+<span class="k">\lhead</span><span class="nb">{</span><span class="k">\leftmark</span><span class="nb">}</span>
+<span class="k">\rhead</span><span class="nb">{}</span>
+<span class="k">\cfoot</span><span class="nb">{</span><span class="k">\thepage</span><span class="nb">}</span> <span class="c">% remove page number at the bottom</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\chaptermark</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\markboth</span><span class="nb">{</span>Chpater <span class="k">\thechapter</span>.<span class="k">\ </span>#1<span class="nb">}{}}</span> <span class="c">% leftmark for english</span>
+<span class="c">% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese</span>
+<span class="c">% \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark</span>
 
 
 <span class="c">% style setting</span>

@@ -37,6 +37,18 @@
     linkcolor=blue,
     %urlcolor=cyan,
 }
+% show line number
+\usepackage{lineno}
+\linenumbers % comment out to hide line number
+% make header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{}
+\cfoot{\thepage} % remove page number at the bottom
+\renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}} % leftmark for english
+% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese
+% \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark
 
 
 % style setting
