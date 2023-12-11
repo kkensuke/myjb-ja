@@ -6,7 +6,7 @@
 ## `preamble.tex`
 ```latex
 % set margins
-\usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
+\usepackage[top=25truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,color}
 % math
 \usepackage{amsmath,amsthm,amssymb,mathtools,mathrsfs}
