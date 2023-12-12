@@ -40,8 +40,8 @@ export ZDOTDIR="$HOME/path/to/zsh"
 ```
 
 ```bash
-# .zshenv のエイリアスをホームディレクトリに配置
-.zshenv -> '/Users/$HOME/path/to/zsh/.zshenv'
+# zsh/ にある .zshenv を読み込むためのエイリアスをホームディレクトリに配置
+~/.zshenv -> '/Users/$HOME/path/to/zsh/.zshenv'
 ```
 
 ## `.zshrc`

@@ -51,6 +51,9 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 
     ```json
     {
+        // 他の設定
+        // ...
+        
         // latex
         "latex-workshop.latex.tools": [
             {
@@ -106,7 +109,7 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
     ```
 
 ## $\LaTeX$ ファイルをコンパイルしよう！
-テスト用の LaTeX ディレクトリを作成しましょう。[こちら](https://github.com/kkensuke/latex-template)から `article-template` をダウンロードしてください。そして、VS Code でディレクトリを開きます。`intro.tex` を編集し、`cmd + S`（Mac）でコンパイルします。すると、同じディレクトリに変更された `main.pdf` が保存されます。
+テスト用の LaTeX ディレクトリを作成しましょう。[こちら](https://github.com/kkensuke/latex-template)から `article-template` をダウンロードしてください。そして、VS Code でディレクトリを開きます。`sections/intro.tex` を編集し、`cmd + S`（Mac）でコンパイルします。すると、変更された `main.pdf` が出力されます。
 
 ディレクトリ構造は次の通りです：
 ```

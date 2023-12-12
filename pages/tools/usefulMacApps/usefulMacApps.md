@@ -6,7 +6,7 @@
 ---
 
 ## [AppCleaner](https://freemacsoft.net/appcleaner/)
-アプリをコンピュータから削除する際、`AppCleaner` はアプリに関連するすべてのファイルを見つけて一度にすべて削除できるようにします。
+アプリをコンピューターから削除する際、`AppCleaner` はアプリに関連するすべてのファイルを見つけて一度にすべて削除できるようにします。
 ```{image} img/appcleaner.png
 :width: 400px
 :align: center
