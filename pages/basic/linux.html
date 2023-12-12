@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -203,9 +204,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">1.5. マークダウン</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -471,6 +473,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">シンボリックリンク</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.1.2. Reference</a></li>
 </ul>
             </nav>
         </div>
@@ -487,7 +490,7 @@ document.write(`
 <blockquote>
 <div><p>last update: Dec 12, 2023</p>
 </div></blockquote>
-<p>ここでは、コマンドラインについて学びます。コマンドラインはコンピュータへのテキストインターフェースです。テキストコマンドを入力して、ファイルの作成や削除、ファイルの権限の変更などの操作を行うことができます。</p>
+<p>ここでは、コマンドラインについて学びます。コマンドラインはコンピューターへのテキストインターフェースです。テキストコマンドを入力して、ファイルの作成や削除、ファイルの権限の変更などの操作を行うことができます。</p>
 <p>Macでは、<code class="docutils literal notranslate"><span class="pre">terminal.app</span></code> でコマンドラインを使用できます。</p>
 <section id="id2">
 <h2><span class="section-number">1.1.1. </span>基本<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
@@ -768,7 +771,7 @@ chmod<span class="w"> </span>u+x<span class="w"> </span>file
 <hr class="docutils" />
 <section id="id5">
 <h3>シェルのグロブパターン<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">グロブパターン</span></code> は、ワイルドカード文字を使用してファイル名のセットを指定するものです。 <code class="docutils literal notranslate"><span class="pre">グロブパターン</span></code> は、特定のパターンに一致するファイルを検索する強力な方法です。たとえば、 <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> はカレントディレクトリ内の拡張子が <code class="docutils literal notranslate"><span class="pre">.txt</span></code> のすべてのファイルを意味します。</p>
+<p><code class="docutils literal notranslate"><span class="pre">グロブパターン</span></code> は、ワイルドカード文字を使用してファイル名をまとめて指定するものです。 <code class="docutils literal notranslate"><span class="pre">グロブパターン</span></code> は、特定のパターンに一致するファイルを検索する強力な方法です。たとえば、 <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> はカレントディレクトリ内の拡張子が <code class="docutils literal notranslate"><span class="pre">.txt</span></code> のすべてのファイルを意味します。</p>
 <p>いくつかの一般的なワイルドカード文字：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* : 0文字以上の任意の文字に一致
 ? : 任意の1文字に一致
@@ -910,14 +913,14 @@ mv<span class="w"> </span>*<span class="o">{</span>.py,.sh<span class="o">}</spa
 `&gt;`: リダイレクト
 </pre></div>
 </div>
-<p>Unixライクなシステムでは、3つのタイプのストリームがあり、コンピュータプログラムとその環境を接続します。標準入力 (<code class="docutils literal notranslate"><span class="pre">stdin</span></code>)、標準出力 (<code class="docutils literal notranslate"><span class="pre">stdout</span></code>)、標準エラー (<code class="docutils literal notranslate"><span class="pre">stderr</span></code>) です。入力ストリームはユーザーからデータを受け取るストリームです。出力ストリームはユーザーにデータを送信するストリームです。エラーストリームはユーザーにエラーメッセージを送信するストリームです。<code class="docutils literal notranslate"><span class="pre">パイプ</span></code> と <code class="docutils literal notranslate"><span class="pre">リダイレクト</span></code> は、1つのコマンドの出力を別のコマンドの入力に接続するために使用されます。</p>
+<p>Unixライクなシステムでは、3つのタイプのストリームがあり、コンピュータープログラムとその環境を接続します。標準入力 (<code class="docutils literal notranslate"><span class="pre">stdin</span></code>)、標準出力 (<code class="docutils literal notranslate"><span class="pre">stdout</span></code>)、標準エラー (<code class="docutils literal notranslate"><span class="pre">stderr</span></code>) です。入力ストリームはユーザーからデータを受け取るストリームです。出力ストリームはユーザーにデータを送信するストリームです。エラーストリームはユーザーにエラーメッセージを送信するストリームです。<code class="docutils literal notranslate"><span class="pre">パイプ</span></code> と <code class="docutils literal notranslate"><span class="pre">リダイレクト</span></code> は、1つのコマンドの出力を別のコマンドの入力に接続するために使用されます。</p>
 <p><strong>パイプライン</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout を stdin に送ります。2番目のコマンドは、前のコマンドの stdout を stdin として受け取ります。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head
 </pre></div>
 </div>
 <p><strong>リダイレクト</strong></p>
-<p>``&gt;` stdout をファイルに送ります</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> stdout をファイルに送ります</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span><span class="w"> </span>&gt;<span class="w"> </span>hist.txt
 cat<span class="w"> </span>hist.txt<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
 </pre></div>
@@ -962,9 +965,8 @@ cat<span class="w"> </span>test.txt
 </li>
 </ul>
 <p><strong>他の stdout を使用するコマンド</strong> <code class="docutils literal notranslate"><span class="pre">$()</span></code></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date<span class="w"> </span>+%Y%D
-touch<span class="w"> </span>file_<span class="sb">`</span>date<span class="w"> </span>+%Y%D<span class="sb">`</span>
-<span class="c1"># touch file_$(date +%Y%D)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date<span class="w"> </span>+%Y%m%d
+touch<span class="w"> </span>file_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
 
 <span class="c1"># ネストされたコマンド</span>
 dirname<span class="w"> </span><span class="k">$(</span>which<span class="w"> </span>cat<span class="k">)</span>
@@ -975,9 +977,11 @@ ls<span class="w"> </span><span class="k">$(</span>dirname<span class="w"> </spa
 <hr class="docutils" />
 <section id="id9">
 <h3>シンボリックリンク<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のハードリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します
-<code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のシンボリックリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します。</p>
-<p>シンボリックリンクは、別のファイルやディレクトリへの参照するためのファイルです。シンボリックリンクは、元のファイルが削除されてもリンクが残り、元のファイルへのポインタが壊れてしまうことがあります。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のハードリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">file1</span> <span class="pre">file2</span></code>: <code class="docutils literal notranslate"><span class="pre">file1</span></code> のシンボリックリンク <code class="docutils literal notranslate"><span class="pre">file2</span></code> を作成します。</p></li>
+</ul>
+<p>シンボリックリンクは、別のファイルやディレクトリへの参照するためのファイルです。シンボリックリンクを作成することで、わざわざ同じファイルを複数の場所にコピーする必要がなくなり、ファイルの内容を変更しても、シンボリックリンクを通じてアクセスできるすべての場所で変更が反映されます。しかし、元のファイルが削除されると、シンボリックリンクは壊れてしまいます。</p>
 <p>一方、ハードリンクは、同じ inode に紐付いている別のファイルエントリです。したがって、ハードリンクは元のファイルと同じデータを共有し、元のファイルとリンクファイルの間には区別がありません。したがって、元のファイルを削除しても、ハードリンクが残り、データは保持されます。ただし、ハードリンクは同じファイルシステム内でのみ機能します。</p>
 <p>例：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln<span class="w"> </span>-s<span class="w"> </span>original_file<span class="w"> </span>link_file
@@ -991,9 +995,16 @@ ls<span class="w"> </span>-l
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>エイリアスはシンボリックリンクに似ていますが、オリジナルのファイルを移動した後も有効です。シンボリックリンクと比べてエイリアスの方が便利に思えますが、エイリアスは Unix システムと互換性がありません。<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> のようには使えませんが、<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code> のように使うことはできます。</p>
+<p>エイリアスはシンボリックリンクに似ていますが、オリジナルのファイルを移動した後も有効です。シンボリックリンクと比べてエイリアスの方が便利に思えますが、エイリアスは Unix システムと互換性がありません。<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> のようには使えませんが、<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">symlink</span></code> のように使うことはできます。</p>
 </div>
 </section>
+</section>
+<section id="reference">
+<h2><span class="section-number">1.1.2. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p></li>
+<li><p><a class="reference external" href="https://missing.csail.mit.edu/">The Missing Semester of Your CS Education</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -1074,6 +1085,7 @@ ls<span class="w"> </span>-l
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">シンボリックリンク</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.1.2. Reference</a></li>
 </ul>
   </nav></div>
 

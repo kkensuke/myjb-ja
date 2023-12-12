@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -113,7 +114,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/mylogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.7. GitHub" href="github/github.html" />
+    <link rel="next" title="1.8. GitHub" href="github/github.html" />
     <link rel="prev" title="1.4. Zsh" href="zsh.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -205,9 +206,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">1.5. マークダウン</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -464,24 +466,24 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.5. マークダウン</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.6. 見出し1</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.6.1. 見出し2</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">見出し3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.6. 見出し</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.7. 見出し1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.7.1. 見出し2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">見出し3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.6.2. 水平線</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.6.3. リスト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.6.4. 改行</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6.5. 色</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.6. コード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.6.7. リンク</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.6.8. チェックボックス</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.6.9. 生のテキスト、コード、斜体、太字、取り消し線</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.6.10. LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.6.11. 引用</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.6.12. テーブル</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.6.13. ページ内リンク</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">1.6.14. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.7.2. リスト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.7.3. 改行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.7.4. 色</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.7.5. コード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.7.6. リンク</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.7.7. チェックボックス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.7.8. 生のテキスト、コード、斜体、太字、取り消し線</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.7.9. LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.7.10. 引用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.11. テーブル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.7.12. ページ内リンク</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">1.7.13. 参考</a></li>
 </ul>
 </li>
 </ul>
@@ -504,6 +506,9 @@ document.write(`
 <p>ここでは、Markdown の基本的な使用方法を学びます。Markdown は<strong>定式化され、構造化されたテキストを作成するためのシンプルで軽量なマークアップ言語</strong>です。
 このJupyter Book のソースコードも Markdown で書かれています（特に MyST）。Markdown を使用してウェブサイト、ドキュメント、ノート、書籍、プレゼンテーション、メールメッセージなどを作成できます。MyST は、<strong>科学技術文書</strong>向けの Markdown の派生版の一つです。</p>
 <p>以下では、どのように Markdown を書くかと、それがどのように見えるかを示します。</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1><span class="section-number">1.6. </span>見出し<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># 見出し1</span>
 <span class="gu">## 見出し2</span>
@@ -512,26 +517,16 @@ document.write(`
 </div>
 </div></blockquote>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1><span class="section-number">1.6. </span>見出し1<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
-<section id="id3">
-<h2><span class="section-number">1.6.1. </span>見出し2<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1><span class="section-number">1.7. </span>見出し1<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
 <section id="id4">
-<h3>見出し3<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-</section>
-</section>
+<h2><span class="section-number">1.7.1. </span>見出し2<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <section id="id5">
-<h2><span class="section-number">1.6.2. </span>水平線<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
-</pre></div>
-</div>
-<hr class="docutils" />
-<p>placeholdertext</p>
-</div></blockquote>
+<h3>見出し3<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+</section>
 </section>
 <section id="id6">
-<h2><span class="section-number">1.6.3. </span>リスト<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.2. </span>リスト<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -590,11 +585,11 @@ document.write(`
 </div>
 </section>
 <section id="id7">
-<h2><span class="section-number">1.6.4. </span>改行<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.3. </span>改行<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 <p>改行は、行末に半角スペースを2つ入れることで行えます。</p>
 </section>
 <section id="id8">
-<h2><span class="section-number">1.6.5. </span>色<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.4. </span>色<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
 <p>Markdown内ではHTMLを使用できます。</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
@@ -612,7 +607,7 @@ document.write(`
 </div>
 </section>
 <section id="id9">
-<h2><span class="section-number">1.6.6. </span>コード<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.5. </span>コード<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -637,7 +632,7 @@ document.write(`
 </div>
 </section>
 <section id="id10">
-<h2><span class="section-number">1.6.7. </span>リンク<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.6. </span>リンク<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -654,7 +649,7 @@ document.write(`
 </div>
 </section>
 <section id="id11">
-<h2><span class="section-number">1.6.8. </span>チェックボックス<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.7. </span>チェックボックス<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -675,33 +670,32 @@ document.write(`
 </div>
 </section>
 <section id="id12">
-<h2><span class="section-number">1.6.9. </span>生のテキスト、コード、斜体、太字、取り消し線<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.8. </span>生のテキスト、コード、斜体、太字、取り消し線<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>&gt;```
-&gt;asdf
-&gt;```
-<span class="k">&gt;</span>
-<span class="ge">&gt;`asdf`</span>
-<span class="k">&gt;</span>
-<span class="ge">&gt;*asdf*</span>
-&gt;<span class="ge">_adsf_</span>
-<span class="k">&gt;</span>
-<span class="ge">&gt;**asdf**</span>
-&gt;<span class="gs">__adsf__</span>
-<span class="k">&gt;</span>
-<span class="ge">&gt;***asdf***</span>
-&gt;___adsf___
-&gt;<span class="ge">*__adsf__*</span>
-&gt;<span class="gd">~~asdf~~</span>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="sb">```</span>
+<span class="sb">asdf</span>
+<span class="sb">```</span>
+
+<span class="sb">`asdf`</span>
+
+<span class="ge">*asdf*</span>
+<span class="ge">_adsf_</span>
+
+<span class="gs">**asdf**</span>
+<span class="gs">__adsf__</span>
+
+***asdf***
+___adsf___
+<span class="ge">*__adsf__*</span>
+<span class="gd">~~asdf~~</span>
 </pre></div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
 <div class="result-content docutils">
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asdf</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asdf</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">asdf</span></code></p>
@@ -713,14 +707,13 @@ document.write(`
 <em><strong>adsf</strong></em>
 <em><strong>adsf</strong></em>
 ~~asdf~~</p>
-</div></blockquote>
 </div>
 </div>
 </div>
 </div>
 </section>
 <section id="latex">
-<h2><span class="section-number">1.6.10. </span>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.9. </span>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -747,7 +740,7 @@ $$
 </div>
 </section>
 <section id="id13">
-<h2><span class="section-number">1.6.11. </span>引用<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.10. </span>引用<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -766,7 +759,7 @@ $$
 </div>
 </section>
 <section id="id14">
-<h2><span class="section-number">1.6.12. </span>テーブル<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.11. </span>テーブル<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
@@ -813,7 +806,7 @@ $$
 </div>
 </section>
 <section id="id15">
-<h2><span class="section-number">1.6.13. </span>ページ内リンク<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.12. </span>ページ内リンク<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">リストへのリンク</span>](<span class="na">#リスト</span>)
 </pre></div>
@@ -824,7 +817,7 @@ $$
 </div></blockquote>
 </section>
 <section id="id16">
-<h2><span class="section-number">1.6.14. </span>参考<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7.13. </span>参考<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiW8bKRiv33AhXFC94KHb5XAYgQFnoECAwQAQ&amp;url=https%3A%2F%2Fwww.markdownguide.org%2F&amp;usg=AOvVaw1fohdJEEbL6kohiJ-Pimbe">Markdownガイド</a></p></li>
 </ul>
@@ -876,7 +869,7 @@ $$
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.7. </span>GitHub</p>
+        <p class="prev-next-title"><span class="section-number">1.8. </span>GitHub</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -899,24 +892,24 @@ $$
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.5. マークダウン</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.6. 見出し1</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.6.1. 見出し2</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">見出し3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.6. 見出し</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.7. 見出し1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.7.1. 見出し2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">見出し3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.6.2. 水平線</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.6.3. リスト</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.6.4. 改行</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.6.5. 色</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.6.6. コード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.6.7. リンク</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.6.8. チェックボックス</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.6.9. 生のテキスト、コード、斜体、太字、取り消し線</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.6.10. LaTeX</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.6.11. 引用</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.6.12. テーブル</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.6.13. ページ内リンク</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">1.6.14. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.7.2. リスト</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.7.3. 改行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.7.4. 色</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">1.7.5. コード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.7.6. リンク</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.7.7. チェックボックス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">1.7.8. 生のテキスト、コード、斜体、太字、取り消し線</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.7.9. LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.7.10. 引用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.11. テーブル</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.7.12. ページ内リンク</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">1.7.13. 参考</a></li>
 </ul>
 </li>
 </ul>

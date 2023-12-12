@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -203,9 +204,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">1.4. Zsh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">1.5. マークダウン</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -510,8 +512,8 @@ document.write(`
 <span class="nb">export</span><span class="w"> </span><span class="nv">ZDOTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/path/to/zsh&quot;</span>
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># .zshenv のエイリアスをホームディレクトリに配置</span>
-.zshenv<span class="w"> </span>-&gt;<span class="w"> </span><span class="s1">&#39;/Users/$HOME/path/to/zsh/.zshenv&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># zsh/ にある .zshenv を読み込むためのエイリアスをホームディレクトリに配置</span>
+~/.zshenv<span class="w"> </span>-&gt;<span class="w"> </span><span class="s1">&#39;/Users/$HOME/path/to/zsh/.zshenv&#39;</span>
 </pre></div>
 </div>
 </section>

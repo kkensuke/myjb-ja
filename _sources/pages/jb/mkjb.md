@@ -72,7 +72,7 @@ jb は jupyter-book の略です。
 
 ## 公開する
 まず、GitHubのウェブサイト上で `test-book` という名前のリポジトリを初期化せずに作成します。
-次に、ローカルコンピュータ上の `test-book` ディレクトリで以下のコマンドを実行します。
+次に、ローカルコンピューター上の `test-book` ディレクトリで以下のコマンドを実行します。
 ```bash
 (venv)$ echo "# test-book" >> README.md
 (venv)$ git init

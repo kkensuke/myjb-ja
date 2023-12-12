@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>1.7. GitHub &#8212; My note</title>
+    <title>1.8. GitHub &#8212; My note</title>
   
   
   
@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -111,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../../_static/mylogo.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="1.8. 絵文字を使ったコミットメッセージ" href="commitMessage.html" />
+    <link rel="next" title="1.9. 絵文字を使ったコミットメッセージ" href="commitMessage.html" />
     <link rel="prev" title="1.5. マークダウン" href="../markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -203,9 +204,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../zsh.html">1.4. Zsh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../markdown.html">1.5. マークダウン</a></li>
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../packageManager.html">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packageManager.html">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -461,8 +463,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.7.1. Git (バージョン管理システム、VSC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.7.2. 基本コマンド</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.8.1. Git (バージョン管理システム、VSC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.8.2. 基本コマンド</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">新しいリポジトリの作成</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コマンドラインから既存のリポジトリをプッシュ</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">クローン</a></li>
@@ -475,13 +477,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">他のユーザーをプライベートリポジトリに招待する</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.7.3. GitHub CLI</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.8.3. GitHub CLI</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">インストール</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">現在のディレクトリをベースに新しいリポジトリを作成</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">リモートリポジトリを削除するためのエイリアスを作成</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.4. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.8.4. 参考</a></li>
 </ul>
             </nav>
         </div>
@@ -494,17 +496,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="github">
-<h1><span class="section-number">1.7. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">1.8. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>last update: Dec 12, 2023</p>
 </div></blockquote>
 <a class="reference internal image-reference" href="../../../_images/GitHub-flow.png" id="flow"><img alt="../../../_images/GitHub-flow.png" class="align-center" id="flow" src="../../../_images/GitHub-flow.png" style="width: 600px;" /></a>
 <section id="git-vsc">
-<h2><span class="section-number">1.7.1. </span>Git (バージョン管理システム、VSC)<a class="headerlink" href="#git-vsc" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.8.1. </span>Git (バージョン管理システム、VSC)<a class="headerlink" href="#git-vsc" title="Permalink to this heading">#</a></h2>
 <p>Gitは、開発者がソースコードの変更を管理し、ソフトウェア開発プロジェクトで共同作業するために使われる一般的なバージョン管理システムです。複数の人が同じプトジェクトのソースコードに対して別々に作業し、過去の変更を追跡することを可能にします。</p>
-<p>Gitのローカルリポジトリは、開発者のコンピュータに保存されているプトジェクトのソースコードです。プトジェクトのソースコードに変更が加えられると、その変更はローカルで追跡され、開発者はその変更をローカルリポジトリにコミットすることができます。これによって開発者は、他の開発者が作業しているプトジェクトのソースコードに影響を与えることなく、新しいコードの変更を試したり、修正を加えたりすることができます。</p>
+<p>Gitのローカルリポジトリは、開発者のコンピューターに保存されているプトジェクトのソースコードです。プトジェクトのソースコードに変更が加えられると、その変更はローカルで追跡され、開発者はその変更をローカルリポジトリにコミットすることができます。これによって開発者は、他の開発者が作業しているプトジェクトのソースコードに影響を与えることなく、新しいコードの変更を試したり、修正を加えたりすることができます。</p>
 <p>一方、リモートリポジトリは、リモートサーバーに保存されているプトジェクトのソースコードです。開発者はローカルの変更をリモートリポジトリにプッシュして、チーム内の他の開発者と共有することができます。これにより、チーム全員がプトジェクトのソースコードに加えられた最新の変更を見ることができ、より効果的なコラボレーションが可能になります。</p>
-<p>ローカルリポジトリとリモートリポジトリの主な違いは、ローカルリポジトリは開発者のコンピュータに保存されるのに対し、リモートリポジトリは複数の開発者がアクセスできるサーバーに保存されることです。ローカルリポジトリもリモートリポジトリも、Git のワークフローには欠かせないものです。なぜなら、開発者がそれぞれ独立してコード変更に取り組める一方で、チーム全員が最新の変更に対応できるようになるからです。</p>
+<p>ローカルリポジトリとリモートリポジトリの主な違いは、ローカルリポジトリは開発者のコンピューターに保存されるのに対し、リモートリポジトリは複数の開発者がアクセスできるサーバーに保存されることです。ローカルリポジトリもリモートリポジトリも、Git のワークフローには欠かせないものです。なぜなら、開発者がそれぞれ独立してコード変更に取り組める一方で、チーム全員が最新の変更に対応できるようになるからです。</p>
 <p>以下は、Git に関する主要な用語と概念です：</p>
 <ul class="simple">
 <li><p>リポジトリ（repogitory）： リポジトリとは、Gitによって追跡されるプロジェクト内のファイルやフォルダーの集まりのことです。ローカルコンピューターとリモートサーバー（GitHub など）にあります。</p></li>
@@ -519,11 +521,11 @@ document.write(`
 <p>これらは、Git で使われる最も一般的な用語や概念のほんの一部です。Git を学ぶには時間がかかりますが、チームで働く開発者にとっては重要なスキルです。</p>
 </section>
 <section id="id1">
-<h2><span class="section-number">1.7.2. </span>基本コマンド<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.8.2. </span>基本コマンド<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <section id="id2">
 <h3>新しいリポジトリの作成<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <p>まず、<a class="reference external" href="https://github.com/">GitHub のウェブサイト</a>で初期化せずに新しいリポジトリを作成します。
-次に、ローカルコンピュータ上で以下のコマンドを実行します。</p>
+次に、ローカルコンピューター上で以下のコマンドを実行します。</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mkdir<span class="w"> </span>プロジェクト名<span class="o">]</span>
 <span class="o">[</span><span class="nb">cd</span><span class="w"> </span>プロジェクト名<span class="o">]</span>
 
@@ -693,7 +695,7 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
 </section>
 </section>
 <section id="github-cli">
-<span id="id10"></span><h2><span class="section-number">1.7.3. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this heading">#</a></h2>
+<span id="id10"></span><h2><span class="section-number">1.8.3. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this heading">#</a></h2>
 <section id="id11">
 <h3>インストール<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>brew<span class="w"> </span>install<span class="w"> </span>gh
@@ -742,7 +744,7 @@ $<span class="w"> </span>gh<span class="w"> </span>auth<span class="w"> </span>r
 </section>
 </section>
 <section id="id14">
-<h2><span class="section-number">1.7.4. </span>参考<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.8.4. </span>参考<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">What is Git?</a></p></li>
 <li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials">Bitbucket</a></p></li>
@@ -795,7 +797,7 @@ $<span class="w"> </span>gh<span class="w"> </span>auth<span class="w"> </span>r
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.8. </span>絵文字を使ったコミットメッセージ</p>
+        <p class="prev-next-title"><span class="section-number">1.9. </span>絵文字を使ったコミットメッセージ</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -817,8 +819,8 @@ $<span class="w"> </span>gh<span class="w"> </span>auth<span class="w"> </span>r
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.7.1. Git (バージョン管理システム、VSC)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.7.2. 基本コマンド</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-vsc">1.8.1. Git (バージョン管理システム、VSC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.8.2. 基本コマンド</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">新しいリポジトリの作成</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">コマンドラインから既存のリポジトリをプッシュ</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">クローン</a></li>
@@ -831,13 +833,13 @@ $<span class="w"> </span>gh<span class="w"> </span>auth<span class="w"> </span>r
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">他のユーザーをプライベートリポジトリに招待する</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.7.3. GitHub CLI</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-cli">1.8.3. GitHub CLI</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">インストール</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">現在のディレクトリをベースに新しいリポジトリを作成</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">リモートリポジトリを削除するためのエイリアスを作成</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.7.4. 参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1.8.4. 参考</a></li>
 </ul>
   </nav></div>
 

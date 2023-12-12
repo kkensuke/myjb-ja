@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>1.9. Homebrew と venv &#8212; My note</title>
+    <title>1.10. Homebrew と venv &#8212; My note</title>
   
   
   
@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -112,7 +113,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="2. Python" href="../python/python.html" />
-    <link rel="prev" title="1.8. 絵文字を使ったコミットメッセージ" href="github/commitMessage.html" />
+    <link rel="prev" title="1.9. 絵文字を使ったコミットメッセージ" href="github/commitMessage.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -203,9 +204,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">1.5. マークダウン</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -461,9 +463,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homebrew">1.9.1. Homebrew</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venv">1.9.2. Venv</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">1.9.3. Jupyter-labを使用しましょう！</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homebrew">1.10.1. Homebrew</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venv">1.10.2. Venv</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">1.10.3. Jupyter-labを使用しましょう！</a></li>
 </ul>
             </nav>
         </div>
@@ -476,15 +478,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="homebrew-venv">
-<h1><span class="section-number">1.9. </span>Homebrew と venv<a class="headerlink" href="#homebrew-venv" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">1.10. </span>Homebrew と venv<a class="headerlink" href="#homebrew-venv" title="Permalink to this heading">#</a></h1>
 <blockquote>
 <div><p>last update: Dec 12, 2023</p>
 </div></blockquote>
-<p>パッケージマネージャとは何ですか？</p>
+<p>パッケージマネージャーとは何ですか？</p>
 <blockquote>
-<div><p>パッケージマネージャまたはパッケージ管理システムは、コンピュータプログラムのインストール、アップグレード、設定、削除のプロセスを一貫した方法で自動化するためのソフトウェアツールのコレクションです。 - Wikipedia</p>
+<div><p>パッケージマネージャーまたはパッケージ管理システムは、コンピュータープログラムのインストール、アップグレード、設定、削除のプロセスを一貫した方法で自動化するためのソフトウェアツールのコレクションです。 - Wikipedia</p>
 </div></blockquote>
-<p>パッケージマネージャにはさまざまな種類があります。そして、OS レベルのパッケージマネージャとアプリケーションレベルのパッケージマネージャといった、異なる階層のものがあります。</p>
+<p>パッケージマネージャーにはさまざまな種類があります。そして、OS レベルのパッケージマネージャーとアプリケーションレベルのパッケージマネージャーといった、異なる階層のものがあります。</p>
 <p>OSレベルの場合、</p>
 <ul class="simple">
 <li><p>Windows：vcpkg</p></li>
@@ -502,8 +504,8 @@ document.write(`
 </ul>
 <p>このページでは、Homebrew をインストールと venv の作成について説明します。</p>
 <section id="homebrew">
-<h2><span class="section-number">1.9.1. </span><a class="reference external" href="https://docs.brew.sh/Installation">Homebrew</a><a class="headerlink" href="#homebrew" title="Permalink to this heading">#</a></h2>
-<p>Homebrewは、macOS（または Linux）を補完するパッケージマネージャです。
+<h2><span class="section-number">1.10.1. </span><a class="reference external" href="https://docs.brew.sh/Installation">Homebrew</a><a class="headerlink" href="#homebrew" title="Permalink to this heading">#</a></h2>
+<p>Homebrewは、macOS（または Linux）を補完するパッケージマネージャーです。
 インストールするには、ターミナルに次のコードを入力します（最新のコードを<a class="reference external" href="https://brew.sh/">ここで</a>確認する必要があります）;</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
@@ -530,7 +532,7 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">Homebrew</span> <span class="pre">x.x.x</span></code> と表示された場合、成功です。</p>
 </section>
 <section id="venv">
-<span id="id1"></span><h2><span class="section-number">1.9.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this heading">#</a></h2>
+<span id="id1"></span><h2><span class="section-number">1.10.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this heading">#</a></h2>
 <p>Python の仮想環境を作成するには、venv が最も簡単なツールです！ Python のための pyenv や anaconda などもありますが、初心者には必要ありません。venv を作成しましょう。</p>
 <p>venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/test
@@ -552,7 +554,7 @@ Pythonのバージョンを確認してみましょう：</p>
 <p>すると <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.x.x</span></code> が表示されます。</p>
 <p>これで新しい venv を作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> コマンドで venv 内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
-何かをインストールする前に、<code class="docutils literal notranslate"><span class="pre">pip</span></code> をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャです（以下の Username を変更してください）：</p>
+何かをインストールする前に、<code class="docutils literal notranslate"><span class="pre">pip</span></code> をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャーです（以下の Username を変更してください）：</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/&lt;Username&gt;/test/bin/python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 </pre></div>
 </div>
@@ -570,7 +572,7 @@ Pythonのバージョンを確認してみましょう：</p>
 pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
 </pre></div>
 </div>
-<p>Matplotlib は可視化のためのライブラリ、pandas はデータ分析と操作のためのライブラリ、jupyter-lab はウェブベースのユーザーインターフェースを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
+<p>Matplotlib は可視化のためのライブラリ、pandas はデータ分析と操作のためのライブラリ、jupyter-lab はウェブベースのユーザーインターフェイスを提供するライブラリです。また、科学的な計算にはScipyも便利なパッケージです。
 これでテスト用 venv に多くのパッケージがインストールされました。<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> を試してみてください。ただし、明らかに4つまたは5つのパッケージしかインストールされていないように思うかもしれませんが、実際には、jupyter-lab とともに多くのパッケージがインストールされています。
 venv を非アクティブにするには、ターミナルで単に <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> と入力します。再度アクティブにするには、<code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">test/bin/activate</span></code> を入力します。</p>
 <div class="admonition warning">
@@ -582,14 +584,14 @@ venv を非アクティブにするには、ターミナルで単に <code class
 </div>
 </section>
 <section id="jupyter-lab">
-<h2><span class="section-number">1.9.3. </span>Jupyter-labを使用しましょう！<a class="headerlink" href="#jupyter-lab" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.10.3. </span>Jupyter-labを使用しましょう！<a class="headerlink" href="#jupyter-lab" title="Permalink to this heading">#</a></h2>
 <p>jupyter-lab をインストールしたので、使ってみましょう！！</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter-lab
 </pre></div>
 </div>
 <p>デフォルトのブラウザが表示され、jupyter-labが開きます。</p>
 <p>jupyter-lab を非アクティブ化するには（venvではなく）、ターミナルで <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">C</span></code> を入力し、終了するかどうかを尋ねられたら y（yes）を入力します。
-詳細については、<a class="reference internal" href="../jb/jb.html"><span class="doc std std-doc">Jupyter Book</span></a> ページを参照してください。</p>
+詳細については、<a class="reference internal" href="../python/basics.html"><span class="doc std std-doc">このページ</span></a> を参照してください。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
@@ -639,7 +641,7 @@ venv を非アクティブにするには、ターミナルで単に <code class
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.8. </span>絵文字を使ったコミットメッセージ</p>
+        <p class="prev-next-title"><span class="section-number">1.9. </span>絵文字を使ったコミットメッセージ</p>
       </div>
     </a>
     <a class="right-next"
@@ -669,9 +671,9 @@ venv を非アクティブにするには、ターミナルで単に <code class
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homebrew">1.9.1. Homebrew</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venv">1.9.2. Venv</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">1.9.3. Jupyter-labを使用しましょう！</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homebrew">1.10.1. Homebrew</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#venv">1.10.2. Venv</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-lab">1.10.3. Jupyter-labを使用しましょう！</a></li>
 </ul>
   </nav></div>
 

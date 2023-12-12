@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -203,9 +204,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">1.5. マークダウン</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.7. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.8. 絵文字を使ったコミットメッセージ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.9. Homebrew と venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.8. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.9. 絵文字を使ったコミットメッセージ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.10. Homebrew と venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -484,7 +486,7 @@ document.write(`
 <div><p>last update: Dec 12, 2023</p>
 </div></blockquote>
 <p>パス (path) は通常、ディレクトリツリー内のファイル/ディレクトリの位置を識別するための文字列を示します。
-PATH は環境変数の1つであり、上記で説明したパスとは少し異なります。</p>
+一方、<code class="docutils literal notranslate"><span class="pre">PATH</span></code> は環境変数の1つであり、先に説明したパスとは少し異なります。</p>
 <p>シェルでコマンドを入力すると、シェルはそのコマンドを見つけて実行する必要があります。PATH は、入力したコマンドをシェルが検索すべき場所を指定します。</p>
 <p>PATH を確認するには、次のコマンドを実行します：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
