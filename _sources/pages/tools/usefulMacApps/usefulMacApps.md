@@ -38,6 +38,10 @@ CustomShortCutはCheatSheetと互換性があり、ショートカットキー�
 
 ## [coconutBattery](https://www.coconut-flavour.com/coconutbattery/)
 `coconutBattery` を使用して、Mac、iPad、iPhoneのデバイスバッテリー情報を確認できます。
+```{image} img/coconutBattery.png
+:width: 300px
+:align: center
+```
 
 ## [draw.io](https://app.diagrams.net/)
 `draw.io` は、フローチャートやネットワークダイアグラムなどを作成するための無料でオープンソースの図形ソフトウェアです。シンプルで使いやすいUIで、ブラウザまたはデスクトップアプリから使用できます。
@@ -96,7 +100,7 @@ Notionは、多くの便利な機能を備えたマークダウンベースの�
 `Shotcut` は、無料でオープンソースのビデオエディタです。
 
 ## [Shottr](https://shottr.cc/)
-`Shottr` は、スクリーンショットを撮るための無料アプリです。全画面のスクリーンショット：`cmd + shift + 1`、選択したエリアのスクリーンショット：`cmd + shift + 2`、アクティブなウィンドウのスクリーンショット：`cmd + shift + 8`、画面をスクロールして全ページをキャプチャ：`cmd + shift + 9`。さらに、マルチ言語のOCRを使用してスクリーンショットをテキストに変換できます：`cmd + option + ctrl + O`（数字のゼロではない）。
+`Shottr` は、スクリーンショットを撮るための無料アプリです。全画面のスクリーンショット：`cmd + shift + 1`、選択したエリアのスクリーンショット：`cmd + shift + 2`、アクティブなウィンドウのスクリーンショット：`cmd + shift + 8`、画面をスクロールして全ページをキャプチャ：`cmd + shift + 9`。さらに、マルチ言語のOCRを使用してスクリーンショットをテキストに変換できます：`cmd + option + ctrl + o`。
 
 `````{tab-set}
 ````{tab-item} モザイク
