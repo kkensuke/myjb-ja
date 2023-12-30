@@ -8,9 +8,9 @@
 :align: center
 ```
 
-## [2OCR](https://2ocr.com/)
-画像をテキストに変換できます。複数の言語を検出できます。
-```{image} img/2ocr.png
+## [PDF24 Tools](https://tools.pdf24.org/en/)
+PDF ファイルを多くの方法で編集できます。また、OCR を使用して検索可能な PDF ファイルを作成することもできます。
+```{image} img/PDF24.png
 :width: 700px
 :align: center
 ```
