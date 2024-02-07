@@ -4,7 +4,7 @@
 GitHubでファイルをコミットする際は、コミットメッセージを追加しますが、コミットの内容を簡単に表現するために `絵文字` を使用することが推奨されていることがあります。ここでは、そのための `zsh` でのエイリアスの設定を紹介します。
 
 以下のコードを `.zshrc` に追加してください。
-```zsh
+```bash
 ## EMOJI-LOG の使用 (https://github.com/ahmadawais/Emoji-Log) ##
 # Git Commit, Add all and Push — 一つのステップで行う
 gacp() { git add . && git commit -m "$*" && git push origin main }

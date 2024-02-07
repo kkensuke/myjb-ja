@@ -9,7 +9,7 @@ First, Make `_static/myadmonitions.css` in your book.
 ## Change icons for pre-defined admonitions
 You can choose icons for admonitions from [Fontawsome](https://fontawesome.com/search?o=r&m=free&f=brands%2Cclassic%2Csharp)
 
-:::css
+:::{code-block} css
 /* change icon for note */
 div.note .admonition-title:after {
     content: "\f02d" !important;
@@ -40,7 +40,7 @@ important
 
 
 ## No icon class
-:::css
+:::{code-block} css
 /** No icon for admonitions with no-icon class */
 div.admonition.no-icon > .admonition-title::after {
     content: none !important;
@@ -71,7 +71,7 @@ admonition without icon
 
 
 ## New admonitions 1
-:::css
+:::{code-block} css
 /* simple class for admonitions */
 div.simple {
     border-left-color: rgba(var(--pst-color-success), .1);
@@ -133,7 +133,7 @@ Remember, with great power comes great responsibility.
 
 
 ## New admonitions 2
-:::css
+:::{code-block} css
 /* extra-credit class as title for admonitions */
 div.admonition-extra-credit {
     border-left-color: rgba(0, 146, 16, 1);
@@ -217,7 +217,7 @@ question class (letter case doesn’t matter)
 
 ## Remove icons from `sphinx-proof`
 
-:::css
+:::{code-block} css
 /* remove icons from spinx-proof */
 div.axiom p.admonition-title::after {
 	content: none;

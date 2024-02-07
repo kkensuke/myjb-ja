@@ -6,7 +6,7 @@ Latexの基本
 
 `$` を使ってインライン数式を書くことができます。
 
-````{admonition} 例
+````{admonition} Example
 ```latex
 物理学で最も有名な方程式は$E=mc^2$です。
 ```
@@ -18,7 +18,7 @@ Latexの基本
 
 `$$` または `\[ \]` を使用してディスプレイ数式を書くことができます。
 
-````{admonition} 例
+````{admonition} Example
 
 ```latex
 シュレディンガー方程式:
