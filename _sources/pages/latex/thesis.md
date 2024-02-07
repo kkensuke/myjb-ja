@@ -30,6 +30,21 @@
 \usepackage{authblk}
 % url
 \usepackage{url}
+% cite
+\usepackage[
+    backend=biber, 
+    style=phys,
+    sortcites=true,
+    biblabel=brackets,
+    giveninits=true,
+    abbreviate=false,
+    block=space,
+    backref=true, backrefstyle=two,
+]{biblatex}
+% For arXiv paper, use @article instead of @misc 
+% and add "journaltitle = {{arXiv}:0000.00000 [category]},"
+% and remove "doi = {...}"
+\addbibresource{ref.bib}
 % color
 \usepackage{xcolor}
 \hypersetup{
@@ -108,13 +123,14 @@
 \input{chapters/0-symbols.tex}
 \newpage
 \pagestyle{fancy}
-\input{chapters/0-intro.tex}
+\input{chapters/1-intro.tex}
 \newpage
-\input{chapters/1-asdf.tex}
+\input{chapters/2-asdf.tex}
 
 \newpage
-\bibliographystyle{unsrt}
-\bibliography{ref}
+% \bibliographystyle{unsrt}
+% \bibliography{ref}
+\printbibliography[title=References] % for biblatex
 
 \newpage
 \appendix
@@ -158,15 +174,15 @@
 ### `chapters/0-abstract.tex`
 ```latex
 \thispagestyle{plain}
+\null\vspace{\fill}
+
 \begin{center}
-    \null\vspace{\fill}
-    
-    \textbf{\Large Abstract}
-    
-    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-    
-    \vspace{\fill}
+    \textbf{\Large 概要}
 \end{center}
+
+abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+
+\vspace{\fill}
 ```
 
 ### `chapters/0-symbols.tex`
@@ -198,13 +214,14 @@
 \end{tabular}
 ```
 
-### `chapters/0-intro.tex`
+### `chapters/1-intro.tex`
 ```latex
 \chapter{Introduction}
 \lipsum[1-6]
+A reference to a paper\cite{aharonov1998quantum}.
 ```
 
-### `chapters/1-asdf.tex`
+### `chapters/2-asdf.tex`
 ```latex
 \chapter{asdf}
 \lipsum[1]
@@ -216,6 +233,22 @@
 \lipsum[1]
 ```
 
+## `ref.bib`
+```bibtex
+@article{aharonov1998quantum,
+  title        = {Quantum Circuits with Mixed States},
+  url          = {http://arxiv.org/abs/quant-ph/9806029},
+  journaltitle = {{arXiv}:quant-ph/9806029},
+  publisher    = {{arXiv}},
+  author       = {Aharonov, Dorit and Kitaev, Alexei and Nisan, Noam},
+  urldate      = {2022-09-15},
+  date         = {1998-06-08},
+  langid       = {english},
+  eprinttype   = {arxiv},
+  eprint       = {quant-ph/9806029},
+  keywords     = {Quantum Physics}
+}
+```
 
 
 ## Output

@@ -29,7 +29,7 @@ Homebrewは、macOS（または Linux）を補完するパッケージマネー�
 ```
 
 次の出力が表示されます：
-```zsh
+```bash
 ==> Next steps:
 - Run these two commands in your terminal to add Homebrew to your PATH:
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/kensuke/.zprofile
@@ -40,13 +40,13 @@ Homebrewは、macOS（または Linux）を補完するパッケージマネー�
 ```
 
 Homebrew を PATH に追加するために次を入力します（Usernameを変更してください）：
-```zsh
+```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/Username/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 成功したかどうかを確認しましょう！
-```zsh
+```bash
 brew --version
 ```
 `Homebrew x.x.x` と表示された場合、成功です。
@@ -58,21 +58,21 @@ Python の仮想環境を作成するには、venv が最も簡単なツール�
 
 venv を作成したり削除したりするのは非常に簡単です。まず、ホームディレクトリにテスト用の venv を作成します。
 
-```zsh
+```bash
 python3 -m venv ~/test
 ```
 次にvenvをアクティベートします：
-```zsh
+```bash
 source test/bin/activate
 ```
 または
-```zsh
+```bash
 . test/bin/activate
 ```
 
 これでvenvがアクティブになります。ターミナルのユーザー名の左側に venv の名前が  `(test) Username@MacBook-Pro ~ %` のように表示されます。
 Pythonのバージョンを確認してみましょう：
-```zsh
+```bash
 python -V
 ```
 すると `Python 3.x.x` が表示されます。
@@ -80,21 +80,21 @@ python -V
 これで新しい venv を作成し、アクティブにしましたが、実際にはパッケージはまだほとんどありません。
 `pip list --format=freeze` コマンドで venv 内のパッケージが表示されますが、今の段階では基本的なパッケージしかありません。
 何かをインストールする前に、`pip` をアップグレードする必要があるかもしれません。これは Python のパッケージマネージャーです（以下の Username を変更してください）：
-```zsh
+```bash
 /Users/<Username>/test/bin/python3 -m pip install --upgrade pip
 ```
 次にパッケージをインストールしてみましょう（ここでは numpy を使用します）！
-```zsh
+```bash
 pip install numpy
 ```
 そして確認してみましょう：
-```zsh
+```bash
 pip list --format=freeze
 ```
 `numpy==x.xx.x` のように表示されます。
 
 初心者として Python を使用する場合は、matplotlib、pandas、jupyter-lab をインストールすることをお勧めします；
-```zsh
+```bash
 pip install matplotlib
 pip install jupyterlab
 ```
@@ -105,7 +105,7 @@ venv を非アクティブにするには、ターミナルで単に `deactivate
 
 ````{warning}
 venv を削除する場合は、ターミナルで次を入力して削除します：
-```zsh
+```bash
 rm -rf ~/test
 ```
 ````
@@ -113,7 +113,7 @@ rm -rf ~/test
 ## Jupyter-labを使用しましょう！
 jupyter-lab をインストールしたので、使ってみましょう！！
 
-```zsh
+```bash
 jupyter-lab
 ```
 デフォルトのブラウザが表示され、jupyter-labが開きます。

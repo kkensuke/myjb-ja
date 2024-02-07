@@ -1,12 +1,11 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.15.0
 kernelspec:
-  display_name: 'Python 3.8.9 (''venv'': venv)'
+  display_name: Python 3 (ipykernel)
   language: python
   name: python3
 myst:
@@ -22,6 +21,7 @@ myst:
       :width: 200px
       ```
 ---
+
 #  MyST
 > last update: {sub-ref}`today`
 
@@ -80,7 +80,9 @@ some text.
 ## Block break
 :::{example}
 This is an example of
+
 +++ {"meta": "data"}
+
 a block break
 :::
 
@@ -228,15 +230,14 @@ equation ref: {eq}`mylabel`
 
 
 ## Executable code
-
-::::md
+::::{code-block} md
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
 ::::
 
-```{code-cell} ipython3
+```{code-cell}
 note = "Python syntax highlighting"
 print(note)
 ```
@@ -490,7 +491,7 @@ This is a footnote[^mylabel].
 
 ## Check for missing references
 You can check for missing references when building a Jupyter Book. To do so, use the following options:
-```shell
+```bash
 jupyter-book build -W -n --keep-going docs/
 ```
 

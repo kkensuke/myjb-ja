@@ -4,27 +4,27 @@
 ## TexLive のインストール (Mac)
 
 `install-tl-unx.tar.gz` をダウンロード
-```zsh
+```bash
 $ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 `install-tl-unx.tar.gz` を展開
-```zsh
+```bash
 $ tar xvf install-tl-unx.tar.gz
 ```
 
 インストーラーのディレクトリに移動
-```zsh
+```bash
 $ cd install-tl-2*
 ```
 
 TexLive をインストール
-```zsh
+```bash
 $ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
 ```
 
 インストールを開始するには、`I` を入力して Enter キーを押します。
-```zsh
+```bash
 アクション:
  <I> ハードディスクへのインストールの開始
  <H> ヘルプ
@@ -33,7 +33,7 @@ $ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/t
 ```
 
 シンボリックリンクを `/usr/local/bin` に追加
-```zsh
+```bash
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
