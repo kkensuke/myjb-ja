@@ -88,7 +88,7 @@ ans = integrate.quad(x2, 0, 4)  # 数値的な結果
 print("x, y = ", ans)
 
 
-display(Latex("$$ \int_0^4 x^2 dx = \\frac{x^3}{3} \Big|_0^4 = \\frac{4^3}{3} = 23.3333 $$"))
+display(Latex("$$ \int_0^4 x^2 dx = \\frac{x^3}{3} \Big|_0^4 = \\frac{4^3}{3} = 21.3333 $$"))
 ```
 
 ---
